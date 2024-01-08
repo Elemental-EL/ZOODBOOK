@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1200.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.zoodbook.HelloController">
+   <children>
+      <ScrollPane fx:id="scrollPane" prefHeight="720.0" prefWidth="1200.0">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="2500.0" prefWidth="1184.0" styleClass="mainpageBackground">
+               <children>
+                  <TextField fx:id="searchBar" alignment="CENTER_RIGHT" layoutX="400.0" layoutY="14.0" prefHeight="34.0" prefWidth="400.0" promptText="جستجو" style="-fx-background-radius: 10;" styleClass="upbuttonradius">
+                     <font>
+                        <Font name="B Nazanin Bold" size="12.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets left="25.0" />
+                     </opaqueInsets>
+                     <padding>
+                        <Insets left="37.0" right="5.0" />
+                     </padding>
+                  </TextField>
+                  <ImageView fx:id="profilebtn" fitHeight="35.0" fitWidth="35.0" layoutX="14.0" layoutY="14.0" onMouseClicked="#onUserClicked" pickOnBounds="true" preserveRatio="true" styleClass="zoom">
+                     <image>
+                        <Image url="@Uset%20Green%20PNG.png" />
+                     </image></ImageView>
+                  <ImageView fx:id="cartbtn" fitHeight="35.0" fitWidth="35.0" layoutX="55.0" layoutY="13.0" onMouseClicked="#onCartClicked" pickOnBounds="true" preserveRatio="true" styleClass="zoom">
+                     <image>
+                        <Image url="@Cart%20Green%20PNG.png" />
+                     </image></ImageView>
+                  <ImageView fx:id="logotbn" fitHeight="100.0" fitWidth="100.0" layoutX="1069.0" layoutY="13.0" onMouseClicked="#onLogoClicked" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@jhjhj.png" />
+                     </image></ImageView>
+                  <Pane layoutX="165.0" layoutY="86.0" prefHeight="54.0" prefWidth="885.0">
+                     <children>
+                        <Button fx:id="classicbtn" layoutX="730.0" mnemonicParsing="false" onAction="#onClassicClicked" prefHeight="54.0" prefWidth="147.0" text="کلاسیک" textFill="WHITE">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                           <styleClass>
+                              <String fx:value="mainpageElementsdarkgreen" />
+                              <String fx:value="navbarbuttonshover" />
+                           </styleClass></Button>
+                        <Button fx:id="historybtn" layoutX="587.0" mnemonicParsing="false" onAction="#onHistoryClicked" prefHeight="54.0" prefWidth="147.0" text="تاریخی" textFill="WHITE">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                           <styleClass>
+                              <String fx:value="mainpageElementsdarkgreen" />
+                              <String fx:value="navbarbuttonshover" />
+                           </styleClass></Button>
+                        <Button fx:id="biobtn" layoutX="444.0" mnemonicParsing="false" onAction="#onBioClicked" prefHeight="54.0" prefWidth="147.0" text="بیوگرافی" textFill="WHITE">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                           <styleClass>
+                              <String fx:value="mainpageElementsdarkgreen" />
+                              <String fx:value="navbarbuttonshover" />
+                           </styleClass></Button>
+                        <Button fx:id="psychobtn" layoutX="301.0" mnemonicParsing="false" onAction="#onPsychoClicked" prefHeight="54.0" prefWidth="147.0" text="روانشناسی" textFill="WHITE">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                           <styleClass>
+                              <String fx:value="mainpageElementsdarkgreen" />
+                              <String fx:value="navbarbuttonshover" />
+                           </styleClass></Button>
+                        <Button fx:id="cookingbtn" layoutX="158.0" mnemonicParsing="false" onAction="#onCookingClicked" prefHeight="54.0" prefWidth="147.0" text="آشپزی" textFill="WHITE">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                           <styleClass>
+                              <String fx:value="mainpageElementsdarkgreen" />
+                              <String fx:value="navbarbuttonshover" />
+                           </styleClass></Button>
+                        <Button fx:id="scifibtn" layoutX="15.0" mnemonicParsing="false" onAction="#onScifiClicked" prefHeight="54.0" prefWidth="147.0" text="علمی-تخیلی" textFill="WHITE">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                           <styleClass>
+                              <String fx:value="mainpageElementsdarkgreen" />
+                              <String fx:value="navbarbuttonshover" />
+                           </styleClass></Button>
+                     </children>
+                  </Pane>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="1129.0" layoutY="180.0" pickOnBounds="true" preserveRatio="true" />
+                  <Label layoutX="1074.0" layoutY="190.0" text="کلاسیک">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="showMoreCl" layoutX="981.0" layoutY="187.0" mnemonicParsing="false" onAction="#onShowMoreClassic" text="مشاهده همه">
+                     <styleClass>
+                        <String fx:value="lightgreen" />
+                        <String fx:value="navbarbuttonshover" />
+                     </styleClass></Button>
+                  <Pane layoutX="9.0" layoutY="220.0" prefHeight="200.0" prefWidth="1160.0" styleClass="categoriesradiudandcolor" />
+                  <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="1129.0" layoutY="433.0" pickOnBounds="true" preserveRatio="true" />
+                  <Label layoutX="1076.0" layoutY="442.0" text="تاریخی">
+                     <font>
+                        <Font name="System Bold Italic" size="14.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="showMoreHis" layoutX="981.0" layoutY="439.0" mnemonicParsing="false" onAction="#onShowMoreHistory" text="مشاهده همه">
+                     <styleClass>
+                        <String fx:value="lightgreen" />
+                        <String fx:value="navbarbuttonshover" />
+                     </styleClass></Button>
+                  <Pane layoutX="9.0" layoutY="473.0" prefHeight="200.0" prefWidth="1160.0" styleClass="categoriesradiudandcolor" />
+                  <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="1129.0" layoutY="684.0" pickOnBounds="true" preserveRatio="true" />
+                  <Label layoutX="1071.0" layoutY="691.0" text="بیوگرافی">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="showMoreBio" layoutX="981.0" layoutY="691.0" mnemonicParsing="false" onAction="#onShowMoreBio" text="مشاهده همه">
+                     <styleClass>
+                        <String fx:value="lightgreen" />
+                        <String fx:value="navbarbuttonshover" />
+                     </styleClass></Button>
+                  <Pane layoutX="9.0" layoutY="726.0" prefHeight="200.0" prefWidth="1160.0" styleClass="categoriesradiudandcolor" />
+                  <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="1129.0" layoutY="937.0" pickOnBounds="true" preserveRatio="true" />
+                  <Label layoutX="1062.0" layoutY="944.0" text="روانشناسی">
+                     <font>
+                        <Font name="System Bold Italic" size="14.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="showMorePsycho" layoutX="977.0" layoutY="943.0" mnemonicParsing="false" onAction="#onShowMorePsycho" text="مشاهده همه">
+                     <styleClass>
+                        <String fx:value="lightgreen" />
+                        <String fx:value="navbarbuttonshover" />
+                     </styleClass></Button>
+                  <Pane layoutX="9.0" layoutY="980.0" prefHeight="200.0" prefWidth="1160.0" styleClass="categoriesradiudandcolor" />
+                  <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="1129.0" layoutY="1193.0" pickOnBounds="true" preserveRatio="true" />
+                  <Label layoutX="1079.0" layoutY="1203.0" text="آشپزی">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="showMoreCooking" layoutX="981.0" layoutY="1202.0" mnemonicParsing="false" onAction="#onShowMoreCooking" text="مشاهده همه">
+                     <styleClass>
+                        <String fx:value="lightgreen" />
+                        <String fx:value="navbarbuttonshover" />
+                     </styleClass></Button>
+                  <Pane layoutX="9.0" layoutY="1240.0" prefHeight="200.0" prefWidth="1160.0" styleClass="categoriesradiudandcolor" />
+                  <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="1129.0" layoutY="1449.0" pickOnBounds="true" preserveRatio="true" />
+                  <Label layoutX="1049.0" layoutY="1458.0" text="علمی-تخیلی">
+                     <font>
+                        <Font name="System Bold Italic" size="14.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="showMoreScifi" layoutX="961.0" layoutY="1456.0" mnemonicParsing="false" onAction="#onShowMoreScifi" text="مشاهده همه">
+                     <styleClass>
+                        <String fx:value="lightgreen" />
+                        <String fx:value="navbarbuttonshover" />
+                     </styleClass></Button>
+                  <Pane layoutX="9.0" layoutY="1495.0" prefHeight="200.0" prefWidth="1160.0" styleClass="categoriesradiudandcolor" />
+                  <ImageView fx:id="searchbtn" fitHeight="32.0" fitWidth="32.0" layoutX="400.0" layoutY="15.0" onMouseClicked="#onSearchClicked" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Search.png" />
+                     </image></ImageView>
+                  <Pane fx:id="info" layoutX="9.0" layoutY="1730.0" prefHeight="200.0" prefWidth="1160.0" styleClass="categoriesradiudandcolor">
+                     <children>
+                        <Hyperlink fx:id="infolink" layoutX="1013.0" layoutY="14.0" onAction="#onInfoLinkClicked" text="اولین کتاب">
+                           <font>
+                              <Font name="System Bold" size="28.0" />
+                           </font>
+                        </Hyperlink>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="features" layoutX="-1.0" layoutY="1986.0" prefHeight="200.0" prefWidth="1200.0">
+                     <children>
+                        <ImageView fitHeight="45.0" fitWidth="45.0" layoutX="1094.0" layoutY="75.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@setare.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="45.0" fitWidth="45.0" layoutX="713.0" layoutY="75.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@setare.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="45.0" fitWidth="45.0" layoutX="321.0" layoutY="75.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@setare.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="814.0" layoutY="80.0" text="هر کتابی بخوای اینجا هست!">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="408.0" layoutY="80.0" text="کتابت خیلی زود میرسه دستت!" textAlignment="RIGHT">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="53.0" layoutY="80.0" text="ارزونتر از اینجا پیدا نمیکنی!" textAlignment="RIGHT">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Label>
+                     </children></Pane>
+                  <Pane fx:id="footer" layoutX="-1.0" layoutY="2186.0" prefHeight="315.0" prefWidth="1200.0">
+                     <children>
+                        <Label layoutX="1056.0" layoutY="42.0" text="درباره ما" textFill="#164c35">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="787.0" layoutY="42.0" text="تماس با ما" textFill="#164c35">
+                           <font>
+                              <Font name="System Bold Italic" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="476.0" layoutY="42.0" text="دسترسی سریع" textFill="#164c35">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+               </children></AnchorPane>
+        </content>
+      </ScrollPane>
+      <Button fx:id="jupmUpbtn" layoutX="579.0" layoutY="693.0" mnemonicParsing="false" onAction="#onJumpUpClicked" text="↑" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <styleClass>
+            <String fx:value="mainpageElementsdarkgreen" />
+            <String fx:value="upbuttonradius" />
+            <String fx:value="navbarbuttonshover" />
+         </styleClass>
+      </Button>
+   </children>
+</AnchorPane>

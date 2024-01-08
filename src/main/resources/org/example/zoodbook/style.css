@@ -1,0 +1,56 @@
+.mainpageElementsdarkgreen{
+-fx-background-color:#164c35;
+//colors of elements in mainpage
+}
+
+.mainpageBackground{
+-fx-background-color:#FEFCF3;
+//the color of whole background
+}
+
+.lightgreen{
+-fx-background-color:#D2E3C8;
+//color for moshahede bishtar
+}
+
+.navbarbuttonshover:hover{
+-fx-background-color : #86A789;
+
+//hovering navbar buttons
+}
+
+.upbuttonradius{
+-fx-background-radius:100px,100px,0px,0px;
+//radius for go upper button
+}
+
+.categoriesradiudandcolor{
+-fx-background-color:#fef9f3;
+-fx-background-radius:25px,25px,0px,0px;
+}
+
+.navbarbuttonshover:pressed{
+-fx-background-color : #4F6F52;
+}
+.loginsabtnam:hover{
+-fx-fill : #86A789;
+-fx-underline:true;
+  -fx-scale-x: 1.1;
+    -fx-scale-y: 1.1;
+     transition:
+                    -fx-scale-x 0.5s ease,
+                    -fx-scale-y 0.5s ease;
+}
+.loginsabtnam:pressed{
+-fx-fill:#164c35;
+}
+.text-area .scroll-pane .content .text{
+-fx-text-alignment:right;
+}
+.zoom:hover{
+  -fx-scale-x: 1.1;
+    -fx-scale-y: 1.1;
+     transition:
+                    -fx-scale-x 0.5s ease,
+                    -fx-scale-y 0.5s ease;
+}

@@ -1,0 +1,529 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="720.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.zoodbook.psychobooksController">
+    <children>
+        <ScrollPane fx:id="scrollPane" prefHeight="720.0" prefWidth="1200.0">
+            <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="2133.0" prefWidth="1186.0" styleClass="mainpageBackground" stylesheets="@style.css">
+                    <children>
+                        <ImageView fx:id="logobtn" fitHeight="100.0" fitWidth="100.0" layoutX="1071.0" layoutY="14.0" onMouseClicked="#onLogoClicked" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@jhjhj.png" />
+                            </image>
+                        </ImageView>
+                        <Pane layoutX="150.0" layoutY="37.0" prefHeight="54.0" prefWidth="885.0">
+                            <children>
+                                <Button fx:id="classicbtn" layoutX="730.0" mnemonicParsing="false" onAction="#onClassicClicked" prefHeight="54.0" prefWidth="147.0" stylesheets="@style.css" text="کلاسیک" textFill="WHITE">
+                                    <font>
+                                        <Font size="20.0" />
+                                    </font>
+                                    <styleClass>
+                                        <String fx:value="mainpageElementsdarkgreen" />
+                                        <String fx:value="navbarbuttonshover" />
+                                    </styleClass>
+                                </Button>
+                                <Button fx:id="historybtn" layoutX="587.0" mnemonicParsing="false" onAction="#onHistoryClicked" prefHeight="54.0" prefWidth="147.0" stylesheets="@style.css" text="تاریخی" textFill="WHITE">
+                                    <font>
+                                        <Font size="20.0" />
+                                    </font>
+                                    <styleClass>
+                                        <String fx:value="mainpageElementsdarkgreen" />
+                                        <String fx:value="navbarbuttonshover" />
+                                    </styleClass>
+                                </Button>
+                                <Button fx:id="biobtn" layoutX="444.0" mnemonicParsing="false" onAction="#onBioClicked" prefHeight="54.0" prefWidth="147.0" stylesheets="@style.css" text="بیوگرافی" textFill="WHITE">
+                                    <font>
+                                        <Font size="20.0" />
+                                    </font>
+                                    <styleClass>
+                                        <String fx:value="mainpageElementsdarkgreen" />
+                                        <String fx:value="navbarbuttonshover" />
+                                    </styleClass>
+                                </Button>
+                                <Button fx:id="psychobtn" layoutX="301.0" mnemonicParsing="false" onAction="#onPsychoClicked" prefHeight="54.0" prefWidth="147.0" stylesheets="@style.css" text="روانشناسی" textFill="WHITE">
+                                    <font>
+                                        <Font size="20.0" />
+                                    </font>
+                                    <styleClass>
+                                        <String fx:value="mainpageElementsdarkgreen" />
+                                        <String fx:value="navbarbuttonshover" />
+                                    </styleClass>
+                                </Button>
+                                <Button fx:id="cookingbtn" layoutX="158.0" mnemonicParsing="false" onAction="#onCookingClicked" prefHeight="54.0" prefWidth="147.0" stylesheets="@style.css" text="آشپزی" textFill="WHITE">
+                                    <font>
+                                        <Font size="20.0" />
+                                    </font>
+                                    <styleClass>
+                                        <String fx:value="mainpageElementsdarkgreen" />
+                                        <String fx:value="navbarbuttonshover" />
+                                    </styleClass>
+                                </Button>
+                                <Button fx:id="scifibtn" layoutX="15.0" mnemonicParsing="false" onAction="#onScifiClicked" prefHeight="54.0" prefWidth="147.0" stylesheets="@style.css" text="علمی-تخیلی" textFill="WHITE">
+                                    <font>
+                                        <Font size="20.0" />
+                                    </font>
+                                    <styleClass>
+                                        <String fx:value="mainpageElementsdarkgreen" />
+                                        <String fx:value="navbarbuttonshover" />
+                                    </styleClass>
+                                </Button>
+                            </children>
+                        </Pane>
+                        <ImageView fx:id="cartbtn" fitHeight="35.0" fitWidth="35.0" layoutX="56.0" layoutY="14.0" onMouseClicked="#onCartClicked" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@Cart%20Green%20PNG.png" />
+                            </image>
+                        </ImageView>
+                        <ImageView fx:id="profilebtn" fitHeight="35.0" fitWidth="35.0" layoutX="14.0" layoutY="14.0" onMouseClicked="#onUserClicked" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@Uset%20Green%20PNG.png" />
+                            </image>
+                        </ImageView>
+                        <Pane layoutX="945.0" layoutY="124.0" prefHeight="74.0" prefWidth="181.0">
+                            <children>
+                                <ImageView fitHeight="70.0" fitWidth="70.0" layoutX="105.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@classic-icon.png" />
+                                    </image>
+                                </ImageView>
+                                <Label layoutX="21.0" layoutY="22.0" text="روانشناسی">
+                                    <font>
+                                        <Font size="20.0" />
+                                    </font>
+                                </Label>
+                            </children>
+                        </Pane>
+                        <Pane layoutX="74.0" layoutY="210.0" prefHeight="227.0" prefWidth="1096.0">
+                            <children>
+                                <ImageView fitHeight="150.0" fitWidth="115.0" layoutX="965.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true" />
+                                <Button fx:id="add1" layoutX="966.0" layoutY="174.0" mnemonicParsing="false" onAction="#onAdd1" text="افزودن به سبد خرید" />
+                                <Label alignment="CENTER_RIGHT" layoutX="897.0" layoutY="16.0" text="نام کتاب :" textAlignment="RIGHT">
+                                    <font>
+                                        <Font size="14.0" />
+                                    </font>
+                                </Label>
+                                <Label alignment="CENTER_RIGHT" layoutX="878.0" layoutY="44.0" text="نام نویسنده :" textAlignment="RIGHT">
+                                    <font>
+                                        <Font size="14.0" />
+                                    </font>
+                                </Label>
+                                <Label alignment="CENTER_RIGHT" layoutX="897.0" layoutY="71.0" text="انتشارات :" textAlignment="RIGHT">
+                                    <font>
+                                        <Font size="14.0" />
+                                    </font>
+                                </Label>
+                                <Label alignment="CENTER_RIGHT" layoutX="913.0" layoutY="99.0" text="قیمت :" textAlignment="RIGHT">
+                                    <font>
+                                        <Font size="14.0" />
+                                    </font>
+                                </Label>
+                                <Label alignment="CENTER_RIGHT" layoutX="891.0" layoutY="127.0" text="توضیحات :" textAlignment="RIGHT">
+                                    <font>
+                                        <Font size="14.0" />
+                                    </font>
+                                </Label>
+                                <Label layoutX="830.0" layoutY="16.0" text="Label">
+                                    <font>
+                                        <Font size="14.0" />
+                                    </font>
+                                </Label>
+                                <Label layoutX="830.0" layoutY="44.0" text="Label">
+                                    <font>
+                                        <Font size="14.0" />
+                                    </font>
+                                </Label>
+                                <Label layoutX="830.0" layoutY="71.0" text="Label">
+                                    <font>
+                                        <Font size="14.0" />
+                                    </font>
+                                </Label>
+                                <Label fx:id="price1" layoutX="830.0" layoutY="99.0" text="Label">
+                                    <font>
+                                        <Font size="14.0" />
+                                    </font>
+                                </Label>
+                            </children>
+                        </Pane>
+                        <Pane layoutX="74.0" layoutY="446.0" prefHeight="227.0" prefWidth="1096.0">
+                            <children>
+                                <ImageView fitHeight="150.0" fitWidth="115.0" layoutX="965.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true" />
+                                <Button fx:id="add2" layoutX="966.0" layoutY="174.0" mnemonicParsing="false" onAction="#onAdd2" text="افزودن به سبد خرید" />
+                                <Label alignment="CENTER_RIGHT" layoutX="897.0" layoutY="16.0" text="نام کتاب :" textAlignment="RIGHT">
+                                    <font>
+                                        <Font size="14.0" />
+                                    </font>
+                                </Label>
+                                <Label alignment="CENTER_RIGHT" layoutX="878.0" layoutY="44.0" text="نام نویسنده :" textAlignment="RIGHT">
+                                    <font>
+                                        <Font size="14.0" />
+                                    </font>
+                                </Label>
+                                <Label alignment="CENTER_RIGHT" layoutX="897.0" layoutY="71.0" text="انتشارات :" textAlignment="RIGHT">
+                                    <font>
+                                        <Font size="14.0" />
+                                    </font>
+                                </Label>
+                                <Label alignment="CENTER_RIGHT" layoutX="913.0" layoutY="99.0" text="قیمت :" textAlignment="RIGHT">
+                                    <font>
+                                        <Font size="14.0" />
+                                    </font>
+                                </Label>
+                                <Label alignment="CENTER_RIGHT" layoutX="891.0" layoutY="127.0" text="توضیحات :" textAlignment="RIGHT">
+                                    <font>
+                                        <Font size="14.0" />
+                                    </font>
+                                </Label>
+                                <Label layoutX="830.0" layoutY="16.0" text="Label">
+                                    <font>
+                                        <Font size="14.0" />
+                                    </font>
+                                </Label>
+                                <Label layoutX="830.0" layoutY="44.0" text="Label">
+                                    <font>
+                                        <Font size="14.0" />
+                                    </font>
+                                </Label>
+                                <Label layoutX="830.0" layoutY="71.0" text="Label">
+                                    <font>
+                                        <Font size="14.0" />
+                                    </font>
+                                </Label>
+                                <Label fx:id="price2" layoutX="830.0" layoutY="99.0" text="Label">
+                                    <font>
+                                        <Font size="14.0" />
+                                    </font>
+                                </Label>
+                            </children>
+                        </Pane>
+                        <Pane layoutX="74.0" layoutY="691.0" prefHeight="227.0" prefWidth="1096.0">
+                            <children>
+                                <ImageView fitHeight="150.0" fitWidth="115.0" layoutX="965.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true" />
+                                <Button fx:id="add3" layoutX="966.0" layoutY="174.0" mnemonicParsing="false" onAction="#onAdd3" text="افزودن به سبد خرید" />
+                                <Label alignment="CENTER_RIGHT" layoutX="897.0" layoutY="16.0" text="نام کتاب :" textAlignment="RIGHT">
+                                    <font>
+                                        <Font size="14.0" />
+                                    </font>
+                                </Label>
+                                <Label alignment="CENTER_RIGHT" layoutX="878.0" layoutY="44.0" text="نام نویسنده :" textAlignment="RIGHT">
+                                    <font>
+                                        <Font size="14.0" />
+                                    </font>
+                                </Label>
+                                <Label alignment="CENTER_RIGHT" layoutX="897.0" layoutY="71.0" text="انتشارات :" textAlignment="RIGHT">
+                                    <font>
+                                        <Font size="14.0" />
+                                    </font>
+                                </Label>
+                                <Label alignment="CENTER_RIGHT" layoutX="913.0" layoutY="99.0" text="قیمت :" textAlignment="RIGHT">
+                                    <font>
+                                        <Font size="14.0" />
+                                    </font>
+                                </Label>
+                                <Label alignment="CENTER_RIGHT" layoutX="891.0" layoutY="127.0" text="توضیحات :" textAlignment="RIGHT">
+                                    <font>
+                                        <Font size="14.0" />
+                                    </font>
+                                </Label>
+                                <Label layoutX="830.0" layoutY="16.0" text="Label">
+                                    <font>
+                                        <Font size="14.0" />
+                                    </font>
+                                </Label>
+                                <Label layoutX="830.0" layoutY="44.0" text="Label">
+                                    <font>
+                                        <Font size="14.0" />
+                                    </font>
+                                </Label>
+                                <Label layoutX="830.0" layoutY="71.0" text="Label">
+                                    <font>
+                                        <Font size="14.0" />
+                                    </font>
+                                </Label>
+                                <Label fx:id="price3" layoutX="830.0" layoutY="99.0" text="Label">
+                                    <font>
+                                        <Font size="14.0" />
+                                    </font>
+                                </Label>
+                            </children>
+                        </Pane>
+                        <Pane layoutX="74.0" layoutY="925.0" prefHeight="227.0" prefWidth="1096.0">
+                            <children>
+                                <ImageView fitHeight="150.0" fitWidth="115.0" layoutX="965.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true" />
+                                <Button fx:id="add4" layoutX="966.0" layoutY="174.0" mnemonicParsing="false" onAction="#onAdd4" text="افزودن به سبد خرید" />
+                                <Label alignment="CENTER_RIGHT" layoutX="897.0" layoutY="16.0" text="نام کتاب :" textAlignment="RIGHT">
+                                    <font>
+                                        <Font size="14.0" />
+                                    </font>
+                                </Label>
+                                <Label alignment="CENTER_RIGHT" layoutX="878.0" layoutY="44.0" text="نام نویسنده :" textAlignment="RIGHT">
+                                    <font>
+                                        <Font size="14.0" />
+                                    </font>
+                                </Label>
+                                <Label alignment="CENTER_RIGHT" layoutX="897.0" layoutY="71.0" text="انتشارات :" textAlignment="RIGHT">
+                                    <font>
+                                        <Font size="14.0" />
+                                    </font>
+                                </Label>
+                                <Label alignment="CENTER_RIGHT" layoutX="913.0" layoutY="99.0" text="قیمت :" textAlignment="RIGHT">
+                                    <font>
+                                        <Font size="14.0" />
+                                    </font>
+                                </Label>
+                                <Label alignment="CENTER_RIGHT" layoutX="891.0" layoutY="127.0" text="توضیحات :" textAlignment="RIGHT">
+                                    <font>
+                                        <Font size="14.0" />
+                                    </font>
+                                </Label>
+                                <Label layoutX="830.0" layoutY="16.0" text="Label">
+                                    <font>
+                                        <Font size="14.0" />
+                                    </font>
+                                </Label>
+                                <Label layoutX="830.0" layoutY="44.0" text="Label">
+                                    <font>
+                                        <Font size="14.0" />
+                                    </font>
+                                </Label>
+                                <Label layoutX="830.0" layoutY="71.0" text="Label">
+                                    <font>
+                                        <Font size="14.0" />
+                                    </font>
+                                </Label>
+                                <Label fx:id="price4" layoutX="830.0" layoutY="99.0" text="Label">
+                                    <font>
+                                        <Font size="14.0" />
+                                    </font>
+                                </Label>
+                            </children>
+                        </Pane>
+                        <Pane layoutX="74.0" layoutY="1164.0" prefHeight="227.0" prefWidth="1096.0">
+                            <children>
+                                <ImageView fitHeight="150.0" fitWidth="115.0" layoutX="965.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true" />
+                                <Button fx:id="add5" layoutX="966.0" layoutY="174.0" mnemonicParsing="false" onAction="#onAdd5" text="افزودن به سبد خرید" />
+                                <Label alignment="CENTER_RIGHT" layoutX="897.0" layoutY="16.0" text="نام کتاب :" textAlignment="RIGHT">
+                                    <font>
+                                        <Font size="14.0" />
+                                    </font>
+                                </Label>
+                                <Label alignment="CENTER_RIGHT" layoutX="878.0" layoutY="44.0" text="نام نویسنده :" textAlignment="RIGHT">
+                                    <font>
+                                        <Font size="14.0" />
+                                    </font>
+                                </Label>
+                                <Label alignment="CENTER_RIGHT" layoutX="897.0" layoutY="71.0" text="انتشارات :" textAlignment="RIGHT">
+                                    <font>
+                                        <Font size="14.0" />
+                                    </font>
+                                </Label>
+                                <Label alignment="CENTER_RIGHT" layoutX="913.0" layoutY="99.0" text="قیمت :" textAlignment="RIGHT">
+                                    <font>
+                                        <Font size="14.0" />
+                                    </font>
+                                </Label>
+                                <Label alignment="CENTER_RIGHT" layoutX="891.0" layoutY="127.0" text="توضیحات :" textAlignment="RIGHT">
+                                    <font>
+                                        <Font size="14.0" />
+                                    </font>
+                                </Label>
+                                <Label layoutX="830.0" layoutY="16.0" text="Label">
+                                    <font>
+                                        <Font size="14.0" />
+                                    </font>
+                                </Label>
+                                <Label layoutX="830.0" layoutY="44.0" text="Label">
+                                    <font>
+                                        <Font size="14.0" />
+                                    </font>
+                                </Label>
+                                <Label layoutX="830.0" layoutY="71.0" text="Label">
+                                    <font>
+                                        <Font size="14.0" />
+                                    </font>
+                                </Label>
+                                <Label fx:id="price5" layoutX="830.0" layoutY="99.0" text="Label">
+                                    <font>
+                                        <Font size="14.0" />
+                                    </font>
+                                </Label>
+                            </children>
+                        </Pane>
+                        <Pane layoutX="74.0" layoutY="1401.0" prefHeight="227.0" prefWidth="1096.0">
+                            <children>
+                                <ImageView fitHeight="150.0" fitWidth="115.0" layoutX="965.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true" />
+                                <Button fx:id="add6" layoutX="966.0" layoutY="174.0" mnemonicParsing="false" onAction="#onAdd6" text="افزودن به سبد خرید" />
+                                <Label alignment="CENTER_RIGHT" layoutX="897.0" layoutY="16.0" text="نام کتاب :" textAlignment="RIGHT">
+                                    <font>
+                                        <Font size="14.0" />
+                                    </font>
+                                </Label>
+                                <Label alignment="CENTER_RIGHT" layoutX="878.0" layoutY="44.0" text="نام نویسنده :" textAlignment="RIGHT">
+                                    <font>
+                                        <Font size="14.0" />
+                                    </font>
+                                </Label>
+                                <Label alignment="CENTER_RIGHT" layoutX="897.0" layoutY="71.0" text="انتشارات :" textAlignment="RIGHT">
+                                    <font>
+                                        <Font size="14.0" />
+                                    </font>
+                                </Label>
+                                <Label alignment="CENTER_RIGHT" layoutX="913.0" layoutY="99.0" text="قیمت :" textAlignment="RIGHT">
+                                    <font>
+                                        <Font size="14.0" />
+                                    </font>
+                                </Label>
+                                <Label alignment="CENTER_RIGHT" layoutX="891.0" layoutY="127.0" text="توضیحات :" textAlignment="RIGHT">
+                                    <font>
+                                        <Font size="14.0" />
+                                    </font>
+                                </Label>
+                                <Label layoutX="830.0" layoutY="16.0" text="Label">
+                                    <font>
+                                        <Font size="14.0" />
+                                    </font>
+                                </Label>
+                                <Label layoutX="830.0" layoutY="44.0" text="Label">
+                                    <font>
+                                        <Font size="14.0" />
+                                    </font>
+                                </Label>
+                                <Label layoutX="830.0" layoutY="71.0" text="Label">
+                                    <font>
+                                        <Font size="14.0" />
+                                    </font>
+                                </Label>
+                                <Label fx:id="price6" layoutX="830.0" layoutY="99.0" text="Label">
+                                    <font>
+                                        <Font size="14.0" />
+                                    </font>
+                                </Label>
+                            </children>
+                        </Pane>
+                        <Pane layoutX="74.0" layoutY="1642.0" prefHeight="227.0" prefWidth="1096.0">
+                            <children>
+                                <ImageView fitHeight="150.0" fitWidth="115.0" layoutX="965.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true" />
+                                <Button fx:id="add7" layoutX="966.0" layoutY="174.0" mnemonicParsing="false" onAction="#onAdd7" text="افزودن به سبد خرید" />
+                                <Label alignment="CENTER_RIGHT" layoutX="897.0" layoutY="16.0" text="نام کتاب :" textAlignment="RIGHT">
+                                    <font>
+                                        <Font size="14.0" />
+                                    </font>
+                                </Label>
+                                <Label alignment="CENTER_RIGHT" layoutX="878.0" layoutY="44.0" text="نام نویسنده :" textAlignment="RIGHT">
+                                    <font>
+                                        <Font size="14.0" />
+                                    </font>
+                                </Label>
+                                <Label alignment="CENTER_RIGHT" layoutX="897.0" layoutY="71.0" text="انتشارات :" textAlignment="RIGHT">
+                                    <font>
+                                        <Font size="14.0" />
+                                    </font>
+                                </Label>
+                                <Label alignment="CENTER_RIGHT" layoutX="913.0" layoutY="99.0" text="قیمت :" textAlignment="RIGHT">
+                                    <font>
+                                        <Font size="14.0" />
+                                    </font>
+                                </Label>
+                                <Label alignment="CENTER_RIGHT" layoutX="891.0" layoutY="127.0" text="توضیحات :" textAlignment="RIGHT">
+                                    <font>
+                                        <Font size="14.0" />
+                                    </font>
+                                </Label>
+                                <Label layoutX="830.0" layoutY="16.0" text="Label">
+                                    <font>
+                                        <Font size="14.0" />
+                                    </font>
+                                </Label>
+                                <Label layoutX="830.0" layoutY="44.0" text="Label">
+                                    <font>
+                                        <Font size="14.0" />
+                                    </font>
+                                </Label>
+                                <Label layoutX="830.0" layoutY="71.0" text="Label">
+                                    <font>
+                                        <Font size="14.0" />
+                                    </font>
+                                </Label>
+                                <Label fx:id="price7" layoutX="830.0" layoutY="99.0" text="Label">
+                                    <font>
+                                        <Font size="14.0" />
+                                    </font>
+                                </Label>
+                            </children>
+                        </Pane>
+                        <Pane layoutX="74.0" layoutY="1876.0" prefHeight="227.0" prefWidth="1096.0">
+                            <children>
+                                <ImageView fitHeight="150.0" fitWidth="115.0" layoutX="965.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true" />
+                                <Button fx:id="add8" layoutX="966.0" layoutY="174.0" mnemonicParsing="false" onAction="#onAdd8" text="افزودن به سبد خرید" />
+                                <Label alignment="CENTER_RIGHT" layoutX="897.0" layoutY="16.0" text="نام کتاب :" textAlignment="RIGHT">
+                                    <font>
+                                        <Font size="14.0" />
+                                    </font>
+                                </Label>
+                                <Label alignment="CENTER_RIGHT" layoutX="878.0" layoutY="44.0" text="نام نویسنده :" textAlignment="RIGHT">
+                                    <font>
+                                        <Font size="14.0" />
+                                    </font>
+                                </Label>
+                                <Label alignment="CENTER_RIGHT" layoutX="897.0" layoutY="71.0" text="انتشارات :" textAlignment="RIGHT">
+                                    <font>
+                                        <Font size="14.0" />
+                                    </font>
+                                </Label>
+                                <Label alignment="CENTER_RIGHT" layoutX="913.0" layoutY="99.0" text="قیمت :" textAlignment="RIGHT">
+                                    <font>
+                                        <Font size="14.0" />
+                                    </font>
+                                </Label>
+                                <Label alignment="CENTER_RIGHT" layoutX="891.0" layoutY="127.0" text="توضیحات :" textAlignment="RIGHT">
+                                    <font>
+                                        <Font size="14.0" />
+                                    </font>
+                                </Label>
+                                <Label layoutX="830.0" layoutY="16.0" text="Label">
+                                    <font>
+                                        <Font size="14.0" />
+                                    </font>
+                                </Label>
+                                <Label layoutX="830.0" layoutY="44.0" text="Label">
+                                    <font>
+                                        <Font size="14.0" />
+                                    </font>
+                                </Label>
+                                <Label layoutX="830.0" layoutY="71.0" text="Label">
+                                    <font>
+                                        <Font size="14.0" />
+                                    </font>
+                                </Label>
+                                <Label fx:id="price8" layoutX="830.0" layoutY="99.0" text="Label">
+                                    <font>
+                                        <Font size="14.0" />
+                                    </font>
+                                </Label>
+                            </children>
+                        </Pane>
+                    </children>
+                </AnchorPane>
+            </content>
+        </ScrollPane>
+        <Button fx:id="jupmUpbtn" layoutX="600.0" layoutY="682.0" mnemonicParsing="false" onAction="#onJumpUpClicked" stylesheets="@style.css" text="↑" textFill="WHITE">
+            <font>
+                <Font size="24.0" />
+            </font>
+            <styleClass>
+                <String fx:value="mainpageElementsdarkgreen" />
+                <String fx:value="upbuttonradius" />
+                <String fx:value="navbarbuttonshover" />
+            </styleClass>
+        </Button>
+    </children>
+</AnchorPane>
