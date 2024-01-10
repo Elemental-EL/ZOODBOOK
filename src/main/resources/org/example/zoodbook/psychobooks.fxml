@@ -91,7 +91,10 @@
                         </ImageView>
                         <Pane layoutX="945.0" layoutY="124.0" prefHeight="74.0" prefWidth="181.0">
                             <children>
-                                <ImageView fitHeight="70.0" fitWidth="70.0" layoutX="105.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true" />
+                                <ImageView fitHeight="70.0" fitWidth="70.0" layoutX="105.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Psychology.png" />
+                           </image></ImageView>
                                 <Label layoutX="21.0" layoutY="22.0" text="روانشناسی">
                                     <font>
                                         <Font size="20.0" />

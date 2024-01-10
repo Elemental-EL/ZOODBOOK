@@ -94,7 +94,10 @@
                            </styleClass></Button>
                      </children>
                   </Pane>
-                  <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="1129.0" layoutY="180.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fitHeight="60.0" fitWidth="60.0" layoutX="1119.0" layoutY="157.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Classsic.png" />
+                     </image></ImageView>
                   <Label layoutX="1074.0" layoutY="190.0" text="کلاسیک">
                      <font>
                         <Font name="System Bold" size="14.0" />
@@ -106,7 +109,10 @@
                         <String fx:value="navbarbuttonshover" />
                      </styleClass></Button>
                   <Pane layoutX="9.0" layoutY="220.0" prefHeight="200.0" prefWidth="1160.0" styleClass="categoriesradiudandcolor" />
-                  <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="1129.0" layoutY="433.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fitHeight="60.0" fitWidth="60.0" layoutX="1119.0" layoutY="409.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@historical.png" />
+                     </image></ImageView>
                   <Label layoutX="1076.0" layoutY="442.0" text="تاریخی">
                      <font>
                         <Font name="System Bold Italic" size="14.0" />
@@ -118,7 +124,10 @@
                         <String fx:value="navbarbuttonshover" />
                      </styleClass></Button>
                   <Pane layoutX="9.0" layoutY="473.0" prefHeight="200.0" prefWidth="1160.0" styleClass="categoriesradiudandcolor" />
-                  <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="1129.0" layoutY="684.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fitHeight="60.0" fitWidth="60.0" layoutX="1119.0" layoutY="661.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Biography.png" />
+                     </image></ImageView>
                   <Label layoutX="1071.0" layoutY="691.0" text="بیوگرافی">
                      <font>
                         <Font name="System Bold" size="14.0" />
@@ -130,7 +139,10 @@
                         <String fx:value="navbarbuttonshover" />
                      </styleClass></Button>
                   <Pane layoutX="9.0" layoutY="726.0" prefHeight="200.0" prefWidth="1160.0" styleClass="categoriesradiudandcolor" />
-                  <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="1129.0" layoutY="937.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fitHeight="60.0" fitWidth="60.0" layoutX="1119.0" layoutY="914.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Psychology.png" />
+                     </image></ImageView>
                   <Label layoutX="1062.0" layoutY="944.0" text="روانشناسی">
                      <font>
                         <Font name="System Bold Italic" size="14.0" />
@@ -142,7 +154,10 @@
                         <String fx:value="navbarbuttonshover" />
                      </styleClass></Button>
                   <Pane layoutX="9.0" layoutY="980.0" prefHeight="200.0" prefWidth="1160.0" styleClass="categoriesradiudandcolor" />
-                  <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="1129.0" layoutY="1193.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fitHeight="60.0" fitWidth="60.0" layoutX="1119.0" layoutY="1172.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@cooking.png" />
+                     </image></ImageView>
                   <Label layoutX="1079.0" layoutY="1203.0" text="آشپزی">
                      <font>
                         <Font name="System Bold" size="14.0" />
@@ -154,7 +169,11 @@
                         <String fx:value="navbarbuttonshover" />
                      </styleClass></Button>
                   <Pane layoutX="9.0" layoutY="1240.0" prefHeight="200.0" prefWidth="1160.0" styleClass="categoriesradiudandcolor" />
-                  <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="1129.0" layoutY="1449.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fitHeight="60.0" fitWidth="60.0" layoutX="1119.0" layoutY="1430.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Sci-fi.png" />
+                     </image>
+                  </ImageView>
                   <Label layoutX="1049.0" layoutY="1458.0" text="علمی-تخیلی">
                      <font>
                         <Font name="System Bold Italic" size="14.0" />
