@@ -10,11 +10,11 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="720.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.zoodbook.psychobooksController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.zoodbook.psychobooksController">
     <children>
         <ScrollPane fx:id="scrollPane" prefHeight="720.0" prefWidth="1200.0">
             <content>
-                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="2133.0" prefWidth="1186.0" styleClass="mainpageBackground" stylesheets="@style.css">
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="2134.0" prefWidth="1184.0" styleClass="mainpageBackground" stylesheets="@style.css">
                     <children>
                         <ImageView fx:id="logobtn" fitHeight="100.0" fitWidth="100.0" layoutX="1071.0" layoutY="14.0" onMouseClicked="#onLogoClicked" pickOnBounds="true" preserveRatio="true">
                             <image>
@@ -81,21 +81,17 @@
                         </Pane>
                         <ImageView fx:id="cartbtn" fitHeight="35.0" fitWidth="35.0" layoutX="56.0" layoutY="14.0" onMouseClicked="#onCartClicked" pickOnBounds="true" preserveRatio="true">
                             <image>
-                                <Image url="@Cart%20Green%20PNG.png" />
+                                <Image url="@CartGreenPNG.png" />
                             </image>
                         </ImageView>
                         <ImageView fx:id="profilebtn" fitHeight="35.0" fitWidth="35.0" layoutX="14.0" layoutY="14.0" onMouseClicked="#onUserClicked" pickOnBounds="true" preserveRatio="true">
                             <image>
-                                <Image url="@Uset%20Green%20PNG.png" />
+                                <Image url="@UsetGreenPNG.png" />
                             </image>
                         </ImageView>
                         <Pane layoutX="945.0" layoutY="124.0" prefHeight="74.0" prefWidth="181.0">
                             <children>
-                                <ImageView fitHeight="70.0" fitWidth="70.0" layoutX="105.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
-                                    <image>
-                                        <Image url="@classic-icon.png" />
-                                    </image>
-                                </ImageView>
+                                <ImageView fitHeight="70.0" fitWidth="70.0" layoutX="105.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true" />
                                 <Label layoutX="21.0" layoutY="22.0" text="روانشناسی">
                                     <font>
                                         <Font size="20.0" />
@@ -515,7 +511,7 @@
                 </AnchorPane>
             </content>
         </ScrollPane>
-        <Button fx:id="jupmUpbtn" layoutX="600.0" layoutY="682.0" mnemonicParsing="false" onAction="#onJumpUpClicked" stylesheets="@style.css" text="↑" textFill="WHITE">
+        <Button fx:id="jupmUpbtn" layoutX="579.0" layoutY="693.0" mnemonicParsing="false" onAction="#onJumpUpClicked" stylesheets="@style.css" text="↑" textFill="WHITE">
             <font>
                 <Font size="24.0" />
             </font>

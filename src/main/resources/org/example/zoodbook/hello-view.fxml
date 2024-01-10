@@ -32,11 +32,11 @@
                   </TextField>
                   <ImageView fx:id="profilebtn" fitHeight="35.0" fitWidth="35.0" layoutX="14.0" layoutY="14.0" onMouseClicked="#onUserClicked" pickOnBounds="true" preserveRatio="true" styleClass="zoom">
                      <image>
-                        <Image url="@Uset%20Green%20PNG.png" />
+                        <Image url="@UsetGreenPNG.png" />
                      </image></ImageView>
                   <ImageView fx:id="cartbtn" fitHeight="35.0" fitWidth="35.0" layoutX="55.0" layoutY="13.0" onMouseClicked="#onCartClicked" pickOnBounds="true" preserveRatio="true" styleClass="zoom">
                      <image>
-                        <Image url="@Cart%20Green%20PNG.png" />
+                        <Image url="@CartGreenPNG.png" />
                      </image></ImageView>
                   <ImageView fx:id="logotbn" fitHeight="100.0" fitWidth="100.0" layoutX="1069.0" layoutY="13.0" onMouseClicked="#onLogoClicked" pickOnBounds="true" preserveRatio="true">
                      <image>

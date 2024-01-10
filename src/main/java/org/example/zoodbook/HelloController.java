@@ -82,7 +82,7 @@ public class HelloController {
     }
     @FXML
     void onCookingClicked (ActionEvent event) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("cooking.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("cookingbooks.fxml"));
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);
@@ -99,28 +99,58 @@ public class HelloController {
         stage.show();
     }
     @FXML
-    void onShowMoreClassic (ActionEvent event){
-
+    void onShowMoreClassic (ActionEvent event) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("classicbooks.fxml"));
+        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.setResizable(false);
+        stage.show();
     }
     @FXML
-    void onShowMoreHistory (ActionEvent event){
-
+    void onShowMoreHistory (ActionEvent event) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("historybooks.fxml"));
+        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.setResizable(false);
+        stage.show();
     }
     @FXML
-    void onShowMoreBio (ActionEvent event){
-
+    void onShowMoreBio (ActionEvent event) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("biobooks.fxml"));
+        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.setResizable(false);
+        stage.show();
     }
     @FXML
-    void onShowMorePsycho (ActionEvent event){
-
+    void onShowMorePsycho (ActionEvent event) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("psychobooks.fxml"));
+        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.setResizable(false);
+        stage.show();
     }
     @FXML
-    void onShowMoreCooking (ActionEvent event){
-
+    void onShowMoreCooking (ActionEvent event) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("cooking.fxml"));
+        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.setResizable(false);
+        stage.show();
     }
     @FXML
-    void onShowMoreScifi (ActionEvent event){
-
+    void onShowMoreScifi (ActionEvent event) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("scifibooks.fxml"));
+        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.setResizable(false);
+        stage.show();
     }
     @FXML
     void onSearchClicked (ActionEvent event){
