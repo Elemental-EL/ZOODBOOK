@@ -49,7 +49,7 @@
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <Button layoutX="40.0" layoutY="22.0" mnemonicParsing="false" text="ویرایش">
+                        <Button fx:id="onEdit1" layoutX="40.0" layoutY="22.0" mnemonicParsing="false" onAction="#onEdit1" text="ویرایش">
                            <font>
                               <Font size="14.0" />
                            </font>
@@ -88,7 +88,7 @@
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <Button layoutX="40.0" layoutY="22.0" mnemonicParsing="false" text="ویرایش">
+                        <Button fx:id="onEdit2" layoutX="40.0" layoutY="22.0" mnemonicParsing="false" onAction="#onEdit2" text="ویرایش">
                            <font>
                               <Font size="14.0" />
                            </font>
@@ -127,7 +127,7 @@
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <Button layoutX="40.0" layoutY="22.0" mnemonicParsing="false" text="ویرایش">
+                        <Button fx:id="onEdit3" layoutX="40.0" layoutY="22.0" mnemonicParsing="false" onAction="#onEdit3" text="ویرایش">
                            <font>
                               <Font size="14.0" />
                            </font>
@@ -166,7 +166,7 @@
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <Button layoutX="40.0" layoutY="22.0" mnemonicParsing="false" text="ویرایش">
+                        <Button fx:id="onEdit4" layoutX="40.0" layoutY="22.0" mnemonicParsing="false" onAction="#onEdit4" text="ویرایش">
                            <font>
                               <Font size="14.0" />
                            </font>
@@ -205,7 +205,7 @@
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <Button layoutX="40.0" layoutY="22.0" mnemonicParsing="false" text="ویرایش">
+                        <Button fx:id="onEdit5" layoutX="40.0" layoutY="22.0" mnemonicParsing="false" onAction="#onEdit5" text="ویرایش">
                            <font>
                               <Font size="14.0" />
                            </font>
@@ -244,7 +244,7 @@
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <Button layoutX="40.0" layoutY="22.0" mnemonicParsing="false" text="ویرایش">
+                        <Button fx:id="onEdit6" layoutX="40.0" layoutY="22.0" mnemonicParsing="false" onAction="#onEdit6" text="ویرایش">
                            <font>
                               <Font size="14.0" />
                            </font>
@@ -283,7 +283,7 @@
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <Button layoutX="40.0" layoutY="22.0" mnemonicParsing="false" text="ویرایش">
+                        <Button fx:id="onEdit7" layoutX="40.0" layoutY="22.0" mnemonicParsing="false" onAction="#onEdit7" text="ویرایش">
                            <font>
                               <Font size="14.0" />
                            </font>
@@ -322,7 +322,7 @@
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <Button layoutX="40.0" layoutY="22.0" mnemonicParsing="false" text="ویرایش">
+                        <Button fx:id="onEdit8" layoutX="40.0" layoutY="22.0" mnemonicParsing="false" onAction="#onEdit8" text="ویرایش">
                            <font>
                               <Font size="14.0" />
                            </font>
@@ -361,7 +361,7 @@
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <Button layoutX="40.0" layoutY="22.0" mnemonicParsing="false" text="ویرایش">
+                        <Button fx:id="onEdit9" layoutX="40.0" layoutY="22.0" mnemonicParsing="false" onAction="#onEdit9" text="ویرایش">
                            <font>
                               <Font size="14.0" />
                            </font>
@@ -400,7 +400,7 @@
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <Button layoutX="40.0" layoutY="22.0" mnemonicParsing="false" text="ویرایش">
+                        <Button fx:id="onEdit10" layoutX="40.0" layoutY="22.0" mnemonicParsing="false" onAction="#onEdit10" text="ویرایش">
                            <font>
                               <Font size="14.0" />
                            </font>
@@ -439,7 +439,7 @@
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <Button layoutX="40.0" layoutY="22.0" mnemonicParsing="false" text="ویرایش">
+                        <Button fx:id="onEdit11" layoutX="40.0" layoutY="22.0" mnemonicParsing="false" onAction="#onEdit11" text="ویرایش">
                            <font>
                               <Font size="14.0" />
                            </font>
@@ -478,7 +478,7 @@
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <Button layoutX="40.0" layoutY="22.0" mnemonicParsing="false" text="ویرایش">
+                        <Button fx:id="onEdit12" layoutX="40.0" layoutY="22.0" mnemonicParsing="false" onAction="#onEdit12" text="ویرایش">
                            <font>
                               <Font size="14.0" />
                            </font>
@@ -517,7 +517,7 @@
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <Button layoutX="40.0" layoutY="22.0" mnemonicParsing="false" text="ویرایش">
+                        <Button fx:id="onEdit13" layoutX="40.0" layoutY="22.0" mnemonicParsing="false" onAction="#onEdit13" text="ویرایش">
                            <font>
                               <Font size="14.0" />
                            </font>
@@ -556,7 +556,7 @@
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <Button layoutX="40.0" layoutY="22.0" mnemonicParsing="false" text="ویرایش">
+                        <Button fx:id="onEdit14" layoutX="40.0" layoutY="22.0" mnemonicParsing="false" onAction="#onEdit14" text="ویرایش">
                            <font>
                               <Font size="14.0" />
                            </font>
@@ -595,7 +595,7 @@
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <Button layoutX="40.0" layoutY="22.0" mnemonicParsing="false" text="ویرایش">
+                        <Button fx:id="onEdit15" layoutX="40.0" layoutY="22.0" mnemonicParsing="false" onAction="#onEdit15" text="ویرایش">
                            <font>
                               <Font size="14.0" />
                            </font>
@@ -634,7 +634,7 @@
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <Button layoutX="40.0" layoutY="22.0" mnemonicParsing="false" text="ویرایش">
+                        <Button fx:id="onEdit16" layoutX="40.0" layoutY="22.0" mnemonicParsing="false" onAction="#onEdit16" text="ویرایش">
                            <font>
                               <Font size="14.0" />
                            </font>
@@ -673,7 +673,7 @@
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <Button layoutX="40.0" layoutY="22.0" mnemonicParsing="false" text="ویرایش">
+                        <Button fx:id="onEdit17" layoutX="40.0" layoutY="22.0" mnemonicParsing="false" onAction="#onEdit17" text="ویرایش">
                            <font>
                               <Font size="14.0" />
                            </font>
@@ -712,7 +712,7 @@
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <Button layoutX="40.0" layoutY="22.0" mnemonicParsing="false" text="ویرایش">
+                        <Button fx:id="onEdit18" layoutX="40.0" layoutY="22.0" mnemonicParsing="false" onAction="#onEdit18" text="ویرایش">
                            <font>
                               <Font size="14.0" />
                            </font>
@@ -751,7 +751,7 @@
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <Button layoutX="40.0" layoutY="22.0" mnemonicParsing="false" text="ویرایش">
+                        <Button fx:id="onEdit19" layoutX="40.0" layoutY="22.0" mnemonicParsing="false" onAction="#onEdit19" text="ویرایش">
                            <font>
                               <Font size="14.0" />
                            </font>
@@ -790,7 +790,7 @@
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <Button layoutX="40.0" layoutY="22.0" mnemonicParsing="false" text="ویرایش">
+                        <Button fx:id="onEdit20" layoutX="40.0" layoutY="22.0" mnemonicParsing="false" onAction="#onEdit20" text="ویرایش">
                            <font>
                               <Font size="14.0" />
                            </font>
@@ -829,7 +829,7 @@
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <Button layoutX="40.0" layoutY="22.0" mnemonicParsing="false" text="ویرایش">
+                        <Button fx:id="onEdit21" layoutX="40.0" layoutY="22.0" mnemonicParsing="false" onAction="#onEdit21" text="ویرایش">
                            <font>
                               <Font size="14.0" />
                            </font>
@@ -868,7 +868,7 @@
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <Button layoutX="40.0" layoutY="22.0" mnemonicParsing="false" text="ویرایش">
+                        <Button fx:id="onEdit22" layoutX="40.0" layoutY="22.0" mnemonicParsing="false" onAction="#onEdit22" text="ویرایش">
                            <font>
                               <Font size="14.0" />
                            </font>
@@ -907,7 +907,7 @@
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <Button layoutX="40.0" layoutY="22.0" mnemonicParsing="false" text="ویرایش">
+                        <Button fx:id="onEdit23" layoutX="40.0" layoutY="22.0" mnemonicParsing="false" onAction="#onEdit23" text="ویرایش">
                            <font>
                               <Font size="14.0" />
                            </font>
@@ -946,7 +946,7 @@
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <Button layoutX="40.0" layoutY="22.0" mnemonicParsing="false" text="ویرایش">
+                        <Button fx:id="onEdit24" layoutX="40.0" layoutY="22.0" mnemonicParsing="false" onAction="#onEdit24" text="ویرایش">
                            <font>
                               <Font size="14.0" />
                            </font>
@@ -985,7 +985,7 @@
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <Button layoutX="40.0" layoutY="22.0" mnemonicParsing="false" text="ویرایش">
+                        <Button fx:id="onEdit25" layoutX="40.0" layoutY="22.0" mnemonicParsing="false" onAction="#onEdit25" text="ویرایش">
                            <font>
                               <Font size="14.0" />
                            </font>
@@ -1024,7 +1024,7 @@
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <Button layoutX="40.0" layoutY="22.0" mnemonicParsing="false" text="ویرایش">
+                        <Button fx:id="onEdit26" layoutX="40.0" layoutY="22.0" mnemonicParsing="false" onAction="#onEdit26" text="ویرایش">
                            <font>
                               <Font size="14.0" />
                            </font>
@@ -1063,7 +1063,7 @@
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <Button layoutX="40.0" layoutY="22.0" mnemonicParsing="false" text="ویرایش">
+                        <Button fx:id="onEdit27" layoutX="40.0" layoutY="22.0" mnemonicParsing="false" onAction="#onEdit27" text="ویرایش">
                            <font>
                               <Font size="14.0" />
                            </font>
@@ -1102,7 +1102,7 @@
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <Button layoutX="40.0" layoutY="22.0" mnemonicParsing="false" text="ویرایش">
+                        <Button fx:id="onEdit28" layoutX="40.0" layoutY="22.0" mnemonicParsing="false" onAction="#onEdit28" text="ویرایش">
                            <font>
                               <Font size="14.0" />
                            </font>
@@ -1141,7 +1141,7 @@
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <Button layoutX="40.0" layoutY="22.0" mnemonicParsing="false" text="ویرایش">
+                        <Button fx:id="onEdit29" layoutX="40.0" layoutY="22.0" mnemonicParsing="false" onAction="#onEdit29" text="ویرایش">
                            <font>
                               <Font size="14.0" />
                            </font>
@@ -1180,7 +1180,7 @@
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <Button layoutX="40.0" layoutY="22.0" mnemonicParsing="false" text="ویرایش">
+                        <Button fx:id="onEdit30" layoutX="40.0" layoutY="22.0" mnemonicParsing="false" onAction="#onEdit30" text="ویرایش">
                            <font>
                               <Font size="14.0" />
                            </font>
@@ -1219,7 +1219,7 @@
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <Button layoutX="40.0" layoutY="22.0" mnemonicParsing="false" text="ویرایش">
+                        <Button fx:id="onEdit31" layoutX="40.0" layoutY="22.0" mnemonicParsing="false" onAction="#onEdit31" text="ویرایش">
                            <font>
                               <Font size="14.0" />
                            </font>
@@ -1258,7 +1258,7 @@
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <Button layoutX="40.0" layoutY="22.0" mnemonicParsing="false" text="ویرایش">
+                        <Button fx:id="onEdit32" layoutX="40.0" layoutY="22.0" mnemonicParsing="false" onAction="#onEdit32" text="ویرایش">
                            <font>
                               <Font size="14.0" />
                            </font>
@@ -1297,7 +1297,7 @@
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <Button layoutX="40.0" layoutY="22.0" mnemonicParsing="false" text="ویرایش">
+                        <Button fx:id="onEdit33" layoutX="40.0" layoutY="22.0" mnemonicParsing="false" onAction="#onEdit33" text="ویرایش">
                            <font>
                               <Font size="14.0" />
                            </font>
@@ -1336,7 +1336,7 @@
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <Button layoutX="40.0" layoutY="22.0" mnemonicParsing="false" text="ویرایش">
+                        <Button fx:id="onEdit34" layoutX="40.0" layoutY="22.0" mnemonicParsing="false" onAction="#onEdit34" text="ویرایش">
                            <font>
                               <Font size="14.0" />
                            </font>
@@ -1375,7 +1375,7 @@
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <Button layoutX="40.0" layoutY="22.0" mnemonicParsing="false" text="ویرایش">
+                        <Button fx:id="onEdit35" layoutX="40.0" layoutY="22.0" mnemonicParsing="false" onAction="#onEdit35" text="ویرایش">
                            <font>
                               <Font size="14.0" />
                            </font>
@@ -1414,7 +1414,7 @@
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <Button layoutX="40.0" layoutY="22.0" mnemonicParsing="false" text="ویرایش">
+                        <Button fx:id="onEdit36" layoutX="40.0" layoutY="22.0" mnemonicParsing="false" onAction="#onEdit36" text="ویرایش">
                            <font>
                               <Font size="14.0" />
                            </font>
@@ -1453,7 +1453,7 @@
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <Button layoutX="40.0" layoutY="22.0" mnemonicParsing="false" text="ویرایش">
+                        <Button fx:id="onEdit37" layoutX="40.0" layoutY="22.0" mnemonicParsing="false" onAction="#onEdit37" text="ویرایش">
                            <font>
                               <Font size="14.0" />
                            </font>
@@ -1492,7 +1492,7 @@
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <Button layoutX="40.0" layoutY="22.0" mnemonicParsing="false" text="ویرایش">
+                        <Button fx:id="onEdit38" layoutX="40.0" layoutY="22.0" mnemonicParsing="false" onAction="#onEdit38" text="ویرایش">
                            <font>
                               <Font size="14.0" />
                            </font>
@@ -1531,7 +1531,7 @@
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <Button layoutX="40.0" layoutY="22.0" mnemonicParsing="false" text="ویرایش">
+                        <Button fx:id="onEdit39" layoutX="40.0" layoutY="22.0" mnemonicParsing="false" onAction="#onEdit39" text="ویرایش">
                            <font>
                               <Font size="14.0" />
                            </font>
@@ -1570,7 +1570,7 @@
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <Button layoutX="40.0" layoutY="22.0" mnemonicParsing="false" text="ویرایش">
+                        <Button fx:id="onEdit40" layoutX="40.0" layoutY="22.0" mnemonicParsing="false" onAction="#onEdit40" text="ویرایش">
                            <font>
                               <Font size="14.0" />
                            </font>
@@ -1609,7 +1609,7 @@
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <Button layoutX="40.0" layoutY="22.0" mnemonicParsing="false" text="ویرایش">
+                        <Button fx:id="onEdit41" layoutX="40.0" layoutY="22.0" mnemonicParsing="false" onAction="#onEdit41" text="ویرایش">
                            <font>
                               <Font size="14.0" />
                            </font>
@@ -1648,7 +1648,7 @@
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <Button layoutX="40.0" layoutY="22.0" mnemonicParsing="false" text="ویرایش">
+                        <Button fx:id="onEdit42" layoutX="40.0" layoutY="22.0" mnemonicParsing="false" onAction="#onEdit42" text="ویرایش">
                            <font>
                               <Font size="14.0" />
                            </font>
@@ -1687,7 +1687,7 @@
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <Button layoutX="40.0" layoutY="22.0" mnemonicParsing="false" text="ویرایش">
+                        <Button fx:id="onEdit43" layoutX="40.0" layoutY="22.0" mnemonicParsing="false" onAction="#onEdit43" text="ویرایش">
                            <font>
                               <Font size="14.0" />
                            </font>
@@ -1726,7 +1726,7 @@
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <Button layoutX="40.0" layoutY="22.0" mnemonicParsing="false" text="ویرایش">
+                        <Button fx:id="onEdit44" layoutX="40.0" layoutY="22.0" mnemonicParsing="false" onAction="#onEdit44" text="ویرایش">
                            <font>
                               <Font size="14.0" />
                            </font>
@@ -1765,7 +1765,7 @@
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <Button layoutX="40.0" layoutY="22.0" mnemonicParsing="false" text="ویرایش">
+                        <Button fx:id="onEdit45" layoutX="40.0" layoutY="22.0" mnemonicParsing="false" onAction="#onEdit45" text="ویرایش">
                            <font>
                               <Font size="14.0" />
                            </font>
@@ -1804,7 +1804,7 @@
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <Button layoutX="40.0" layoutY="22.0" mnemonicParsing="false" text="ویرایش">
+                        <Button fx:id="onEdit46" layoutX="40.0" layoutY="22.0" mnemonicParsing="false" onAction="#onEdit46" text="ویرایش">
                            <font>
                               <Font size="14.0" />
                            </font>
@@ -1843,7 +1843,7 @@
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <Button layoutX="40.0" layoutY="22.0" mnemonicParsing="false" text="ویرایش">
+                        <Button fx:id="onEdit47" layoutX="40.0" layoutY="22.0" mnemonicParsing="false" onAction="#onEdit47" text="ویرایش">
                            <font>
                               <Font size="14.0" />
                            </font>
@@ -1882,7 +1882,7 @@
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <Button layoutX="40.0" layoutY="22.0" mnemonicParsing="false" text="ویرایش">
+                        <Button fx:id="onEdit48" layoutX="40.0" layoutY="22.0" mnemonicParsing="false" onAction="#onEdit48" text="ویرایش">
                            <font>
                               <Font size="14.0" />
                            </font>
@@ -1911,7 +1911,7 @@
             </ImageView>
          </children>
       </Pane>
-      <Button layoutX="402.0" layoutY="539.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="94.0" text="ذخیره">
+      <Button fx:id="onChangeSavebtn" layoutX="402.0" layoutY="539.0" mnemonicParsing="false" onAction="#onChangeSavebtn" prefHeight="40.0" prefWidth="94.0" text="ذخیره">
          <font>
             <Font size="20.0" />
          </font>
