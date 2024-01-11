@@ -11,4 +11,7 @@ public class StorageController {
     void onLogoClicked (MouseEvent event){
 
     }
+
+    public void onBackClicked(MouseEvent event) {
+    }
 }
