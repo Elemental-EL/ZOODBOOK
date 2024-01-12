@@ -13,19 +13,19 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="498.0" prefWidth="438.0" styleClass="mainpageBackground" stylesheets="@style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.zoodbook.SignInController">
    <children>
-      <Pane prefHeight="139.0" prefWidth="438.0" styleClass="lightgreen" stylesheets="@style.css">
+      <Pane prefHeight="139.0" prefWidth="438.0" styleClass="lightgreen">
          <children>
             <ImageView fx:id="logobtn" fitHeight="100.0" fitWidth="100.0" layoutX="329.0" layoutY="14.0" onMouseClicked="#onLogoClicked" pickOnBounds="true" preserveRatio="true" styleClass="zoom">
                <image>
                   <Image url="@jhjhj.png" />
                </image>
             </ImageView>
-            <ImageView fx:id="backbtn" fitHeight="35.0" fitWidth="35.0" layoutX="14.0" layoutY="35.0" onMouseClicked="#onBackClicked" pickOnBounds="true" preserveRatio="true" styleClass="zoom">
+            <ImageView fx:id="backbtn" fitHeight="30.0" fitWidth="30.0" layoutX="11.0" layoutY="10.0" onMouseClicked="#onBackClicked" pickOnBounds="true" preserveRatio="true" styleClass="zoom">
                <image>
                   <Image url="@120.png" />
                </image>
             </ImageView>
-            <Text fx:id="signUpbtn1" fill="#164c35" layoutX="160.0" layoutY="72.0" onMouseClicked="#onSignUpClicked" strokeType="OUTSIDE" strokeWidth="0.0" text="ورود / ثبت نام" wrappingWidth="118.79998779296898">
+            <Text fill="#164c35" layoutX="160.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ورود / ثبت نام" wrappingWidth="118.79998779296898">
                <font>
                   <Font name="System Bold Italic" size="20.0" />
                </font>
