@@ -9,6 +9,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.zoodbook.historybooksController">
     <children>
@@ -104,410 +105,474 @@
                         </Pane>
                         <Pane layoutX="74.0" layoutY="210.0" prefHeight="227.0" prefWidth="1096.0">
                             <children>
-                                <ImageView fitHeight="150.0" fitWidth="115.0" layoutX="965.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true" />
+                                <ImageView fitHeight="150.0" fitWidth="115.0" layoutX="972.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@photo_2024-01-13_10-41-46.jpg" />
+                           </image></ImageView>
                                 <Button fx:id="add1" layoutX="966.0" layoutY="174.0" mnemonicParsing="false" onAction="#onAdd1" text="افزودن به سبد خرید" />
-                                <Label alignment="CENTER_RIGHT" layoutX="897.0" layoutY="16.0" text="نام کتاب :" textAlignment="RIGHT">
+                                <Label alignment="CENTER_RIGHT" layoutX="897.0" layoutY="15.0" text="نام کتاب :" textAlignment="RIGHT">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="15.0" />
                                     </font>
                                 </Label>
-                                <Label alignment="CENTER_RIGHT" layoutX="878.0" layoutY="44.0" text="نام نویسنده :" textAlignment="RIGHT">
+                                <Label alignment="CENTER_RIGHT" layoutX="878.0" layoutY="43.0" text="نام نویسنده :" textAlignment="RIGHT">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="15.0" />
                                     </font>
                                 </Label>
-                                <Label alignment="CENTER_RIGHT" layoutX="897.0" layoutY="71.0" text="انتشارات :" textAlignment="RIGHT">
+                                <Label alignment="CENTER_RIGHT" layoutX="897.0" layoutY="70.0" text="انتشارات :" textAlignment="RIGHT">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="15.0" />
                                     </font>
                                 </Label>
-                                <Label alignment="CENTER_RIGHT" layoutX="913.0" layoutY="99.0" text="قیمت :" textAlignment="RIGHT">
+                                <Label alignment="CENTER_RIGHT" layoutX="913.0" layoutY="98.0" text="قیمت :" textAlignment="RIGHT">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="15.0" />
                                     </font>
                                 </Label>
-                                <Label alignment="CENTER_RIGHT" layoutX="891.0" layoutY="127.0" text="توضیحات :" textAlignment="RIGHT">
+                                <Label alignment="CENTER_RIGHT" layoutX="891.0" layoutY="126.0" text="توضیحات :" textAlignment="RIGHT">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="15.0" />
                                     </font>
                                 </Label>
-                                <Label layoutX="830.0" layoutY="16.0" text="Label">
+                                <Label layoutX="823.0" layoutY="16.0" text="ده مرد رشید">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="14.0" />
                                     </font>
                                 </Label>
-                                <Label layoutX="830.0" layoutY="44.0" text="Label">
+                                <Label layoutX="787.0" layoutY="44.0" text="شاپور آرین نژاد">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="14.0" />
                                     </font>
                                 </Label>
-                                <Label layoutX="830.0" layoutY="71.0" text="Label">
+                                <Label layoutX="829.0" layoutY="71.0" text="بانک کتاب">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="14.0" />
                                     </font>
                                 </Label>
-                                <Label fx:id="price1" layoutX="830.0" layoutY="99.0" text="Label">
+                                <Label fx:id="price1" layoutX="829.0" layoutY="99.0" text="40000 تومان">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="14.0" />
                                     </font>
                                 </Label>
+                        <Text layoutX="365.0" layoutY="142.0" strokeType="OUTSIDE" strokeWidth="0.0" text="پاسارگارد شهری که در ازمنه قدیم،از اوراق زرین تاریخ و پر افتخار ما،با این نام توام است.شهری که سرنوشت کشورهای بزرگ و سلاطین نامور آن روزگاران،در کاخهای سر به فلک کشیده آن،به وسیله شاهان و سرداران ایرانی تعیین میشد..." textAlignment="RIGHT" wrappingWidth="516.8000183105469">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Text>
                             </children>
                         </Pane>
                         <Pane layoutX="74.0" layoutY="446.0" prefHeight="227.0" prefWidth="1096.0">
                             <children>
-                                <ImageView fitHeight="150.0" fitWidth="115.0" layoutX="965.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true" />
+                                <ImageView fitHeight="150.0" fitWidth="115.0" layoutX="971.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@photo_2024-01-13_10-47-24.jpg" />
+                           </image></ImageView>
                                 <Button fx:id="add2" layoutX="966.0" layoutY="174.0" mnemonicParsing="false" onAction="#onAdd2" text="افزودن به سبد خرید" />
-                                <Label alignment="CENTER_RIGHT" layoutX="897.0" layoutY="16.0" text="نام کتاب :" textAlignment="RIGHT">
+                                <Label alignment="CENTER_RIGHT" layoutX="897.0" layoutY="15.0" text="نام کتاب :" textAlignment="RIGHT">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="15.0" />
                                     </font>
                                 </Label>
-                                <Label alignment="CENTER_RIGHT" layoutX="878.0" layoutY="44.0" text="نام نویسنده :" textAlignment="RIGHT">
+                                <Label alignment="CENTER_RIGHT" layoutX="878.0" layoutY="43.0" text="نام نویسنده :" textAlignment="RIGHT">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="15.0" />
                                     </font>
                                 </Label>
-                                <Label alignment="CENTER_RIGHT" layoutX="897.0" layoutY="71.0" text="انتشارات :" textAlignment="RIGHT">
+                                <Label alignment="CENTER_RIGHT" layoutX="897.0" layoutY="70.0" text="انتشارات :" textAlignment="RIGHT">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="15.0" />
                                     </font>
                                 </Label>
-                                <Label alignment="CENTER_RIGHT" layoutX="913.0" layoutY="99.0" text="قیمت :" textAlignment="RIGHT">
+                                <Label alignment="CENTER_RIGHT" layoutX="913.0" layoutY="98.0" text="قیمت :" textAlignment="RIGHT">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="15.0" />
                                     </font>
                                 </Label>
-                                <Label alignment="CENTER_RIGHT" layoutX="891.0" layoutY="127.0" text="توضیحات :" textAlignment="RIGHT">
+                                <Label alignment="CENTER_RIGHT" layoutX="891.0" layoutY="126.0" text="توضیحات :" textAlignment="RIGHT">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="15.0" />
                                     </font>
                                 </Label>
-                                <Label layoutX="830.0" layoutY="16.0" text="Label">
+                                <Label layoutX="770.0" layoutY="16.0" text="کوروش شهریار دادگر">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="14.0" />
                                     </font>
                                 </Label>
-                                <Label layoutX="830.0" layoutY="44.0" text="Label">
+                                <Label layoutX="787.0" layoutY="44.0" text="ویلیام ولفگانگ">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="14.0" />
                                     </font>
                                 </Label>
-                                <Label layoutX="830.0" layoutY="71.0" text="Label">
+                                <Label layoutX="856.0" layoutY="71.0" text="جامی">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="14.0" />
                                     </font>
                                 </Label>
-                                <Label fx:id="price2" layoutX="830.0" layoutY="99.0" text="Label">
+                                <Label fx:id="price2" layoutX="829.0" layoutY="99.0" text="50000 تومان">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="14.0" />
                                     </font>
                                 </Label>
+                        <Text layoutX="138.0" layoutY="143.0" strokeType="OUTSIDE" strokeWidth="0.0" text="کورش کبیر (558-528 ق. م)، موسس سلسله‌ی هخامنشیان، پارسی‌زاده‌ای از ایالت پارس بود که توانست حکومتی جهانی برپایه‌ی انصاف و داد تشکیل دهد. حکومتی که کورش در آسیا پایه گذاشت یکی از نخستین پادشاهی‌های عصر باستان به آن وسعت بود. کتاب حاضر به بیان زندگی این پادشاه ایرانی بر اساس نوشته‌های یونانیان اختصاص دارد که خود از رقبای پارسیان در عصر باستان به شمار می‌رفتند. از میان منابع یونانی، تاریخ هرودت و کتاب سیروپدی (کوروش‌نامه) اثر گزنفون مورد استفاده‌ی نویسنده بوده است. " textAlignment="RIGHT" wrappingWidth="749.6000137329102">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Text>
                             </children>
                         </Pane>
                         <Pane layoutX="74.0" layoutY="691.0" prefHeight="227.0" prefWidth="1096.0">
                             <children>
-                                <ImageView fitHeight="150.0" fitWidth="115.0" layoutX="965.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true" />
+                                <ImageView fitHeight="150.0" fitWidth="115.0" layoutX="968.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@photo_2024-01-13_10-52-00.jpg" />
+                           </image></ImageView>
                                 <Button fx:id="add3" layoutX="966.0" layoutY="174.0" mnemonicParsing="false" onAction="#onAdd3" text="افزودن به سبد خرید" />
-                                <Label alignment="CENTER_RIGHT" layoutX="897.0" layoutY="16.0" text="نام کتاب :" textAlignment="RIGHT">
+                                <Label alignment="CENTER_RIGHT" layoutX="897.0" layoutY="15.0" text="نام کتاب :" textAlignment="RIGHT">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="15.0" />
                                     </font>
                                 </Label>
-                                <Label alignment="CENTER_RIGHT" layoutX="878.0" layoutY="44.0" text="نام نویسنده :" textAlignment="RIGHT">
+                                <Label alignment="CENTER_RIGHT" layoutX="878.0" layoutY="43.0" text="نام نویسنده :" textAlignment="RIGHT">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="15.0" />
                                     </font>
                                 </Label>
-                                <Label alignment="CENTER_RIGHT" layoutX="897.0" layoutY="71.0" text="انتشارات :" textAlignment="RIGHT">
+                                <Label alignment="CENTER_RIGHT" layoutX="897.0" layoutY="70.0" text="انتشارات :" textAlignment="RIGHT">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="15.0" />
                                     </font>
                                 </Label>
-                                <Label alignment="CENTER_RIGHT" layoutX="913.0" layoutY="99.0" text="قیمت :" textAlignment="RIGHT">
+                                <Label alignment="CENTER_RIGHT" layoutX="913.0" layoutY="98.0" text="قیمت :" textAlignment="RIGHT">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="15.0" />
                                     </font>
                                 </Label>
-                                <Label alignment="CENTER_RIGHT" layoutX="891.0" layoutY="127.0" text="توضیحات :" textAlignment="RIGHT">
+                                <Label alignment="CENTER_RIGHT" layoutX="891.0" layoutY="126.0" text="توضیحات :" textAlignment="RIGHT">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="15.0" />
                                     </font>
                                 </Label>
-                                <Label layoutX="830.0" layoutY="16.0" text="Label">
+                                <Label layoutX="774.0" layoutY="16.0" text="اروپا از دوران ناپلئون">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="14.0" />
                                     </font>
                                 </Label>
-                                <Label layoutX="830.0" layoutY="44.0" text="Label">
+                                <Label layoutX="797.0" layoutY="44.0" text="دیوید تامسن">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="14.0" />
                                     </font>
                                 </Label>
-                                <Label layoutX="830.0" layoutY="71.0" text="Label">
+                                <Label layoutX="869.0" layoutY="71.0" text="نی">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="14.0" />
                                     </font>
                                 </Label>
-                                <Label fx:id="price3" layoutX="830.0" layoutY="99.0" text="Label">
+                                <Label fx:id="price3" layoutX="830.0" layoutY="99.0" text="47000 تومان">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="14.0" />
                                     </font>
                                 </Label>
+                        <Text layoutX="9.0" layoutY="143.0" strokeType="OUTSIDE" strokeWidth="0.0" text="شرایط کنونی اروپا و الگوی توسعه اروپا از زمان آشوب های انقلاب فرانسه و فتوحات ناپلئونی را تنها در صورت توجه به موضوعات همه جانبه ای که کل اروپا (از جمله انگلیس) را از سال 1789 تحت تأثیر قرار داده است ، می توان به طور کامل درک کرد. در &quot;اروپا از دوران ناپلئون&quot;، دکتر &quot;دیوید تامسون&quot; با این دید که مجموعه ی تاریخ کشورهای جداگانه ی اروپایی به معنای تاریخ اروپا نیست، بر آن نیروهایی تمرکز می کند که کل اروپا را در برگرفته اند. وی بر وقایع و جنبشهای عظیم مانند رشد جمعیت ، صنعتی شدن ، گسترش فرامرزی ، تأثیر ناسیونالیسم ، دموکراسی و سوسیالیسم ، ارتباط بین جنگ و انقلاب تأکید دارد." textAlignment="RIGHT" wrappingWidth="879.9997024536133">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Text>
                             </children>
                         </Pane>
                         <Pane layoutX="74.0" layoutY="925.0" prefHeight="227.0" prefWidth="1096.0">
                             <children>
-                                <ImageView fitHeight="150.0" fitWidth="115.0" layoutX="965.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true" />
+                                <ImageView fitHeight="150.0" fitWidth="115.0" layoutX="970.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@photo_2024-01-13_10-58-15.jpg" />
+                           </image></ImageView>
                                 <Button fx:id="add4" layoutX="966.0" layoutY="174.0" mnemonicParsing="false" onAction="#onAdd4" text="افزودن به سبد خرید" />
                                 <Label alignment="CENTER_RIGHT" layoutX="897.0" layoutY="16.0" text="نام کتاب :" textAlignment="RIGHT">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="15.0" />
                                     </font>
                                 </Label>
                                 <Label alignment="CENTER_RIGHT" layoutX="878.0" layoutY="44.0" text="نام نویسنده :" textAlignment="RIGHT">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="15.0" />
                                     </font>
                                 </Label>
                                 <Label alignment="CENTER_RIGHT" layoutX="897.0" layoutY="71.0" text="انتشارات :" textAlignment="RIGHT">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="15.0" />
                                     </font>
                                 </Label>
                                 <Label alignment="CENTER_RIGHT" layoutX="913.0" layoutY="99.0" text="قیمت :" textAlignment="RIGHT">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="15.0" />
                                     </font>
                                 </Label>
                                 <Label alignment="CENTER_RIGHT" layoutX="891.0" layoutY="127.0" text="توضیحات :" textAlignment="RIGHT">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="15.0" />
                                     </font>
                                 </Label>
-                                <Label layoutX="830.0" layoutY="16.0" text="Label">
+                                <Label layoutX="798.0" layoutY="17.0" text="خواندنیهای تاریخ">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="14.0" />
                                     </font>
                                 </Label>
-                                <Label layoutX="830.0" layoutY="44.0" text="Label">
+                                <Label layoutX="787.0" layoutY="45.0" text="محمود طلوعی">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="14.0" />
                                     </font>
                                 </Label>
-                                <Label layoutX="830.0" layoutY="71.0" text="Label">
+                                <Label layoutX="867.0" layoutY="72.0" text="علم">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="14.0" />
                                     </font>
                                 </Label>
-                                <Label fx:id="price4" layoutX="830.0" layoutY="99.0" text="Label">
+                                <Label fx:id="price4" layoutX="829.0" layoutY="100.0" text="67000 تومان">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="14.0" />
                                     </font>
                                 </Label>
+                        <Text layoutX="283.0" layoutY="143.0" strokeType="OUTSIDE" strokeWidth="0.0" text="خواندنی‌های تاریخ، از مسیر و معبر کاروان گذشتگانی می‌گوید که غالباً گذرگاه آیندگان است. چرا که اغلب گذشتگان، بسیاری از آزمودنی‌ها را در طول زندگی تجربه کرده‌اند و تا حد امکان راه خود را از چاه جدا کرده‌اند و حتی آنان که در چاه خطاهای خود نیز گرفتار آمده‌اند، چراغ خطری برای آیندگان گشته‌اند و از آنجا که آزموده را آزمودن خطاست، مطالعه و دقت در زندگی و احوالات گذشتگان، طریق درست را نمایان می‌کند." textAlignment="RIGHT" wrappingWidth="604.7999877929688">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Text>
                             </children>
                         </Pane>
                         <Pane layoutX="74.0" layoutY="1164.0" prefHeight="227.0" prefWidth="1096.0">
                             <children>
-                                <ImageView fitHeight="150.0" fitWidth="115.0" layoutX="965.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true" />
+                                <ImageView fitHeight="150.0" fitWidth="115.0" layoutX="970.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@photo_2024-01-13_11-01-03.jpg" />
+                           </image></ImageView>
                                 <Button fx:id="add5" layoutX="966.0" layoutY="174.0" mnemonicParsing="false" onAction="#onAdd5" text="افزودن به سبد خرید" />
                                 <Label alignment="CENTER_RIGHT" layoutX="897.0" layoutY="16.0" text="نام کتاب :" textAlignment="RIGHT">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="15.0" />
                                     </font>
                                 </Label>
                                 <Label alignment="CENTER_RIGHT" layoutX="878.0" layoutY="44.0" text="نام نویسنده :" textAlignment="RIGHT">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="15.0" />
                                     </font>
                                 </Label>
                                 <Label alignment="CENTER_RIGHT" layoutX="897.0" layoutY="71.0" text="انتشارات :" textAlignment="RIGHT">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="15.0" />
                                     </font>
                                 </Label>
                                 <Label alignment="CENTER_RIGHT" layoutX="913.0" layoutY="99.0" text="قیمت :" textAlignment="RIGHT">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="15.0" />
                                     </font>
                                 </Label>
                                 <Label alignment="CENTER_RIGHT" layoutX="891.0" layoutY="127.0" text="توضیحات :" textAlignment="RIGHT">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="15.0" />
                                     </font>
                                 </Label>
-                                <Label layoutX="830.0" layoutY="16.0" text="Label">
+                                <Label layoutX="791.0" layoutY="17.0" text="ایران قبل از اسلام">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="14.0" />
                                     </font>
                                 </Label>
-                                <Label layoutX="830.0" layoutY="44.0" text="Label">
+                                <Label layoutX="802.0" layoutY="45.0" text="حسین پیر نیا">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="14.0" />
                                     </font>
                                 </Label>
-                                <Label layoutX="830.0" layoutY="71.0" text="Label">
+                                <Label layoutX="872.0" layoutY="72.0" text="پر">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="14.0" />
                                     </font>
                                 </Label>
-                                <Label fx:id="price5" layoutX="830.0" layoutY="99.0" text="Label">
+                                <Label fx:id="price5" layoutX="830.0" layoutY="100.0" text="84000 تومان">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="14.0" />
                                     </font>
                                 </Label>
+                        <Text layoutX="107.0" layoutY="143.0" strokeType="OUTSIDE" strokeWidth="0.0" text="تاریخ ایران قبل از اسلام، چکیده‌ای است از متن کامل تاریخ ایران باستان که در آن بیانِ تاریخ از 2225 سال پیش از میلاد آغاز گشته و تا انقراض ساسانیان و ورود اسلام به ایران، پایان می‌یابد.نویـسنده‌ی این کتاب، مـیرزا حسن‏خان پیرنیا(مشیرالدوله)، از مـردان خوش‌نام مشروطه بود که هم‏زمان با پادشاهى رضا شاه پهلوى مانند بسیارى دیگر از رجال شایسته‌ی ملى، از سیاست کناره گرفت و خانه‌نشین شد. این گوشه‌نشینى و ثبات پدیدآمده در کشور، موجب شد که او رو به نوشتن نهاده و آثار ارزشمندی چون «تاریخ مفصل باستان ایران» را بنگارد." textAlignment="RIGHT" wrappingWidth="776.0">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Text>
                             </children>
                         </Pane>
                         <Pane layoutX="74.0" layoutY="1401.0" prefHeight="227.0" prefWidth="1096.0">
                             <children>
-                                <ImageView fitHeight="150.0" fitWidth="115.0" layoutX="965.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true" />
+                                <ImageView fitHeight="150.0" fitWidth="115.0" layoutX="969.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@photo_2024-01-13_11-02-47.jpg" />
+                           </image></ImageView>
                                 <Button fx:id="add6" layoutX="966.0" layoutY="174.0" mnemonicParsing="false" onAction="#onAdd6" text="افزودن به سبد خرید" />
                                 <Label alignment="CENTER_RIGHT" layoutX="897.0" layoutY="16.0" text="نام کتاب :" textAlignment="RIGHT">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="15.0" />
                                     </font>
                                 </Label>
                                 <Label alignment="CENTER_RIGHT" layoutX="878.0" layoutY="44.0" text="نام نویسنده :" textAlignment="RIGHT">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="15.0" />
                                     </font>
                                 </Label>
                                 <Label alignment="CENTER_RIGHT" layoutX="897.0" layoutY="71.0" text="انتشارات :" textAlignment="RIGHT">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="15.0" />
                                     </font>
                                 </Label>
                                 <Label alignment="CENTER_RIGHT" layoutX="913.0" layoutY="99.0" text="قیمت :" textAlignment="RIGHT">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="15.0" />
                                     </font>
                                 </Label>
                                 <Label alignment="CENTER_RIGHT" layoutX="891.0" layoutY="127.0" text="توضیحات :" textAlignment="RIGHT">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="15.0" />
                                     </font>
                                 </Label>
-                                <Label layoutX="830.0" layoutY="16.0" text="Label">
+                                <Label layoutX="772.0" layoutY="17.0" text="ارتش ایران هخامنشی">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="14.0" />
                                     </font>
                                 </Label>
-                                <Label layoutX="830.0" layoutY="44.0" text="Label">
+                                <Label layoutX="821.0" layoutY="44.0" text="دانکن هد">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="14.0" />
                                     </font>
                                 </Label>
-                                <Label layoutX="830.0" layoutY="71.0" text="Label">
+                                <Label layoutX="849.0" layoutY="72.0" text="ققنوس">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="14.0" />
                                     </font>
                                 </Label>
-                                <Label fx:id="price6" layoutX="830.0" layoutY="99.0" text="Label">
+                                <Label fx:id="price6" layoutX="832.0" layoutY="100.0" text="78000 تومان">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="14.0" />
                                     </font>
                                 </Label>
+                        <Text layoutX="8.0" layoutY="142.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ارتش ایران هخامنشی» کتابی با پژوهش دانکن هِد، است و در آن بر اساس اسناد باستان‌شناسی و تاریخی، به توصیف ارتش هخامنشی پرداخته است. این کتاب انواع دسته‌بندی و نیروهای حاضر در ارتش هخامنشی و سیر تحول آن را بررسی کرده است و همچنین به سلاح‌ها و تاکتیک‌های نظامی آن روزگار پرداخته است. امپراتوری ایران در روزگار هخامنشی به مدت تقریباً دویست سال، از نیمۀ سده ششم تا نیمۀ سده چهارم پ. م، بر خاور نزدیک و مدیترانه خاوری تسلط داشت. این بزرگ‌ترین امپراتوری‌ای بود که جهان تا بدان روزگار به خود دیده بود، و از بسیاری جهات موفق‌ترین نیز به شمار می‌رفت. ما برای مدتی طولانی تنها از دریچۀ چشم یونانیان باستان به ایران نگریسته‌ایم. مورخان یونانی منبع اساسی اطلاعات در بارۀ ایرانیان بوده‌اند و حتی امروزه نیز چنینند." textAlignment="RIGHT" wrappingWidth="879.9999847412109">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Text>
                             </children>
                         </Pane>
                         <Pane layoutX="74.0" layoutY="1642.0" prefHeight="227.0" prefWidth="1096.0">
                             <children>
-                                <ImageView fitHeight="150.0" fitWidth="115.0" layoutX="965.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true" />
+                                <ImageView fitHeight="150.0" fitWidth="115.0" layoutX="970.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@photo_2024-01-13_11-08-21.jpg" />
+                           </image></ImageView>
                                 <Button fx:id="add7" layoutX="966.0" layoutY="174.0" mnemonicParsing="false" onAction="#onAdd7" text="افزودن به سبد خرید" />
                                 <Label alignment="CENTER_RIGHT" layoutX="897.0" layoutY="16.0" text="نام کتاب :" textAlignment="RIGHT">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="15.0" />
                                     </font>
                                 </Label>
                                 <Label alignment="CENTER_RIGHT" layoutX="878.0" layoutY="44.0" text="نام نویسنده :" textAlignment="RIGHT">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="15.0" />
                                     </font>
                                 </Label>
                                 <Label alignment="CENTER_RIGHT" layoutX="897.0" layoutY="71.0" text="انتشارات :" textAlignment="RIGHT">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="15.0" />
                                     </font>
                                 </Label>
                                 <Label alignment="CENTER_RIGHT" layoutX="913.0" layoutY="99.0" text="قیمت :" textAlignment="RIGHT">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="15.0" />
                                     </font>
                                 </Label>
                                 <Label alignment="CENTER_RIGHT" layoutX="891.0" layoutY="127.0" text="توضیحات :" textAlignment="RIGHT">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="15.0" />
                                     </font>
                                 </Label>
-                                <Label layoutX="830.0" layoutY="16.0" text="Label">
+                                <Label layoutX="698.0" layoutY="18.0" text="اشکانیان فرمانروایان فراموش شده">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="14.0" />
                                     </font>
                                 </Label>
-                                <Label layoutX="830.0" layoutY="44.0" text="Label">
+                                <Label layoutX="793.0" layoutY="46.0" text="محسن جعفری">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="14.0" />
                                     </font>
                                 </Label>
-                                <Label layoutX="830.0" layoutY="71.0" text="Label">
+                                <Label layoutX="846.0" layoutY="73.0" text="ققنوس">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="14.0" />
                                     </font>
                                 </Label>
-                                <Label fx:id="price7" layoutX="830.0" layoutY="99.0" text="Label">
+                                <Label fx:id="price7" layoutX="831.0" layoutY="100.0" text="69000 تومان">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="14.0" />
                                     </font>
                                 </Label>
+                        <Text layoutX="-6.0" layoutY="142.0" strokeType="OUTSIDE" strokeWidth="0.0" text="اشکانیان (۲۴۷ ق.م تا ۲۲۴ م) از دودمان‌های شگفت‌آور تاریخ ایران‌اند، زیرا از یک سو با ۴۷۱ سال پادشاهی دیرپاترین دودمان تاریخ ایران هستند و از سوی دیگر نوشته‌های تاریخی و آثار باستان‌شناسی اندکی از آنان در دست داریم. هیچ کتاب تاریخی‌ای از دوره اشکانی بر جای نمانده است و در منابع ایرانی فقط اشاراتی مبهم به اشکانیان شده است، چنان‌که فردوسی به‌زیبایی سروده است: ازیرا جز از نام نشنیده‌ام نه در نامه خسروان دیده‌ام منابع تاریخی یونانی و رومی نیز نگاهی حاشیه‌ای به اشکانیان داشته‌اند و فقط هنگامی از آنان نوشته‌اند که جنگی میان ایرانیان و رومیان رخ داده است، بنابراین دوره‌های صلح میان دو دولت در تاریکی تاریخ فرو رفته است." textAlignment="RIGHT" wrappingWidth="893.6000213623047">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Text>
                             </children>
                         </Pane>
                         <Pane layoutX="74.0" layoutY="1876.0" prefHeight="227.0" prefWidth="1096.0">
                             <children>
-                                <ImageView fitHeight="150.0" fitWidth="115.0" layoutX="965.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true" />
+                                <ImageView fitHeight="150.0" fitWidth="115.0" layoutX="970.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@photo_2024-01-13_11-10-45.jpg" />
+                           </image></ImageView>
                                 <Button fx:id="add8" layoutX="966.0" layoutY="174.0" mnemonicParsing="false" onAction="#onAdd8" text="افزودن به سبد خرید" />
                                 <Label alignment="CENTER_RIGHT" layoutX="897.0" layoutY="16.0" text="نام کتاب :" textAlignment="RIGHT">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="15.0" />
                                     </font>
                                 </Label>
                                 <Label alignment="CENTER_RIGHT" layoutX="878.0" layoutY="44.0" text="نام نویسنده :" textAlignment="RIGHT">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="15.0" />
                                     </font>
                                 </Label>
                                 <Label alignment="CENTER_RIGHT" layoutX="897.0" layoutY="71.0" text="انتشارات :" textAlignment="RIGHT">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="15.0" />
                                     </font>
                                 </Label>
                                 <Label alignment="CENTER_RIGHT" layoutX="913.0" layoutY="99.0" text="قیمت :" textAlignment="RIGHT">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="15.0" />
                                     </font>
                                 </Label>
                                 <Label alignment="CENTER_RIGHT" layoutX="891.0" layoutY="127.0" text="توضیحات :" textAlignment="RIGHT">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="15.0" />
                                     </font>
                                 </Label>
-                                <Label layoutX="830.0" layoutY="16.0" text="Label">
+                                <Label layoutX="717.0" layoutY="17.0" text="ساسانیان فرمانروایان ایران شهر">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="14.0" />
                                     </font>
                                 </Label>
-                                <Label layoutX="830.0" layoutY="44.0" text="Label">
+                                <Label layoutX="793.0" layoutY="45.0" text="محسن جعفری">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="14.0" />
                                     </font>
                                 </Label>
-                                <Label layoutX="830.0" layoutY="71.0" text="Label">
+                                <Label layoutX="849.0" layoutY="73.0" text="ققنوس">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="14.0" />
                                     </font>
                                 </Label>
-                                <Label fx:id="price8" layoutX="830.0" layoutY="99.0" text="Label">
+                                <Label fx:id="price8" layoutX="830.0" layoutY="101.0" text="56000 تومان">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="14.0" />
                                     </font>
                                 </Label>
+                        <Text layoutX="49.0" layoutY="143.0" strokeType="OUTSIDE" strokeWidth="0.0" text="در فصل‌های نخستین این کتاب ابتدا سرگذشت پرماجرای ملتی جنگاور را خواهید خواند که به فرماندهی شاهان ساسانی پنجه‌درپنجۀ دولت‌های قدرتمند جهان باستان به‌ویژه رومیان انداختند؛ دو امپراتور رومی مهاجم را کشتند و نخستین ملت جهان باستان بودند که یک امپراتور رومی را زنده اسیر کردند، همچنین با دلاوری از مرزهای ایران‌زمین در برابر حمله‌های پیاپی کوچ‌نشینان غارتگر دفاع کردند.در دو فصل پایانی کتاب مهم‌ترین دستاوردهای فرهنگی و تمدنی ایرانیان در زمینه شهرسازی، معماری، هنر و ادبیات بررسی‌شده و اهمیت میراث دورۀ ساسانی در پیشرفت تمدن جهانی شرح داده شده است." textAlignment="RIGHT" wrappingWidth="838.3999633789062">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Text>
                             </children>
                         </Pane>
                     </children>
