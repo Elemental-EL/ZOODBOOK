@@ -54,5 +54,11 @@
                     -fx-scale-x 0.5s ease,
                     -fx-scale-y 0.5s ease;
 }
+.lightergreen{
+-fx-background-color:#F5FBF1;
+}
+.radiusforcat{
+-fx-background-radius:20px;
+}
 
-
+//
