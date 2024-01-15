@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.lang.String?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ScrollPane?>
@@ -13,11 +14,11 @@
 
 <AnchorPane prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.zoodbook.StorageController">
    <children>
-      <ScrollPane layoutX="49.0" layoutY="149.0" prefHeight="375.0" prefWidth="800.0">
+      <ScrollPane layoutX="49.0" layoutY="149.0" prefHeight="5000.0" prefWidth="800.0" styleClass="mainpageElementsdarkgreen" stylesheets="@style.css">
         <content>
           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="3400.0" prefWidth="786.0">
                <children>
-                  <Pane prefHeight="71.0" prefWidth="786.0">
+                  <Pane prefHeight="71.0" prefWidth="786.0" styleClass="lightergreen" stylesheets="@style.css">
                      <children>
                         <Label layoutX="701.0" layoutY="22.0" text="نام کتاب :">
                            <font>
@@ -44,19 +45,19 @@
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <TextField fx:id="quantity1" alignment="CENTER_RIGHT" editable="false" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" text="5">
+                        <TextField fx:id="quantity1" alignment="CENTER_RIGHT" editable="false" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" style="-fx-background-radius: 4;" stylesheets="@style.css" text="5">
                            <font>
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <Button fx:id="onEdit1" layoutX="40.0" layoutY="22.0" mnemonicParsing="false" onAction="#onEdit1" text="ویرایش">
+                        <Button fx:id="onEdit1" layoutX="40.0" layoutY="22.0" mnemonicParsing="false" onAction="#onEdit1" style="-fx-background-radius: 4;" styleClass="mainpageElementsdarkgreen" stylesheets="@style.css" text="ویرایش" textFill="WHITE">
                            <font>
                               <Font size="14.0" />
                            </font>
                         </Button>
                      </children>
                   </Pane>
-                  <Pane layoutY="71.0" prefHeight="71.0" prefWidth="786.0">
+                  <Pane layoutY="71.0" prefHeight="71.0" prefWidth="786.0" styleClass="pastelgreen" stylesheets="@style.css">
                      <children>
                         <Label layoutX="701.0" layoutY="22.0" text="نام کتاب :">
                            <font>
@@ -83,19 +84,24 @@
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <TextField fx:id="quantity2" alignment="CENTER_RIGHT" editable="false" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" text="5">
+                        <TextField fx:id="quantity2" alignment="CENTER_RIGHT" editable="false" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" style="-fx-background-radius: 4;" stylesheets="@style.css" text="5">
                            <font>
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <Button fx:id="onEdit2" layoutX="40.0" layoutY="22.0" mnemonicParsing="false" onAction="#onEdit2" text="ویرایش">
+                        <Button fx:id="onEdit2" layoutX="40.0" layoutY="22.0" mnemonicParsing="false" onAction="#onEdit2" style="-fx-background-radius: 4;" stylesheets="@style.css" text="ویرایش" textFill="WHITE">
                            <font>
                               <Font size="14.0" />
                            </font>
+                           <styleClass>
+                              <String fx:value="mainpageElementsdarkgreen" />
+                              <String fx:value="zoom" />
+                              <String fx:value="radiusforcat" />
+                           </styleClass>
                         </Button>
                      </children>
                   </Pane>
-                  <Pane layoutY="142.0" prefHeight="71.0" prefWidth="786.0">
+                  <Pane layoutY="142.0" prefHeight="71.0" prefWidth="786.0" styleClass="lightergreen" stylesheets="@style.css">
                      <children>
                         <Label layoutX="701.0" layoutY="22.0" text="نام کتاب :">
                            <font>
@@ -122,19 +128,24 @@
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <TextField fx:id="quantity3" alignment="CENTER_RIGHT" editable="false" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" text="3">
+                        <TextField fx:id="quantity3" alignment="CENTER_RIGHT" editable="false" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" style="-fx-background-radius: 4;" stylesheets="@style.css" text="3">
                            <font>
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <Button fx:id="onEdit3" layoutX="40.0" layoutY="22.0" mnemonicParsing="false" onAction="#onEdit3" text="ویرایش">
+                        <Button fx:id="onEdit3" layoutX="40.0" layoutY="22.0" mnemonicParsing="false" onAction="#onEdit3" style="-fx-background-radius: 4;" stylesheets="@style.css" text="ویرایش" textFill="WHITE">
                            <font>
                               <Font size="14.0" />
                            </font>
+                           <styleClass>
+                              <String fx:value="mainpageElementsdarkgreen" />
+                              <String fx:value="zoom" />
+                              <String fx:value="radiusforcat" />
+                           </styleClass>
                         </Button>
                      </children>
                   </Pane>
-                  <Pane layoutY="213.0" prefHeight="71.0" prefWidth="786.0">
+                  <Pane layoutY="213.0" prefHeight="71.0" prefWidth="786.0" styleClass="pastelgreen" stylesheets="@style.css">
                      <children>
                         <Label layoutX="701.0" layoutY="22.0" text="نام کتاب :">
                            <font>
@@ -161,19 +172,24 @@
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <TextField fx:id="quantity4" alignment="CENTER_RIGHT" editable="false" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" text="6">
+                        <TextField fx:id="quantity4" alignment="CENTER_RIGHT" editable="false" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" style="-fx-background-radius: 4;" stylesheets="@style.css" text="6">
                            <font>
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <Button fx:id="onEdit4" layoutX="40.0" layoutY="22.0" mnemonicParsing="false" onAction="#onEdit4" text="ویرایش">
+                        <Button fx:id="onEdit4" layoutX="40.0" layoutY="22.0" mnemonicParsing="false" onAction="#onEdit4" style="-fx-background-radius: 4;" stylesheets="@style.css" text="ویرایش" textFill="WHITE">
                            <font>
                               <Font size="14.0" />
                            </font>
+                           <styleClass>
+                              <String fx:value="mainpageElementsdarkgreen" />
+                              <String fx:value="zoom" />
+                              <String fx:value="radiusforcat" />
+                           </styleClass>
                         </Button>
                      </children>
                   </Pane>
-                  <Pane layoutX="-1.0" layoutY="284.0" prefHeight="71.0" prefWidth="786.0">
+                  <Pane layoutX="-1.0" layoutY="284.0" prefHeight="71.0" prefWidth="786.0" styleClass="lightergreen" stylesheets="@style.css">
                      <children>
                         <Label layoutX="701.0" layoutY="22.0" text="نام کتاب :">
                            <font>
@@ -200,19 +216,24 @@
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <TextField fx:id="quantity5" alignment="CENTER_RIGHT" editable="false" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" text="4">
+                        <TextField fx:id="quantity5" alignment="CENTER_RIGHT" editable="false" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" style="-fx-background-radius: 4;" stylesheets="@style.css" text="4">
                            <font>
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <Button fx:id="onEdit5" layoutX="40.0" layoutY="22.0" mnemonicParsing="false" onAction="#onEdit5" text="ویرایش">
+                        <Button fx:id="onEdit5" layoutX="40.0" layoutY="22.0" mnemonicParsing="false" onAction="#onEdit5" style="-fx-background-radius: 4;" stylesheets="@style.css" text="ویرایش" textFill="WHITE">
                            <font>
                               <Font size="14.0" />
                            </font>
+                           <styleClass>
+                              <String fx:value="mainpageElementsdarkgreen" />
+                              <String fx:value="zoom" />
+                              <String fx:value="radiusforcat" />
+                           </styleClass>
                         </Button>
                      </children>
                   </Pane>
-                  <Pane layoutX="-1.0" layoutY="355.0" prefHeight="71.0" prefWidth="786.0">
+                  <Pane layoutX="-1.0" layoutY="355.0" prefHeight="71.0" prefWidth="786.0" styleClass="pastelgreen" stylesheets="@style.css">
                      <children>
                         <Label layoutX="701.0" layoutY="22.0" text="نام کتاب :">
                            <font>
@@ -239,19 +260,24 @@
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <TextField fx:id="quantity6" alignment="CENTER_RIGHT" editable="false" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" text="4">
+                        <TextField fx:id="quantity6" alignment="CENTER_RIGHT" editable="false" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" style="-fx-background-radius: 4;" stylesheets="@style.css" text="4">
                            <font>
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <Button fx:id="onEdit6" layoutX="40.0" layoutY="22.0" mnemonicParsing="false" onAction="#onEdit6" text="ویرایش">
+                        <Button fx:id="onEdit6" layoutX="40.0" layoutY="22.0" mnemonicParsing="false" onAction="#onEdit6" style="-fx-background-radius: 4;" stylesheets="@style.css" text="ویرایش" textFill="WHITE">
                            <font>
                               <Font size="14.0" />
                            </font>
+                           <styleClass>
+                              <String fx:value="mainpageElementsdarkgreen" />
+                              <String fx:value="zoom" />
+                              <String fx:value="radiusforcat" />
+                           </styleClass>
                         </Button>
                      </children>
                   </Pane>
-                  <Pane layoutY="421.0" prefHeight="71.0" prefWidth="786.0">
+                  <Pane layoutY="421.0" prefHeight="71.0" prefWidth="786.0" styleClass="lightergreen" stylesheets="@style.css">
                      <children>
                         <Label layoutX="701.0" layoutY="22.0" text="نام کتاب :">
                            <font>
@@ -278,19 +304,24 @@
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <TextField fx:id="quantity7" alignment="CENTER_RIGHT" editable="false" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" text="7">
+                        <TextField fx:id="quantity7" alignment="CENTER_RIGHT" editable="false" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" style="-fx-background-radius: 4;" stylesheets="@style.css" text="7">
                            <font>
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <Button fx:id="onEdit7" layoutX="40.0" layoutY="22.0" mnemonicParsing="false" onAction="#onEdit7" text="ویرایش">
+                        <Button fx:id="onEdit7" layoutX="40.0" layoutY="22.0" mnemonicParsing="false" onAction="#onEdit7" style="-fx-background-radius: 4;" stylesheets="@style.css" text="ویرایش" textFill="WHITE">
                            <font>
                               <Font size="14.0" />
                            </font>
+                           <styleClass>
+                              <String fx:value="mainpageElementsdarkgreen" />
+                              <String fx:value="zoom" />
+                              <String fx:value="radiusforcat" />
+                           </styleClass>
                         </Button>
                      </children>
                   </Pane>
-                  <Pane layoutY="492.0" prefHeight="71.0" prefWidth="786.0">
+                  <Pane layoutY="492.0" prefHeight="71.0" prefWidth="786.0" styleClass="pastelgreen" stylesheets="@style.css">
                      <children>
                         <Label layoutX="701.0" layoutY="22.0" text="نام کتاب :">
                            <font>
@@ -317,19 +348,24 @@
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <TextField fx:id="quantity8" alignment="CENTER_RIGHT" editable="false" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" text="3">
+                        <TextField fx:id="quantity8" alignment="CENTER_RIGHT" editable="false" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" style="-fx-background-radius: 4;" stylesheets="@style.css" text="3">
                            <font>
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <Button fx:id="onEdit8" layoutX="40.0" layoutY="22.0" mnemonicParsing="false" onAction="#onEdit8" text="ویرایش">
+                        <Button fx:id="onEdit8" layoutX="40.0" layoutY="22.0" mnemonicParsing="false" onAction="#onEdit8" style="-fx-background-radius: 4;" stylesheets="@style.css" text="ویرایش" textFill="WHITE">
                            <font>
                               <Font size="14.0" />
                            </font>
+                           <styleClass>
+                              <String fx:value="mainpageElementsdarkgreen" />
+                              <String fx:value="zoom" />
+                              <String fx:value="radiusforcat" />
+                           </styleClass>
                         </Button>
                      </children>
                   </Pane>
-                  <Pane layoutX="-1.0" layoutY="563.0" prefHeight="71.0" prefWidth="786.0">
+                  <Pane layoutX="-1.0" layoutY="563.0" prefHeight="71.0" prefWidth="786.0" styleClass="lightergreen" stylesheets="@style.css">
                      <children>
                         <Label layoutX="701.0" layoutY="22.0" text="نام کتاب :">
                            <font>
@@ -356,19 +392,24 @@
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <TextField fx:id="quantity9" alignment="CENTER_RIGHT" editable="false" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" text="5">
+                        <TextField fx:id="quantity9" alignment="CENTER_RIGHT" editable="false" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" style="-fx-background-radius: 4;" stylesheets="@style.css" text="5">
                            <font>
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <Button fx:id="onEdit9" layoutX="40.0" layoutY="22.0" mnemonicParsing="false" onAction="#onEdit9" text="ویرایش">
+                        <Button fx:id="onEdit9" layoutX="40.0" layoutY="22.0" mnemonicParsing="false" onAction="#onEdit9" style="-fx-background-radius: 4;" stylesheets="@style.css" text="ویرایش" textFill="WHITE">
                            <font>
                               <Font size="14.0" />
                            </font>
+                           <styleClass>
+                              <String fx:value="mainpageElementsdarkgreen" />
+                              <String fx:value="zoom" />
+                              <String fx:value="radiusforcat" />
+                           </styleClass>
                         </Button>
                      </children>
                   </Pane>
-                  <Pane layoutY="634.0" prefHeight="71.0" prefWidth="786.0">
+                  <Pane layoutY="634.0" prefHeight="71.0" prefWidth="786.0" styleClass="pastelgreen" stylesheets="@style.css">
                      <children>
                         <Label layoutX="701.0" layoutY="22.0" text="نام کتاب :">
                            <font>
@@ -395,19 +436,24 @@
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <TextField fx:id="quantity10" alignment="CENTER_RIGHT" editable="false" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" text="6">
+                        <TextField fx:id="quantity10" alignment="CENTER_RIGHT" editable="false" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" style="-fx-background-radius: 4;" stylesheets="@style.css" text="6">
                            <font>
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <Button fx:id="onEdit10" layoutX="40.0" layoutY="22.0" mnemonicParsing="false" onAction="#onEdit10" text="ویرایش">
+                        <Button fx:id="onEdit10" layoutX="40.0" layoutY="22.0" mnemonicParsing="false" onAction="#onEdit10" style="-fx-background-radius: 4;" stylesheets="@style.css" text="ویرایش" textFill="WHITE">
                            <font>
                               <Font size="14.0" />
                            </font>
+                           <styleClass>
+                              <String fx:value="mainpageElementsdarkgreen" />
+                              <String fx:value="zoom" />
+                              <String fx:value="radiusforcat" />
+                           </styleClass>
                         </Button>
                      </children>
                   </Pane>
-                  <Pane layoutY="707.0" prefHeight="71.0" prefWidth="786.0">
+                  <Pane layoutY="707.0" prefHeight="71.0" prefWidth="786.0" styleClass="lightergreen" stylesheets="@style.css">
                      <children>
                         <Label layoutX="701.0" layoutY="22.0" text="نام کتاب :">
                            <font>
@@ -434,19 +480,24 @@
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <TextField fx:id="quantity11" alignment="CENTER_RIGHT" editable="false" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" text="4">
+                        <TextField fx:id="quantity11" alignment="CENTER_RIGHT" editable="false" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" style="-fx-background-radius: 4;" stylesheets="@style.css" text="4">
                            <font>
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <Button fx:id="onEdit11" layoutX="40.0" layoutY="22.0" mnemonicParsing="false" onAction="#onEdit11" text="ویرایش">
+                        <Button fx:id="onEdit11" layoutX="40.0" layoutY="22.0" mnemonicParsing="false" onAction="#onEdit11" style="-fx-background-radius: 4;" stylesheets="@style.css" text="ویرایش" textFill="WHITE">
                            <font>
                               <Font size="14.0" />
                            </font>
+                           <styleClass>
+                              <String fx:value="mainpageElementsdarkgreen" />
+                              <String fx:value="zoom" />
+                              <String fx:value="radiusforcat" />
+                           </styleClass>
                         </Button>
                      </children>
                   </Pane>
-                  <Pane layoutX="-1.0" layoutY="778.0" prefHeight="71.0" prefWidth="786.0">
+                  <Pane layoutX="-1.0" layoutY="778.0" prefHeight="71.0" prefWidth="786.0" styleClass="pastelgreen" stylesheets="@style.css">
                      <children>
                         <Label layoutX="701.0" layoutY="22.0" text="نام کتاب :">
                            <font>
@@ -473,19 +524,24 @@
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <TextField fx:id="quantity12" alignment="CENTER_RIGHT" editable="false" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" text="6">
+                        <TextField fx:id="quantity12" alignment="CENTER_RIGHT" editable="false" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" style="-fx-background-radius: 4;" stylesheets="@style.css" text="6">
                            <font>
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <Button fx:id="onEdit12" layoutX="40.0" layoutY="22.0" mnemonicParsing="false" onAction="#onEdit12" text="ویرایش">
+                        <Button fx:id="onEdit12" layoutX="40.0" layoutY="22.0" mnemonicParsing="false" onAction="#onEdit12" style="-fx-background-radius: 4;" stylesheets="@style.css" text="ویرایش" textFill="WHITE">
                            <font>
                               <Font size="14.0" />
                            </font>
+                           <styleClass>
+                              <String fx:value="mainpageElementsdarkgreen" />
+                              <String fx:value="zoom" />
+                              <String fx:value="radiusforcat" />
+                           </styleClass>
                         </Button>
                      </children>
                   </Pane>
-                  <Pane layoutX="-1.0" layoutY="849.0" prefHeight="71.0" prefWidth="786.0">
+                  <Pane layoutX="-1.0" layoutY="849.0" prefHeight="71.0" prefWidth="786.0" styleClass="lightergreen" stylesheets="@style.css">
                      <children>
                         <Label layoutX="701.0" layoutY="22.0" text="نام کتاب :">
                            <font>
@@ -512,19 +568,24 @@
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <TextField fx:id="quantity13" alignment="CENTER_RIGHT" editable="false" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" text="5">
+                        <TextField fx:id="quantity13" alignment="CENTER_RIGHT" editable="false" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" style="-fx-background-radius: 4;" stylesheets="@style.css" text="5">
                            <font>
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <Button fx:id="onEdit13" layoutX="40.0" layoutY="22.0" mnemonicParsing="false" onAction="#onEdit13" text="ویرایش">
+                        <Button fx:id="onEdit13" layoutX="40.0" layoutY="22.0" mnemonicParsing="false" onAction="#onEdit13" style="-fx-background-radius: 4;" stylesheets="@style.css" text="ویرایش" textFill="WHITE">
                            <font>
                               <Font size="14.0" />
                            </font>
+                           <styleClass>
+                              <String fx:value="mainpageElementsdarkgreen" />
+                              <String fx:value="zoom" />
+                              <String fx:value="radiusforcat" />
+                           </styleClass>
                         </Button>
                      </children>
                   </Pane>
-                  <Pane layoutX="-1.0" layoutY="920.0" prefHeight="71.0" prefWidth="786.0">
+                  <Pane layoutX="-1.0" layoutY="920.0" prefHeight="71.0" prefWidth="786.0" styleClass="pastelgreen" stylesheets="@style.css">
                      <children>
                         <Label layoutX="701.0" layoutY="22.0" text="نام کتاب :">
                            <font>
@@ -551,19 +612,24 @@
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <TextField fx:id="quantity14" alignment="CENTER_RIGHT" editable="false" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" text="6">
+                        <TextField fx:id="quantity14" alignment="CENTER_RIGHT" editable="false" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" style="-fx-background-radius: 4;" stylesheets="@style.css" text="6">
                            <font>
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <Button fx:id="onEdit14" layoutX="40.0" layoutY="22.0" mnemonicParsing="false" onAction="#onEdit14" text="ویرایش">
+                        <Button fx:id="onEdit14" layoutX="40.0" layoutY="22.0" mnemonicParsing="false" onAction="#onEdit14" style="-fx-background-radius: 4;" stylesheets="@style.css" text="ویرایش" textFill="WHITE">
                            <font>
                               <Font size="14.0" />
                            </font>
+                           <styleClass>
+                              <String fx:value="mainpageElementsdarkgreen" />
+                              <String fx:value="zoom" />
+                              <String fx:value="radiusforcat" />
+                           </styleClass>
                         </Button>
                      </children>
                   </Pane>
-                  <Pane layoutX="-1.0" layoutY="991.0" prefHeight="71.0" prefWidth="786.0">
+                  <Pane layoutX="-1.0" layoutY="991.0" prefHeight="71.0" prefWidth="786.0" styleClass="lightergreen" stylesheets="@style.css">
                      <children>
                         <Label layoutX="701.0" layoutY="22.0" text="نام کتاب :">
                            <font>
@@ -590,19 +656,24 @@
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <TextField fx:id="quantity15" alignment="CENTER_RIGHT" editable="false" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" text="6">
+                        <TextField fx:id="quantity15" alignment="CENTER_RIGHT" editable="false" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" style="-fx-background-radius: 4;" stylesheets="@style.css" text="6">
                            <font>
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <Button fx:id="onEdit15" layoutX="40.0" layoutY="22.0" mnemonicParsing="false" onAction="#onEdit15" text="ویرایش">
+                        <Button fx:id="onEdit15" layoutX="40.0" layoutY="22.0" mnemonicParsing="false" onAction="#onEdit15" style="-fx-background-radius: 4;" stylesheets="@style.css" text="ویرایش" textFill="WHITE">
                            <font>
                               <Font size="14.0" />
                            </font>
+                           <styleClass>
+                              <String fx:value="mainpageElementsdarkgreen" />
+                              <String fx:value="zoom" />
+                              <String fx:value="radiusforcat" />
+                           </styleClass>
                         </Button>
                      </children>
                   </Pane>
-                  <Pane layoutY="1062.0" prefHeight="71.0" prefWidth="786.0">
+                  <Pane layoutY="1062.0" prefHeight="71.0" prefWidth="786.0" styleClass="pastelgreen" stylesheets="@style.css">
                      <children>
                         <Label layoutX="701.0" layoutY="22.0" text="نام کتاب :">
                            <font>
@@ -629,19 +700,24 @@
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <TextField fx:id="quantity16" alignment="CENTER_RIGHT" editable="false" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" text="4">
+                        <TextField fx:id="quantity16" alignment="CENTER_RIGHT" editable="false" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" style="-fx-background-radius: 4;" stylesheets="@style.css" text="4">
                            <font>
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <Button fx:id="onEdit16" layoutX="40.0" layoutY="22.0" mnemonicParsing="false" onAction="#onEdit16" text="ویرایش">
+                        <Button fx:id="onEdit16" layoutX="40.0" layoutY="22.0" mnemonicParsing="false" onAction="#onEdit16" style="-fx-background-radius: 4;" stylesheets="@style.css" text="ویرایش" textFill="WHITE">
                            <font>
                               <Font size="14.0" />
                            </font>
+                           <styleClass>
+                              <String fx:value="mainpageElementsdarkgreen" />
+                              <String fx:value="zoom" />
+                              <String fx:value="radiusforcat" />
+                           </styleClass>
                         </Button>
                      </children>
                   </Pane>
-                  <Pane layoutY="1133.0" prefHeight="71.0" prefWidth="786.0">
+                  <Pane layoutY="1133.0" prefHeight="71.0" prefWidth="786.0" styleClass="lightergreen" stylesheets="@style.css">
                      <children>
                         <Label layoutX="701.0" layoutY="22.0" text="نام کتاب :">
                            <font>
@@ -668,19 +744,24 @@
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <TextField fx:id="quantity17" alignment="CENTER_RIGHT" editable="false" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" text="5">
+                        <TextField fx:id="quantity17" alignment="CENTER_RIGHT" editable="false" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" style="-fx-background-radius: 4;" stylesheets="@style.css" text="5">
                            <font>
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <Button fx:id="onEdit17" layoutX="40.0" layoutY="22.0" mnemonicParsing="false" onAction="#onEdit17" text="ویرایش">
+                        <Button fx:id="onEdit17" layoutX="40.0" layoutY="22.0" mnemonicParsing="false" onAction="#onEdit17" style="-fx-background-radius: 4;" stylesheets="@style.css" text="ویرایش" textFill="WHITE">
                            <font>
                               <Font size="14.0" />
                            </font>
+                           <styleClass>
+                              <String fx:value="mainpageElementsdarkgreen" />
+                              <String fx:value="zoom" />
+                              <String fx:value="radiusforcat" />
+                           </styleClass>
                         </Button>
                      </children>
                   </Pane>
-                  <Pane layoutY="1204.0" prefHeight="71.0" prefWidth="786.0">
+                  <Pane layoutY="1204.0" prefHeight="71.0" prefWidth="786.0" styleClass="pastelgreen" stylesheets="@style.css">
                      <children>
                         <Label layoutX="701.0" layoutY="22.0" text="نام کتاب :">
                            <font>
@@ -707,19 +788,24 @@
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <TextField fx:id="quantity18" alignment="CENTER_RIGHT" editable="false" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" text="4">
+                        <TextField fx:id="quantity18" alignment="CENTER_RIGHT" editable="false" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" style="-fx-background-radius: 4;" stylesheets="@style.css" text="4">
                            <font>
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <Button fx:id="onEdit18" layoutX="40.0" layoutY="22.0" mnemonicParsing="false" onAction="#onEdit18" text="ویرایش">
+                        <Button fx:id="onEdit18" layoutX="40.0" layoutY="22.0" mnemonicParsing="false" onAction="#onEdit18" style="-fx-background-radius: 4;" stylesheets="@style.css" text="ویرایش" textFill="WHITE">
                            <font>
                               <Font size="14.0" />
                            </font>
+                           <styleClass>
+                              <String fx:value="mainpageElementsdarkgreen" />
+                              <String fx:value="zoom" />
+                              <String fx:value="radiusforcat" />
+                           </styleClass>
                         </Button>
                      </children>
                   </Pane>
-                  <Pane layoutY="1275.0" prefHeight="71.0" prefWidth="786.0">
+                  <Pane layoutY="1275.0" prefHeight="71.0" prefWidth="786.0" styleClass="lightergreen" stylesheets="@style.css">
                      <children>
                         <Label layoutX="701.0" layoutY="22.0" text="نام کتاب :">
                            <font>
@@ -746,19 +832,24 @@
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <TextField fx:id="quantity19" alignment="CENTER_RIGHT" editable="false" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" text="6">
+                        <TextField fx:id="quantity19" alignment="CENTER_RIGHT" editable="false" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" style="-fx-background-radius: 4;" stylesheets="@style.css" text="6">
                            <font>
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <Button fx:id="onEdit19" layoutX="40.0" layoutY="22.0" mnemonicParsing="false" onAction="#onEdit19" text="ویرایش">
+                        <Button fx:id="onEdit19" layoutX="40.0" layoutY="22.0" mnemonicParsing="false" onAction="#onEdit19" style="-fx-background-radius: 4;" stylesheets="@style.css" text="ویرایش" textFill="WHITE">
                            <font>
                               <Font size="14.0" />
                            </font>
+                           <styleClass>
+                              <String fx:value="mainpageElementsdarkgreen" />
+                              <String fx:value="zoom" />
+                              <String fx:value="radiusforcat" />
+                           </styleClass>
                         </Button>
                      </children>
                   </Pane>
-                  <Pane layoutY="1346.0" prefHeight="71.0" prefWidth="786.0">
+                  <Pane layoutY="1346.0" prefHeight="71.0" prefWidth="786.0" styleClass="pastelgreen" stylesheets="@style.css">
                      <children>
                         <Label layoutX="701.0" layoutY="22.0" text="نام کتاب :">
                            <font>
@@ -785,19 +876,24 @@
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <TextField fx:id="quantity20" alignment="CENTER_RIGHT" editable="false" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" text="3">
+                        <TextField fx:id="quantity20" alignment="CENTER_RIGHT" editable="false" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" style="-fx-background-radius: 4;" stylesheets="@style.css" text="3">
                            <font>
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <Button fx:id="onEdit20" layoutX="40.0" layoutY="22.0" mnemonicParsing="false" onAction="#onEdit20" text="ویرایش">
+                        <Button fx:id="onEdit20" layoutX="40.0" layoutY="22.0" mnemonicParsing="false" onAction="#onEdit20" style="-fx-background-radius: 4;" stylesheets="@style.css" text="ویرایش" textFill="WHITE">
                            <font>
                               <Font size="14.0" />
                            </font>
+                           <styleClass>
+                              <String fx:value="mainpageElementsdarkgreen" />
+                              <String fx:value="zoom" />
+                              <String fx:value="radiusforcat" />
+                           </styleClass>
                         </Button>
                      </children>
                   </Pane>
-                  <Pane layoutY="1417.0" prefHeight="71.0" prefWidth="786.0">
+                  <Pane layoutY="1417.0" prefHeight="71.0" prefWidth="786.0" styleClass="lightergreen" stylesheets="@style.css">
                      <children>
                         <Label layoutX="701.0" layoutY="22.0" text="نام کتاب :">
                            <font>
@@ -824,19 +920,24 @@
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <TextField fx:id="quantity21" alignment="CENTER_RIGHT" editable="false" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" text="4">
+                        <TextField fx:id="quantity21" alignment="CENTER_RIGHT" editable="false" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" style="-fx-background-radius: 4;" stylesheets="@style.css" text="4">
                            <font>
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <Button fx:id="onEdit21" layoutX="40.0" layoutY="22.0" mnemonicParsing="false" onAction="#onEdit21" text="ویرایش">
+                        <Button fx:id="onEdit21" layoutX="40.0" layoutY="22.0" mnemonicParsing="false" onAction="#onEdit21" style="-fx-background-radius: 4;" stylesheets="@style.css" text="ویرایش" textFill="WHITE">
                            <font>
                               <Font size="14.0" />
                            </font>
+                           <styleClass>
+                              <String fx:value="mainpageElementsdarkgreen" />
+                              <String fx:value="zoom" />
+                              <String fx:value="radiusforcat" />
+                           </styleClass>
                         </Button>
                      </children>
                   </Pane>
-                  <Pane layoutY="1491.0" prefHeight="71.0" prefWidth="786.0">
+                  <Pane layoutY="1491.0" prefHeight="71.0" prefWidth="786.0" styleClass="pastelgreen" stylesheets="@style.css">
                      <children>
                         <Label layoutX="701.0" layoutY="22.0" text="نام کتاب :">
                            <font>
@@ -863,19 +964,24 @@
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <TextField fx:id="quantity22" alignment="CENTER_RIGHT" editable="false" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" text="3">
+                        <TextField fx:id="quantity22" alignment="CENTER_RIGHT" editable="false" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" style="-fx-background-radius: 4;" stylesheets="@style.css" text="3">
                            <font>
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <Button fx:id="onEdit22" layoutX="40.0" layoutY="22.0" mnemonicParsing="false" onAction="#onEdit22" text="ویرایش">
+                        <Button fx:id="onEdit22" layoutX="40.0" layoutY="22.0" mnemonicParsing="false" onAction="#onEdit22" style="-fx-background-radius: 4;" stylesheets="@style.css" text="ویرایش" textFill="WHITE">
                            <font>
                               <Font size="14.0" />
                            </font>
+                           <styleClass>
+                              <String fx:value="mainpageElementsdarkgreen" />
+                              <String fx:value="zoom" />
+                              <String fx:value="radiusforcat" />
+                           </styleClass>
                         </Button>
                      </children>
                   </Pane>
-                  <Pane layoutX="-1.0" layoutY="1562.0" prefHeight="71.0" prefWidth="786.0">
+                  <Pane layoutX="-1.0" layoutY="1562.0" prefHeight="71.0" prefWidth="786.0" styleClass="lightergreen" stylesheets="@style.css">
                      <children>
                         <Label layoutX="701.0" layoutY="22.0" text="نام کتاب :">
                            <font>
@@ -902,19 +1008,24 @@
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <TextField fx:id="quantity23" alignment="CENTER_RIGHT" editable="false" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" text="5">
+                        <TextField fx:id="quantity23" alignment="CENTER_RIGHT" editable="false" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" style="-fx-background-radius: 4;" stylesheets="@style.css" text="5">
                            <font>
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <Button fx:id="onEdit23" layoutX="40.0" layoutY="22.0" mnemonicParsing="false" onAction="#onEdit23" text="ویرایش">
+                        <Button fx:id="onEdit23" layoutX="40.0" layoutY="22.0" mnemonicParsing="false" onAction="#onEdit23" style="-fx-background-radius: 4;" stylesheets="@style.css" text="ویرایش" textFill="WHITE">
                            <font>
                               <Font size="14.0" />
                            </font>
+                           <styleClass>
+                              <String fx:value="mainpageElementsdarkgreen" />
+                              <String fx:value="zoom" />
+                              <String fx:value="radiusforcat" />
+                           </styleClass>
                         </Button>
                      </children>
                   </Pane>
-                  <Pane layoutX="-1.0" layoutY="1633.0" prefHeight="71.0" prefWidth="786.0">
+                  <Pane layoutX="-1.0" layoutY="1633.0" prefHeight="71.0" prefWidth="786.0" styleClass="pastelgreen" stylesheets="@style.css">
                      <children>
                         <Label layoutX="701.0" layoutY="22.0" text="نام کتاب :">
                            <font>
@@ -941,19 +1052,24 @@
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <TextField fx:id="quantity24" alignment="CENTER_RIGHT" editable="false" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" text="6">
+                        <TextField fx:id="quantity24" alignment="CENTER_RIGHT" editable="false" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" style="-fx-background-radius: 4;" stylesheets="@style.css" text="6">
                            <font>
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <Button fx:id="onEdit24" layoutX="40.0" layoutY="22.0" mnemonicParsing="false" onAction="#onEdit24" text="ویرایش">
+                        <Button fx:id="onEdit24" layoutX="40.0" layoutY="22.0" mnemonicParsing="false" onAction="#onEdit24" style="-fx-background-radius: 4;" stylesheets="@style.css" text="ویرایش" textFill="WHITE">
                            <font>
                               <Font size="14.0" />
                            </font>
+                           <styleClass>
+                              <String fx:value="mainpageElementsdarkgreen" />
+                              <String fx:value="zoom" />
+                              <String fx:value="radiusforcat" />
+                           </styleClass>
                         </Button>
                      </children>
                   </Pane>
-                  <Pane layoutY="1704.0" prefHeight="71.0" prefWidth="786.0">
+                  <Pane layoutY="1704.0" prefHeight="71.0" prefWidth="786.0" styleClass="lightergreen" stylesheets="@style.css">
                      <children>
                         <Label layoutX="701.0" layoutY="22.0" text="نام کتاب :">
                            <font>
@@ -980,19 +1096,24 @@
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <TextField fx:id="quantity25" alignment="CENTER_RIGHT" editable="false" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" text="4">
+                        <TextField fx:id="quantity25" alignment="CENTER_RIGHT" editable="false" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" style="-fx-background-radius: 4;" stylesheets="@style.css" text="4">
                            <font>
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <Button fx:id="onEdit25" layoutX="40.0" layoutY="22.0" mnemonicParsing="false" onAction="#onEdit25" text="ویرایش">
+                        <Button fx:id="onEdit25" layoutX="40.0" layoutY="22.0" mnemonicParsing="false" onAction="#onEdit25" style="-fx-background-radius: 4;" stylesheets="@style.css" text="ویرایش" textFill="WHITE">
                            <font>
                               <Font size="14.0" />
                            </font>
+                           <styleClass>
+                              <String fx:value="mainpageElementsdarkgreen" />
+                              <String fx:value="zoom" />
+                              <String fx:value="radiusforcat" />
+                           </styleClass>
                         </Button>
                      </children>
                   </Pane>
-                  <Pane layoutY="1775.0" prefHeight="71.0" prefWidth="786.0">
+                  <Pane layoutY="1775.0" prefHeight="71.0" prefWidth="786.0" styleClass="pastelgreen" stylesheets="@style.css">
                      <children>
                         <Label layoutX="701.0" layoutY="22.0" text="نام کتاب :">
                            <font>
@@ -1019,19 +1140,24 @@
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <TextField fx:id="quantity26" alignment="CENTER_RIGHT" editable="false" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" text="4">
+                        <TextField fx:id="quantity26" alignment="CENTER_RIGHT" editable="false" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" style="-fx-background-radius: 4;" stylesheets="@style.css" text="4">
                            <font>
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <Button fx:id="onEdit26" layoutX="40.0" layoutY="22.0" mnemonicParsing="false" onAction="#onEdit26" text="ویرایش">
+                        <Button fx:id="onEdit26" layoutX="40.0" layoutY="22.0" mnemonicParsing="false" onAction="#onEdit26" style="-fx-background-radius: 4;" stylesheets="@style.css" text="ویرایش" textFill="WHITE">
                            <font>
                               <Font size="14.0" />
                            </font>
+                           <styleClass>
+                              <String fx:value="mainpageElementsdarkgreen" />
+                              <String fx:value="zoom" />
+                              <String fx:value="radiusforcat" />
+                           </styleClass>
                         </Button>
                      </children>
                   </Pane>
-                  <Pane layoutY="1850.0" prefHeight="71.0" prefWidth="786.0">
+                  <Pane layoutY="1850.0" prefHeight="71.0" prefWidth="786.0" styleClass="lightergreen" stylesheets="@style.css">
                      <children>
                         <Label layoutX="701.0" layoutY="22.0" text="نام کتاب :">
                            <font>
@@ -1058,19 +1184,24 @@
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <TextField fx:id="quantity27" alignment="CENTER_RIGHT" editable="false" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" text="6">
+                        <TextField fx:id="quantity27" alignment="CENTER_RIGHT" editable="false" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" style="-fx-background-radius: 4;" stylesheets="@style.css" text="6">
                            <font>
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <Button fx:id="onEdit27" layoutX="40.0" layoutY="22.0" mnemonicParsing="false" onAction="#onEdit27" text="ویرایش">
+                        <Button fx:id="onEdit27" layoutX="40.0" layoutY="22.0" mnemonicParsing="false" onAction="#onEdit27" style="-fx-background-radius: 4;" stylesheets="@style.css" text="ویرایش" textFill="WHITE">
                            <font>
                               <Font size="14.0" />
                            </font>
+                           <styleClass>
+                              <String fx:value="mainpageElementsdarkgreen" />
+                              <String fx:value="zoom" />
+                              <String fx:value="radiusforcat" />
+                           </styleClass>
                         </Button>
                      </children>
                   </Pane>
-                  <Pane layoutY="1921.0" prefHeight="71.0" prefWidth="786.0">
+                  <Pane layoutY="1921.0" prefHeight="71.0" prefWidth="786.0" styleClass="pastelgreen" stylesheets="@style.css">
                      <children>
                         <Label layoutX="701.0" layoutY="22.0" text="نام کتاب :">
                            <font>
@@ -1097,19 +1228,24 @@
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <TextField fx:id="quantity28" alignment="CENTER_RIGHT" editable="false" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" text="5">
+                        <TextField fx:id="quantity28" alignment="CENTER_RIGHT" editable="false" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" style="-fx-background-radius: 4;" stylesheets="@style.css" text="5">
                            <font>
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <Button fx:id="onEdit28" layoutX="40.0" layoutY="22.0" mnemonicParsing="false" onAction="#onEdit28" text="ویرایش">
+                        <Button fx:id="onEdit28" layoutX="40.0" layoutY="22.0" mnemonicParsing="false" onAction="#onEdit28" style="-fx-background-radius: 4;" stylesheets="@style.css" text="ویرایش" textFill="WHITE">
                            <font>
                               <Font size="14.0" />
                            </font>
+                           <styleClass>
+                              <String fx:value="mainpageElementsdarkgreen" />
+                              <String fx:value="zoom" />
+                              <String fx:value="radiusforcat" />
+                           </styleClass>
                         </Button>
                      </children>
                   </Pane>
-                  <Pane layoutY="1992.0" prefHeight="71.0" prefWidth="786.0">
+                  <Pane layoutY="1992.0" prefHeight="71.0" prefWidth="786.0" styleClass="lightergreen" stylesheets="@style.css">
                      <children>
                         <Label layoutX="701.0" layoutY="22.0" text="نام کتاب :">
                            <font>
@@ -1136,19 +1272,24 @@
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <TextField fx:id="quantity29" alignment="CENTER_RIGHT" editable="false" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" text="4">
+                        <TextField fx:id="quantity29" alignment="CENTER_RIGHT" editable="false" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" style="-fx-background-radius: 4;" stylesheets="@style.css" text="4">
                            <font>
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <Button fx:id="onEdit29" layoutX="40.0" layoutY="22.0" mnemonicParsing="false" onAction="#onEdit29" text="ویرایش">
+                        <Button fx:id="onEdit29" layoutX="40.0" layoutY="22.0" mnemonicParsing="false" onAction="#onEdit29" style="-fx-background-radius: 4;" stylesheets="@style.css" text="ویرایش" textFill="WHITE">
                            <font>
                               <Font size="14.0" />
                            </font>
+                           <styleClass>
+                              <String fx:value="mainpageElementsdarkgreen" />
+                              <String fx:value="zoom" />
+                              <String fx:value="radiusforcat" />
+                           </styleClass>
                         </Button>
                      </children>
                   </Pane>
-                  <Pane layoutX="-1.0" layoutY="2066.0" prefHeight="71.0" prefWidth="786.0">
+                  <Pane layoutX="-1.0" layoutY="2066.0" prefHeight="71.0" prefWidth="786.0" styleClass="pastelgreen" stylesheets="@style.css">
                      <children>
                         <Label layoutX="701.0" layoutY="22.0" text="نام کتاب :">
                            <font>
@@ -1175,19 +1316,24 @@
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <TextField fx:id="quantity30" alignment="CENTER_RIGHT" editable="false" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" text="3">
+                        <TextField fx:id="quantity30" alignment="CENTER_RIGHT" editable="false" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" style="-fx-background-radius: 4;" stylesheets="@style.css" text="3">
                            <font>
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <Button fx:id="onEdit30" layoutX="40.0" layoutY="22.0" mnemonicParsing="false" onAction="#onEdit30" text="ویرایش">
+                        <Button fx:id="onEdit30" layoutX="40.0" layoutY="22.0" mnemonicParsing="false" onAction="#onEdit30" style="-fx-background-radius: 4;" stylesheets="@style.css" text="ویرایش" textFill="WHITE">
                            <font>
                               <Font size="14.0" />
                            </font>
+                           <styleClass>
+                              <String fx:value="mainpageElementsdarkgreen" />
+                              <String fx:value="zoom" />
+                              <String fx:value="radiusforcat" />
+                           </styleClass>
                         </Button>
                      </children>
                   </Pane>
-                  <Pane layoutX="-1.0" layoutY="2137.0" prefHeight="71.0" prefWidth="786.0">
+                  <Pane layoutX="-1.0" layoutY="2137.0" prefHeight="71.0" prefWidth="786.0" styleClass="lightergreen" stylesheets="@style.css">
                      <children>
                         <Label layoutX="701.0" layoutY="22.0" text="نام کتاب :">
                            <font>
@@ -1214,19 +1360,24 @@
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <TextField fx:id="quantity31" alignment="CENTER_RIGHT" editable="false" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" text="4">
+                        <TextField fx:id="quantity31" alignment="CENTER_RIGHT" editable="false" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" style="-fx-background-radius: 4;" stylesheets="@style.css" text="4">
                            <font>
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <Button fx:id="onEdit31" layoutX="40.0" layoutY="22.0" mnemonicParsing="false" onAction="#onEdit31" text="ویرایش">
+                        <Button fx:id="onEdit31" layoutX="40.0" layoutY="22.0" mnemonicParsing="false" onAction="#onEdit31" style="-fx-background-radius: 4;" stylesheets="@style.css" text="ویرایش" textFill="WHITE">
                            <font>
                               <Font size="14.0" />
                            </font>
+                           <styleClass>
+                              <String fx:value="mainpageElementsdarkgreen" />
+                              <String fx:value="zoom" />
+                              <String fx:value="radiusforcat" />
+                           </styleClass>
                         </Button>
                      </children>
                   </Pane>
-                  <Pane layoutX="-1.0" layoutY="2203.0" prefHeight="71.0" prefWidth="786.0">
+                  <Pane layoutX="-1.0" layoutY="2203.0" prefHeight="71.0" prefWidth="786.0" styleClass="pastelgreen" stylesheets="@style.css">
                      <children>
                         <Label layoutX="701.0" layoutY="22.0" text="نام کتاب :">
                            <font>
@@ -1253,19 +1404,24 @@
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <TextField fx:id="quantity32" alignment="CENTER_RIGHT" editable="false" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" text="6">
+                        <TextField fx:id="quantity32" alignment="CENTER_RIGHT" editable="false" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" style="-fx-background-radius: 4;" stylesheets="@style.css" text="6">
                            <font>
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <Button fx:id="onEdit32" layoutX="40.0" layoutY="22.0" mnemonicParsing="false" onAction="#onEdit32" text="ویرایش">
+                        <Button fx:id="onEdit32" layoutX="40.0" layoutY="22.0" mnemonicParsing="false" onAction="#onEdit32" style="-fx-background-radius: 4;" stylesheets="@style.css" text="ویرایش" textFill="WHITE">
                            <font>
                               <Font size="14.0" />
                            </font>
+                           <styleClass>
+                              <String fx:value="mainpageElementsdarkgreen" />
+                              <String fx:value="zoom" />
+                              <String fx:value="radiusforcat" />
+                           </styleClass>
                         </Button>
                      </children>
                   </Pane>
-                  <Pane layoutX="-1.0" layoutY="2274.0" prefHeight="71.0" prefWidth="786.0">
+                  <Pane layoutX="-1.0" layoutY="2274.0" prefHeight="71.0" prefWidth="786.0" styleClass="lightergreen" stylesheets="@style.css">
                      <children>
                         <Label layoutX="701.0" layoutY="22.0" text="نام کتاب :">
                            <font>
@@ -1292,19 +1448,24 @@
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <TextField fx:id="quantity33" alignment="CENTER_RIGHT" editable="false" layoutX="414.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" text="5">
+                        <TextField fx:id="quantity33" alignment="CENTER_RIGHT" editable="false" layoutX="414.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" style="-fx-background-radius: 4;" stylesheets="@style.css" text="5">
                            <font>
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <Button fx:id="onEdit33" layoutX="40.0" layoutY="22.0" mnemonicParsing="false" onAction="#onEdit33" text="ویرایش">
+                        <Button fx:id="onEdit33" layoutX="40.0" layoutY="22.0" mnemonicParsing="false" onAction="#onEdit33" style="-fx-background-radius: 4;" stylesheets="@style.css" text="ویرایش" textFill="WHITE">
                            <font>
                               <Font size="14.0" />
                            </font>
+                           <styleClass>
+                              <String fx:value="mainpageElementsdarkgreen" />
+                              <String fx:value="zoom" />
+                              <String fx:value="radiusforcat" />
+                           </styleClass>
                         </Button>
                      </children>
                   </Pane>
-                  <Pane layoutX="-1.0" layoutY="2345.0" prefHeight="71.0" prefWidth="786.0">
+                  <Pane layoutX="-1.0" layoutY="2345.0" prefHeight="71.0" prefWidth="786.0" styleClass="pastelgreen" stylesheets="@style.css">
                      <children>
                         <Label layoutX="701.0" layoutY="22.0" text="نام کتاب :">
                            <font>
@@ -1331,19 +1492,24 @@
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <TextField fx:id="quantity34" alignment="CENTER_RIGHT" editable="false" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" text="7">
+                        <TextField fx:id="quantity34" alignment="CENTER_RIGHT" editable="false" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" style="-fx-background-radius: 4;" stylesheets="@style.css" text="7">
                            <font>
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <Button fx:id="onEdit34" layoutX="40.0" layoutY="22.0" mnemonicParsing="false" onAction="#onEdit34" text="ویرایش">
+                        <Button fx:id="onEdit34" layoutX="40.0" layoutY="22.0" mnemonicParsing="false" onAction="#onEdit34" style="-fx-background-radius: 4;" stylesheets="@style.css" text="ویرایش" textFill="WHITE">
                            <font>
                               <Font size="14.0" />
                            </font>
+                           <styleClass>
+                              <String fx:value="mainpageElementsdarkgreen" />
+                              <String fx:value="zoom" />
+                              <String fx:value="radiusforcat" />
+                           </styleClass>
                         </Button>
                      </children>
                   </Pane>
-                  <Pane layoutY="2416.0" prefHeight="71.0" prefWidth="786.0">
+                  <Pane layoutY="2416.0" prefHeight="71.0" prefWidth="786.0" styleClass="lightergreen" stylesheets="@style.css">
                      <children>
                         <Label layoutX="701.0" layoutY="22.0" text="نام کتاب :">
                            <font>
@@ -1370,19 +1536,24 @@
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <TextField fx:id="quantity35" alignment="CENTER_RIGHT" editable="false" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" text="4">
+                        <TextField fx:id="quantity35" alignment="CENTER_RIGHT" editable="false" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" style="-fx-background-radius: 4;" stylesheets="@style.css" text="4">
                            <font>
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <Button fx:id="onEdit35" layoutX="40.0" layoutY="22.0" mnemonicParsing="false" onAction="#onEdit35" text="ویرایش">
+                        <Button fx:id="onEdit35" layoutX="40.0" layoutY="22.0" mnemonicParsing="false" onAction="#onEdit35" style="-fx-background-radius: 4;" stylesheets="@style.css" text="ویرایش" textFill="WHITE">
                            <font>
                               <Font size="14.0" />
                            </font>
+                           <styleClass>
+                              <String fx:value="mainpageElementsdarkgreen" />
+                              <String fx:value="zoom" />
+                              <String fx:value="radiusforcat" />
+                           </styleClass>
                         </Button>
                      </children>
                   </Pane>
-                  <Pane layoutX="-1.0" layoutY="2487.0" prefHeight="71.0" prefWidth="786.0">
+                  <Pane layoutX="-1.0" layoutY="2487.0" prefHeight="71.0" prefWidth="786.0" styleClass="pastelgreen" stylesheets="@style.css">
                      <children>
                         <Label layoutX="701.0" layoutY="22.0" text="نام کتاب :">
                            <font>
@@ -1409,19 +1580,24 @@
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <TextField fx:id="quantity36" alignment="CENTER_RIGHT" editable="false" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" text="5">
+                        <TextField fx:id="quantity36" alignment="CENTER_RIGHT" editable="false" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" style="-fx-background-radius: 4;" stylesheets="@style.css" text="5">
                            <font>
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <Button fx:id="onEdit36" layoutX="40.0" layoutY="22.0" mnemonicParsing="false" onAction="#onEdit36" text="ویرایش">
+                        <Button fx:id="onEdit36" layoutX="40.0" layoutY="22.0" mnemonicParsing="false" onAction="#onEdit36" style="-fx-background-radius: 4;" stylesheets="@style.css" text="ویرایش" textFill="WHITE">
                            <font>
                               <Font size="14.0" />
                            </font>
+                           <styleClass>
+                              <String fx:value="mainpageElementsdarkgreen" />
+                              <String fx:value="zoom" />
+                              <String fx:value="radiusforcat" />
+                           </styleClass>
                         </Button>
                      </children>
                   </Pane>
-                  <Pane layoutX="-1.0" layoutY="2558.0" prefHeight="71.0" prefWidth="786.0">
+                  <Pane layoutX="-1.0" layoutY="2558.0" prefHeight="71.0" prefWidth="786.0" styleClass="lightergreen" stylesheets="@style.css">
                      <children>
                         <Label layoutX="701.0" layoutY="22.0" text="نام کتاب :">
                            <font>
@@ -1448,19 +1624,24 @@
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <TextField fx:id="quantity37" alignment="CENTER_RIGHT" editable="false" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" text="6">
+                        <TextField fx:id="quantity37" alignment="CENTER_RIGHT" editable="false" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" style="-fx-background-radius: 4;" stylesheets="@style.css" text="6">
                            <font>
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <Button fx:id="onEdit37" layoutX="40.0" layoutY="22.0" mnemonicParsing="false" onAction="#onEdit37" text="ویرایش">
+                        <Button fx:id="onEdit37" layoutX="40.0" layoutY="22.0" mnemonicParsing="false" onAction="#onEdit37" style="-fx-background-radius: 4;" stylesheets="@style.css" text="ویرایش" textFill="WHITE">
                            <font>
                               <Font size="14.0" />
                            </font>
+                           <styleClass>
+                              <String fx:value="mainpageElementsdarkgreen" />
+                              <String fx:value="zoom" />
+                              <String fx:value="radiusforcat" />
+                           </styleClass>
                         </Button>
                      </children>
                   </Pane>
-                  <Pane layoutX="-1.0" layoutY="2629.0" prefHeight="71.0" prefWidth="786.0">
+                  <Pane layoutX="-1.0" layoutY="2629.0" prefHeight="71.0" prefWidth="786.0" styleClass="pastelgreen" stylesheets="@style.css">
                      <children>
                         <Label layoutX="701.0" layoutY="22.0" text="نام کتاب :">
                            <font>
@@ -1487,19 +1668,24 @@
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <TextField fx:id="quantity38" alignment="CENTER_RIGHT" editable="false" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" text="7">
+                        <TextField fx:id="quantity38" alignment="CENTER_RIGHT" editable="false" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" style="-fx-background-radius: 4;" stylesheets="@style.css" text="7">
                            <font>
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <Button fx:id="onEdit38" layoutX="40.0" layoutY="22.0" mnemonicParsing="false" onAction="#onEdit38" text="ویرایش">
+                        <Button fx:id="onEdit38" layoutX="40.0" layoutY="22.0" mnemonicParsing="false" onAction="#onEdit38" style="-fx-background-radius: 4;" stylesheets="@style.css" text="ویرایش" textFill="WHITE">
                            <font>
                               <Font size="14.0" />
                            </font>
+                           <styleClass>
+                              <String fx:value="mainpageElementsdarkgreen" />
+                              <String fx:value="zoom" />
+                              <String fx:value="radiusforcat" />
+                           </styleClass>
                         </Button>
                      </children>
                   </Pane>
-                  <Pane layoutX="-1.0" layoutY="2692.0" prefHeight="71.0" prefWidth="786.0">
+                  <Pane layoutX="-1.0" layoutY="2692.0" prefHeight="71.0" prefWidth="786.0" styleClass="lightergreen" stylesheets="@style.css">
                      <children>
                         <Label layoutX="701.0" layoutY="22.0" text="نام کتاب :">
                            <font>
@@ -1526,19 +1712,24 @@
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <TextField fx:id="quantity39" alignment="CENTER_RIGHT" editable="false" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" text="8">
+                        <TextField fx:id="quantity39" alignment="CENTER_RIGHT" editable="false" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" style="-fx-background-radius: 4;" stylesheets="@style.css" text="8">
                            <font>
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <Button fx:id="onEdit39" layoutX="40.0" layoutY="22.0" mnemonicParsing="false" onAction="#onEdit39" text="ویرایش">
+                        <Button fx:id="onEdit39" layoutX="40.0" layoutY="22.0" mnemonicParsing="false" onAction="#onEdit39" style="-fx-background-radius: 4;" stylesheets="@style.css" text="ویرایش" textFill="WHITE">
                            <font>
                               <Font size="14.0" />
                            </font>
+                           <styleClass>
+                              <String fx:value="mainpageElementsdarkgreen" />
+                              <String fx:value="zoom" />
+                              <String fx:value="radiusforcat" />
+                           </styleClass>
                         </Button>
                      </children>
                   </Pane>
-                  <Pane layoutX="-1.0" layoutY="2763.0" prefHeight="71.0" prefWidth="786.0">
+                  <Pane layoutX="-1.0" layoutY="2763.0" prefHeight="71.0" prefWidth="786.0" styleClass="pastelgreen" stylesheets="@style.css">
                      <children>
                         <Label layoutX="701.0" layoutY="22.0" text="نام کتاب :">
                            <font>
@@ -1565,19 +1756,24 @@
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <TextField fx:id="quantity40" alignment="CENTER_RIGHT" editable="false" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" text="5">
+                        <TextField fx:id="quantity40" alignment="CENTER_RIGHT" editable="false" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" style="-fx-background-radius: 4;" stylesheets="@style.css" text="5">
                            <font>
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <Button fx:id="onEdit40" layoutX="40.0" layoutY="22.0" mnemonicParsing="false" onAction="#onEdit40" text="ویرایش">
+                        <Button fx:id="onEdit40" layoutX="40.0" layoutY="22.0" mnemonicParsing="false" onAction="#onEdit40" style="-fx-background-radius: 4;" stylesheets="@style.css" text="ویرایش" textFill="WHITE">
                            <font>
                               <Font size="14.0" />
                            </font>
+                           <styleClass>
+                              <String fx:value="mainpageElementsdarkgreen" />
+                              <String fx:value="zoom" />
+                              <String fx:value="radiusforcat" />
+                           </styleClass>
                         </Button>
                      </children>
                   </Pane>
-                  <Pane layoutX="-1.0" layoutY="2834.0" prefHeight="71.0" prefWidth="786.0">
+                  <Pane layoutX="-1.0" layoutY="2834.0" prefHeight="71.0" prefWidth="786.0" styleClass="lightergreen" stylesheets="@style.css">
                      <children>
                         <Label layoutX="701.0" layoutY="22.0" text="نام کتاب :">
                            <font>
@@ -1604,19 +1800,24 @@
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <TextField fx:id="quantity41" alignment="CENTER_RIGHT" editable="false" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" text="3">
+                        <TextField fx:id="quantity41" alignment="CENTER_RIGHT" editable="false" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" style="-fx-background-radius: 4;" stylesheets="@style.css" text="3">
                            <font>
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <Button fx:id="onEdit41" layoutX="40.0" layoutY="22.0" mnemonicParsing="false" onAction="#onEdit41" text="ویرایش">
+                        <Button fx:id="onEdit41" layoutX="40.0" layoutY="22.0" mnemonicParsing="false" onAction="#onEdit41" style="-fx-background-radius: 4;" stylesheets="@style.css" text="ویرایش" textFill="WHITE">
                            <font>
                               <Font size="14.0" />
                            </font>
+                           <styleClass>
+                              <String fx:value="mainpageElementsdarkgreen" />
+                              <String fx:value="zoom" />
+                              <String fx:value="radiusforcat" />
+                           </styleClass>
                         </Button>
                      </children>
                   </Pane>
-                  <Pane layoutX="-1.0" layoutY="2905.0" prefHeight="71.0" prefWidth="786.0">
+                  <Pane layoutX="-1.0" layoutY="2905.0" prefHeight="71.0" prefWidth="786.0" styleClass="pastelgreen" stylesheets="@style.css">
                      <children>
                         <Label layoutX="701.0" layoutY="22.0" text="نام کتاب :">
                            <font>
@@ -1643,19 +1844,24 @@
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <TextField fx:id="quantity42" alignment="CENTER_RIGHT" editable="false" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" text="5">
+                        <TextField fx:id="quantity42" alignment="CENTER_RIGHT" editable="false" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" style="-fx-background-radius: 4;" stylesheets="@style.css" text="5">
                            <font>
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <Button fx:id="onEdit42" layoutX="40.0" layoutY="22.0" mnemonicParsing="false" onAction="#onEdit42" text="ویرایش">
+                        <Button fx:id="onEdit42" layoutX="40.0" layoutY="22.0" mnemonicParsing="false" onAction="#onEdit42" style="-fx-background-radius: 4;" stylesheets="@style.css" text="ویرایش" textFill="WHITE">
                            <font>
                               <Font size="14.0" />
                            </font>
+                           <styleClass>
+                              <String fx:value="mainpageElementsdarkgreen" />
+                              <String fx:value="zoom" />
+                              <String fx:value="radiusforcat" />
+                           </styleClass>
                         </Button>
                      </children>
                   </Pane>
-                  <Pane layoutX="-1.0" layoutY="2976.0" prefHeight="71.0" prefWidth="786.0">
+                  <Pane layoutX="-1.0" layoutY="2976.0" prefHeight="71.0" prefWidth="786.0" styleClass="lightergreen" stylesheets="@style.css">
                      <children>
                         <Label layoutX="701.0" layoutY="22.0" text="نام کتاب :">
                            <font>
@@ -1682,19 +1888,24 @@
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <TextField fx:id="quantity43" alignment="CENTER_RIGHT" editable="false" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" text="6">
+                        <TextField fx:id="quantity43" alignment="CENTER_RIGHT" editable="false" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" style="-fx-background-radius: 4;" stylesheets="@style.css" text="6">
                            <font>
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <Button fx:id="onEdit43" layoutX="40.0" layoutY="22.0" mnemonicParsing="false" onAction="#onEdit43" text="ویرایش">
+                        <Button fx:id="onEdit43" layoutX="40.0" layoutY="22.0" mnemonicParsing="false" onAction="#onEdit43" style="-fx-background-radius: 4;" stylesheets="@style.css" text="ویرایش" textFill="WHITE">
                            <font>
                               <Font size="14.0" />
                            </font>
+                           <styleClass>
+                              <String fx:value="mainpageElementsdarkgreen" />
+                              <String fx:value="zoom" />
+                              <String fx:value="radiusforcat" />
+                           </styleClass>
                         </Button>
                      </children>
                   </Pane>
-                  <Pane fx:id="quantity44" layoutX="-1.0" layoutY="3047.0" prefHeight="71.0" prefWidth="786.0">
+                  <Pane fx:id="quantity44" layoutX="-1.0" layoutY="3047.0" prefHeight="71.0" prefWidth="786.0" styleClass="pastelgreen" stylesheets="@style.css">
                      <children>
                         <Label layoutX="701.0" layoutY="22.0" text="نام کتاب :">
                            <font>
@@ -1721,19 +1932,24 @@
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <TextField alignment="CENTER_RIGHT" editable="false" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" text="4">
+                        <TextField alignment="CENTER_RIGHT" editable="false" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" style="-fx-background-radius: 4;" stylesheets="@style.css" text="4">
                            <font>
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <Button fx:id="onEdit44" layoutX="40.0" layoutY="22.0" mnemonicParsing="false" onAction="#onEdit44" text="ویرایش">
+                        <Button fx:id="onEdit44" layoutX="40.0" layoutY="22.0" mnemonicParsing="false" onAction="#onEdit44" style="-fx-background-radius: 4;" stylesheets="@style.css" text="ویرایش" textFill="WHITE">
                            <font>
                               <Font size="14.0" />
                            </font>
+                           <styleClass>
+                              <String fx:value="mainpageElementsdarkgreen" />
+                              <String fx:value="zoom" />
+                              <String fx:value="radiusforcat" />
+                           </styleClass>
                         </Button>
                      </children>
                   </Pane>
-                  <Pane layoutX="-1.0" layoutY="3118.0" prefHeight="71.0" prefWidth="786.0">
+                  <Pane layoutX="-1.0" layoutY="3118.0" prefHeight="71.0" prefWidth="786.0" styleClass="lightergreen" stylesheets="@style.css">
                      <children>
                         <Label layoutX="701.0" layoutY="22.0" text="نام کتاب :">
                            <font>
@@ -1760,19 +1976,24 @@
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <TextField fx:id="quantity45" alignment="CENTER_RIGHT" editable="false" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" text="5">
+                        <TextField fx:id="quantity45" alignment="CENTER_RIGHT" editable="false" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" style="-fx-background-radius: 4;" stylesheets="@style.css" text="5">
                            <font>
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <Button fx:id="onEdit45" layoutX="40.0" layoutY="22.0" mnemonicParsing="false" onAction="#onEdit45" text="ویرایش">
+                        <Button fx:id="onEdit45" layoutX="40.0" layoutY="22.0" mnemonicParsing="false" onAction="#onEdit45" style="-fx-background-radius: 4;" stylesheets="@style.css" text="ویرایش" textFill="WHITE">
                            <font>
                               <Font size="14.0" />
                            </font>
+                           <styleClass>
+                              <String fx:value="mainpageElementsdarkgreen" />
+                              <String fx:value="zoom" />
+                              <String fx:value="radiusforcat" />
+                           </styleClass>
                         </Button>
                      </children>
                   </Pane>
-                  <Pane layoutX="-1.0" layoutY="3189.0" prefHeight="71.0" prefWidth="786.0">
+                  <Pane layoutX="-1.0" layoutY="3189.0" prefHeight="71.0" prefWidth="786.0" styleClass="pastelgreen" stylesheets="@style.css">
                      <children>
                         <Label layoutX="701.0" layoutY="22.0" text="نام کتاب :">
                            <font>
@@ -1799,19 +2020,24 @@
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <TextField fx:id="quantity46" alignment="CENTER_RIGHT" editable="false" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" text="5">
+                        <TextField fx:id="quantity46" alignment="CENTER_RIGHT" editable="false" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" style="-fx-background-radius: 4;" stylesheets="@style.css" text="5">
                            <font>
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <Button fx:id="onEdit46" layoutX="40.0" layoutY="22.0" mnemonicParsing="false" onAction="#onEdit46" text="ویرایش">
+                        <Button fx:id="onEdit46" layoutX="40.0" layoutY="22.0" mnemonicParsing="false" onAction="#onEdit46" style="-fx-background-radius: 4;" stylesheets="@style.css" text="ویرایش" textFill="WHITE">
                            <font>
                               <Font size="14.0" />
                            </font>
+                           <styleClass>
+                              <String fx:value="mainpageElementsdarkgreen" />
+                              <String fx:value="zoom" />
+                              <String fx:value="radiusforcat" />
+                           </styleClass>
                         </Button>
                      </children>
                   </Pane>
-                  <Pane layoutX="-1.0" layoutY="3260.0" prefHeight="71.0" prefWidth="786.0">
+                  <Pane layoutX="-1.0" layoutY="3260.0" prefHeight="71.0" prefWidth="786.0" styleClass="lightergreen" stylesheets="@style.css">
                      <children>
                         <Label layoutX="701.0" layoutY="22.0" text="نام کتاب :">
                            <font>
@@ -1838,19 +2064,24 @@
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <TextField fx:id="quantity47" alignment="CENTER_RIGHT" editable="false" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" text="3">
+                        <TextField fx:id="quantity47" alignment="CENTER_RIGHT" editable="false" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" style="-fx-background-radius: 4;" stylesheets="@style.css" text="3">
                            <font>
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <Button fx:id="onEdit47" layoutX="40.0" layoutY="22.0" mnemonicParsing="false" onAction="#onEdit47" text="ویرایش">
+                        <Button fx:id="onEdit47" layoutX="40.0" layoutY="22.0" mnemonicParsing="false" onAction="#onEdit47" style="-fx-background-radius: 4;" stylesheets="@style.css" text="ویرایش" textFill="WHITE">
                            <font>
                               <Font size="14.0" />
                            </font>
+                           <styleClass>
+                              <String fx:value="mainpageElementsdarkgreen" />
+                              <String fx:value="zoom" />
+                              <String fx:value="radiusforcat" />
+                           </styleClass>
                         </Button>
                      </children>
                   </Pane>
-                  <Pane layoutX="-1.0" layoutY="3324.0" prefHeight="71.0" prefWidth="786.0">
+                  <Pane layoutX="-1.0" layoutY="3324.0" prefHeight="71.0" prefWidth="786.0" styleClass="pastelgreen" stylesheets="@style.css">
                      <children>
                         <Label layoutX="701.0" layoutY="22.0" text="نام کتاب :">
                            <font>
@@ -1877,24 +2108,29 @@
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <TextField fx:id="quantity48" alignment="CENTER_RIGHT" editable="false" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" text="4">
+                        <TextField fx:id="quantity48" alignment="CENTER_RIGHT" editable="false" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" style="-fx-background-radius: 4;" stylesheets="@style.css" text="4">
                            <font>
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <Button fx:id="onEdit48" layoutX="40.0" layoutY="22.0" mnemonicParsing="false" onAction="#onEdit48" text="ویرایش">
+                        <Button fx:id="onEdit48" layoutX="40.0" layoutY="22.0" mnemonicParsing="false" onAction="#onEdit48" style="-fx-background-radius: 4;" stylesheets="@style.css" text="ویرایش" textFill="WHITE">
                            <font>
                               <Font size="14.0" />
                            </font>
+                           <styleClass>
+                              <String fx:value="mainpageElementsdarkgreen" />
+                              <String fx:value="zoom" />
+                              <String fx:value="radiusforcat" />
+                           </styleClass>
                         </Button>
                      </children>
                   </Pane>
                </children></AnchorPane>
         </content>
       </ScrollPane>
-      <Pane layoutX="-1.0" layoutY="-1.0" prefHeight="130.0" prefWidth="900.0">
+      <Pane layoutX="-1.0" layoutY="-1.0" prefHeight="130.0" prefWidth="900.0" styleClass="lightgreen" stylesheets="@style.css">
          <children>
-            <ImageView fx:id="logobtn" fitHeight="100.0" fitWidth="100.0" layoutX="790.0" layoutY="11.0" onMouseClicked="#onLogoClicked" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="logobtn" fitHeight="100.0" fitWidth="100.0" layoutX="790.0" layoutY="11.0" onMouseClicked="#onLogoClicked" pickOnBounds="true" preserveRatio="true" styleClass="zoom">
                <image>
                   <Image url="@jhjhj.png" />
                </image>
@@ -1904,17 +2140,23 @@
                   <Font name="System Bold Italic" size="28.0" />
                </font>
             </Text>
-            <ImageView fx:id="backbtn" fitHeight="30.0" fitWidth="30.0" layoutX="14.0" layoutY="14.0" onMouseClicked="#onBackClicked" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="backbtn" fitHeight="30.0" fitWidth="30.0" layoutX="14.0" layoutY="14.0" onMouseClicked="#onBackClicked" pickOnBounds="true" preserveRatio="true" styleClass="zoom">
                <image>
                   <Image url="@120.png" />
                </image>
             </ImageView>
          </children>
       </Pane>
-      <Button fx:id="onChangeSavebtn" layoutX="402.0" layoutY="539.0" mnemonicParsing="false" onAction="#onChangeSavebtn" prefHeight="40.0" prefWidth="94.0" text="ذخیره">
+      <Button fx:id="onChangeSavebtn" layoutX="402.0" layoutY="539.0" mnemonicParsing="false" onAction="#onChangeSavebtn" prefHeight="40.0" prefWidth="94.0" stylesheets="@style.css" text="ذخیره" textFill="WHITE">
          <font>
             <Font size="20.0" />
          </font>
+         <styleClass>
+            <String fx:value="zoom" />
+            <String fx:value="mainpageElementsdarkgreen" />
+            <String fx:value="navbarbuttonshover" />
+            <String fx:value="radiusforcat" />
+         </styleClass>
       </Button>
    </children>
 </AnchorPane>
