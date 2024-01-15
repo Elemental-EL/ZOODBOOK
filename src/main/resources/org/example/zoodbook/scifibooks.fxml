@@ -9,6 +9,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.zoodbook.scifibooksController">
     <children>
@@ -104,410 +105,474 @@
                         </Pane>
                         <Pane layoutX="74.0" layoutY="210.0" prefHeight="227.0" prefWidth="1096.0">
                             <children>
-                                <ImageView fitHeight="150.0" fitWidth="115.0" layoutX="965.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true" />
+                                <ImageView fitHeight="141.0" fitWidth="143.0" layoutX="952.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@photo_2024-01-15_10-40-43.jpg" />
+                           </image></ImageView>
                                 <Button fx:id="add1" layoutX="966.0" layoutY="174.0" mnemonicParsing="false" onAction="#onAdd1" text="افزودن به سبد خرید" />
                                 <Label alignment="CENTER_RIGHT" layoutX="897.0" layoutY="16.0" text="نام کتاب :" textAlignment="RIGHT">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="15.0" />
                                     </font>
                                 </Label>
                                 <Label alignment="CENTER_RIGHT" layoutX="878.0" layoutY="44.0" text="نام نویسنده :" textAlignment="RIGHT">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="15.0" />
                                     </font>
                                 </Label>
                                 <Label alignment="CENTER_RIGHT" layoutX="897.0" layoutY="71.0" text="انتشارات :" textAlignment="RIGHT">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="15.0" />
                                     </font>
                                 </Label>
                                 <Label alignment="CENTER_RIGHT" layoutX="913.0" layoutY="99.0" text="قیمت :" textAlignment="RIGHT">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="15.0" />
                                     </font>
                                 </Label>
                                 <Label alignment="CENTER_RIGHT" layoutX="891.0" layoutY="127.0" text="توضیحات :" textAlignment="RIGHT">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="15.0" />
                                     </font>
                                 </Label>
-                                <Label layoutX="830.0" layoutY="16.0" text="Label">
+                                <Label layoutX="810.0" layoutY="17.0" text="جدال با طوفان">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="14.0" />
                                     </font>
                                 </Label>
-                                <Label layoutX="830.0" layoutY="44.0" text="Label">
+                                <Label layoutX="823.0" layoutY="46.0" text="جیم بوچر">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="14.0" />
                                     </font>
                                 </Label>
-                                <Label layoutX="830.0" layoutY="71.0" text="Label">
+                                <Label layoutX="859.0" layoutY="72.0" text="آذرباد">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="14.0" />
                                     </font>
                                 </Label>
-                                <Label fx:id="price1" layoutX="830.0" layoutY="99.0" text="Label">
+                                <Label fx:id="price1" layoutX="824.0" layoutY="100.0" text="120000 تومان">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="14.0" />
                                     </font>
                                 </Label>
+                        <Text layoutX="8.0" layoutY="144.0" strokeType="OUTSIDE" strokeWidth="0.0" text="“هری درسدن در کاری که انجام می دهد بهترین است، در حقیقت، تنها کسی است که این کار را انجام می دهد. به همین دلیل زمانی که پلیس شیکاگو پرونده ای داشت که فراتر از توانایی و خلاقیت یک فانی بود، برای جواب نزد او آمدند. چرا که دنیای “روزمره” بی شک پر از چیزهایی عجیب و جادویی است – و بیشترشان چندان با بشر خوب کنار نمی آیند. در این موقعیت هری وارد عمل می شود. جادوگری را استخدام کنید تا برایتان هر چیزی بگیرد.&quot;" textAlignment="RIGHT" wrappingWidth="880.0">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Text>
                             </children>
                         </Pane>
                         <Pane layoutX="74.0" layoutY="446.0" prefHeight="227.0" prefWidth="1096.0">
                             <children>
-                                <ImageView fitHeight="150.0" fitWidth="115.0" layoutX="965.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true" />
+                                <ImageView fitHeight="152.0" fitWidth="154.0" layoutX="946.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@photo_2024-01-15_10-40-45.jpg" />
+                           </image></ImageView>
                                 <Button fx:id="add2" layoutX="966.0" layoutY="174.0" mnemonicParsing="false" onAction="#onAdd2" text="افزودن به سبد خرید" />
                                 <Label alignment="CENTER_RIGHT" layoutX="897.0" layoutY="16.0" text="نام کتاب :" textAlignment="RIGHT">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="15.0" />
                                     </font>
                                 </Label>
                                 <Label alignment="CENTER_RIGHT" layoutX="878.0" layoutY="44.0" text="نام نویسنده :" textAlignment="RIGHT">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="15.0" />
                                     </font>
                                 </Label>
                                 <Label alignment="CENTER_RIGHT" layoutX="897.0" layoutY="71.0" text="انتشارات :" textAlignment="RIGHT">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="15.0" />
                                     </font>
                                 </Label>
                                 <Label alignment="CENTER_RIGHT" layoutX="913.0" layoutY="99.0" text="قیمت :" textAlignment="RIGHT">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="15.0" />
                                     </font>
                                 </Label>
                                 <Label alignment="CENTER_RIGHT" layoutX="891.0" layoutY="127.0" text="توضیحات :" textAlignment="RIGHT">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="15.0" />
                                     </font>
                                 </Label>
-                                <Label layoutX="830.0" layoutY="16.0" text="Label">
+                                <Label layoutX="824.0" layoutY="18.0" text="پیمان برادری">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="14.0" />
                                     </font>
                                 </Label>
-                                <Label layoutX="830.0" layoutY="44.0" text="Label">
+                                <Label layoutX="812.0" layoutY="46.0" text="الیور باودن">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="14.0" />
                                     </font>
                                 </Label>
-                                <Label layoutX="830.0" layoutY="71.0" text="Label">
+                                <Label layoutX="860.0" layoutY="72.0" text="آذرباد">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="14.0" />
                                     </font>
                                 </Label>
-                                <Label fx:id="price2" layoutX="830.0" layoutY="99.0" text="Label">
+                                <Label fx:id="price2" layoutX="833.0" layoutY="100.0" text="80000 تومان">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="14.0" />
                                     </font>
                                 </Label>
+                        <Text layoutX="8.0" layoutY="143.0" strokeType="OUTSIDE" strokeWidth="0.0" text="اما آن صدا هنوز در ذهن اتزیو می‌پیچید. نیرویی نامرئی و غریب او را به بازگشت به درون کلیسا فرا می‌خواند. حس کرد کاری را آنجا ناتمام گذاشته است.رودریگو نه... فقط رودریگو نبود... چیزی مهم‌تر را فراموش کرده بود. گرچه حالا که برمی‌گشت، فرصت تمام کردن کار او را نیز داشت.ماریو پرسید: «چی شده اتریو؟»" textAlignment="RIGHT" wrappingWidth="880.0">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Text>
                             </children>
                         </Pane>
                         <Pane layoutX="74.0" layoutY="691.0" prefHeight="227.0" prefWidth="1096.0">
                             <children>
-                                <ImageView fitHeight="150.0" fitWidth="115.0" layoutX="965.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true" />
+                                <ImageView fitHeight="153.0" fitWidth="149.0" layoutX="948.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@photo_2024-01-15_10-40-49.jpg" />
+                           </image></ImageView>
                                 <Button fx:id="add3" layoutX="966.0" layoutY="174.0" mnemonicParsing="false" onAction="#onAdd3" text="افزودن به سبد خرید" />
                                 <Label alignment="CENTER_RIGHT" layoutX="897.0" layoutY="16.0" text="نام کتاب :" textAlignment="RIGHT">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="15.0" />
                                     </font>
                                 </Label>
                                 <Label alignment="CENTER_RIGHT" layoutX="878.0" layoutY="44.0" text="نام نویسنده :" textAlignment="RIGHT">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="15.0" />
                                     </font>
                                 </Label>
                                 <Label alignment="CENTER_RIGHT" layoutX="897.0" layoutY="71.0" text="انتشارات :" textAlignment="RIGHT">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="15.0" />
                                     </font>
                                 </Label>
                                 <Label alignment="CENTER_RIGHT" layoutX="913.0" layoutY="99.0" text="قیمت :" textAlignment="RIGHT">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="15.0" />
                                     </font>
                                 </Label>
                                 <Label alignment="CENTER_RIGHT" layoutX="891.0" layoutY="127.0" text="توضیحات :" textAlignment="RIGHT">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="15.0" />
                                     </font>
                                 </Label>
-                                <Label layoutX="830.0" layoutY="16.0" text="Label">
+                                <Label layoutX="852.0" layoutY="17.0" text="بی روح">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="14.0" />
                                     </font>
                                 </Label>
-                                <Label layoutX="830.0" layoutY="44.0" text="Label">
+                                <Label layoutX="786.0" layoutY="45.0" text="نیل شو بسترمن">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="14.0" />
                                     </font>
                                 </Label>
-                                <Label layoutX="830.0" layoutY="71.0" text="Label">
+                                <Label layoutX="861.0" layoutY="73.0" text="آذرباد">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="14.0" />
                                     </font>
                                 </Label>
-                                <Label fx:id="price3" layoutX="830.0" layoutY="99.0" text="Label">
+                                <Label fx:id="price3" layoutX="823.0" layoutY="100.0" text="130000 تومان">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="14.0" />
                                     </font>
                                 </Label>
+                        <Text layoutX="-5.0" layoutY="144.0" strokeType="OUTSIDE" strokeWidth="0.0" text="کتاب «بی روح» رمانی نوشته ی «نیل شوسترمن» است که اولین بار در سال 2013 چاپ شد. «لو» و «کانر» دوباره در راه هستند. مقصد آن ها به «اوهایو» تغییر کرده، جایی که عتیقه فروشی به نام «سونیا» با گذشته ای اسرارآمیز، به آن ها کمک خواهد کرد تا «گسستگی» را برای همیشه از بین ببرند. با این حال، آن ها پس از یک سانحه ی رانندگی عجیب، به منطقه ای متعلق به بومی های آمریکا می رسند. اطلاعات زیادی در مورد گذشته ی «لو» در این قسمت ارائه می شود، و «کانر» نیز با شخصیتی منحصر به فرد به نام «کم» دیدار می کند. تعداد زیادی از کاراکترها در کتاب های قبلی این مجموعه، دوباره مورد توجه قرار می گیرند و یک بار دیگر، جهانی هیجان انگیز را می آفرینند که مخاطبین را وادار می کند به پیشروی در داستان ادامه دهند." textAlignment="RIGHT" wrappingWidth="896.0">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Text>
                             </children>
                         </Pane>
                         <Pane layoutX="74.0" layoutY="925.0" prefHeight="227.0" prefWidth="1096.0">
                             <children>
-                                <ImageView fitHeight="150.0" fitWidth="115.0" layoutX="965.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true" />
+                                <ImageView fitHeight="151.0" fitWidth="151.0" layoutX="947.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@photo_2024-01-15_10-41-21.jpg" />
+                           </image></ImageView>
                                 <Button fx:id="add4" layoutX="966.0" layoutY="174.0" mnemonicParsing="false" onAction="#onAdd4" text="افزودن به سبد خرید" />
                                 <Label alignment="CENTER_RIGHT" layoutX="897.0" layoutY="16.0" text="نام کتاب :" textAlignment="RIGHT">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="15.0" />
                                     </font>
                                 </Label>
                                 <Label alignment="CENTER_RIGHT" layoutX="878.0" layoutY="44.0" text="نام نویسنده :" textAlignment="RIGHT">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="15.0" />
                                     </font>
                                 </Label>
                                 <Label alignment="CENTER_RIGHT" layoutX="897.0" layoutY="71.0" text="انتشارات :" textAlignment="RIGHT">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="15.0" />
                                     </font>
                                 </Label>
                                 <Label alignment="CENTER_RIGHT" layoutX="913.0" layoutY="99.0" text="قیمت :" textAlignment="RIGHT">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="15.0" />
                                     </font>
                                 </Label>
                                 <Label alignment="CENTER_RIGHT" layoutX="891.0" layoutY="127.0" text="توضیحات :" textAlignment="RIGHT">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="15.0" />
                                     </font>
                                 </Label>
-                                <Label layoutX="830.0" layoutY="16.0" text="Label">
+                                <Label layoutX="808.0" layoutY="17.0" text="به سوی آسمان">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="14.0" />
                                     </font>
                                 </Label>
-                                <Label layoutX="830.0" layoutY="44.0" text="Label">
+                                <Label layoutX="779.0" layoutY="45.0" text="برندون سلدرمون">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="14.0" />
                                     </font>
                                 </Label>
-                                <Label layoutX="830.0" layoutY="71.0" text="Label">
+                                <Label layoutX="859.0" layoutY="72.0" text="آذرباد">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="14.0" />
                                     </font>
                                 </Label>
-                                <Label fx:id="price4" layoutX="830.0" layoutY="99.0" text="Label">
+                                <Label fx:id="price4" layoutX="831.0" layoutY="100.0" text="67000 تومان">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="14.0" />
                                     </font>
                                 </Label>
+                        <Text layoutY="143.0" strokeType="OUTSIDE" strokeWidth="0.0" text="کتاب «به سوی آسمان» رمانی نوشته «برندون سندرسون» است که اولین بار در سال 2018 چاپ شد. در جهانی اسرارآمیز به نام «دتریتوس» که انسان ها در آن زیر سطح زمین زندگی می کنند، دختری شانزده ساله به نام «اسپنسا» باید وجهه خدشه دار شده پدر خلبانش را—پس از مطرح شدن شایعه ای درباره ترک مأموریت توسط پدرش—احیا کند. «اسپنسا» همیشه دوست داشته در مسیر پدرش قدم بگذارد و از خانه اش در مقابل یورش های ویرانگر نژادی از بیگانگان به نام «کرل» محافظت کند." textAlignment="RIGHT" wrappingWidth="890.0">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Text>
                             </children>
                         </Pane>
                         <Pane layoutX="74.0" layoutY="1164.0" prefHeight="227.0" prefWidth="1096.0">
                             <children>
-                                <ImageView fitHeight="150.0" fitWidth="115.0" layoutX="965.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true" />
+                                <ImageView fitHeight="177.0" fitWidth="149.0" layoutX="948.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@photo_2024-01-15_10-41-24.jpg" />
+                           </image></ImageView>
                                 <Button fx:id="add5" layoutX="966.0" layoutY="174.0" mnemonicParsing="false" onAction="#onAdd5" text="افزودن به سبد خرید" />
                                 <Label alignment="CENTER_RIGHT" layoutX="897.0" layoutY="16.0" text="نام کتاب :" textAlignment="RIGHT">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="15.0" />
                                     </font>
                                 </Label>
                                 <Label alignment="CENTER_RIGHT" layoutX="878.0" layoutY="44.0" text="نام نویسنده :" textAlignment="RIGHT">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="15.0" />
                                     </font>
                                 </Label>
                                 <Label alignment="CENTER_RIGHT" layoutX="897.0" layoutY="71.0" text="انتشارات :" textAlignment="RIGHT">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="15.0" />
                                     </font>
                                 </Label>
                                 <Label alignment="CENTER_RIGHT" layoutX="913.0" layoutY="99.0" text="قیمت :" textAlignment="RIGHT">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="15.0" />
                                     </font>
                                 </Label>
                                 <Label alignment="CENTER_RIGHT" layoutX="891.0" layoutY="127.0" text="توضیحات :" textAlignment="RIGHT">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="15.0" />
                                     </font>
                                 </Label>
-                                <Label layoutX="830.0" layoutY="16.0" text="Label">
+                                <Label layoutX="833.0" layoutY="17.0" text="ماورایی ها">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="14.0" />
                                     </font>
                                 </Label>
-                                <Label layoutX="830.0" layoutY="44.0" text="Label">
+                                <Label layoutX="805.0" layoutY="45.0" text="براندون مول">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="14.0" />
                                     </font>
                                 </Label>
-                                <Label layoutX="830.0" layoutY="71.0" text="Label">
+                                <Label layoutX="861.0" layoutY="72.0" text="آذرباد">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="14.0" />
                                     </font>
                                 </Label>
-                                <Label fx:id="price5" layoutX="830.0" layoutY="99.0" text="Label">
+                                <Label fx:id="price5" layoutX="831.0" layoutY="100.0" text="70000 تومان">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="14.0" />
                                     </font>
                                 </Label>
+                        <Text layoutX="-1.0" layoutY="143.0" strokeType="OUTSIDE" strokeWidth="0.0" text="شما در این کتاب می‌خوانید که فقط یک جسم نیستید که با نیازهای معمولی خوردن و خوابیدن به زندگی ادامه دهید، بلکه مجموعه‌ای از نیروهای شگفت‌انگیز هستید که می‌توانید سرنوشت خود را در جهتی که می‌خواهید حرکت دهید و مهمتر اینکه می‌‌توانید با نیروی درونی و کمک کائنات به سلامتی جسمی و روحی و آرامش برسید." textAlignment="RIGHT" wrappingWidth="890.0">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Text>
                             </children>
                         </Pane>
                         <Pane layoutX="74.0" layoutY="1401.0" prefHeight="227.0" prefWidth="1096.0">
                             <children>
-                                <ImageView fitHeight="150.0" fitWidth="115.0" layoutX="965.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true" />
+                                <ImageView fitHeight="149.0" fitWidth="166.0" layoutX="948.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@photo_2024-01-15_10-41-27.jpg" />
+                           </image></ImageView>
                                 <Button fx:id="add6" layoutX="966.0" layoutY="174.0" mnemonicParsing="false" onAction="#onAdd6" text="افزودن به سبد خرید" />
                                 <Label alignment="CENTER_RIGHT" layoutX="897.0" layoutY="16.0" text="نام کتاب :" textAlignment="RIGHT">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="15.0" />
                                     </font>
                                 </Label>
                                 <Label alignment="CENTER_RIGHT" layoutX="878.0" layoutY="44.0" text="نام نویسنده :" textAlignment="RIGHT">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="15.0" />
                                     </font>
                                 </Label>
                                 <Label alignment="CENTER_RIGHT" layoutX="897.0" layoutY="71.0" text="انتشارات :" textAlignment="RIGHT">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="15.0" />
                                     </font>
                                 </Label>
                                 <Label alignment="CENTER_RIGHT" layoutX="913.0" layoutY="99.0" text="قیمت :" textAlignment="RIGHT">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="15.0" />
                                     </font>
                                 </Label>
                                 <Label alignment="CENTER_RIGHT" layoutX="891.0" layoutY="127.0" text="توضیحات :" textAlignment="RIGHT">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="15.0" />
                                     </font>
                                 </Label>
-                                <Label layoutX="830.0" layoutY="16.0" text="Label">
+                                <Label layoutX="811.0" layoutY="17.0" text="بازی منصفانه ">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="14.0" />
                                     </font>
                                 </Label>
-                                <Label layoutX="830.0" layoutY="44.0" text="Label">
+                                <Label layoutX="800.0" layoutY="45.0" text="پاتریشا یریگز">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="14.0" />
                                     </font>
                                 </Label>
-                                <Label layoutX="830.0" layoutY="71.0" text="Label">
+                                <Label layoutX="860.0" layoutY="72.0" text="آذرباد">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="14.0" />
                                     </font>
                                 </Label>
-                                <Label fx:id="price6" layoutX="830.0" layoutY="99.0" text="Label">
+                                <Label fx:id="price6" layoutX="831.0" layoutY="100.0" text="84000 تومان">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="14.0" />
                                     </font>
                                 </Label>
+                        <Text layoutX="-1.0" layoutY="142.0" strokeType="OUTSIDE" strokeWidth="0.0" text="داستان آلفا و اُمگا در مونتانا می‌گذرد و بیشتر آن در ناحیه‌ای کوهستانی جنگلی. جایی که ساحره‌ای مخوف قدرتمندترین گرگ و در حقیقت آلفایِ تمام آلفاها و گله‌اش را به چالش می‌کشد؛ ماروک، گرگ و موجودی که در وحشی‌ترین حالتش با نام گرندلِ شیطان نیز شناخته می‌شود. حال یک آلفا و یک اُمگا،‌ باید نقش خود را ایفا کنند، کسانی که نام کتاب را به‌خود اختصاص داده‌اند." textAlignment="RIGHT" wrappingWidth="890.0">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Text>
                             </children>
                         </Pane>
                         <Pane layoutX="74.0" layoutY="1642.0" prefHeight="227.0" prefWidth="1096.0">
                             <children>
-                                <ImageView fitHeight="150.0" fitWidth="115.0" layoutX="965.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true" />
+                                <ImageView fitHeight="156.0" fitWidth="149.0" layoutX="948.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@photo_2024-01-15_10-41-30.jpg" />
+                           </image></ImageView>
                                 <Button fx:id="add7" layoutX="966.0" layoutY="174.0" mnemonicParsing="false" onAction="#onAdd7" text="افزودن به سبد خرید" />
                                 <Label alignment="CENTER_RIGHT" layoutX="897.0" layoutY="16.0" text="نام کتاب :" textAlignment="RIGHT">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="15.0" />
                                     </font>
                                 </Label>
                                 <Label alignment="CENTER_RIGHT" layoutX="878.0" layoutY="44.0" text="نام نویسنده :" textAlignment="RIGHT">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="15.0" />
                                     </font>
                                 </Label>
                                 <Label alignment="CENTER_RIGHT" layoutX="897.0" layoutY="71.0" text="انتشارات :" textAlignment="RIGHT">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="15.0" />
                                     </font>
                                 </Label>
                                 <Label alignment="CENTER_RIGHT" layoutX="913.0" layoutY="99.0" text="قیمت :" textAlignment="RIGHT">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="15.0" />
                                     </font>
                                 </Label>
                                 <Label alignment="CENTER_RIGHT" layoutX="891.0" layoutY="127.0" text="توضیحات :" textAlignment="RIGHT">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="15.0" />
                                     </font>
                                 </Label>
-                                <Label layoutX="830.0" layoutY="16.0" text="Label">
+                                <Label layoutX="843.0" layoutY="18.0" text="الن ویک">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="14.0" />
                                     </font>
                                 </Label>
-                                <Label layoutX="830.0" layoutY="44.0" text="Label">
+                                <Label layoutX="820.0" layoutY="45.0" text="ریک باروز">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="14.0" />
                                     </font>
                                 </Label>
-                                <Label layoutX="830.0" layoutY="71.0" text="Label">
+                                <Label layoutX="861.0" layoutY="72.0" text="آذرباد">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="14.0" />
                                     </font>
                                 </Label>
-                                <Label fx:id="price7" layoutX="830.0" layoutY="99.0" text="Label">
+                                <Label fx:id="price7" layoutX="831.0" layoutY="100.0" text="78000 تومان">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="14.0" />
                                     </font>
                                 </Label>
+                        <Text layoutX="-1.0" layoutY="142.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ویک چشمانش را باز کرد و لحظه‌ی خوشش به‌هم خورد، مانند حبابی ترکید. مرد ژنده‌پوش میان‌سالی را دید که از آن سر کشتی با لبخندی کریه به آنان زل زده بود. مرد شلوار ارتشی و جلیقه شکاری به تن داشت، کلاه نقاب‌داری به سر و چکمه‌های خاکی به پا داشت. سیگاری هم از لبش آویزان بود.الن به سمت مرد حرکت کرد و صدایش را بلند کرد: «مشکلی هست؟»مرد عکس‌العملی نشان نداد، فقط پک سنگینی از سیگارش گرفت و به خیره بودنش ادامه داد." textAlignment="RIGHT" wrappingWidth="890.0">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Text>
                             </children>
                         </Pane>
                         <Pane layoutX="74.0" layoutY="1876.0" prefHeight="227.0" prefWidth="1096.0">
                             <children>
-                                <ImageView fitHeight="150.0" fitWidth="115.0" layoutX="965.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true" />
+                                <ImageView fitHeight="149.0" fitWidth="148.0" layoutX="948.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@photo_2024-01-15_10-41-33.jpg" />
+                           </image></ImageView>
                                 <Button fx:id="add8" layoutX="966.0" layoutY="174.0" mnemonicParsing="false" onAction="#onAdd8" text="افزودن به سبد خرید" />
                                 <Label alignment="CENTER_RIGHT" layoutX="897.0" layoutY="16.0" text="نام کتاب :" textAlignment="RIGHT">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="15.0" />
                                     </font>
                                 </Label>
                                 <Label alignment="CENTER_RIGHT" layoutX="878.0" layoutY="44.0" text="نام نویسنده :" textAlignment="RIGHT">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="15.0" />
                                     </font>
                                 </Label>
                                 <Label alignment="CENTER_RIGHT" layoutX="897.0" layoutY="71.0" text="انتشارات :" textAlignment="RIGHT">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="15.0" />
                                     </font>
                                 </Label>
                                 <Label alignment="CENTER_RIGHT" layoutX="913.0" layoutY="99.0" text="قیمت :" textAlignment="RIGHT">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="15.0" />
                                     </font>
                                 </Label>
                                 <Label alignment="CENTER_RIGHT" layoutX="891.0" layoutY="127.0" text="توضیحات :" textAlignment="RIGHT">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="15.0" />
                                     </font>
                                 </Label>
-                                <Label layoutX="830.0" layoutY="16.0" text="Label">
+                                <Label layoutX="843.0" layoutY="17.0" text="اسکارلت">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="14.0" />
                                     </font>
                                 </Label>
-                                <Label layoutX="830.0" layoutY="44.0" text="Label">
+                                <Label layoutX="808.0" layoutY="45.0" text="ماریسا مییر">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="14.0" />
                                     </font>
                                 </Label>
-                                <Label layoutX="830.0" layoutY="71.0" text="Label">
+                                <Label layoutX="860.0" layoutY="73.0" text="آذرباد">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="14.0" />
                                     </font>
                                 </Label>
-                                <Label fx:id="price8" layoutX="830.0" layoutY="99.0" text="Label">
+                                <Label fx:id="price8" layoutX="831.0" layoutY="101.0" text="90000 تومان">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="14.0" />
                                     </font>
                                 </Label>
+                        <Text layoutX="-2.0" layoutY="142.0" strokeType="OUTSIDE" strokeWidth="0.0" text="سیندر، مکانیک سایبورگ باز می‌گردد و این بار در تلاش است از زندان فرار کند. حتی اگر موفق شود، تبدیل به تحت تعقیب‌ترین فراری بین‌الملل می‌شود. در گوشه‌ی دیگری از دنیا مادربزرگ «اسکارلت بنویت» ناپدید شده است. مقامات از پیگیری این پرونده سرباز می‌زنند واسکارلت تصمیم می‌گیرد خودش سرنخ‌ها را دنبال کند. او در جستجوی اطلاعات  مرتبط با دزدیده شدن مادربزرگش با پسری به نام گرگ که یک مبارز خیابانی است روبه‌رو می‌شود." textAlignment="RIGHT" wrappingWidth="890.0">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Text>
                             </children>
                         </Pane>
                     </children>
