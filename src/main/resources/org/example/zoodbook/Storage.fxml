@@ -24,7 +24,7 @@
                               <Font size="18.0" />
                            </font>
                         </Label>
-                        <Label layoutX="590.0" layoutY="22.0" text="قلعه حیوانات">
+                        <Label alignment="CENTER_RIGHT" layoutX="632.0" layoutY="23.0" text="تام سایر">
                            <font>
                               <Font size="18.0" />
                            </font>
@@ -39,12 +39,12 @@
                               <Font size="18.0" />
                            </font>
                         </Label>
-                        <TextField alignment="CENTER_RIGHT" layoutX="151.0" layoutY="22.0" prefHeight="30.0" prefWidth="154.0" text="125000 تومان">
+                        <TextField fx:id="price1" alignment="CENTER_RIGHT" editable="false" layoutX="151.0" layoutY="22.0" prefHeight="30.0" prefWidth="154.0" text="40000 تومان">
                            <font>
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <TextField alignment="CENTER_RIGHT" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" text="1">
+                        <TextField fx:id="quantity1" alignment="CENTER_RIGHT" editable="false" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" text="5">
                            <font>
                               <Font size="14.0" />
                            </font>
@@ -63,7 +63,7 @@
                               <Font size="18.0" />
                            </font>
                         </Label>
-                        <Label layoutX="590.0" layoutY="22.0" text="قلعه حیوانات">
+                        <Label layoutX="595.0" layoutY="22.0" text="قلعه حیوانات">
                            <font>
                               <Font size="18.0" />
                            </font>
@@ -78,12 +78,12 @@
                               <Font size="18.0" />
                            </font>
                         </Label>
-                        <TextField alignment="CENTER_RIGHT" layoutX="151.0" layoutY="22.0" prefHeight="30.0" prefWidth="154.0" text="125000 تومان">
+                        <TextField fx:id="price2" alignment="CENTER_RIGHT" editable="false" layoutX="151.0" layoutY="22.0" prefHeight="30.0" prefWidth="154.0" text="35000 تومان">
                            <font>
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <TextField alignment="CENTER_RIGHT" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" text="2">
+                        <TextField fx:id="quantity2" alignment="CENTER_RIGHT" editable="false" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" text="5">
                            <font>
                               <Font size="14.0" />
                            </font>
@@ -102,7 +102,7 @@
                               <Font size="18.0" />
                            </font>
                         </Label>
-                        <Label layoutX="590.0" layoutY="22.0" text="قلعه حیوانات">
+                        <Label layoutX="637.0" layoutY="22.0" text="بینوایان">
                            <font>
                               <Font size="18.0" />
                            </font>
@@ -117,12 +117,12 @@
                               <Font size="18.0" />
                            </font>
                         </Label>
-                        <TextField alignment="CENTER_RIGHT" layoutX="151.0" layoutY="22.0" prefHeight="30.0" prefWidth="154.0" text="125000 تومان">
+                        <TextField fx:id="price3" alignment="CENTER_RIGHT" editable="false" layoutX="151.0" layoutY="22.0" prefHeight="30.0" prefWidth="154.0" text="95000 تومان">
                            <font>
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <TextField alignment="CENTER_RIGHT" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" text="3">
+                        <TextField fx:id="quantity3" alignment="CENTER_RIGHT" editable="false" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" text="3">
                            <font>
                               <Font size="14.0" />
                            </font>
@@ -141,7 +141,7 @@
                               <Font size="18.0" />
                            </font>
                         </Label>
-                        <Label layoutX="590.0" layoutY="22.0" text="قلعه حیوانات">
+                        <Label layoutX="614.0" layoutY="22.0" text="آوای وحش">
                            <font>
                               <Font size="18.0" />
                            </font>
@@ -156,12 +156,12 @@
                               <Font size="18.0" />
                            </font>
                         </Label>
-                        <TextField alignment="CENTER_RIGHT" layoutX="151.0" layoutY="22.0" prefHeight="30.0" prefWidth="154.0" text="125000 تومان">
+                        <TextField fx:id="price4" alignment="CENTER_RIGHT" editable="false" layoutX="151.0" layoutY="22.0" prefHeight="30.0" prefWidth="154.0" text="80000 تومان">
                            <font>
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <TextField alignment="CENTER_RIGHT" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" text="4">
+                        <TextField fx:id="quantity4" alignment="CENTER_RIGHT" editable="false" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" text="6">
                            <font>
                               <Font size="14.0" />
                            </font>
@@ -180,7 +180,7 @@
                               <Font size="18.0" />
                            </font>
                         </Label>
-                        <Label layoutX="590.0" layoutY="22.0" text="قلعه حیوانات">
+                        <Label layoutX="584.0" layoutY="23.0" text="رابینسون کروزر">
                            <font>
                               <Font size="18.0" />
                            </font>
@@ -195,12 +195,12 @@
                               <Font size="18.0" />
                            </font>
                         </Label>
-                        <TextField alignment="CENTER_RIGHT" layoutX="151.0" layoutY="22.0" prefHeight="30.0" prefWidth="154.0" text="125000 تومان">
+                        <TextField fx:id="price5" alignment="CENTER_RIGHT" editable="false" layoutX="151.0" layoutY="22.0" prefHeight="30.0" prefWidth="154.0" text=" 35000 تومان">
                            <font>
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <TextField alignment="CENTER_RIGHT" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" text="5">
+                        <TextField fx:id="quantity5" alignment="CENTER_RIGHT" editable="false" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" text="4">
                            <font>
                               <Font size="14.0" />
                            </font>
@@ -219,9 +219,9 @@
                               <Font size="18.0" />
                            </font>
                         </Label>
-                        <Label layoutX="590.0" layoutY="22.0" text="قلعه حیوانات">
+                        <Label layoutX="540.0" layoutY="22.0" text="دکتر جکیل و آقای هاید">
                            <font>
-                              <Font size="18.0" />
+                              <Font size="17.0" />
                            </font>
                         </Label>
                         <Label layoutX="485.0" layoutY="22.0" text="تعداد :">
@@ -234,12 +234,12 @@
                               <Font size="18.0" />
                            </font>
                         </Label>
-                        <TextField alignment="CENTER_RIGHT" layoutX="151.0" layoutY="22.0" prefHeight="30.0" prefWidth="154.0" text="125000 تومان">
+                        <TextField fx:id="price6" alignment="CENTER_RIGHT" editable="false" layoutX="151.0" layoutY="22.0" prefHeight="30.0" prefWidth="154.0" text=" 70000 تومان">
                            <font>
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <TextField alignment="CENTER_RIGHT" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" text="6">
+                        <TextField fx:id="quantity6" alignment="CENTER_RIGHT" editable="false" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" text="4">
                            <font>
                               <Font size="14.0" />
                            </font>
@@ -258,7 +258,7 @@
                               <Font size="18.0" />
                            </font>
                         </Label>
-                        <Label layoutX="590.0" layoutY="22.0" text="قلعه حیوانات">
+                        <Label layoutX="610.0" layoutY="23.0" text="سپید دندان">
                            <font>
                               <Font size="18.0" />
                            </font>
@@ -273,12 +273,12 @@
                               <Font size="18.0" />
                            </font>
                         </Label>
-                        <TextField alignment="CENTER_RIGHT" layoutX="151.0" layoutY="22.0" prefHeight="30.0" prefWidth="154.0" text="125000 تومان">
+                        <TextField fx:id="price7" alignment="CENTER_RIGHT" editable="false" layoutX="151.0" layoutY="22.0" prefHeight="30.0" prefWidth="154.0" text="55000 تومان">
                            <font>
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <TextField alignment="CENTER_RIGHT" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" text="7">
+                        <TextField fx:id="quantity7" alignment="CENTER_RIGHT" editable="false" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" text="7">
                            <font>
                               <Font size="14.0" />
                            </font>
@@ -297,7 +297,7 @@
                               <Font size="18.0" />
                            </font>
                         </Label>
-                        <Label layoutX="590.0" layoutY="22.0" text="قلعه حیوانات">
+                        <Label layoutX="590.0" layoutY="22.0" text="شاهزاده و گدا">
                            <font>
                               <Font size="18.0" />
                            </font>
@@ -312,12 +312,12 @@
                               <Font size="18.0" />
                            </font>
                         </Label>
-                        <TextField alignment="CENTER_RIGHT" layoutX="151.0" layoutY="22.0" prefHeight="30.0" prefWidth="154.0" text="125000 تومان">
+                        <TextField fx:id="price8" alignment="CENTER_RIGHT" editable="false" layoutX="151.0" layoutY="22.0" prefHeight="30.0" prefWidth="154.0" text="60000 تومان">
                            <font>
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <TextField alignment="CENTER_RIGHT" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" text="8">
+                        <TextField fx:id="quantity8" alignment="CENTER_RIGHT" editable="false" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" text="3">
                            <font>
                               <Font size="14.0" />
                            </font>
@@ -336,7 +336,7 @@
                               <Font size="18.0" />
                            </font>
                         </Label>
-                        <Label layoutX="590.0" layoutY="22.0" text="قلعه حیوانات">
+                        <Label layoutX="602.0" layoutY="22.0" text="ده مرد رشید">
                            <font>
                               <Font size="18.0" />
                            </font>
@@ -351,12 +351,12 @@
                               <Font size="18.0" />
                            </font>
                         </Label>
-                        <TextField alignment="CENTER_RIGHT" layoutX="151.0" layoutY="22.0" prefHeight="30.0" prefWidth="154.0" text="125000 تومان">
+                        <TextField fx:id="price9" alignment="CENTER_RIGHT" editable="false" layoutX="151.0" layoutY="22.0" prefHeight="30.0" prefWidth="154.0" text="40000 تومان">
                            <font>
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <TextField alignment="CENTER_RIGHT" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" text="9">
+                        <TextField fx:id="quantity9" alignment="CENTER_RIGHT" editable="false" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" text="5">
                            <font>
                               <Font size="14.0" />
                            </font>
@@ -375,9 +375,9 @@
                               <Font size="18.0" />
                            </font>
                         </Label>
-                        <Label layoutX="590.0" layoutY="22.0" text="قلعه حیوانات">
+                        <Label layoutX="546.0" layoutY="22.0" text="کوروش شهریار دادگر">
                            <font>
-                              <Font size="18.0" />
+                              <Font size="17.0" />
                            </font>
                         </Label>
                         <Label layoutX="485.0" layoutY="22.0" text="تعداد :">
@@ -390,12 +390,12 @@
                               <Font size="18.0" />
                            </font>
                         </Label>
-                        <TextField alignment="CENTER_RIGHT" layoutX="151.0" layoutY="22.0" prefHeight="30.0" prefWidth="154.0" text="125000 تومان">
+                        <TextField fx:id="price10" alignment="CENTER_RIGHT" editable="false" layoutX="151.0" layoutY="22.0" prefHeight="30.0" prefWidth="154.0" text="50000 تومان">
                            <font>
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <TextField alignment="CENTER_RIGHT" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" text="10">
+                        <TextField fx:id="quantity10" alignment="CENTER_RIGHT" editable="false" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" text="6">
                            <font>
                               <Font size="14.0" />
                            </font>
@@ -414,9 +414,9 @@
                               <Font size="18.0" />
                            </font>
                         </Label>
-                        <Label layoutX="590.0" layoutY="22.0" text="قلعه حیوانات">
+                        <Label layoutX="552.0" layoutY="22.0" text="اروپا از دوران ناپلئون">
                            <font>
-                              <Font size="18.0" />
+                              <Font size="17.0" />
                            </font>
                         </Label>
                         <Label layoutX="485.0" layoutY="22.0" text="تعداد :">
@@ -429,12 +429,12 @@
                               <Font size="18.0" />
                            </font>
                         </Label>
-                        <TextField alignment="CENTER_RIGHT" layoutX="151.0" layoutY="22.0" prefHeight="30.0" prefWidth="154.0" text="125000 تومان">
+                        <TextField fx:id="price11" alignment="CENTER_RIGHT" editable="false" layoutX="151.0" layoutY="22.0" prefHeight="30.0" prefWidth="154.0" text="47000 تومان">
                            <font>
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <TextField alignment="CENTER_RIGHT" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" text="11">
+                        <TextField fx:id="quantity11" alignment="CENTER_RIGHT" editable="false" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" text="4">
                            <font>
                               <Font size="14.0" />
                            </font>
@@ -453,7 +453,7 @@
                               <Font size="18.0" />
                            </font>
                         </Label>
-                        <Label layoutX="590.0" layoutY="22.0" text="قلعه حیوانات">
+                        <Label layoutX="555.0" layoutY="22.0" text="خواندنی های تاریخ">
                            <font>
                               <Font size="18.0" />
                            </font>
@@ -468,12 +468,12 @@
                               <Font size="18.0" />
                            </font>
                         </Label>
-                        <TextField alignment="CENTER_RIGHT" layoutX="151.0" layoutY="22.0" prefHeight="30.0" prefWidth="154.0" text="125000 تومان">
+                        <TextField fx:id="price12" alignment="CENTER_RIGHT" editable="false" layoutX="151.0" layoutY="22.0" prefHeight="30.0" prefWidth="154.0" text="67000 تومان">
                            <font>
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <TextField alignment="CENTER_RIGHT" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" text="12">
+                        <TextField fx:id="quantity12" alignment="CENTER_RIGHT" editable="false" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" text="6">
                            <font>
                               <Font size="14.0" />
                            </font>
@@ -492,7 +492,7 @@
                               <Font size="18.0" />
                            </font>
                         </Label>
-                        <Label layoutX="590.0" layoutY="22.0" text="قلعه حیوانات">
+                        <Label layoutX="563.0" layoutY="22.0" text="ایران قبل از اسلام">
                            <font>
                               <Font size="18.0" />
                            </font>
@@ -507,12 +507,12 @@
                               <Font size="18.0" />
                            </font>
                         </Label>
-                        <TextField alignment="CENTER_RIGHT" layoutX="151.0" layoutY="22.0" prefHeight="30.0" prefWidth="154.0" text="125000 تومان">
+                        <TextField fx:id="price13" alignment="CENTER_RIGHT" editable="false" layoutX="151.0" layoutY="22.0" prefHeight="30.0" prefWidth="154.0" text="84000 تومان">
                            <font>
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <TextField alignment="CENTER_RIGHT" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" text="13">
+                        <TextField fx:id="quantity13" alignment="CENTER_RIGHT" editable="false" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" text="5">
                            <font>
                               <Font size="14.0" />
                            </font>
@@ -531,7 +531,7 @@
                               <Font size="18.0" />
                            </font>
                         </Label>
-                        <Label layoutX="590.0" layoutY="22.0" text="قلعه حیوانات">
+                        <Label layoutX="544.0" layoutY="22.0" text="ارتش ایران هخامنشی">
                            <font>
                               <Font size="18.0" />
                            </font>
@@ -546,12 +546,12 @@
                               <Font size="18.0" />
                            </font>
                         </Label>
-                        <TextField alignment="CENTER_RIGHT" layoutX="151.0" layoutY="22.0" prefHeight="30.0" prefWidth="154.0" text="125000 تومان">
+                        <TextField fx:id="price14" alignment="CENTER_RIGHT" editable="false" layoutX="151.0" layoutY="22.0" prefHeight="30.0" prefWidth="154.0" text="78000 تومان">
                            <font>
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <TextField alignment="CENTER_RIGHT" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" text="14">
+                        <TextField fx:id="quantity14" alignment="CENTER_RIGHT" editable="false" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" text="6">
                            <font>
                               <Font size="14.0" />
                            </font>
@@ -570,7 +570,7 @@
                               <Font size="18.0" />
                            </font>
                         </Label>
-                        <Label layoutX="590.0" layoutY="22.0" text="قلعه حیوانات">
+                        <Label layoutX="614.0" layoutY="23.0" text="اشکانیان ...">
                            <font>
                               <Font size="18.0" />
                            </font>
@@ -585,12 +585,12 @@
                               <Font size="18.0" />
                            </font>
                         </Label>
-                        <TextField alignment="CENTER_RIGHT" layoutX="151.0" layoutY="22.0" prefHeight="30.0" prefWidth="154.0" text="125000 تومان">
+                        <TextField fx:id="price15" alignment="CENTER_RIGHT" editable="false" layoutX="151.0" layoutY="22.0" prefHeight="30.0" prefWidth="154.0" text="69000 تومان">
                            <font>
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <TextField alignment="CENTER_RIGHT" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" text="15">
+                        <TextField fx:id="quantity15" alignment="CENTER_RIGHT" editable="false" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" text="6">
                            <font>
                               <Font size="14.0" />
                            </font>
@@ -609,7 +609,7 @@
                               <Font size="18.0" />
                            </font>
                         </Label>
-                        <Label layoutX="590.0" layoutY="22.0" text="قلعه حیوانات">
+                        <Label layoutX="606.0" layoutY="22.0" text="ساسانیان ...">
                            <font>
                               <Font size="18.0" />
                            </font>
@@ -624,12 +624,12 @@
                               <Font size="18.0" />
                            </font>
                         </Label>
-                        <TextField alignment="CENTER_RIGHT" layoutX="151.0" layoutY="22.0" prefHeight="30.0" prefWidth="154.0" text="125000 تومان">
+                        <TextField fx:id="price16" alignment="CENTER_RIGHT" editable="false" layoutX="151.0" layoutY="22.0" prefHeight="30.0" prefWidth="154.0" text="56000 تومان">
                            <font>
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <TextField alignment="CENTER_RIGHT" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" text="16">
+                        <TextField fx:id="quantity16" alignment="CENTER_RIGHT" editable="false" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" text="4">
                            <font>
                               <Font size="14.0" />
                            </font>
@@ -648,7 +648,7 @@
                               <Font size="18.0" />
                            </font>
                         </Label>
-                        <Label layoutX="590.0" layoutY="22.0" text="قلعه حیوانات">
+                        <Label layoutX="585.0" layoutY="23.0" text="راه روشن است">
                            <font>
                               <Font size="18.0" />
                            </font>
@@ -663,12 +663,12 @@
                               <Font size="18.0" />
                            </font>
                         </Label>
-                        <TextField alignment="CENTER_RIGHT" layoutX="151.0" layoutY="22.0" prefHeight="30.0" prefWidth="154.0" text="125000 تومان">
+                        <TextField fx:id="price17" alignment="CENTER_RIGHT" editable="false" layoutX="151.0" layoutY="22.0" prefHeight="30.0" prefWidth="154.0" text="90000 تومان">
                            <font>
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <TextField alignment="CENTER_RIGHT" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" text="17">
+                        <TextField fx:id="quantity17" alignment="CENTER_RIGHT" editable="false" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" text="5">
                            <font>
                               <Font size="14.0" />
                            </font>
@@ -687,7 +687,7 @@
                               <Font size="18.0" />
                            </font>
                         </Label>
-                        <Label layoutX="590.0" layoutY="22.0" text="قلعه حیوانات">
+                        <Label layoutX="580.0" layoutY="23.0" text="دختری از تبار ما">
                            <font>
                               <Font size="18.0" />
                            </font>
@@ -702,12 +702,12 @@
                               <Font size="18.0" />
                            </font>
                         </Label>
-                        <TextField alignment="CENTER_RIGHT" layoutX="151.0" layoutY="22.0" prefHeight="30.0" prefWidth="154.0" text="125000 تومان">
+                        <TextField fx:id="price18" alignment="CENTER_RIGHT" editable="false" layoutX="151.0" layoutY="22.0" prefHeight="30.0" prefWidth="154.0" text="65000 تومان">
                            <font>
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <TextField alignment="CENTER_RIGHT" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" text="18">
+                        <TextField fx:id="quantity18" alignment="CENTER_RIGHT" editable="false" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" text="4">
                            <font>
                               <Font size="14.0" />
                            </font>
@@ -726,7 +726,7 @@
                               <Font size="18.0" />
                            </font>
                         </Label>
-                        <Label layoutX="590.0" layoutY="22.0" text="قلعه حیوانات">
+                        <Label layoutX="650.0" layoutY="22.0" text="شدن ">
                            <font>
                               <Font size="18.0" />
                            </font>
@@ -741,12 +741,12 @@
                               <Font size="18.0" />
                            </font>
                         </Label>
-                        <TextField alignment="CENTER_RIGHT" layoutX="151.0" layoutY="22.0" prefHeight="30.0" prefWidth="154.0" text="125000 تومان">
+                        <TextField fx:id="price19" alignment="CENTER_RIGHT" editable="false" layoutX="151.0" layoutY="22.0" prefHeight="30.0" prefWidth="154.0" text="120000 تومان">
                            <font>
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <TextField alignment="CENTER_RIGHT" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" text="19">
+                        <TextField fx:id="quantity19" alignment="CENTER_RIGHT" editable="false" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" text="6">
                            <font>
                               <Font size="14.0" />
                            </font>
@@ -765,7 +765,7 @@
                               <Font size="18.0" />
                            </font>
                         </Label>
-                        <Label layoutX="590.0" layoutY="22.0" text="قلعه حیوانات">
+                        <Label layoutX="554.0" layoutY="22.0" text="دختری با هفت اسم">
                            <font>
                               <Font size="18.0" />
                            </font>
@@ -780,12 +780,12 @@
                               <Font size="18.0" />
                            </font>
                         </Label>
-                        <TextField alignment="CENTER_RIGHT" layoutX="151.0" layoutY="22.0" prefHeight="30.0" prefWidth="154.0" text="125000 تومان">
+                        <TextField fx:id="price20" alignment="CENTER_RIGHT" editable="false" layoutX="151.0" layoutY="22.0" prefHeight="30.0" prefWidth="154.0" text="110000 تومان">
                            <font>
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <TextField alignment="CENTER_RIGHT" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" text="20">
+                        <TextField fx:id="quantity20" alignment="CENTER_RIGHT" editable="false" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" text="3">
                            <font>
                               <Font size="14.0" />
                            </font>
@@ -804,7 +804,7 @@
                               <Font size="18.0" />
                            </font>
                         </Label>
-                        <Label layoutX="590.0" layoutY="22.0" text="قلعه حیوانات">
+                        <Label layoutX="629.0" layoutY="22.0" text="کفش باز">
                            <font>
                               <Font size="18.0" />
                            </font>
@@ -819,12 +819,12 @@
                               <Font size="18.0" />
                            </font>
                         </Label>
-                        <TextField alignment="CENTER_RIGHT" layoutX="151.0" layoutY="22.0" prefHeight="30.0" prefWidth="154.0" text="125000 تومان">
+                        <TextField fx:id="price21" alignment="CENTER_RIGHT" editable="false" layoutX="151.0" layoutY="22.0" prefHeight="30.0" prefWidth="154.0" text="130000 تومان">
                            <font>
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <TextField alignment="CENTER_RIGHT" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" text="21">
+                        <TextField fx:id="quantity21" alignment="CENTER_RIGHT" editable="false" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" text="4">
                            <font>
                               <Font size="14.0" />
                            </font>
@@ -843,7 +843,7 @@
                               <Font size="18.0" />
                            </font>
                         </Label>
-                        <Label layoutX="590.0" layoutY="22.0" text="قلعه حیوانات">
+                        <Label layoutX="618.0" layoutY="22.0" text="استیو جابز">
                            <font>
                               <Font size="18.0" />
                            </font>
@@ -858,12 +858,12 @@
                               <Font size="18.0" />
                            </font>
                         </Label>
-                        <TextField alignment="CENTER_RIGHT" layoutX="151.0" layoutY="22.0" prefHeight="30.0" prefWidth="154.0" text="125000 تومان">
+                        <TextField fx:id="price22" alignment="CENTER_RIGHT" editable="false" layoutX="151.0" layoutY="22.0" prefHeight="30.0" prefWidth="154.0" text="98000 تومان">
                            <font>
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <TextField alignment="CENTER_RIGHT" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" text="22">
+                        <TextField fx:id="quantity22" alignment="CENTER_RIGHT" editable="false" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" text="3">
                            <font>
                               <Font size="14.0" />
                            </font>
@@ -882,7 +882,7 @@
                               <Font size="18.0" />
                            </font>
                         </Label>
-                        <Label layoutX="590.0" layoutY="22.0" text="قلعه حیوانات">
+                        <Label layoutX="612.0" layoutY="22.0" text="داستان من">
                            <font>
                               <Font size="18.0" />
                            </font>
@@ -897,12 +897,12 @@
                               <Font size="18.0" />
                            </font>
                         </Label>
-                        <TextField alignment="CENTER_RIGHT" layoutX="151.0" layoutY="22.0" prefHeight="30.0" prefWidth="154.0" text="125000 تومان">
+                        <TextField fx:id="price23" alignment="CENTER_RIGHT" editable="false" layoutX="151.0" layoutY="22.0" prefHeight="30.0" prefWidth="154.0" text="145000 تومان">
                            <font>
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <TextField alignment="CENTER_RIGHT" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" text="23">
+                        <TextField fx:id="quantity23" alignment="CENTER_RIGHT" editable="false" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" text="5">
                            <font>
                               <Font size="14.0" />
                            </font>
@@ -921,9 +921,9 @@
                               <Font size="18.0" />
                            </font>
                         </Label>
-                        <Label layoutX="590.0" layoutY="22.0" text="قلعه حیوانات">
+                        <Label layoutX="541.0" layoutY="26.0" text="آدری هپبورن یک روح زیبا">
                            <font>
-                              <Font size="18.0" />
+                              <Font size="15.0" />
                            </font>
                         </Label>
                         <Label layoutX="485.0" layoutY="22.0" text="تعداد :">
@@ -936,12 +936,12 @@
                               <Font size="18.0" />
                            </font>
                         </Label>
-                        <TextField alignment="CENTER_RIGHT" layoutX="151.0" layoutY="22.0" prefHeight="30.0" prefWidth="154.0" text="125000 تومان">
+                        <TextField fx:id="price24" alignment="CENTER_RIGHT" editable="false" layoutX="151.0" layoutY="22.0" prefHeight="30.0" prefWidth="154.0" text="170000 تومان">
                            <font>
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <TextField alignment="CENTER_RIGHT" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" text="24">
+                        <TextField fx:id="quantity24" alignment="CENTER_RIGHT" editable="false" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" text="6">
                            <font>
                               <Font size="14.0" />
                            </font>
@@ -960,7 +960,7 @@
                               <Font size="18.0" />
                            </font>
                         </Label>
-                        <Label layoutX="590.0" layoutY="22.0" text="قلعه حیوانات">
+                        <Label layoutX="568.0" layoutY="22.0" text="خودت را تباه نکن">
                            <font>
                               <Font size="18.0" />
                            </font>
@@ -975,12 +975,12 @@
                               <Font size="18.0" />
                            </font>
                         </Label>
-                        <TextField alignment="CENTER_RIGHT" layoutX="151.0" layoutY="22.0" prefHeight="30.0" prefWidth="154.0" text="125000 تومان">
+                        <TextField fx:id="price25" alignment="CENTER_RIGHT" editable="false" layoutX="151.0" layoutY="22.0" prefHeight="30.0" prefWidth="154.0" text="125000 تومان">
                            <font>
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <TextField alignment="CENTER_RIGHT" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" text="25">
+                        <TextField fx:id="quantity25" alignment="CENTER_RIGHT" editable="false" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" text="4">
                            <font>
                               <Font size="14.0" />
                            </font>
@@ -999,7 +999,7 @@
                               <Font size="18.0" />
                            </font>
                         </Label>
-                        <Label layoutX="590.0" layoutY="22.0" text="قلعه حیوانات">
+                        <Label layoutX="586.0" layoutY="22.0" text="چهار هزار هفته">
                            <font>
                               <Font size="18.0" />
                            </font>
@@ -1014,12 +1014,12 @@
                               <Font size="18.0" />
                            </font>
                         </Label>
-                        <TextField alignment="CENTER_RIGHT" layoutX="151.0" layoutY="22.0" prefHeight="30.0" prefWidth="154.0" text="125000 تومان">
+                        <TextField fx:id="price26" alignment="CENTER_RIGHT" editable="false" layoutX="151.0" layoutY="22.0" prefHeight="30.0" prefWidth="154.0" text="147000 تومان">
                            <font>
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <TextField alignment="CENTER_RIGHT" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" text="26">
+                        <TextField fx:id="quantity26" alignment="CENTER_RIGHT" editable="false" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" text="4">
                            <font>
                               <Font size="14.0" />
                            </font>
@@ -1038,7 +1038,7 @@
                               <Font size="18.0" />
                            </font>
                         </Label>
-                        <Label layoutX="590.0" layoutY="22.0" text="قلعه حیوانات">
+                        <Label layoutX="600.0" layoutY="22.0" text="ذهنیت پرنده">
                            <font>
                               <Font size="18.0" />
                            </font>
@@ -1053,12 +1053,12 @@
                               <Font size="18.0" />
                            </font>
                         </Label>
-                        <TextField alignment="CENTER_RIGHT" layoutX="151.0" layoutY="22.0" prefHeight="30.0" prefWidth="154.0" text="125000 تومان">
+                        <TextField fx:id="price27" alignment="CENTER_RIGHT" editable="false" layoutX="151.0" layoutY="22.0" prefHeight="30.0" prefWidth="154.0" text="90000 تومان">
                            <font>
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <TextField alignment="CENTER_RIGHT" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" text="27">
+                        <TextField fx:id="quantity27" alignment="CENTER_RIGHT" editable="false" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" text="6">
                            <font>
                               <Font size="14.0" />
                            </font>
@@ -1077,7 +1077,7 @@
                               <Font size="18.0" />
                            </font>
                         </Label>
-                        <Label layoutX="590.0" layoutY="22.0" text="قلعه حیوانات">
+                        <Label layoutX="571.0" layoutY="22.0" text="شجاعت رنج بردن">
                            <font>
                               <Font size="18.0" />
                            </font>
@@ -1092,12 +1092,12 @@
                               <Font size="18.0" />
                            </font>
                         </Label>
-                        <TextField alignment="CENTER_RIGHT" layoutX="151.0" layoutY="22.0" prefHeight="30.0" prefWidth="154.0" text="125000 تومان">
+                        <TextField fx:id="price28" alignment="CENTER_RIGHT" editable="false" layoutX="151.0" layoutY="22.0" prefHeight="30.0" prefWidth="154.0" text="160000 تومان">
                            <font>
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <TextField alignment="CENTER_RIGHT" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" text="28">
+                        <TextField fx:id="quantity28" alignment="CENTER_RIGHT" editable="false" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" text="5">
                            <font>
                               <Font size="14.0" />
                            </font>
@@ -1116,7 +1116,7 @@
                               <Font size="18.0" />
                            </font>
                         </Label>
-                        <Label layoutX="590.0" layoutY="22.0" text="قلعه حیوانات">
+                        <Label layoutX="611.0" layoutY="23.0" text="اصل گرایی">
                            <font>
                               <Font size="18.0" />
                            </font>
@@ -1131,12 +1131,12 @@
                               <Font size="18.0" />
                            </font>
                         </Label>
-                        <TextField alignment="CENTER_RIGHT" layoutX="151.0" layoutY="22.0" prefHeight="30.0" prefWidth="154.0" text="125000 تومان">
+                        <TextField fx:id="price29" alignment="CENTER_RIGHT" editable="false" layoutX="151.0" layoutY="22.0" prefHeight="30.0" prefWidth="154.0" text="120000 تومان">
                            <font>
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <TextField alignment="CENTER_RIGHT" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" text="29">
+                        <TextField fx:id="quantity29" alignment="CENTER_RIGHT" editable="false" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" text="4">
                            <font>
                               <Font size="14.0" />
                            </font>
@@ -1155,7 +1155,7 @@
                               <Font size="18.0" />
                            </font>
                         </Label>
-                        <Label layoutX="590.0" layoutY="22.0" text="قلعه حیوانات">
+                        <Label layoutX="558.0" layoutY="22.0" text="قدرت شروع ناقص">
                            <font>
                               <Font size="18.0" />
                            </font>
@@ -1170,12 +1170,12 @@
                               <Font size="18.0" />
                            </font>
                         </Label>
-                        <TextField alignment="CENTER_RIGHT" layoutX="151.0" layoutY="22.0" prefHeight="30.0" prefWidth="154.0" text="125000 تومان">
+                        <TextField fx:id="price30" alignment="CENTER_RIGHT" editable="false" layoutX="151.0" layoutY="22.0" prefHeight="30.0" prefWidth="154.0" text="135000 تومان">
                            <font>
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <TextField alignment="CENTER_RIGHT" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" text="30">
+                        <TextField fx:id="quantity30" alignment="CENTER_RIGHT" editable="false" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" text="3">
                            <font>
                               <Font size="14.0" />
                            </font>
@@ -1194,7 +1194,7 @@
                               <Font size="18.0" />
                            </font>
                         </Label>
-                        <Label layoutX="590.0" layoutY="22.0" text="قلعه حیوانات">
+                        <Label layoutX="602.0" layoutY="22.0" text="بی حد و مرز">
                            <font>
                               <Font size="18.0" />
                            </font>
@@ -1209,12 +1209,12 @@
                               <Font size="18.0" />
                            </font>
                         </Label>
-                        <TextField alignment="CENTER_RIGHT" layoutX="151.0" layoutY="22.0" prefHeight="30.0" prefWidth="154.0" text="125000 تومان">
+                        <TextField fx:id="price31" alignment="CENTER_RIGHT" editable="false" layoutX="151.0" layoutY="22.0" prefHeight="30.0" prefWidth="154.0" text="156000 تومان">
                            <font>
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <TextField alignment="CENTER_RIGHT" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" text="31">
+                        <TextField fx:id="quantity31" alignment="CENTER_RIGHT" editable="false" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" text="4">
                            <font>
                               <Font size="14.0" />
                            </font>
@@ -1233,7 +1233,7 @@
                               <Font size="18.0" />
                            </font>
                         </Label>
-                        <Label layoutX="590.0" layoutY="22.0" text="قلعه حیوانات">
+                        <Label layoutX="626.0" layoutY="22.0" text="اثر مرکب">
                            <font>
                               <Font size="18.0" />
                            </font>
@@ -1248,12 +1248,12 @@
                               <Font size="18.0" />
                            </font>
                         </Label>
-                        <TextField alignment="CENTER_RIGHT" layoutX="151.0" layoutY="22.0" prefHeight="30.0" prefWidth="154.0" text="125000 تومان">
+                        <TextField fx:id="price32" alignment="CENTER_RIGHT" editable="false" layoutX="151.0" layoutY="22.0" prefHeight="30.0" prefWidth="154.0" text="145000 تومان">
                            <font>
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <TextField alignment="CENTER_RIGHT" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" text="32">
+                        <TextField fx:id="quantity32" alignment="CENTER_RIGHT" editable="false" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" text="6">
                            <font>
                               <Font size="14.0" />
                            </font>
@@ -1272,7 +1272,7 @@
                               <Font size="18.0" />
                            </font>
                         </Label>
-                        <Label layoutX="590.0" layoutY="22.0" text="قلعه حیوانات">
+                        <Label layoutX="611.0" layoutY="22.0" text="هنر آشپزی ">
                            <font>
                               <Font size="18.0" />
                            </font>
@@ -1287,12 +1287,12 @@
                               <Font size="18.0" />
                            </font>
                         </Label>
-                        <TextField alignment="CENTER_RIGHT" layoutX="151.0" layoutY="22.0" prefHeight="30.0" prefWidth="154.0" text="125000 تومان">
+                        <TextField fx:id="price33" alignment="CENTER_RIGHT" editable="false" layoutX="151.0" layoutY="22.0" prefHeight="30.0" prefWidth="154.0" text="50000 تومان">
                            <font>
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <TextField alignment="CENTER_RIGHT" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" text="33">
+                        <TextField fx:id="quantity33" alignment="CENTER_RIGHT" editable="false" layoutX="414.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" text="5">
                            <font>
                               <Font size="14.0" />
                            </font>
@@ -1311,7 +1311,7 @@
                               <Font size="18.0" />
                            </font>
                         </Label>
-                        <Label layoutX="590.0" layoutY="22.0" text="قلعه حیوانات">
+                        <Label layoutX="612.0" layoutY="22.0" text="آشپزی ملل">
                            <font>
                               <Font size="18.0" />
                            </font>
@@ -1326,12 +1326,12 @@
                               <Font size="18.0" />
                            </font>
                         </Label>
-                        <TextField alignment="CENTER_RIGHT" layoutX="151.0" layoutY="22.0" prefHeight="30.0" prefWidth="154.0" text="125000 تومان">
+                        <TextField fx:id="price34" alignment="CENTER_RIGHT" editable="false" layoutX="151.0" layoutY="22.0" prefHeight="30.0" prefWidth="154.0" text="70000 تومان">
                            <font>
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <TextField alignment="CENTER_RIGHT" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" text="34">
+                        <TextField fx:id="quantity34" alignment="CENTER_RIGHT" editable="false" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" text="7">
                            <font>
                               <Font size="14.0" />
                            </font>
@@ -1350,7 +1350,7 @@
                               <Font size="18.0" />
                            </font>
                         </Label>
-                        <Label layoutX="590.0" layoutY="22.0" text="قلعه حیوانات">
+                        <Label layoutX="613.0" layoutY="22.0" text="پیش غذاها">
                            <font>
                               <Font size="18.0" />
                            </font>
@@ -1365,12 +1365,12 @@
                               <Font size="18.0" />
                            </font>
                         </Label>
-                        <TextField alignment="CENTER_RIGHT" layoutX="151.0" layoutY="22.0" prefHeight="30.0" prefWidth="154.0" text="125000 تومان">
+                        <TextField fx:id="price35" alignment="CENTER_RIGHT" editable="false" layoutX="151.0" layoutY="22.0" prefHeight="30.0" prefWidth="154.0" text="76000 تومان">
                            <font>
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <TextField alignment="CENTER_RIGHT" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" text="35">
+                        <TextField fx:id="quantity35" alignment="CENTER_RIGHT" editable="false" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" text="4">
                            <font>
                               <Font size="14.0" />
                            </font>
@@ -1389,7 +1389,7 @@
                               <Font size="18.0" />
                            </font>
                         </Label>
-                        <Label layoutX="590.0" layoutY="22.0" text="قلعه حیوانات">
+                        <Label layoutX="616.0" layoutY="22.0" text="هنر آشپزی">
                            <font>
                               <Font size="18.0" />
                            </font>
@@ -1404,12 +1404,12 @@
                               <Font size="18.0" />
                            </font>
                         </Label>
-                        <TextField alignment="CENTER_RIGHT" layoutX="151.0" layoutY="22.0" prefHeight="30.0" prefWidth="154.0" text="125000 تومان">
+                        <TextField fx:id="price36" alignment="CENTER_RIGHT" editable="false" layoutX="151.0" layoutY="22.0" prefHeight="30.0" prefWidth="154.0" text="60000 تومان">
                            <font>
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <TextField alignment="CENTER_RIGHT" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" text="36">
+                        <TextField fx:id="quantity36" alignment="CENTER_RIGHT" editable="false" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" text="5">
                            <font>
                               <Font size="14.0" />
                            </font>
@@ -1428,7 +1428,7 @@
                               <Font size="18.0" />
                            </font>
                         </Label>
-                        <Label layoutX="590.0" layoutY="22.0" text="قلعه حیوانات">
+                        <Label layoutX="575.0" layoutY="22.0" text="آشپری برای همه">
                            <font>
                               <Font size="18.0" />
                            </font>
@@ -1443,12 +1443,12 @@
                               <Font size="18.0" />
                            </font>
                         </Label>
-                        <TextField alignment="CENTER_RIGHT" layoutX="151.0" layoutY="22.0" prefHeight="30.0" prefWidth="154.0" text="125000 تومان">
+                        <TextField fx:id="price37" alignment="CENTER_RIGHT" editable="false" layoutX="151.0" layoutY="22.0" prefHeight="30.0" prefWidth="154.0" text="45000 تومان">
                            <font>
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <TextField alignment="CENTER_RIGHT" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" text="37">
+                        <TextField fx:id="quantity37" alignment="CENTER_RIGHT" editable="false" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" text="6">
                            <font>
                               <Font size="14.0" />
                            </font>
@@ -1467,7 +1467,7 @@
                               <Font size="18.0" />
                            </font>
                         </Label>
-                        <Label layoutX="590.0" layoutY="22.0" text="قلعه حیوانات">
+                        <Label layoutX="621.0" layoutY="22.0" text="آشپزباشی">
                            <font>
                               <Font size="18.0" />
                            </font>
@@ -1482,12 +1482,12 @@
                               <Font size="18.0" />
                            </font>
                         </Label>
-                        <TextField alignment="CENTER_RIGHT" layoutX="151.0" layoutY="22.0" prefHeight="30.0" prefWidth="154.0" text="125000 تومان">
+                        <TextField fx:id="price38" alignment="CENTER_RIGHT" editable="false" layoutX="151.0" layoutY="22.0" prefHeight="30.0" prefWidth="154.0" text="90000 تومان">
                            <font>
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <TextField alignment="CENTER_RIGHT" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" text="38">
+                        <TextField fx:id="quantity38" alignment="CENTER_RIGHT" editable="false" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" text="7">
                            <font>
                               <Font size="14.0" />
                            </font>
@@ -1506,7 +1506,7 @@
                               <Font size="18.0" />
                            </font>
                         </Label>
-                        <Label layoutX="590.0" layoutY="22.0" text="قلعه حیوانات">
+                        <Label layoutX="593.0" layoutY="22.0" text="پخت انواع نان">
                            <font>
                               <Font size="18.0" />
                            </font>
@@ -1521,12 +1521,12 @@
                               <Font size="18.0" />
                            </font>
                         </Label>
-                        <TextField alignment="CENTER_RIGHT" layoutX="151.0" layoutY="22.0" prefHeight="30.0" prefWidth="154.0" text="125000 تومان">
+                        <TextField fx:id="price39" alignment="CENTER_RIGHT" editable="false" layoutX="151.0" layoutY="22.0" prefHeight="30.0" prefWidth="154.0" text="125000 تومان">
                            <font>
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <TextField alignment="CENTER_RIGHT" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" text="39">
+                        <TextField fx:id="quantity39" alignment="CENTER_RIGHT" editable="false" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" text="8">
                            <font>
                               <Font size="14.0" />
                            </font>
@@ -1545,7 +1545,7 @@
                               <Font size="18.0" />
                            </font>
                         </Label>
-                        <Label layoutX="590.0" layoutY="22.0" text="قلعه حیوانات">
+                        <Label layoutX="543.0" layoutY="22.0" text="غذاهای 30 دقیقه ای">
                            <font>
                               <Font size="18.0" />
                            </font>
@@ -1560,12 +1560,12 @@
                               <Font size="18.0" />
                            </font>
                         </Label>
-                        <TextField alignment="CENTER_RIGHT" layoutX="151.0" layoutY="22.0" prefHeight="30.0" prefWidth="154.0" text="125000 تومان">
+                        <TextField fx:id="price40" alignment="CENTER_RIGHT" editable="false" layoutX="151.0" layoutY="22.0" prefHeight="30.0" prefWidth="154.0" text="80000 تومان">
                            <font>
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <TextField alignment="CENTER_RIGHT" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" text="40">
+                        <TextField fx:id="quantity40" alignment="CENTER_RIGHT" editable="false" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" text="5">
                            <font>
                               <Font size="14.0" />
                            </font>
@@ -1584,7 +1584,7 @@
                               <Font size="18.0" />
                            </font>
                         </Label>
-                        <Label layoutX="590.0" layoutY="22.0" text="قلعه حیوانات">
+                        <Label layoutX="585.0" layoutY="23.0" text="جدال با طوفان">
                            <font>
                               <Font size="18.0" />
                            </font>
@@ -1599,12 +1599,12 @@
                               <Font size="18.0" />
                            </font>
                         </Label>
-                        <TextField alignment="CENTER_RIGHT" layoutX="151.0" layoutY="22.0" prefHeight="30.0" prefWidth="154.0" text="125000 تومان">
+                        <TextField fx:id="price41" alignment="CENTER_RIGHT" editable="false" layoutX="151.0" layoutY="22.0" prefHeight="30.0" prefWidth="154.0" text="120000 تومان">
                            <font>
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <TextField alignment="CENTER_RIGHT" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" text="41">
+                        <TextField fx:id="quantity41" alignment="CENTER_RIGHT" editable="false" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" text="3">
                            <font>
                               <Font size="14.0" />
                            </font>
@@ -1623,7 +1623,7 @@
                               <Font size="18.0" />
                            </font>
                         </Label>
-                        <Label layoutX="590.0" layoutY="22.0" text="قلعه حیوانات">
+                        <Label layoutX="602.0" layoutY="22.0" text="پیمان برادری">
                            <font>
                               <Font size="18.0" />
                            </font>
@@ -1638,12 +1638,12 @@
                               <Font size="18.0" />
                            </font>
                         </Label>
-                        <TextField alignment="CENTER_RIGHT" layoutX="151.0" layoutY="22.0" prefHeight="30.0" prefWidth="154.0" text="125000 تومان">
+                        <TextField fx:id="price42" alignment="CENTER_RIGHT" editable="false" layoutX="151.0" layoutY="22.0" prefHeight="30.0" prefWidth="154.0" text="80000 تومان">
                            <font>
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <TextField alignment="CENTER_RIGHT" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" text="42">
+                        <TextField fx:id="quantity42" alignment="CENTER_RIGHT" editable="false" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" text="5">
                            <font>
                               <Font size="14.0" />
                            </font>
@@ -1662,7 +1662,7 @@
                               <Font size="18.0" />
                            </font>
                         </Label>
-                        <Label layoutX="590.0" layoutY="22.0" text="قلعه حیوانات">
+                        <Label layoutX="632.0" layoutY="22.0" text="بی روح ">
                            <font>
                               <Font size="18.0" />
                            </font>
@@ -1677,12 +1677,12 @@
                               <Font size="18.0" />
                            </font>
                         </Label>
-                        <TextField alignment="CENTER_RIGHT" layoutX="151.0" layoutY="22.0" prefHeight="30.0" prefWidth="154.0" text="125000 تومان">
+                        <TextField fx:id="price43" alignment="CENTER_RIGHT" editable="false" layoutX="151.0" layoutY="22.0" prefHeight="30.0" prefWidth="154.0" text="130000 تومان">
                            <font>
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <TextField alignment="CENTER_RIGHT" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" text="43">
+                        <TextField fx:id="quantity43" alignment="CENTER_RIGHT" editable="false" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" text="6">
                            <font>
                               <Font size="14.0" />
                            </font>
@@ -1694,14 +1694,14 @@
                         </Button>
                      </children>
                   </Pane>
-                  <Pane layoutX="-1.0" layoutY="3047.0" prefHeight="71.0" prefWidth="786.0">
+                  <Pane fx:id="quantity44" layoutX="-1.0" layoutY="3047.0" prefHeight="71.0" prefWidth="786.0">
                      <children>
                         <Label layoutX="701.0" layoutY="22.0" text="نام کتاب :">
                            <font>
                               <Font size="18.0" />
                            </font>
                         </Label>
-                        <Label layoutX="590.0" layoutY="22.0" text="قلعه حیوانات">
+                        <Label layoutX="582.0" layoutY="22.0" text="به سوی آسمان">
                            <font>
                               <Font size="18.0" />
                            </font>
@@ -1716,12 +1716,12 @@
                               <Font size="18.0" />
                            </font>
                         </Label>
-                        <TextField alignment="CENTER_RIGHT" layoutX="151.0" layoutY="22.0" prefHeight="30.0" prefWidth="154.0" text="125000 تومان">
+                        <TextField fx:id="price44" alignment="CENTER_RIGHT" editable="false" layoutX="151.0" layoutY="22.0" prefHeight="30.0" prefWidth="154.0" text="67000 تومان">
                            <font>
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <TextField alignment="CENTER_RIGHT" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" text="44">
+                        <TextField alignment="CENTER_RIGHT" editable="false" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" text="4">
                            <font>
                               <Font size="14.0" />
                            </font>
@@ -1740,7 +1740,7 @@
                               <Font size="18.0" />
                            </font>
                         </Label>
-                        <Label layoutX="590.0" layoutY="22.0" text="قلعه حیوانات">
+                        <Label layoutX="613.0" layoutY="22.0" text="ماورایی ها">
                            <font>
                               <Font size="18.0" />
                            </font>
@@ -1755,12 +1755,12 @@
                               <Font size="18.0" />
                            </font>
                         </Label>
-                        <TextField alignment="CENTER_RIGHT" layoutX="151.0" layoutY="22.0" prefHeight="30.0" prefWidth="154.0" text="125000 تومان">
+                        <TextField fx:id="price45" alignment="CENTER_RIGHT" editable="false" layoutX="151.0" layoutY="22.0" prefHeight="30.0" prefWidth="154.0" text="70000 تومان">
                            <font>
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <TextField alignment="CENTER_RIGHT" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" text="45">
+                        <TextField fx:id="quantity45" alignment="CENTER_RIGHT" editable="false" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" text="5">
                            <font>
                               <Font size="14.0" />
                            </font>
@@ -1779,7 +1779,7 @@
                               <Font size="18.0" />
                            </font>
                         </Label>
-                        <Label layoutX="590.0" layoutY="22.0" text="قلعه حیوانات">
+                        <Label layoutX="593.0" layoutY="22.0" text="بازی منصفانه">
                            <font>
                               <Font size="18.0" />
                            </font>
@@ -1794,12 +1794,12 @@
                               <Font size="18.0" />
                            </font>
                         </Label>
-                        <TextField alignment="CENTER_RIGHT" layoutX="151.0" layoutY="22.0" prefHeight="30.0" prefWidth="154.0" text="125000 تومان">
+                        <TextField fx:id="price46" alignment="CENTER_RIGHT" editable="false" layoutX="151.0" layoutY="22.0" prefHeight="30.0" prefWidth="154.0" text="84000 تومان">
                            <font>
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <TextField alignment="CENTER_RIGHT" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" text="46">
+                        <TextField fx:id="quantity46" alignment="CENTER_RIGHT" editable="false" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" text="5">
                            <font>
                               <Font size="14.0" />
                            </font>
@@ -1818,7 +1818,7 @@
                               <Font size="18.0" />
                            </font>
                         </Label>
-                        <Label layoutX="590.0" layoutY="22.0" text="قلعه حیوانات">
+                        <Label layoutX="630.0" layoutY="22.0" text="الن ویک">
                            <font>
                               <Font size="18.0" />
                            </font>
@@ -1833,12 +1833,12 @@
                               <Font size="18.0" />
                            </font>
                         </Label>
-                        <TextField alignment="CENTER_RIGHT" layoutX="151.0" layoutY="22.0" prefHeight="30.0" prefWidth="154.0" text="125000 تومان">
+                        <TextField fx:id="price47" alignment="CENTER_RIGHT" editable="false" layoutX="151.0" layoutY="22.0" prefHeight="30.0" prefWidth="154.0" text="78000 تومان">
                            <font>
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <TextField alignment="CENTER_RIGHT" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" text="47">
+                        <TextField fx:id="quantity47" alignment="CENTER_RIGHT" editable="false" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" text="3">
                            <font>
                               <Font size="14.0" />
                            </font>
@@ -1857,7 +1857,7 @@
                               <Font size="18.0" />
                            </font>
                         </Label>
-                        <Label layoutX="590.0" layoutY="22.0" text="قلعه حیوانات">
+                        <Label layoutX="629.0" layoutY="22.0" text="اسکارلت">
                            <font>
                               <Font size="18.0" />
                            </font>
@@ -1872,12 +1872,12 @@
                               <Font size="18.0" />
                            </font>
                         </Label>
-                        <TextField alignment="CENTER_RIGHT" layoutX="151.0" layoutY="22.0" prefHeight="30.0" prefWidth="154.0" text="125000 تومان">
+                        <TextField fx:id="price48" alignment="CENTER_RIGHT" editable="false" layoutX="151.0" layoutY="22.0" prefHeight="30.0" prefWidth="154.0" text="90000 تومان">
                            <font>
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <TextField alignment="CENTER_RIGHT" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" text="48">
+                        <TextField fx:id="quantity48" alignment="CENTER_RIGHT" editable="false" layoutX="413.0" layoutY="21.0" prefHeight="25.0" prefWidth="65.0" text="4">
                            <font>
                               <Font size="14.0" />
                            </font>

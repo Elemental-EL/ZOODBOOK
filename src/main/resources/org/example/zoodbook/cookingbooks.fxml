@@ -9,6 +9,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.zoodbook.cookingbooksController">
     <children>
@@ -104,410 +105,474 @@
                         </Pane>
                         <Pane layoutX="74.0" layoutY="210.0" prefHeight="227.0" prefWidth="1096.0">
                             <children>
-                                <ImageView fitHeight="150.0" fitWidth="115.0" layoutX="965.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true" />
+                                <ImageView fitHeight="150.0" fitWidth="115.0" layoutX="969.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@photo_2024-01-15_09-02-56.jpg" />
+                           </image></ImageView>
                                 <Button fx:id="add1" layoutX="966.0" layoutY="174.0" mnemonicParsing="false" onAction="#onAdd1" text="افزودن به سبد خرید" />
                                 <Label alignment="CENTER_RIGHT" layoutX="897.0" layoutY="16.0" text="نام کتاب :" textAlignment="RIGHT">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="15.0" />
                                     </font>
                                 </Label>
                                 <Label alignment="CENTER_RIGHT" layoutX="878.0" layoutY="44.0" text="نام نویسنده :" textAlignment="RIGHT">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="15.0" />
                                     </font>
                                 </Label>
-                                <Label alignment="CENTER_RIGHT" layoutX="897.0" layoutY="71.0" text="انتشارات :" textAlignment="RIGHT">
+                                <Label alignment="CENTER_RIGHT" layoutX="897.0" layoutY="72.0" text="انتشارات :" textAlignment="RIGHT">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="15.0" />
                                     </font>
                                 </Label>
                                 <Label alignment="CENTER_RIGHT" layoutX="913.0" layoutY="99.0" text="قیمت :" textAlignment="RIGHT">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="15.0" />
                                     </font>
                                 </Label>
                                 <Label alignment="CENTER_RIGHT" layoutX="891.0" layoutY="127.0" text="توضیحات :" textAlignment="RIGHT">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="15.0" />
                                     </font>
                                 </Label>
-                                <Label layoutX="830.0" layoutY="16.0" text="Label">
+                                <Label layoutX="831.0" layoutY="17.0" text="هنر آشپزی">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="14.0" />
                                     </font>
                                 </Label>
-                                <Label layoutX="830.0" layoutY="44.0" text="Label">
+                                <Label layoutX="812.0" layoutY="45.0" text="برایان هیتر">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="14.0" />
                                     </font>
                                 </Label>
-                                <Label layoutX="830.0" layoutY="71.0" text="Label">
+                                <Label layoutX="850.0" layoutY="73.0" text="گیسوم">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="14.0" />
                                     </font>
                                 </Label>
-                                <Label fx:id="price1" layoutX="830.0" layoutY="99.0" text="Label">
+                                <Label fx:id="price1" layoutX="828.0" layoutY="101.0" text="50000 تومان">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="14.0" />
                                     </font>
                                 </Label>
+                        <Text layoutX="14.0" layoutY="143.0" strokeType="OUTSIDE" strokeWidth="0.0" text="امروزه صنعت آشپزی و مدیریت خانه‌داری به یکی از رشته‌های دانشگاهی تبدیل شده است و از موقعیت سنتی خود خارج گشته و زندگی زیبای شما را تحت تأثیر خود گذاشته است. شما با روبرو شدن یک سفره رنگین اولین پیشامدی که بر ذهنتان حاکم می گردد، این تصور است که برای تهیه غذای خوش‌طعم و مفید باید مبالغ هنگفتی را هزینه کنید، تا غذاهای متنوع آماده گردد، در حالی که واقعیت چیز دیگری است که خانم خانه با در نظر گرفتن اقتصاد خانواده می‌تواند از کمترین امکانات بهترین استفاده بهینه را داشته باشد." textAlignment="RIGHT" wrappingWidth="870.0">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Text>
                             </children>
                         </Pane>
                         <Pane layoutX="74.0" layoutY="446.0" prefHeight="227.0" prefWidth="1096.0">
                             <children>
-                                <ImageView fitHeight="150.0" fitWidth="115.0" layoutX="965.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true" />
+                                <ImageView fitHeight="150.0" fitWidth="115.0" layoutX="971.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@photo1.jpg" />
+                           </image></ImageView>
                                 <Button fx:id="add2" layoutX="966.0" layoutY="174.0" mnemonicParsing="false" onAction="#onAdd2" text="افزودن به سبد خرید" />
                                 <Label alignment="CENTER_RIGHT" layoutX="897.0" layoutY="16.0" text="نام کتاب :" textAlignment="RIGHT">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="15.0" />
                                     </font>
                                 </Label>
                                 <Label alignment="CENTER_RIGHT" layoutX="878.0" layoutY="44.0" text="نام نویسنده :" textAlignment="RIGHT">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="15.0" />
                                     </font>
                                 </Label>
                                 <Label alignment="CENTER_RIGHT" layoutX="897.0" layoutY="71.0" text="انتشارات :" textAlignment="RIGHT">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="15.0" />
                                     </font>
                                 </Label>
                                 <Label alignment="CENTER_RIGHT" layoutX="913.0" layoutY="99.0" text="قیمت :" textAlignment="RIGHT">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="15.0" />
                                     </font>
                                 </Label>
                                 <Label alignment="CENTER_RIGHT" layoutX="891.0" layoutY="127.0" text="توضیحات :" textAlignment="RIGHT">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="15.0" />
                                     </font>
                                 </Label>
-                                <Label layoutX="830.0" layoutY="16.0" text="Label">
+                                <Label layoutX="829.0" layoutY="17.0" text="آشپزی ملل">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="14.0" />
                                     </font>
                                 </Label>
-                                <Label layoutX="830.0" layoutY="44.0" text="Label">
+                                <Label layoutX="810.0" layoutY="45.0" text="ساناز سانیا">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="14.0" />
                                     </font>
                                 </Label>
-                                <Label layoutX="830.0" layoutY="71.0" text="Label">
+                                <Label layoutX="852.0" layoutY="71.0" text="گیسوم">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="14.0" />
                                     </font>
                                 </Label>
-                                <Label fx:id="price2" layoutX="830.0" layoutY="99.0" text="Label">
+                                <Label fx:id="price2" layoutX="829.0" layoutY="100.0" text="70000 تومان">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="14.0" />
                                     </font>
                                 </Label>
+                        <Text layoutX="14.0" layoutY="143.0" strokeType="OUTSIDE" strokeWidth="0.0" text="امروزه صنعت آشپزی و مدیریت خانه‌داری به یکی از رشته‌های دانشگاهی تبدیل شده است و از موقعیت سنتی خود خارج گشته و زندگی زیبای شما را تحت تأثیر خود گذاشته است. شما با روبرو شدن یک سفره رنگین اولین پیشامدی که بر ذهنتان حاکم می گردد، این تصور است که برای تهیه غذای خوش‌طعم و مفید باید مبالغ هنگفتی را هزینه کنید، تا غذاهای متنوع آماده گردد، در حالی که واقعیت چیز دیگری است که خانم خانه با در نظر گرفتن اقتصاد خانواده می‌تواند از کمترین امکانات بهترین استفاده بهینه را داشته باشد." textAlignment="RIGHT" wrappingWidth="870.0">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Text>
                             </children>
                         </Pane>
                         <Pane layoutX="74.0" layoutY="691.0" prefHeight="227.0" prefWidth="1096.0">
                             <children>
-                                <ImageView fitHeight="150.0" fitWidth="115.0" layoutX="965.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true" />
+                                <ImageView fitHeight="150.0" fitWidth="115.0" layoutX="971.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@photo_2024-01-15_09-02-57.jpg" />
+                           </image></ImageView>
                                 <Button fx:id="add3" layoutX="966.0" layoutY="174.0" mnemonicParsing="false" onAction="#onAdd3" text="افزودن به سبد خرید" />
                                 <Label alignment="CENTER_RIGHT" layoutX="897.0" layoutY="16.0" text="نام کتاب :" textAlignment="RIGHT">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="15.0" />
                                     </font>
                                 </Label>
                                 <Label alignment="CENTER_RIGHT" layoutX="878.0" layoutY="44.0" text="نام نویسنده :" textAlignment="RIGHT">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="15.0" />
                                     </font>
                                 </Label>
                                 <Label alignment="CENTER_RIGHT" layoutX="897.0" layoutY="71.0" text="انتشارات :" textAlignment="RIGHT">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="15.0" />
                                     </font>
                                 </Label>
                                 <Label alignment="CENTER_RIGHT" layoutX="913.0" layoutY="99.0" text="قیمت :" textAlignment="RIGHT">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="15.0" />
                                     </font>
                                 </Label>
                                 <Label alignment="CENTER_RIGHT" layoutX="891.0" layoutY="127.0" text="توضیحات :" textAlignment="RIGHT">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="15.0" />
                                     </font>
                                 </Label>
-                                <Label layoutX="830.0" layoutY="16.0" text="Label">
+                                <Label layoutX="824.0" layoutY="17.0" text="پیش غذا ها">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="14.0" />
                                     </font>
                                 </Label>
-                                <Label layoutX="830.0" layoutY="44.0" text="Label">
+                                <Label layoutX="804.0" layoutY="45.0" text="رزا منتظمی">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="14.0" />
                                     </font>
                                 </Label>
-                                <Label layoutX="830.0" layoutY="71.0" text="Label">
+                                <Label layoutX="849.0" layoutY="72.0" text="گیسوم">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="14.0" />
                                     </font>
                                 </Label>
-                                <Label fx:id="price3" layoutX="830.0" layoutY="99.0" text="Label">
+                                <Label fx:id="price3" layoutX="829.0" layoutY="100.0" text="76000 تومان">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="14.0" />
                                     </font>
                                 </Label>
+                        <Text layoutX="14.0" layoutY="143.0" strokeType="OUTSIDE" strokeWidth="0.0" text="امروزه صنعت آشپزی و مدیریت خانه‌داری به یکی از رشته‌های دانشگاهی تبدیل شده است و از موقعیت سنتی خود خارج گشته و زندگی زیبای شما را تحت تأثیر خود گذاشته است. شما با روبرو شدن یک سفره رنگین اولین پیشامدی که بر ذهنتان حاکم می گردد، این تصور است که برای تهیه غذای خوش‌طعم و مفید باید مبالغ هنگفتی را هزینه کنید، تا غذاهای متنوع آماده گردد، در حالی که واقعیت چیز دیگری است که خانم خانه با در نظر گرفتن اقتصاد خانواده می‌تواند از کمترین امکانات بهترین استفاده بهینه را داشته باشد." textAlignment="RIGHT" wrappingWidth="870.0">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Text>
                             </children>
                         </Pane>
                         <Pane layoutX="74.0" layoutY="925.0" prefHeight="227.0" prefWidth="1096.0">
                             <children>
-                                <ImageView fitHeight="150.0" fitWidth="115.0" layoutX="965.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true" />
+                                <ImageView fitHeight="150.0" fitWidth="115.0" layoutX="971.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@photo4.jpg" />
+                           </image></ImageView>
                                 <Button fx:id="add4" layoutX="966.0" layoutY="174.0" mnemonicParsing="false" onAction="#onAdd4" text="افزودن به سبد خرید" />
                                 <Label alignment="CENTER_RIGHT" layoutX="897.0" layoutY="16.0" text="نام کتاب :" textAlignment="RIGHT">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="15.0" />
                                     </font>
                                 </Label>
                                 <Label alignment="CENTER_RIGHT" layoutX="878.0" layoutY="44.0" text="نام نویسنده :" textAlignment="RIGHT">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="15.0" />
                                     </font>
                                 </Label>
                                 <Label alignment="CENTER_RIGHT" layoutX="897.0" layoutY="71.0" text="انتشارات :" textAlignment="RIGHT">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="15.0" />
                                     </font>
                                 </Label>
                                 <Label alignment="CENTER_RIGHT" layoutX="913.0" layoutY="99.0" text="قیمت :" textAlignment="RIGHT">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="15.0" />
                                     </font>
                                 </Label>
                                 <Label alignment="CENTER_RIGHT" layoutX="891.0" layoutY="127.0" text="توضیحات :" textAlignment="RIGHT">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="15.0" />
                                     </font>
                                 </Label>
-                                <Label layoutX="830.0" layoutY="16.0" text="Label">
+                                <Label layoutX="830.0" layoutY="16.0" text="هنر آشپزی">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="14.0" />
                                     </font>
                                 </Label>
-                                <Label layoutX="830.0" layoutY="44.0" text="Label">
+                                <Label layoutX="805.0" layoutY="44.0" text="رزا منتظمی">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="14.0" />
                                     </font>
                                 </Label>
-                                <Label layoutX="830.0" layoutY="71.0" text="Label">
+                                <Label layoutX="850.0" layoutY="72.0" text="گیسوم">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="14.0" />
                                     </font>
                                 </Label>
-                                <Label fx:id="price4" layoutX="830.0" layoutY="99.0" text="Label">
+                                <Label fx:id="price4" layoutX="828.0" layoutY="100.0" text="60000 تومان">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="14.0" />
                                     </font>
                                 </Label>
+                        <Text layoutX="14.0" layoutY="143.0" strokeType="OUTSIDE" strokeWidth="0.0" text="امروزه صنعت آشپزی و مدیریت خانه‌داری به یکی از رشته‌های دانشگاهی تبدیل شده است و از موقعیت سنتی خود خارج گشته و زندگی زیبای شما را تحت تأثیر خود گذاشته است. شما با روبرو شدن یک سفره رنگین اولین پیشامدی که بر ذهنتان حاکم می گردد، این تصور است که برای تهیه غذای خوش‌طعم و مفید باید مبالغ هنگفتی را هزینه کنید، تا غذاهای متنوع آماده گردد، در حالی که واقعیت چیز دیگری است که خانم خانه با در نظر گرفتن اقتصاد خانواده می‌تواند از کمترین امکانات بهترین استفاده بهینه را داشته باشد." textAlignment="RIGHT" wrappingWidth="870.0">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Text>
                             </children>
                         </Pane>
                         <Pane layoutX="74.0" layoutY="1164.0" prefHeight="227.0" prefWidth="1096.0">
                             <children>
-                                <ImageView fitHeight="150.0" fitWidth="115.0" layoutX="965.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true" />
+                                <ImageView fitHeight="150.0" fitWidth="115.0" layoutX="965.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@photo3.jpg" />
+                           </image></ImageView>
                                 <Button fx:id="add5" layoutX="966.0" layoutY="174.0" mnemonicParsing="false" onAction="#onAdd5" text="افزودن به سبد خرید" />
                                 <Label alignment="CENTER_RIGHT" layoutX="897.0" layoutY="16.0" text="نام کتاب :" textAlignment="RIGHT">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="15.0" />
                                     </font>
                                 </Label>
                                 <Label alignment="CENTER_RIGHT" layoutX="878.0" layoutY="44.0" text="نام نویسنده :" textAlignment="RIGHT">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="15.0" />
                                     </font>
                                 </Label>
                                 <Label alignment="CENTER_RIGHT" layoutX="897.0" layoutY="71.0" text="انتشارات :" textAlignment="RIGHT">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="15.0" />
                                     </font>
                                 </Label>
                                 <Label alignment="CENTER_RIGHT" layoutX="913.0" layoutY="99.0" text="قیمت :" textAlignment="RIGHT">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="15.0" />
                                     </font>
                                 </Label>
                                 <Label alignment="CENTER_RIGHT" layoutX="891.0" layoutY="127.0" text="توضیحات :" textAlignment="RIGHT">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="15.0" />
                                     </font>
                                 </Label>
-                                <Label layoutX="830.0" layoutY="16.0" text="Label">
+                                <Label layoutX="799.0" layoutY="17.0" text="آشپزی برای همه">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="14.0" />
                                     </font>
                                 </Label>
-                                <Label layoutX="830.0" layoutY="44.0" text="Label">
+                                <Label layoutX="781.0" layoutY="45.0" text="فاطمه پوریاقی">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="14.0" />
                                     </font>
                                 </Label>
-                                <Label layoutX="830.0" layoutY="71.0" text="Label">
+                                <Label layoutX="849.0" layoutY="72.0" text="گیسوم">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="14.0" />
                                     </font>
                                 </Label>
-                                <Label fx:id="price5" layoutX="830.0" layoutY="99.0" text="Label">
+                                <Label fx:id="price5" layoutX="829.0" layoutY="100.0" text="45000 تومان">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="14.0" />
                                     </font>
                                 </Label>
+                        <Text layoutX="14.0" layoutY="143.0" strokeType="OUTSIDE" strokeWidth="0.0" text="امروزه صنعت آشپزی و مدیریت خانه‌داری به یکی از رشته‌های دانشگاهی تبدیل شده است و از موقعیت سنتی خود خارج گشته و زندگی زیبای شما را تحت تأثیر خود گذاشته است. شما با روبرو شدن یک سفره رنگین اولین پیشامدی که بر ذهنتان حاکم می گردد، این تصور است که برای تهیه غذای خوش‌طعم و مفید باید مبالغ هنگفتی را هزینه کنید، تا غذاهای متنوع آماده گردد، در حالی که واقعیت چیز دیگری است که خانم خانه با در نظر گرفتن اقتصاد خانواده می‌تواند از کمترین امکانات بهترین استفاده بهینه را داشته باشد." textAlignment="RIGHT" wrappingWidth="870.0">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Text>
                             </children>
                         </Pane>
                         <Pane layoutX="74.0" layoutY="1401.0" prefHeight="227.0" prefWidth="1096.0">
                             <children>
-                                <ImageView fitHeight="150.0" fitWidth="115.0" layoutX="965.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true" />
+                                <ImageView fitHeight="150.0" fitWidth="115.0" layoutX="969.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@photo2.jpg" />
+                           </image></ImageView>
                                 <Button fx:id="add6" layoutX="966.0" layoutY="174.0" mnemonicParsing="false" onAction="#onAdd6" text="افزودن به سبد خرید" />
                                 <Label alignment="CENTER_RIGHT" layoutX="897.0" layoutY="16.0" text="نام کتاب :" textAlignment="RIGHT">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="15.0" />
                                     </font>
                                 </Label>
                                 <Label alignment="CENTER_RIGHT" layoutX="878.0" layoutY="44.0" text="نام نویسنده :" textAlignment="RIGHT">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="15.0" />
                                     </font>
                                 </Label>
                                 <Label alignment="CENTER_RIGHT" layoutX="897.0" layoutY="71.0" text="انتشارات :" textAlignment="RIGHT">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="15.0" />
                                     </font>
                                 </Label>
                                 <Label alignment="CENTER_RIGHT" layoutX="913.0" layoutY="99.0" text="قیمت :" textAlignment="RIGHT">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="15.0" />
                                     </font>
                                 </Label>
                                 <Label alignment="CENTER_RIGHT" layoutX="891.0" layoutY="127.0" text="توضیحات :" textAlignment="RIGHT">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="15.0" />
                                     </font>
                                 </Label>
-                                <Label layoutX="830.0" layoutY="16.0" text="Label">
+                                <Label layoutX="833.0" layoutY="17.0" text="آشپزباشی">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="14.0" />
                                     </font>
                                 </Label>
-                                <Label layoutX="830.0" layoutY="44.0" text="Label">
+                                <Label layoutX="803.0" layoutY="45.0" text="رزا منتظمی">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="14.0" />
                                     </font>
                                 </Label>
-                                <Label layoutX="830.0" layoutY="71.0" text="Label">
+                                <Label layoutX="850.0" layoutY="71.0" text="گیسوم">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="14.0" />
                                     </font>
                                 </Label>
-                                <Label fx:id="price6" layoutX="830.0" layoutY="99.0" text="Label">
+                                <Label fx:id="price6" layoutX="829.0" layoutY="100.0" text="90000 تومان">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="14.0" />
                                     </font>
                                 </Label>
+                        <Text layoutX="14.0" layoutY="143.0" strokeType="OUTSIDE" strokeWidth="0.0" text="امروزه صنعت آشپزی و مدیریت خانه‌داری به یکی از رشته‌های دانشگاهی تبدیل شده است و از موقعیت سنتی خود خارج گشته و زندگی زیبای شما را تحت تأثیر خود گذاشته است. شما با روبرو شدن یک سفره رنگین اولین پیشامدی که بر ذهنتان حاکم می گردد، این تصور است که برای تهیه غذای خوش‌طعم و مفید باید مبالغ هنگفتی را هزینه کنید، تا غذاهای متنوع آماده گردد، در حالی که واقعیت چیز دیگری است که خانم خانه با در نظر گرفتن اقتصاد خانواده می‌تواند از کمترین امکانات بهترین استفاده بهینه را داشته باشد." textAlignment="RIGHT" wrappingWidth="870.0">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Text>
                             </children>
                         </Pane>
                         <Pane layoutX="74.0" layoutY="1642.0" prefHeight="227.0" prefWidth="1096.0">
                             <children>
-                                <ImageView fitHeight="150.0" fitWidth="115.0" layoutX="965.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true" />
+                                <ImageView fitHeight="150.0" fitWidth="115.0" layoutX="973.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@photo1.jpg" />
+                           </image></ImageView>
                                 <Button fx:id="add7" layoutX="966.0" layoutY="174.0" mnemonicParsing="false" onAction="#onAdd7" text="افزودن به سبد خرید" />
                                 <Label alignment="CENTER_RIGHT" layoutX="897.0" layoutY="16.0" text="نام کتاب :" textAlignment="RIGHT">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="15.0" />
                                     </font>
                                 </Label>
                                 <Label alignment="CENTER_RIGHT" layoutX="878.0" layoutY="44.0" text="نام نویسنده :" textAlignment="RIGHT">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="15.0" />
                                     </font>
                                 </Label>
                                 <Label alignment="CENTER_RIGHT" layoutX="897.0" layoutY="71.0" text="انتشارات :" textAlignment="RIGHT">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="15.0" />
                                     </font>
                                 </Label>
                                 <Label alignment="CENTER_RIGHT" layoutX="913.0" layoutY="99.0" text="قیمت :" textAlignment="RIGHT">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="15.0" />
                                     </font>
                                 </Label>
                                 <Label alignment="CENTER_RIGHT" layoutX="891.0" layoutY="127.0" text="توضیحات :" textAlignment="RIGHT">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="15.0" />
                                     </font>
                                 </Label>
-                                <Label layoutX="830.0" layoutY="16.0" text="Label">
+                                <Label layoutX="812.0" layoutY="17.0" text="پخت انواع نان">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="14.0" />
                                     </font>
                                 </Label>
-                                <Label layoutX="830.0" layoutY="44.0" text="Label">
+                                <Label layoutX="789.0" layoutY="45.0" text="شیرین درساره">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="14.0" />
                                     </font>
                                 </Label>
-                                <Label layoutX="830.0" layoutY="71.0" text="Label">
+                                <Label layoutX="850.0" layoutY="72.0" text="گیسوم">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="14.0" />
                                     </font>
                                 </Label>
-                                <Label fx:id="price7" layoutX="830.0" layoutY="99.0" text="Label">
+                                <Label fx:id="price7" layoutX="820.0" layoutY="100.0" text="125000 تومان">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="14.0" />
                                     </font>
                                 </Label>
+                        <Text layoutX="14.0" layoutY="143.0" strokeType="OUTSIDE" strokeWidth="0.0" text="امروزه صنعت آشپزی و مدیریت خانه‌داری به یکی از رشته‌های دانشگاهی تبدیل شده است و از موقعیت سنتی خود خارج گشته و زندگی زیبای شما را تحت تأثیر خود گذاشته است. شما با روبرو شدن یک سفره رنگین اولین پیشامدی که بر ذهنتان حاکم می گردد، این تصور است که برای تهیه غذای خوش‌طعم و مفید باید مبالغ هنگفتی را هزینه کنید، تا غذاهای متنوع آماده گردد، در حالی که واقعیت چیز دیگری است که خانم خانه با در نظر گرفتن اقتصاد خانواده می‌تواند از کمترین امکانات بهترین استفاده بهینه را داشته باشد." textAlignment="RIGHT" wrappingWidth="870.0">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Text>
                             </children>
                         </Pane>
                         <Pane layoutX="74.0" layoutY="1876.0" prefHeight="227.0" prefWidth="1096.0">
                             <children>
-                                <ImageView fitHeight="150.0" fitWidth="115.0" layoutX="965.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true" />
+                                <ImageView fitHeight="150.0" fitWidth="115.0" layoutX="974.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@photo_2024-01-15_09-02-58.jpg" />
+                           </image></ImageView>
                                 <Button fx:id="add8" layoutX="966.0" layoutY="174.0" mnemonicParsing="false" onAction="#onAdd8" text="افزودن به سبد خرید" />
                                 <Label alignment="CENTER_RIGHT" layoutX="897.0" layoutY="16.0" text="نام کتاب :" textAlignment="RIGHT">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="15.0" />
                                     </font>
                                 </Label>
                                 <Label alignment="CENTER_RIGHT" layoutX="878.0" layoutY="44.0" text="نام نویسنده :" textAlignment="RIGHT">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="15.0" />
                                     </font>
                                 </Label>
                                 <Label alignment="CENTER_RIGHT" layoutX="897.0" layoutY="71.0" text="انتشارات :" textAlignment="RIGHT">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="15.0" />
                                     </font>
                                 </Label>
                                 <Label alignment="CENTER_RIGHT" layoutX="913.0" layoutY="99.0" text="قیمت :" textAlignment="RIGHT">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="15.0" />
                                     </font>
                                 </Label>
                                 <Label alignment="CENTER_RIGHT" layoutX="891.0" layoutY="127.0" text="توضیحات :" textAlignment="RIGHT">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="15.0" />
                                     </font>
                                 </Label>
-                                <Label layoutX="830.0" layoutY="16.0" text="Label">
+                                <Label layoutX="773.0" layoutY="17.0" text="غذاهای 30 دقیقه ای">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="14.0" />
                                     </font>
                                 </Label>
-                                <Label layoutX="830.0" layoutY="44.0" text="Label">
+                                <Label layoutX="832.0" layoutY="44.0" text="بو بنت">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="14.0" />
                                     </font>
                                 </Label>
-                                <Label layoutX="830.0" layoutY="71.0" text="Label">
+                                <Label layoutX="850.0" layoutY="72.0" text="گیسوم">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="14.0" />
                                     </font>
                                 </Label>
-                                <Label fx:id="price8" layoutX="830.0" layoutY="99.0" text="Label">
+                                <Label fx:id="price8" layoutX="828.0" layoutY="100.0" text="80000 تومان">
                                     <font>
-                                        <Font size="14.0" />
+                                        <Font name="System Bold" size="14.0" />
                                     </font>
                                 </Label>
+                        <Text layoutX="14.0" layoutY="143.0" strokeType="OUTSIDE" strokeWidth="0.0" text="امروزه صنعت آشپزی و مدیریت خانه‌داری به یکی از رشته‌های دانشگاهی تبدیل شده است و از موقعیت سنتی خود خارج گشته و زندگی زیبای شما را تحت تأثیر خود گذاشته است. شما با روبرو شدن یک سفره رنگین اولین پیشامدی که بر ذهنتان حاکم می گردد، این تصور است که برای تهیه غذای خوش‌طعم و مفید باید مبالغ هنگفتی را هزینه کنید، تا غذاهای متنوع آماده گردد، در حالی که واقعیت چیز دیگری است که خانم خانه با در نظر گرفتن اقتصاد خانواده می‌تواند از کمترین امکانات بهترین استفاده بهینه را داشته باشد." textAlignment="RIGHT" wrappingWidth="870.0">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Text>
                             </children>
                         </Pane>
                     </children>
