@@ -8,11 +8,11 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="500.0" prefWidth="901.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.zoodbook.OrdersController">
+<AnchorPane prefHeight="500.0" prefWidth="901.0" styleClass="mainpageBackground" stylesheets="@style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.zoodbook.OrdersController">
    <children>
-      <Pane layoutX="1.0" prefHeight="130.0" prefWidth="900.0">
+      <Pane layoutX="1.0" prefHeight="130.0" prefWidth="900.0" styleClass="lightgreen" stylesheets="@style.css">
          <children>
-            <ImageView fx:id="logobtn" fitHeight="100.0" fitWidth="100.0" layoutX="790.0" layoutY="11.0" onMouseClicked="#onLogoClicked" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="logobtn" fitHeight="100.0" fitWidth="100.0" layoutX="790.0" layoutY="11.0" onMouseClicked="#onLogoClicked" pickOnBounds="true" preserveRatio="true" styleClass="zoom">
                <image>
                   <Image url="@jhjhj.png" />
                </image>
@@ -22,7 +22,7 @@
                   <Font name="System Bold Italic" size="28.0" />
                </font>
             </Text>
-            <ImageView fx:id="backbtn" fitHeight="30.0" fitWidth="30.0" layoutX="14.0" layoutY="14.0" onMouseClicked="#onBackClicked" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="backbtn" fitHeight="30.0" fitWidth="30.0" layoutX="14.0" layoutY="14.0" onMouseClicked="#onBackClicked" pickOnBounds="true" preserveRatio="true" styleClass="zoom">
                <image>
                   <Image url="@120.png" />
                </image>

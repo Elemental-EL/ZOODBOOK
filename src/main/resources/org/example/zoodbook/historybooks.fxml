@@ -17,7 +17,7 @@
             <content>
                 <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="2135.0" prefWidth="1184.0" styleClass="mainpageBackground" stylesheets="@style.css">
                     <children>
-                        <ImageView fx:id="logobtn" fitHeight="100.0" fitWidth="100.0" layoutX="1071.0" layoutY="14.0" onMouseClicked="#onLogoClicked" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fx:id="logobtn" fitHeight="100.0" fitWidth="100.0" layoutX="1071.0" layoutY="14.0" onMouseClicked="#onLogoClicked" pickOnBounds="true" preserveRatio="true" styleClass="zoom">
                             <image>
                                 <Image url="@jhjhj.png" />
                             </image>
@@ -80,12 +80,12 @@
                                 </Button>
                             </children>
                         </Pane>
-                        <ImageView fx:id="cartbtn" fitHeight="35.0" fitWidth="35.0" layoutX="56.0" layoutY="14.0" onMouseClicked="#onCartClicked" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fx:id="cartbtn" fitHeight="35.0" fitWidth="35.0" layoutX="56.0" layoutY="14.0" onMouseClicked="#onCartClicked" pickOnBounds="true" preserveRatio="true" styleClass="zoom">
                             <image>
                                 <Image url="@CartGreenPNG.png" />
                             </image>
                         </ImageView>
-                        <ImageView fx:id="profilebtn" fitHeight="35.0" fitWidth="35.0" layoutX="14.0" layoutY="14.0" onMouseClicked="#onUserClicked" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fx:id="profilebtn" fitHeight="35.0" fitWidth="35.0" layoutX="14.0" layoutY="14.0" onMouseClicked="#onUserClicked" pickOnBounds="true" preserveRatio="true" styleClass="zoom">
                             <image>
                                 <Image url="@UsetGreenPNG.png" />
                             </image>

@@ -60,5 +60,6 @@
 .radiusforcat{
 -fx-background-radius:20px;
 }
-
-//
+.pastelgreen{
+-fx-background-color:#E1ECC8;
+}

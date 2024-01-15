@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.lang.String?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ScrollPane?>
@@ -14,7 +15,7 @@
 
 <AnchorPane prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.zoodbook.CartController">
    <children>
-      <Pane prefHeight="100.0" prefWidth="900.0">
+      <Pane prefHeight="100.0" prefWidth="900.0" styleClass="lightgreen" stylesheets="@style.css">
          <children>
             <ImageView fx:id="logobtn" fitHeight="100.0" fitWidth="100.0" layoutX="800.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -33,9 +34,9 @@
             </Label>
          </children>
       </Pane>
-      <ScrollPane layoutY="100.0" prefHeight="500.0" prefWidth="900.0">
+      <ScrollPane layoutY="100.0" prefHeight="800.0" prefWidth="900.0">
         <content>
-          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="800.0" prefWidth="884.0">
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="800.0" prefWidth="884.0" styleClass="mainpageBackground" stylesheets="@style.css">
                <children>
                   <Label layoutX="697.0" layoutY="23.0" text="سبد خرید شما">
                      <font>
@@ -51,7 +52,7 @@
                     <content>
                       <AnchorPane fx:id="cartList" minHeight="0.0" minWidth="0.0" prefHeight="900.0" prefWidth="783.0">
                            <children>
-                              <VBox prefHeight="900.0">
+                              <VBox prefHeight="900.0" styleClass="lightergreen" stylesheets="@style.css">
                                  <children>
                                     <Pane prefHeight="60.0" prefWidth="785.0">
                                        <children>
@@ -100,10 +101,15 @@
                         </AnchorPane>
                     </content>
                   </ScrollPane>
-                  <Button layoutX="393.0" layoutY="378.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="100.0" text="ادامه خرید">
+                  <Button layoutX="393.0" layoutY="378.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="100.0" stylesheets="@style.css" text="ادامه خرید" textFill="WHITE">
                      <font>
                         <Font size="16.0" />
                      </font>
+                     <styleClass>
+                        <String fx:value="navbarbuttonshover" />
+                        <String fx:value="radiusforcat" />
+                        <String fx:value="mainpageElementsdarkgreen" />
+                     </styleClass>
                   </Button>
                   <Label layoutX="674.0" layoutY="438.0" text="سفارشات شما">
                      <font>
@@ -115,7 +121,7 @@
                         <Image url="@orderd-icon.png" />
                      </image>
                   </ImageView>
-                  <TextArea layoutX="93.0" layoutY="483.0" prefHeight="300.0" prefWidth="700.0" />
+                  <TextArea layoutX="93.0" layoutY="483.0" prefHeight="300.0" prefWidth="700.0" styleClass="mainpageElementsdarkgreen" stylesheets="@style.css" />
                </children>
             </AnchorPane>
         </content>
