@@ -13,7 +13,7 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.zoodbook.classicbooksController">
    <children>
-      <ScrollPane fx:id="scrollPane" prefHeight="720.0" prefWidth="1200.0">
+      <ScrollPane fx:id="scrollPane" prefHeight="2500.0" prefWidth="1200.0">
          <content>
             <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="2133.0" prefWidth="1184.0" styleClass="mainpageBackground" stylesheets="@style.css">
                <children>
@@ -109,7 +109,11 @@
                            <image>
                               <Image url="@photo_2024-01-15_09-29-49.jpg" />
                            </image></ImageView>
-                        <Button fx:id="add1" layoutX="966.0" layoutY="174.0" mnemonicParsing="false" onAction="#onAdd1" styleClass="mainpageElementsdarkgreen" stylesheets="@style.css" text="افزودن به سبد خرید" textFill="WHITE" />
+                        <Button fx:id="add1" layoutX="966.0" layoutY="174.0" mnemonicParsing="false" onAction="#onAdd1" stylesheets="@style.css" text="افزودن به سبد خرید" textFill="WHITE">
+                           <styleClass>
+                              <String fx:value="mainpageElementsdarkgreen" />
+                              <String fx:value="navbarbuttonshover" />
+                           </styleClass></Button>
                         <Label alignment="CENTER_RIGHT" layoutX="897.0" layoutY="16.0" text="نام کتاب :" textAlignment="RIGHT">
                            <font>
                               <Font name="System Bold" size="15.0" />
@@ -172,7 +176,11 @@
                            <image>
                               <Image url="@photo_2024-01-15_09-29-45.jpg" />
                            </image></ImageView>
-                        <Button fx:id="add2" layoutX="966.0" layoutY="174.0" mnemonicParsing="false" onAction="#onAdd2" styleClass="mainpageElementsdarkgreen" stylesheets="@style.css" text="افزودن به سبد خرید" textFill="WHITE" />
+                        <Button fx:id="add2" layoutX="966.0" layoutY="174.0" mnemonicParsing="false" onAction="#onAdd2" stylesheets="@style.css" text="افزودن به سبد خرید" textFill="WHITE">
+                           <styleClass>
+                              <String fx:value="mainpageElementsdarkgreen" />
+                              <String fx:value="navbarbuttonshover" />
+                           </styleClass></Button>
                         <Label alignment="CENTER_RIGHT" layoutX="897.0" layoutY="16.0" text="نام کتاب :" textAlignment="RIGHT">
                            <font>
                               <Font name="System Bold" size="15.0" />
@@ -235,7 +243,11 @@
                            <image>
                               <Image url="@photo_2024-01-15_09-29-41.jpg" />
                            </image></ImageView>
-                        <Button fx:id="add3" layoutX="966.0" layoutY="174.0" mnemonicParsing="false" onAction="#onAdd3" styleClass="mainpageElementsdarkgreen" stylesheets="@style.css" text="افزودن به سبد خرید" textFill="WHITE" />
+                        <Button fx:id="add3" layoutX="966.0" layoutY="174.0" mnemonicParsing="false" onAction="#onAdd3" stylesheets="@style.css" text="افزودن به سبد خرید" textFill="WHITE">
+                           <styleClass>
+                              <String fx:value="mainpageElementsdarkgreen" />
+                              <String fx:value="navbarbuttonshover" />
+                           </styleClass></Button>
                         <Label alignment="CENTER_RIGHT" layoutX="897.0" layoutY="16.0" text="نام کتاب :" textAlignment="RIGHT">
                            <font>
                               <Font name="System Bold" size="15.0" />
@@ -298,7 +310,11 @@
                            <image>
                               <Image url="@photo_2024-01-15_09-29-36.jpg" />
                            </image></ImageView>
-                        <Button fx:id="add4" layoutX="966.0" layoutY="174.0" mnemonicParsing="false" onAction="#onAdd4" styleClass="mainpageElementsdarkgreen" stylesheets="@style.css" text="افزودن به سبد خرید" textFill="WHITE" />
+                        <Button fx:id="add4" layoutX="966.0" layoutY="174.0" mnemonicParsing="false" onAction="#onAdd4" stylesheets="@style.css" text="افزودن به سبد خرید" textFill="WHITE">
+                           <styleClass>
+                              <String fx:value="mainpageElementsdarkgreen" />
+                              <String fx:value="navbarbuttonshover" />
+                           </styleClass></Button>
                         <Label alignment="CENTER_RIGHT" layoutX="897.0" layoutY="16.0" text="نام کتاب :" textAlignment="RIGHT">
                            <font>
                               <Font name="System Bold" size="15.0" />
@@ -361,7 +377,11 @@
                            <image>
                               <Image url="@photo_2024-01-15_09-29-32.jpg" />
                            </image></ImageView>
-                        <Button fx:id="add5" layoutX="966.0" layoutY="174.0" mnemonicParsing="false" onAction="#onAdd5" styleClass="mainpageElementsdarkgreen" stylesheets="@style.css" text="افزودن به سبد خرید" textFill="WHITE" />
+                        <Button fx:id="add5" layoutX="966.0" layoutY="174.0" mnemonicParsing="false" onAction="#onAdd5" stylesheets="@style.css" text="افزودن به سبد خرید" textFill="WHITE">
+                           <styleClass>
+                              <String fx:value="mainpageElementsdarkgreen" />
+                              <String fx:value="navbarbuttonshover" />
+                           </styleClass></Button>
                         <Label alignment="CENTER_RIGHT" layoutX="897.0" layoutY="16.0" text="نام کتاب :" textAlignment="RIGHT">
                            <font>
                               <Font name="System Bold" size="15.0" />
@@ -424,7 +444,11 @@
                            <image>
                               <Image url="@photo_2024-01-15_09-29-28.jpg" />
                            </image></ImageView>
-                        <Button fx:id="add6" layoutX="966.0" layoutY="174.0" mnemonicParsing="false" onAction="#onAdd6" styleClass="mainpageElementsdarkgreen" stylesheets="@style.css" text="افزودن به سبد خرید" textFill="WHITE" />
+                        <Button fx:id="add6" layoutX="966.0" layoutY="174.0" mnemonicParsing="false" onAction="#onAdd6" stylesheets="@style.css" text="افزودن به سبد خرید" textFill="WHITE">
+                           <styleClass>
+                              <String fx:value="mainpageElementsdarkgreen" />
+                              <String fx:value="navbarbuttonshover" />
+                           </styleClass></Button>
                         <Label alignment="CENTER_RIGHT" layoutX="897.0" layoutY="16.0" text="نام کتاب :" textAlignment="RIGHT">
                            <font>
                               <Font name="System Bold" size="15.0" />
@@ -487,7 +511,11 @@
                            <image>
                               <Image url="@photo_2024-01-15_09-29-23.jpg" />
                            </image></ImageView>
-                        <Button fx:id="add7" layoutX="966.0" layoutY="174.0" mnemonicParsing="false" onAction="#onAdd7" styleClass="mainpageElementsdarkgreen" stylesheets="@style.css" text="افزودن به سبد خرید" textFill="WHITE" />
+                        <Button fx:id="add7" layoutX="966.0" layoutY="174.0" mnemonicParsing="false" onAction="#onAdd7" stylesheets="@style.css" text="افزودن به سبد خرید" textFill="WHITE">
+                           <styleClass>
+                              <String fx:value="mainpageElementsdarkgreen" />
+                              <String fx:value="navbarbuttonshover" />
+                           </styleClass></Button>
                         <Label alignment="CENTER_RIGHT" layoutX="897.0" layoutY="16.0" text="نام کتاب :" textAlignment="RIGHT">
                            <font>
                               <Font name="System Bold" size="15.0" />
@@ -550,7 +578,11 @@
                            <image>
                               <Image url="@photo_2024-01-15_09-29-19.jpg" />
                            </image></ImageView>
-                        <Button fx:id="add8" layoutX="966.0" layoutY="174.0" mnemonicParsing="false" onAction="#onAdd8" styleClass="mainpageElementsdarkgreen" stylesheets="@style.css" text="افزودن به سبد خرید" textFill="WHITE" />
+                        <Button fx:id="add8" layoutX="966.0" layoutY="174.0" mnemonicParsing="false" onAction="#onAdd8" stylesheets="@style.css" text="افزودن به سبد خرید" textFill="WHITE">
+                           <styleClass>
+                              <String fx:value="mainpageElementsdarkgreen" />
+                              <String fx:value="navbarbuttonshover" />
+                           </styleClass></Button>
                         <Label alignment="CENTER_RIGHT" layoutX="897.0" layoutY="16.0" text="نام کتاب :" textAlignment="RIGHT">
                            <font>
                               <Font name="System Bold" size="15.0" />

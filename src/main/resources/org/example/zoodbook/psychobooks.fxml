@@ -111,8 +111,8 @@
                            </image></ImageView>
                                 <Button fx:id="add1" layoutX="966.0" layoutY="174.0" mnemonicParsing="false" onAction="#onAdd1" stylesheets="@style.css" text="افزودن به سبد خرید" textFill="WHITE">
                            <styleClass>
-                              <String fx:value="lightergreen" />
-                              <String fx:value="radiusforcat" />
+                              <String fx:value="mainpageElementsdarkgreen" />
+                              <String fx:value="navbarbuttonshover" />
                            </styleClass></Button>
                                 <Label alignment="CENTER_RIGHT" layoutX="897.0" layoutY="16.0" text="نام کتاب :" textAlignment="RIGHT">
                                     <font>
@@ -178,8 +178,8 @@
                            </image></ImageView>
                                 <Button fx:id="add2" layoutX="966.0" layoutY="174.0" mnemonicParsing="false" onAction="#onAdd2" stylesheets="@style.css" text="افزودن به سبد خرید" textFill="WHITE">
                            <styleClass>
-                              <String fx:value="lightergreen" />
-                              <String fx:value="radiusforcat" />
+                              <String fx:value="mainpageElementsdarkgreen" />
+                              <String fx:value="navbarbuttonshover" />
                            </styleClass></Button>
                                 <Label alignment="CENTER_RIGHT" layoutX="897.0" layoutY="16.0" text="نام کتاب :" textAlignment="RIGHT">
                                     <font>
@@ -245,8 +245,8 @@
                            </image></ImageView>
                                 <Button fx:id="add3" layoutX="966.0" layoutY="174.0" mnemonicParsing="false" onAction="#onAdd3" stylesheets="@style.css" text="افزودن به سبد خرید" textFill="WHITE">
                            <styleClass>
-                              <String fx:value="lightergreen" />
-                              <String fx:value="radiusforcat" />
+                              <String fx:value="mainpageElementsdarkgreen" />
+                              <String fx:value="navbarbuttonshover" />
                            </styleClass></Button>
                                 <Label alignment="CENTER_RIGHT" layoutX="897.0" layoutY="16.0" text="نام کتاب :" textAlignment="RIGHT">
                                     <font>
@@ -312,8 +312,8 @@
                            </image></ImageView>
                                 <Button fx:id="add4" layoutX="966.0" layoutY="174.0" mnemonicParsing="false" onAction="#onAdd4" stylesheets="@style.css" text="افزودن به سبد خرید" textFill="WHITE">
                            <styleClass>
-                              <String fx:value="lightergreen" />
-                              <String fx:value="radiusforcat" />
+                              <String fx:value="mainpageElementsdarkgreen" />
+                              <String fx:value="navbarbuttonshover" />
                            </styleClass></Button>
                                 <Label alignment="CENTER_RIGHT" layoutX="897.0" layoutY="16.0" text="نام کتاب :" textAlignment="RIGHT">
                                     <font>
@@ -379,8 +379,8 @@
                            </image></ImageView>
                                 <Button fx:id="add5" layoutX="966.0" layoutY="174.0" mnemonicParsing="false" onAction="#onAdd5" stylesheets="@style.css" text="افزودن به سبد خرید" textFill="WHITE">
                            <styleClass>
-                              <String fx:value="lightergreen" />
-                              <String fx:value="radiusforcat" />
+                              <String fx:value="mainpageElementsdarkgreen" />
+                              <String fx:value="navbarbuttonshover" />
                            </styleClass></Button>
                                 <Label alignment="CENTER_RIGHT" layoutX="897.0" layoutY="16.0" text="نام کتاب :" textAlignment="RIGHT">
                                     <font>
@@ -446,8 +446,8 @@
                            </image></ImageView>
                                 <Button fx:id="add6" layoutX="966.0" layoutY="174.0" mnemonicParsing="false" onAction="#onAdd6" stylesheets="@style.css" text="افزودن به سبد خرید" textFill="WHITE">
                            <styleClass>
-                              <String fx:value="lightergreen" />
-                              <String fx:value="radiusforcat" />
+                              <String fx:value="mainpageElementsdarkgreen" />
+                              <String fx:value="navbarbuttonshover" />
                            </styleClass></Button>
                                 <Label alignment="CENTER_RIGHT" layoutX="897.0" layoutY="16.0" text="نام کتاب :" textAlignment="RIGHT">
                                     <font>
@@ -513,8 +513,8 @@
                            </image></ImageView>
                                 <Button fx:id="add7" layoutX="966.0" layoutY="174.0" mnemonicParsing="false" onAction="#onAdd7" stylesheets="@style.css" text="افزودن به سبد خرید" textFill="WHITE">
                            <styleClass>
-                              <String fx:value="lightergreen" />
-                              <String fx:value="radiusforcat" />
+                              <String fx:value="mainpageElementsdarkgreen" />
+                              <String fx:value="navbarbuttonshover" />
                            </styleClass></Button>
                                 <Label alignment="CENTER_RIGHT" layoutX="897.0" layoutY="16.0" text="نام کتاب :" textAlignment="RIGHT">
                                     <font>
@@ -580,8 +580,8 @@
                            </image></ImageView>
                                 <Button fx:id="add8" layoutX="966.0" layoutY="174.0" mnemonicParsing="false" onAction="#onAdd8" stylesheets="@style.css" text="افزودن به سبد خرید" textFill="WHITE">
                            <styleClass>
-                              <String fx:value="lightergreen" />
-                              <String fx:value="radiusforcat" />
+                              <String fx:value="mainpageElementsdarkgreen" />
+                              <String fx:value="navbarbuttonshover" />
                            </styleClass></Button>
                                 <Label alignment="CENTER_RIGHT" layoutX="897.0" layoutY="16.0" text="نام کتاب :" textAlignment="RIGHT">
                                     <font>
