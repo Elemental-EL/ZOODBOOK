@@ -107,8 +107,9 @@
                      <styleClass>
                         <String fx:value="lightgreen" />
                         <String fx:value="navbarbuttonshover" />
+                        <String fx:value="zoom" />
                      </styleClass></Button>
-                  <Pane layoutX="9.0" layoutY="220.0" prefHeight="200.0" prefWidth="1160.0" styleClass="categoriesradiudandcolor">
+                  <Pane layoutX="9.0" layoutY="220.0" prefHeight="200.0" prefWidth="1160.0">
                      <children>
                         <Pane layoutX="886.0" layoutY="5.0" prefHeight="190.0" prefWidth="260.0">
                            <children>
@@ -116,7 +117,12 @@
                                  <image>
                                     <Image url="@photo_2024-01-15_09-29-36.jpg" />
                                  </image></ImageView>
-                              <Button layoutX="130.0" layoutY="151.0" mnemonicParsing="false" text="افزودن به سبد خرید" />
+                              <Button layoutX="130.0" layoutY="151.0" mnemonicParsing="false" stylesheets="@style.css" text="افزودن به سبد خرید" textFill="WHITE">
+                                 <styleClass>
+                                    <String fx:value="mainpageElementsdarkgreen" />
+                                    <String fx:value="zoom" />
+                                    <String fx:value="navbarbuttonshover" />
+                                 </styleClass></Button>
                               <Label layoutX="80.0" layoutY="27.0" text="نام کتاب:">
                                  <font>
                                     <Font name="System Bold" size="14.0" />
@@ -157,7 +163,12 @@
                                  <image>
                                     <Image url="@photo_2024-01-15_09-29-49.jpg" />
                                  </image></ImageView>
-                              <Button layoutX="128.0" layoutY="151.0" mnemonicParsing="false" text="افزودن به سبد خرید" />
+                              <Button layoutX="128.0" layoutY="151.0" mnemonicParsing="false" stylesheets="@style.css" text="افزودن به سبد خرید" textFill="WHITE">
+                                 <styleClass>
+                                    <String fx:value="mainpageElementsdarkgreen" />
+                                    <String fx:value="zoom" />
+                                    <String fx:value="navbarbuttonshover" />
+                                 </styleClass></Button>
                               <Label layoutX="80.0" layoutY="29.0" text="نام کتاب:">
                                  <font>
                                     <Font name="System Bold" size="14.0" />
@@ -198,7 +209,12 @@
                                  <image>
                                     <Image url="@photo_2024-01-15_09-29-45.jpg" />
                                  </image></ImageView>
-                              <Button layoutX="124.0" layoutY="151.0" mnemonicParsing="false" text="افزودن به سبد خرید" />
+                              <Button layoutX="124.0" layoutY="151.0" mnemonicParsing="false" stylesheets="@style.css" text="افزودن به سبد خرید" textFill="WHITE">
+                                 <styleClass>
+                                    <String fx:value="mainpageElementsdarkgreen" />
+                                    <String fx:value="zoom" />
+                                    <String fx:value="navbarbuttonshover" />
+                                 </styleClass></Button>
                               <Label layoutX="79.0" layoutY="32.0" text="نام کتاب:">
                                  <font>
                                     <Font name="System Bold" size="14.0" />
@@ -239,7 +255,12 @@
                                  <image>
                                     <Image url="@photo_2024-01-15_09-29-41.jpg" />
                                  </image></ImageView>
-                              <Button layoutX="123.0" layoutY="151.0" mnemonicParsing="false" text="افزودن به سبد خرید" />
+                              <Button layoutX="123.0" layoutY="151.0" mnemonicParsing="false" stylesheets="@style.css" text="افزودن به سبد خرید" textFill="WHITE">
+                                 <styleClass>
+                                    <String fx:value="mainpageElementsdarkgreen" />
+                                    <String fx:value="zoom" />
+                                    <String fx:value="navbarbuttonshover" />
+                                 </styleClass></Button>
                               <Label layoutX="70.0" layoutY="30.0" text="نام کتاب:">
                                  <font>
                                     <Font name="System Bold" size="14.0" />
@@ -274,7 +295,11 @@
                                  </font></Label>
                            </children>
                         </Pane>
-                     </children></Pane>
+                     </children>
+                     <styleClass>
+                        <String fx:value="lightergreen" />
+                        <String fx:value="radiusforcat" />
+                     </styleClass></Pane>
                   <ImageView fitHeight="60.0" fitWidth="60.0" layoutX="1119.0" layoutY="409.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@historical.png" />
@@ -288,6 +313,7 @@
                      <styleClass>
                         <String fx:value="lightgreen" />
                         <String fx:value="navbarbuttonshover" />
+                        <String fx:value="zoom" />
                      </styleClass></Button>
                   <ImageView fitHeight="60.0" fitWidth="60.0" layoutX="1119.0" layoutY="661.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -302,6 +328,7 @@
                      <styleClass>
                         <String fx:value="lightgreen" />
                         <String fx:value="navbarbuttonshover" />
+                        <String fx:value="zoom" />
                      </styleClass></Button>
                   <ImageView fitHeight="60.0" fitWidth="60.0" layoutX="1119.0" layoutY="914.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -316,6 +343,7 @@
                      <styleClass>
                         <String fx:value="lightgreen" />
                         <String fx:value="navbarbuttonshover" />
+                        <String fx:value="zoom" />
                      </styleClass></Button>
                   <ImageView fitHeight="60.0" fitWidth="60.0" layoutX="1119.0" layoutY="1172.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -330,6 +358,7 @@
                      <styleClass>
                         <String fx:value="lightgreen" />
                         <String fx:value="navbarbuttonshover" />
+                        <String fx:value="zoom" />
                      </styleClass></Button>
                   <ImageView fitHeight="60.0" fitWidth="60.0" layoutX="1119.0" layoutY="1430.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -345,6 +374,7 @@
                      <styleClass>
                         <String fx:value="lightgreen" />
                         <String fx:value="navbarbuttonshover" />
+                        <String fx:value="zoom" />
                      </styleClass></Button>
                   <ImageView fx:id="searchbtn" fitHeight="32.0" fitWidth="32.0" layoutX="400.0" layoutY="15.0" onMouseClicked="#onSearchClicked" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -420,7 +450,12 @@
                                     <Image url="@photo_2024-01-13_10-41-46.jpg" />
                                  </image>
                               </ImageView>
-                              <Button layoutX="130.0" layoutY="151.0" mnemonicParsing="false" text="افزودن به سبد خرید" />
+                              <Button layoutX="130.0" layoutY="151.0" mnemonicParsing="false" stylesheets="@style.css" text="افزودن به سبد خرید" textFill="WHITE">
+                                 <styleClass>
+                                    <String fx:value="mainpageElementsdarkgreen" />
+                                    <String fx:value="zoom" />
+                                    <String fx:value="navbarbuttonshover" />
+                                 </styleClass></Button>
                               <Label layoutX="80.0" layoutY="27.0" text="نام کتاب:">
                                  <font>
                                     <Font name="System Bold" size="14.0" />
@@ -470,7 +505,12 @@
                                     <Image url="@photo_2024-01-13_10-47-24.jpg" />
                                  </image>
                               </ImageView>
-                              <Button layoutX="128.0" layoutY="151.0" mnemonicParsing="false" text="افزودن به سبد خرید" />
+                              <Button layoutX="128.0" layoutY="151.0" mnemonicParsing="false" stylesheets="@style.css" text="افزودن به سبد خرید" textFill="WHITE">
+                                 <styleClass>
+                                    <String fx:value="mainpageElementsdarkgreen" />
+                                    <String fx:value="zoom" />
+                                    <String fx:value="navbarbuttonshover" />
+                                 </styleClass></Button>
                               <Label layoutX="79.0" layoutY="14.0" text="نام کتاب:">
                                  <font>
                                     <Font name="System Bold" size="14.0" />
@@ -520,7 +560,12 @@
                                     <Image url="@photo_2024-01-13_11-02-47.jpg" />
                                  </image>
                               </ImageView>
-                              <Button layoutX="124.0" layoutY="151.0" mnemonicParsing="false" text="افزودن به سبد خرید" />
+                              <Button layoutX="124.0" layoutY="151.0" mnemonicParsing="false" stylesheets="@style.css" text="افزودن به سبد خرید" textFill="WHITE">
+                                 <styleClass>
+                                    <String fx:value="mainpageElementsdarkgreen" />
+                                    <String fx:value="zoom" />
+                                    <String fx:value="navbarbuttonshover" />
+                                 </styleClass></Button>
                               <Label layoutX="77.0" layoutY="14.0" text="نام کتاب:">
                                  <font>
                                     <Font name="System Bold" size="14.0" />
@@ -570,7 +615,12 @@
                                     <Image url="@photo_2024-01-13_10-58-15.jpg" />
                                  </image>
                               </ImageView>
-                              <Button layoutX="123.0" layoutY="151.0" mnemonicParsing="false" text="افزودن به سبد خرید" />
+                              <Button layoutX="123.0" layoutY="151.0" mnemonicParsing="false" stylesheets="@style.css" text="افزودن به سبد خرید" textFill="WHITE">
+                                 <styleClass>
+                                    <String fx:value="mainpageElementsdarkgreen" />
+                                    <String fx:value="zoom" />
+                                    <String fx:value="navbarbuttonshover" />
+                                 </styleClass></Button>
                               <Label layoutX="76.0" layoutY="15.0" text="نام کتاب:">
                                  <font>
                                     <Font name="System Bold" size="14.0" />
@@ -615,7 +665,7 @@
                         </Pane>
                      </children>
                   </Pane>
-                  <Pane layoutX="9.0" layoutY="725.0" prefHeight="200.0" prefWidth="1160.0" styleClass="categoriesradiudandcolor">
+                  <Pane layoutX="9.0" layoutY="725.0" prefHeight="200.0" prefWidth="1160.0">
                      <children>
                         <Pane layoutX="886.0" layoutY="5.0" prefHeight="190.0" prefWidth="260.0">
                            <children>
@@ -624,7 +674,12 @@
                                     <Image url="@photo_2024-01-15_08-51-14.jpg" />
                                  </image>
                               </ImageView>
-                              <Button layoutX="130.0" layoutY="151.0" mnemonicParsing="false" text="افزودن به سبد خرید" />
+                              <Button layoutX="130.0" layoutY="151.0" mnemonicParsing="false" stylesheets="@style.css" text="افزودن به سبد خرید" textFill="WHITE">
+                                 <styleClass>
+                                    <String fx:value="mainpageElementsdarkgreen" />
+                                    <String fx:value="zoom" />
+                                    <String fx:value="navbarbuttonshover" />
+                                 </styleClass></Button>
                               <Label layoutX="80.0" layoutY="27.0" text="نام کتاب:">
                                  <font>
                                     <Font name="System Bold" size="14.0" />
@@ -674,7 +729,12 @@
                                     <Image url="@photo_2024-01-15_09-02-12.jpg" />
                                  </image>
                               </ImageView>
-                              <Button layoutX="128.0" layoutY="151.0" mnemonicParsing="false" text="افزودن به سبد خرید" />
+                              <Button layoutX="128.0" layoutY="151.0" mnemonicParsing="false" stylesheets="@style.css" text="افزودن به سبد خرید" textFill="WHITE">
+                                 <styleClass>
+                                    <String fx:value="mainpageElementsdarkgreen" />
+                                    <String fx:value="zoom" />
+                                    <String fx:value="navbarbuttonshover" />
+                                 </styleClass></Button>
                               <Label layoutX="80.0" layoutY="29.0" text="نام کتاب:">
                                  <font>
                                     <Font name="System Bold" size="14.0" />
@@ -724,7 +784,12 @@
                                     <Image url="@photo_2024-01-15_08-43-55.jpg" />
                                  </image>
                               </ImageView>
-                              <Button layoutX="124.0" layoutY="151.0" mnemonicParsing="false" text="افزودن به سبد خرید" />
+                              <Button layoutX="124.0" layoutY="151.0" mnemonicParsing="false" stylesheets="@style.css" text="افزودن به سبد خرید" textFill="WHITE">
+                                 <styleClass>
+                                    <String fx:value="mainpageElementsdarkgreen" />
+                                    <String fx:value="zoom" />
+                                    <String fx:value="navbarbuttonshover" />
+                                 </styleClass></Button>
                               <Label layoutX="79.0" layoutY="32.0" text="نام کتاب:">
                                  <font>
                                     <Font name="System Bold" size="14.0" />
@@ -774,7 +839,12 @@
                                     <Image url="@photo_2024-01-15_08-56-02.jpg" />
                                  </image>
                               </ImageView>
-                              <Button layoutX="123.0" layoutY="151.0" mnemonicParsing="false" text="افزودن به سبد خرید" />
+                              <Button layoutX="123.0" layoutY="151.0" mnemonicParsing="false" stylesheets="@style.css" text="افزودن به سبد خرید" textFill="WHITE">
+                                 <styleClass>
+                                    <String fx:value="mainpageElementsdarkgreen" />
+                                    <String fx:value="zoom" />
+                                    <String fx:value="navbarbuttonshover" />
+                                 </styleClass></Button>
                               <Label layoutX="70.0" layoutY="30.0" text="نام کتاب:">
                                  <font>
                                     <Font name="System Bold" size="14.0" />
@@ -818,6 +888,10 @@
                            </children>
                         </Pane>
                      </children>
+                     <styleClass>
+                        <String fx:value="lightergreen" />
+                        <String fx:value="radiusforcat" />
+                     </styleClass>
                   </Pane>
                   <Pane layoutX="9.0" layoutY="980.0" prefHeight="200.0" prefWidth="1160.0" styleClass="categoriesradiudandcolor">
                      <children>
@@ -828,7 +902,12 @@
                                     <Image url="@photo_4_2024-01-15_10-20-21.jpg" />
                                  </image>
                               </ImageView>
-                              <Button layoutX="130.0" layoutY="151.0" mnemonicParsing="false" text="افزودن به سبد خرید" />
+                              <Button layoutX="130.0" layoutY="151.0" mnemonicParsing="false" stylesheets="@style.css" text="افزودن به سبد خرید" textFill="WHITE">
+                                 <styleClass>
+                                    <String fx:value="mainpageElementsdarkgreen" />
+                                    <String fx:value="zoom" />
+                                    <String fx:value="navbarbuttonshover" />
+                                 </styleClass></Button>
                               <Label layoutX="80.0" layoutY="27.0" text="نام کتاب:">
                                  <font>
                                     <Font name="System Bold" size="14.0" />
@@ -878,7 +957,12 @@
                                     <Image url="@photo_1_2024-01-15_10-20-21.jpg" />
                                  </image>
                               </ImageView>
-                              <Button layoutX="128.0" layoutY="151.0" mnemonicParsing="false" text="افزودن به سبد خرید" />
+                              <Button layoutX="128.0" layoutY="151.0" mnemonicParsing="false" stylesheets="@style.css" text="افزودن به سبد خرید" textFill="WHITE">
+                                 <styleClass>
+                                    <String fx:value="mainpageElementsdarkgreen" />
+                                    <String fx:value="zoom" />
+                                    <String fx:value="navbarbuttonshover" />
+                                 </styleClass></Button>
                               <Label layoutX="80.0" layoutY="29.0" text="نام کتاب:">
                                  <font>
                                     <Font name="System Bold" size="14.0" />
@@ -928,7 +1012,12 @@
                                     <Image url="@photo_2_2024-01-15_10-20-21.jpg" />
                                  </image>
                               </ImageView>
-                              <Button layoutX="124.0" layoutY="151.0" mnemonicParsing="false" text="افزودن به سبد خرید" />
+                              <Button layoutX="124.0" layoutY="151.0" mnemonicParsing="false" stylesheets="@style.css" text="افزودن به سبد خرید" textFill="WHITE">
+                                 <styleClass>
+                                    <String fx:value="mainpageElementsdarkgreen" />
+                                    <String fx:value="zoom" />
+                                    <String fx:value="navbarbuttonshover" />
+                                 </styleClass></Button>
                               <Label layoutX="79.0" layoutY="32.0" text="نام کتاب:">
                                  <font>
                                     <Font name="System Bold" size="14.0" />
@@ -978,7 +1067,12 @@
                                     <Image url="@photo_7_2024-01-15_10-20-21.jpg" />
                                  </image>
                               </ImageView>
-                              <Button layoutX="123.0" layoutY="151.0" mnemonicParsing="false" text="افزودن به سبد خرید" />
+                              <Button layoutX="123.0" layoutY="151.0" mnemonicParsing="false" stylesheets="@style.css" text="افزودن به سبد خرید" textFill="WHITE">
+                                 <styleClass>
+                                    <String fx:value="mainpageElementsdarkgreen" />
+                                    <String fx:value="zoom" />
+                                    <String fx:value="navbarbuttonshover" />
+                                 </styleClass></Button>
                               <Label layoutX="70.0" layoutY="30.0" text="نام کتاب:">
                                  <font>
                                     <Font name="System Bold" size="14.0" />
@@ -1023,7 +1117,7 @@
                         </Pane>
                      </children>
                   </Pane>
-                  <Pane layoutX="9.0" layoutY="1238.0" prefHeight="200.0" prefWidth="1160.0" styleClass="categoriesradiudandcolor">
+                  <Pane layoutX="9.0" layoutY="1238.0" prefHeight="200.0" prefWidth="1160.0">
                      <children>
                         <Pane layoutX="886.0" layoutY="5.0" prefHeight="190.0" prefWidth="260.0">
                            <children>
@@ -1032,7 +1126,12 @@
                                     <Image url="@photo4.jpg" />
                                  </image>
                               </ImageView>
-                              <Button layoutX="130.0" layoutY="151.0" mnemonicParsing="false" text="افزودن به سبد خرید" />
+                              <Button layoutX="130.0" layoutY="151.0" mnemonicParsing="false" stylesheets="@style.css" text="افزودن به سبد خرید" textFill="WHITE">
+                                 <styleClass>
+                                    <String fx:value="mainpageElementsdarkgreen" />
+                                    <String fx:value="zoom" />
+                                    <String fx:value="navbarbuttonshover" />
+                                 </styleClass></Button>
                               <Label layoutX="80.0" layoutY="27.0" text="نام کتاب:">
                                  <font>
                                     <Font name="System Bold" size="14.0" />
@@ -1082,7 +1181,12 @@
                                     <Image url="@photo3.jpg" />
                                  </image>
                               </ImageView>
-                              <Button layoutX="128.0" layoutY="151.0" mnemonicParsing="false" text="افزودن به سبد خرید" />
+                              <Button layoutX="128.0" layoutY="151.0" mnemonicParsing="false" stylesheets="@style.css" text="افزودن به سبد خرید" textFill="WHITE">
+                                 <styleClass>
+                                    <String fx:value="mainpageElementsdarkgreen" />
+                                    <String fx:value="zoom" />
+                                    <String fx:value="navbarbuttonshover" />
+                                 </styleClass></Button>
                               <Label layoutX="80.0" layoutY="29.0" text="نام کتاب:">
                                  <font>
                                     <Font name="System Bold" size="14.0" />
@@ -1132,7 +1236,12 @@
                                     <Image url="@photo_2024-01-15_09-02-56.jpg" />
                                  </image>
                               </ImageView>
-                              <Button layoutX="124.0" layoutY="151.0" mnemonicParsing="false" text="افزودن به سبد خرید" />
+                              <Button layoutX="124.0" layoutY="151.0" mnemonicParsing="false" stylesheets="@style.css" text="افزودن به سبد خرید" textFill="WHITE">
+                                 <styleClass>
+                                    <String fx:value="mainpageElementsdarkgreen" />
+                                    <String fx:value="zoom" />
+                                    <String fx:value="navbarbuttonshover" />
+                                 </styleClass></Button>
                               <Label layoutX="79.0" layoutY="32.0" text="نام کتاب:">
                                  <font>
                                     <Font name="System Bold" size="14.0" />
@@ -1182,7 +1291,12 @@
                                     <Image url="@photo2.jpg" />
                                  </image>
                               </ImageView>
-                              <Button layoutX="123.0" layoutY="151.0" mnemonicParsing="false" text="افزودن به سبد خرید" />
+                              <Button layoutX="123.0" layoutY="151.0" mnemonicParsing="false" stylesheets="@style.css" text="افزودن به سبد خرید" textFill="WHITE">
+                                 <styleClass>
+                                    <String fx:value="mainpageElementsdarkgreen" />
+                                    <String fx:value="zoom" />
+                                    <String fx:value="navbarbuttonshover" />
+                                 </styleClass></Button>
                               <Label layoutX="70.0" layoutY="30.0" text="نام کتاب:">
                                  <font>
                                     <Font name="System Bold" size="14.0" />
@@ -1226,6 +1340,10 @@
                            </children>
                         </Pane>
                      </children>
+                     <styleClass>
+                        <String fx:value="lightergreen" />
+                        <String fx:value="radiusforcat" />
+                     </styleClass>
                   </Pane>
                   <Pane layoutX="9.0" layoutY="1494.0" prefHeight="200.0" prefWidth="1160.0" styleClass="categoriesradiudandcolor">
                      <children>
@@ -1236,7 +1354,12 @@
                                     <Image url="@photo_2024-01-15_10-40-43.jpg" />
                                  </image>
                               </ImageView>
-                              <Button layoutX="130.0" layoutY="151.0" mnemonicParsing="false" text="افزودن به سبد خرید" />
+                              <Button layoutX="130.0" layoutY="151.0" mnemonicParsing="false" stylesheets="@style.css" text="افزودن به سبد خرید" textFill="WHITE">
+                                 <styleClass>
+                                    <String fx:value="mainpageElementsdarkgreen" />
+                                    <String fx:value="zoom" />
+                                    <String fx:value="navbarbuttonshover" />
+                                 </styleClass></Button>
                               <Label layoutX="80.0" layoutY="27.0" text="نام کتاب:">
                                  <font>
                                     <Font name="System Bold" size="14.0" />
@@ -1286,7 +1409,12 @@
                                     <Image url="@photo_2024-01-15_10-40-49.jpg" />
                                  </image>
                               </ImageView>
-                              <Button layoutX="128.0" layoutY="151.0" mnemonicParsing="false" text="افزودن به سبد خرید" />
+                              <Button layoutX="128.0" layoutY="151.0" mnemonicParsing="false" stylesheets="@style.css" text="افزودن به سبد خرید" textFill="WHITE">
+                                 <styleClass>
+                                    <String fx:value="mainpageElementsdarkgreen" />
+                                    <String fx:value="zoom" />
+                                    <String fx:value="navbarbuttonshover" />
+                                 </styleClass></Button>
                               <Label layoutX="80.0" layoutY="29.0" text="نام کتاب:">
                                  <font>
                                     <Font name="System Bold" size="14.0" />
@@ -1336,7 +1464,12 @@
                                     <Image url="@photo_2024-01-15_10-41-33.jpg" />
                                  </image>
                               </ImageView>
-                              <Button layoutX="124.0" layoutY="151.0" mnemonicParsing="false" text="افزودن به سبد خرید" />
+                              <Button layoutX="124.0" layoutY="151.0" mnemonicParsing="false" stylesheets="@style.css" text="افزودن به سبد خرید" textFill="WHITE">
+                                 <styleClass>
+                                    <String fx:value="mainpageElementsdarkgreen" />
+                                    <String fx:value="zoom" />
+                                    <String fx:value="navbarbuttonshover" />
+                                 </styleClass></Button>
                               <Label layoutX="79.0" layoutY="32.0" text="نام کتاب:">
                                  <font>
                                     <Font name="System Bold" size="14.0" />
@@ -1386,7 +1519,12 @@
                                     <Image url="@photo_2024-01-15_10-40-45.jpg" />
                                  </image>
                               </ImageView>
-                              <Button layoutX="123.0" layoutY="151.0" mnemonicParsing="false" text="افزودن به سبد خرید" />
+                              <Button layoutX="123.0" layoutY="151.0" mnemonicParsing="false" stylesheets="@style.css" text="افزودن به سبد خرید" textFill="WHITE">
+                                 <styleClass>
+                                    <String fx:value="mainpageElementsdarkgreen" />
+                                    <String fx:value="zoom" />
+                                    <String fx:value="navbarbuttonshover" />
+                                 </styleClass></Button>
                               <Label layoutX="70.0" layoutY="30.0" text="نام کتاب:">
                                  <font>
                                     <Font name="System Bold" size="14.0" />

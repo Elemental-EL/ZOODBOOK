@@ -48,6 +48,7 @@
          <styleClass>
             <String fx:value="mainpageElementsdarkgreen" />
             <String fx:value="navbarbuttonshover" />
+            <String fx:value="zoom" />
          </styleClass></Button>
       <Text layoutX="202.0" layoutY="439.0" strokeType="OUTSIDE" strokeWidth="0.0" text="حساب کاربری ندارید ؟" wrappingWidth="159.5999755859376">
          <font>
