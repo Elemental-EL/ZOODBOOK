@@ -60,5 +60,9 @@
             <Font size="17.0" />
          </font>
       </Text>
+      <Text fx:id="errorText" fill="RED" layoutX="69.0" layoutY="350.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="RIGHT" wrappingWidth="300.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Text>
    </children>
 </AnchorPane>
