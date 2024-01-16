@@ -158,12 +158,66 @@ public class HelloController {
         stage.show();
     }
     @FXML
-    void onSearchClicked (ActionEvent event){
+    void onSearchClicked (MouseEvent event){
 
     }
     @FXML
-    void onInfoLinkClicked (ActionEvent event){
+    void onShowMoreInfoClicked (MouseEvent event){
 
+    }
+    @FXML
+    void onClassicLinkClicked(MouseEvent event) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("classicbooks.fxml"));
+        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.setResizable(false);
+        stage.show();
+    }
+    @FXML
+    void onHistoryLinkClicked(MouseEvent event) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("historybooks.fxml"));
+        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.setResizable(false);
+        stage.show();
+    }
+    @FXML
+    void onBioLinkClicked(MouseEvent event) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("biobooks.fxml"));
+        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.setResizable(false);
+        stage.show();
+    }
+    @FXML
+    void onPsychoLinkClicked(MouseEvent event) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("psychobooks.fxml"));
+        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.setResizable(false);
+        stage.show();
+    }
+    @FXML
+    void onCookingLinkClicked(MouseEvent event) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("cookingbooks.fxml"));
+        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.setResizable(false);
+        stage.show();
+    }
+    @FXML
+    void onScifiLinkClicked(MouseEvent event) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("scifibooks.fxml"));
+        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.setResizable(false);
+        stage.show();
     }
     @FXML
     void onJumpUpClicked (ActionEvent event){

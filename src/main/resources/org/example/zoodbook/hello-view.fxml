@@ -388,7 +388,7 @@
                               <Font size="15.0" />
                            </font>
                         </Text>
-                        <Hyperlink layoutX="417.0" layoutY="116.0" text="...">
+                        <Hyperlink layoutX="417.0" layoutY="116.0" onAction="#onShowMoreInfoClicked" text="...">
                            <font>
                               <Font size="36.0" />
                            </font>
@@ -435,12 +435,12 @@
                      </children></Pane>
                   <Pane fx:id="footer" layoutX="-1.0" layoutY="2186.0" prefHeight="315.0" prefWidth="1200.0">
                      <children>
-                        <Label layoutX="1056.0" layoutY="42.0" text="درباره ما" textFill="#164c35">
+                        <Label layoutX="1087.0" layoutY="42.0" text="درباره ما" textFill="#164c35">
                            <font>
                               <Font name="System Bold" size="24.0" />
                            </font>
                         </Label>
-                        <Label layoutX="787.0" layoutY="42.0" text="تماس با ما" textFill="#164c35">
+                        <Label layoutX="803.0" layoutY="42.0" text="تماس با ما" textFill="#164c35">
                            <font>
                               <Font name="System Bold Italic" size="24.0" />
                            </font>
@@ -450,47 +450,52 @@
                               <Font name="System Bold" size="24.0" />
                            </font>
                         </Label>
-                        <Text fill="#164c35" layoutX="970.0" layoutY="99.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-فروشگاه زودبوک فعالیت خود را از سال1402 آغاز کرد.تیم زودبوک همواره در تلاش است تا بهترین کتاب ها را با قیمت مناسب و کیفیت بالا به مشتریان خود ارائه دهد." textAlignment="CENTER" wrappingWidth="200.0">
+                        <Text fill="#164c35" layoutX="970.0" layoutY="99.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-فروشگاه زودبوک فعالیت خود را از سال1402 آغاز کرد.تیم زودبوک همواره در تلاش است تا بهترین کتاب ها را با قیمت مناسب و کیفیت بالا به مشتریان خود ارائه دهد." textAlignment="RIGHT" wrappingWidth="200.0">
                            <font>
                               <Font size="15.0" />
                            </font>
                         </Text>
-                        <Text fill="#164c35" layoutX="769.0" layoutY="99.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-شماره تماس:09195471712" wrappingWidth="150.0">
+                        <Text fill="#164c35" layoutX="757.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-شماره تماس:09195471712" textAlignment="RIGHT" wrappingWidth="150.0">
                            <font>
                               <Font size="15.0" />
                            </font>
                         </Text>
-                        <Text fill="#164c35" layoutX="666.0" layoutY="139.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-پشتیبانی آنلاین:tel.me//zoodBook" textAlignment="RIGHT" wrappingWidth="241.33331298828125">
+                        <Text fill="#164c35" layoutX="757.0" layoutY="137.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-پشتیبانی آنلاین:" textAlignment="RIGHT" wrappingWidth="150.0">
                            <font>
                               <Font size="15.0" />
                            </font>
                         </Text>
-                        <Text fill="#164c35" layoutX="522.0" layoutY="99.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="loginsabtnam" text="کلاسیک" textAlignment="RIGHT">
+                        <Text fill="#164c35" layoutX="564.0" layoutY="99.0" onMouseClicked="#onClassicLinkClicked" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="loginsabtnam" text="کلاسیک" textAlignment="RIGHT">
                            <font>
                               <Font size="15.0" />
                            </font>
                         </Text>
-                        <Text fill="#164c35" layoutX="529.0" layoutY="128.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="loginsabtnam" text="تاریخی" textAlignment="RIGHT">
+                        <Text fill="#164c35" layoutX="571.0" layoutY="128.0" onMouseClicked="#onHistoryLinkClicked" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="loginsabtnam" text="تاریخی" textAlignment="RIGHT">
                            <font>
                               <Font size="15.0" />
                            </font>
                         </Text>
-                        <Text fill="#164c35" layoutX="521.0" layoutY="159.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="loginsabtnam" text="بیوگرافی" textAlignment="RIGHT">
+                        <Text fill="#164c35" layoutX="560.0" layoutY="159.0" onMouseClicked="#onBioLinkClicked" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="loginsabtnam" text="بیوگرافی" textAlignment="RIGHT">
                            <font>
                               <Font size="15.0" />
                            </font>
                         </Text>
-                        <Text fill="#164c35" layoutX="510.0" layoutY="190.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="loginsabtnam" text="روانشناسی" textAlignment="RIGHT">
+                        <Text fill="#164c35" layoutX="549.0" layoutY="190.0" onMouseClicked="#onPsychoLinkClicked" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="loginsabtnam" text="روانشناسی" textAlignment="RIGHT">
                            <font>
                               <Font size="15.0" />
                            </font>
                         </Text>
-                        <Text fill="#164c35" layoutX="534.0" layoutY="219.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="loginsabtnam" text="آشپزی" textAlignment="RIGHT">
+                        <Text fill="#164c35" layoutX="575.0" layoutY="219.0" onMouseClicked="#onCookingLinkClicked" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="loginsabtnam" text="آشپزی" textAlignment="RIGHT">
                            <font>
                               <Font size="15.0" />
                            </font>
                         </Text>
-                        <Text fill="#164c35" layoutX="497.0" layoutY="246.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="loginsabtnam" text="علمی-تخیلی">
+                        <Text fill="#164c35" layoutX="538.0" layoutY="246.0" onMouseClicked="#onScifiLinkClicked" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="loginsabtnam" text="علمی-تخیلی">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Text>
+                        <Text fill="#164c35" layoutX="787.0" layoutY="158.0" strokeType="OUTSIDE" strokeWidth="0.0" text="tel.me//zoodBook">
                            <font>
                               <Font size="15.0" />
                            </font>
@@ -1208,7 +1213,7 @@
                                     <Font name="System Bold" size="14.0" />
                                  </font>
                               </Label>
-                              <Label layoutX="14.0" layoutY="28.0" text="هنر آشپزی">
+                              <Label layoutX="26.0" layoutY="29.0" text="هنر آشپزی">
                                  <font>
                                     <Font name="System Bold" size="12.0" />
                                  </font>
@@ -1278,7 +1283,7 @@
                                     <Font name="System Bold" size="12.0" />
                                  </font>
                               </Label>
-                              <Label layoutX="2.0" layoutY="31.0" text="آشپزی برای همه">
+                              <Label layoutX="-3.0" layoutY="31.0" text="آشپزی برای همه">
                                  <font>
                                     <Font name="System Bold" size="12.0" />
                                  </font>
@@ -1491,7 +1496,7 @@
                                     <Font name="System Bold" size="14.0" />
                                  </font>
                               </Label>
-                              <Label layoutX="23.0" layoutY="115.0" text="130000 تومان">
+                              <Label layoutX="17.0" layoutY="116.0" text="130000 تومان">
                                  <font>
                                     <Font name="System Bold" size="12.0" />
                                  </font>
@@ -1506,7 +1511,7 @@
                                     <Font name="System Bold" size="12.0" />
                                  </font>
                               </Label>
-                              <Label layoutX="32.0" layoutY="31.0" text="بی روح">
+                              <Label layoutX="42.0" layoutY="31.0" text="بی روح">
                                  <font>
                                     <Font name="System Bold" size="12.0" />
                                  </font>
@@ -1546,7 +1551,7 @@
                                     <Font name="System Bold" size="14.0" />
                                  </font>
                               </Label>
-                              <Label layoutX="28.0" layoutY="33.0" text="اسکارلت">
+                              <Label layoutX="36.0" layoutY="35.0" text="اسکارلت">
                                  <font>
                                     <Font name="System Bold" size="12.0" />
                                  </font>
