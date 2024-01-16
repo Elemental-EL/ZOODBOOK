@@ -87,5 +87,10 @@
          </font>
       </Label>
       <TextField fx:id="repPasswordText" alignment="CENTER_RIGHT" layoutX="46.0" layoutY="279.0" prefHeight="26.0" prefWidth="330.0" style="-fx-background-radius: 10;" />
+      <Text fx:id="errorText" fill="RED" layoutX="291.0" layoutY="496.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="RIGHT" wrappingWidth="187.99997558593736">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
    </children>
 </AnchorPane>

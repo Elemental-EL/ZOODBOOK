@@ -11,6 +11,7 @@ import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
+import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
 import java.io.BufferedWriter;
@@ -29,6 +30,8 @@ public class SignUpController {
     private TextArea addressText;
     @FXML
     private Button signupbtn;
+    @FXML
+    private Text errorText;
 
     public void onBackClicked(MouseEvent event) throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource("SignIn.fxml"));
@@ -41,11 +44,17 @@ public class SignUpController {
 
     public void onSignUpClicked(ActionEvent event) throws IOException {
 
+        if (nameText.getText().trim().isEmpty()||familyText.getText().trim().isEmpty()||userText.getText().trim().isEmpty()||passwordText.getText().trim().isEmpty()||codePText.getText().trim().isEmpty()||PhnumberText.getText().trim().isEmpty()||addressText.getText().trim().isEmpty()){
+            errorText.setText("*پر کردن تمامی فیلد ها الزامی است.");
+        }
+
+
+
        // BufferedWriter writer = new BufferedWriter(new FileWriter("Files/Users.txt"));
-        StringBuilder stringBuilder = new StringBuilder("text gotten from file");
-        StringBuilder newUser =new StringBuilder(nameText.getText() +"#"+ familyText.getText() +"#"+userText.getText()+"#"+passwordText.getText().hashCode()+"#"+codePText.getText()+"#"+PhnumberText.getText()+"#"+addressText.getText());
-        stringBuilder.append("\n"+newUser);
-        System.out.println(stringBuilder);
+//        StringBuilder stringBuilder = new StringBuilder("text gotten from file");
+//        StringBuilder newUser =new StringBuilder(nameText.getText() +"#"+ familyText.getText() +"#"+userText.getText()+"#"+passwordText.getText().hashCode()+"#"+codePText.getText()+"#"+PhnumberText.getText()+"#"+addressText.getText());
+//        stringBuilder.append("\n"+newUser);
+//        System.out.println(stringBuilder);
        // User newUser1 = new User(nameText.getText(),);
          //       registerNewUser(newUser1);
 
