@@ -24,10 +24,14 @@
             <String fx:value="loginsabtnam" />
          </styleClass>
       </Button>
-      <Button fx:id="ordersbtn" layoutX="146.0" layoutY="173.0" mnemonicParsing="false" onAction="#onOrdersClicked" style="-fx-background-radius: 5;" styleClass="lightgreen" text="سفارشات" textFill="#164c35">
+      <Button fx:id="ordersbtn" layoutX="146.0" layoutY="173.0" mnemonicParsing="false" onAction="#onOrdersClicked" style="-fx-background-radius: 5;" text="سفارشات" textFill="#164c35">
          <font>
             <Font name="System Bold" size="20.0" />
          </font>
+         <styleClass>
+            <String fx:value="lightgreen" />
+            <String fx:value="loginsabtnam" />
+         </styleClass>
       </Button>
    </children>
 </AnchorPane>

@@ -12,6 +12,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1200.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.zoodbook.HelloController">
    <children>
@@ -439,6 +440,51 @@
                               <Font name="System Bold" size="24.0" />
                            </font>
                         </Label>
+                        <Text fill="#164c35" layoutX="970.0" layoutY="99.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-فروشگاه زودبوک فعالیت خود را از سال1402 آغاز کرد.تیم زودبوک همواره در تلاش است تا بهترین کتاب ها را با قیمت مناسب و کیفیت بالا به مشتریان خود ارائه دهد." textAlignment="RIGHT" wrappingWidth="200.0">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Text>
+                        <Text fill="#164c35" layoutX="752.0" layoutY="99.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-شماره تماس:09195471712" textAlignment="RIGHT" wrappingWidth="150.0">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Text>
+                        <Text fill="#164c35" layoutX="666.0" layoutY="139.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-پشتیبانی آنلاین:tel.me//zoodBook" textAlignment="RIGHT" wrappingWidth="241.33331298828125">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Text>
+                        <Text fill="#164c35" layoutX="522.0" layoutY="99.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="loginsabtnam" text="کلاسیک" textAlignment="RIGHT">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Text>
+                        <Text fill="#164c35" layoutX="529.0" layoutY="128.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="loginsabtnam" text="تاریخی" textAlignment="RIGHT">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Text>
+                        <Text fill="#164c35" layoutX="521.0" layoutY="159.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="loginsabtnam" text="بیوگرافی" textAlignment="RIGHT">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Text>
+                        <Text fill="#164c35" layoutX="510.0" layoutY="190.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="loginsabtnam" text="روانشناسی" textAlignment="RIGHT">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Text>
+                        <Text fill="#164c35" layoutX="534.0" layoutY="219.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="loginsabtnam" text="آشپزی" textAlignment="RIGHT">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Text>
+                        <Text fill="#164c35" layoutX="497.0" layoutY="246.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="loginsabtnam" text="علمی-تخیلی">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Text>
                      </children>
                   </Pane>
                   <Pane layoutX="9.0" layoutY="472.0" prefHeight="200.0" prefWidth="1160.0" styleClass="categoriesradiudandcolor">
