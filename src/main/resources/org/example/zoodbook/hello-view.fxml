@@ -383,11 +383,6 @@
                      </image></ImageView>
                   <Pane fx:id="info" layoutX="9.0" layoutY="1730.0" prefHeight="200.0" prefWidth="1160.0" styleClass="categoriesradiudandcolor">
                      <children>
-                        <Hyperlink fx:id="infolink" layoutX="1013.0" layoutY="14.0" onAction="#onInfoLinkClicked" text="اولین کتاب">
-                           <font>
-                              <Font name="System Bold" size="28.0" />
-                           </font>
-                        </Hyperlink>
                         <Text fill="#164c35" layoutX="-9.0" layoutY="82.0" strokeType="OUTSIDE" strokeWidth="0.0" text="تاریخ هرودوت یا کتاب تواریخ کتابی تاریخی است که هرودوت، مورخ یونانی، آن را نوشته است. این کتاب اولین کتاب تاریخ در جهان به‌شمار می‌رود و شامل ۹ کتاب است. شرح زندگانی ۴ شاه ایرانی کوروش بزرگ، کمبوجیه دوم، داریوش بزرگ، خشایارشا در تارتاریخ هرودوت یا کتاب تواریخ کتابی تاریخی است که هرودوت، مورخ یونانی، آن را نوشته است. این کتاب اولین کتاب تاریخ در جهان به‌شمار می‌رود و شامل ۹ کتاب است. شرح زندگانی ۴ شاه ایرانی کوروش بزرگ، کمبوجیه دوم، داریوش بزرگ، خشایارشا در تاریخ هرودوت آمده‌است. تاریخ هرودوت ابتدا در قرن پانزدهم میلادی در اروپا از یونانی به زبان لاتین ترجمه شد. هنری راولینسون شرق‌شناس معروف و کاشف خط میخی که در دورۀ پادشاهی محمدشاه قاجار مربی نظامی در فوج کرمانشاه بود، ضمن همین خدمت به کاوش و پژوهش در زمینهٔ کشف خط میخی همت گماشت و سرانجام موفق شد.خ هرودوت آمده‌است" textAlignment="RIGHT" wrappingWidth="1154.0000915527344">
                            <font>
                               <Font size="15.0" />
@@ -398,6 +393,11 @@
                               <Font size="36.0" />
                            </font>
                         </Hyperlink>
+                        <Text fill="#164c35" layoutX="1031.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="اولین کتاب">
+                           <font>
+                              <Font name="System Bold Italic" size="26.0" />
+                           </font>
+                        </Text>
                      </children>
                   </Pane>
                   <Pane fx:id="features" layoutX="-1.0" layoutY="1986.0" prefHeight="200.0" prefWidth="1200.0">
@@ -417,17 +417,17 @@
                               <Image url="@setare.png" />
                            </image>
                         </ImageView>
-                        <Label layoutX="814.0" layoutY="80.0" text="هر کتابی بخوای اینجا هست!">
+                        <Label layoutX="814.0" layoutY="80.0" text="هر کتابی بخوای اینجا هست!" textFill="#164c35">
                            <font>
                               <Font name="System Bold" size="24.0" />
                            </font>
                         </Label>
-                        <Label layoutX="408.0" layoutY="80.0" text="کتابت خیلی زود میرسه دستت!" textAlignment="RIGHT">
+                        <Label layoutX="408.0" layoutY="80.0" text="کتابت خیلی زود میرسه دستت!" textAlignment="RIGHT" textFill="#164c35">
                            <font>
                               <Font name="System Bold" size="24.0" />
                            </font>
                         </Label>
-                        <Label layoutX="53.0" layoutY="80.0" text="ارزونتر از اینجا پیدا نمیکنی!" textAlignment="RIGHT">
+                        <Label layoutX="53.0" layoutY="80.0" text="ارزونتر از اینجا پیدا نمیکنی!" textAlignment="RIGHT" textFill="#164c35">
                            <font>
                               <Font name="System Bold" size="24.0" />
                            </font>
@@ -450,12 +450,12 @@
                               <Font name="System Bold" size="24.0" />
                            </font>
                         </Label>
-                        <Text fill="#164c35" layoutX="970.0" layoutY="99.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-فروشگاه زودبوک فعالیت خود را از سال1402 آغاز کرد.تیم زودبوک همواره در تلاش است تا بهترین کتاب ها را با قیمت مناسب و کیفیت بالا به مشتریان خود ارائه دهد." textAlignment="RIGHT" wrappingWidth="200.0">
+                        <Text fill="#164c35" layoutX="970.0" layoutY="99.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-فروشگاه زودبوک فعالیت خود را از سال1402 آغاز کرد.تیم زودبوک همواره در تلاش است تا بهترین کتاب ها را با قیمت مناسب و کیفیت بالا به مشتریان خود ارائه دهد." textAlignment="CENTER" wrappingWidth="200.0">
                            <font>
                               <Font size="15.0" />
                            </font>
                         </Text>
-                        <Text fill="#164c35" layoutX="752.0" layoutY="99.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-شماره تماس:09195471712" textAlignment="RIGHT" wrappingWidth="150.0">
+                        <Text fill="#164c35" layoutX="769.0" layoutY="99.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-شماره تماس:09195471712" wrappingWidth="150.0">
                            <font>
                               <Font size="15.0" />
                            </font>
