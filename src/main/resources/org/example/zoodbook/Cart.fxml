@@ -34,7 +34,7 @@
             </Label>
          </children>
       </Pane>
-      <ScrollPane layoutY="100.0" prefHeight="800.0" prefWidth="900.0">
+      <ScrollPane layoutY="100.0" prefHeight="500.0" prefWidth="900.0">
         <content>
           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="800.0" prefWidth="884.0" styleClass="mainpageBackground" stylesheets="@style.css">
                <children>
@@ -57,46 +57,39 @@
                                     <Pane prefHeight="60.0" prefWidth="785.0">
                                        <Label layoutX="707.0" layoutY="17.0" text="نام کتاب :">
                                           <font>
-                                             <Font size="18.0"/>
+                                             <Font size="18.0" />
                                           </font>
                                        </Label>
-                                       <TextField alignment="CENTER_RIGHT" editable="false" layoutX="543.0"
-                                                  layoutY="15.0" prefHeight="30.0" prefWidth="158.0">
+                                       <TextField alignment="CENTER_RIGHT" editable="false" layoutX="543.0" layoutY="15.0" prefHeight="30.0" prefWidth="158.0">
                                           <font>
-                                             <Font name="System Bold" size="14.0"/>
+                                             <Font name="System Bold" size="14.0" />
                                           </font>
                                        </TextField>
                                        <Label layoutX="477.0" layoutY="17.0" text="تعداد :">
                                           <font>
-                                             <Font size="18.0"/>
+                                             <Font size="18.0" />
                                           </font>
                                        </Label>
-                                       <TextField alignment="CENTER_RIGHT" editable="false" layoutX="421.0"
-                                                  layoutY="15.0" prefHeight="30.0" prefWidth="51.0">
+                                       <TextField alignment="CENTER_RIGHT" editable="false" layoutX="421.0" layoutY="15.0" prefHeight="30.0" prefWidth="51.0">
                                           <font>
-                                             <Font name="System Bold" size="14.0"/>
+                                             <Font name="System Bold" size="14.0" />
                                           </font>
                                        </TextField>
-                                       <TextField alignment="CENTER_RIGHT" editable="false" layoutX="214.0"
-                                                  layoutY="17.0" prefHeight="30.0" prefWidth="123.0">
+                                       <TextField alignment="CENTER_RIGHT" editable="false" layoutX="214.0" layoutY="17.0" prefHeight="30.0" prefWidth="123.0">
                                           <font>
-                                             <Font name="System Bold" size="14.0"/>
+                                             <Font name="System Bold" size="14.0" />
                                           </font>
                                        </TextField>
                                        <Label layoutX="344.0" layoutY="18.0" text="قیمت :">
                                           <font>
-                                             <Font size="18.0"/>
+                                             <Font size="18.0" />
                                           </font>
                                        </Label>
-                                       <Button layoutX="107.0" layoutY="18.0" mnemonicParsing="false"
-                                               onAction="#onAddClicked" prefHeight="30.0" prefWidth="30.0" text="+"/>
-                                       <Button layoutX="64.0" layoutY="18.0" mnemonicParsing="false"
-                                               onAction="#onMinusClicked" prefHeight="30.0" prefWidth="30.0" text="-"/>
-                                       <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="14.0" layoutY="15.0"
-                                                  onMouseClicked="#onRicycleBinClicked" pickOnBounds="true"
-                                                  preserveRatio="true">
+                                       <Button layoutX="107.0" layoutY="18.0" mnemonicParsing="false" onAction="#onAddClicked" prefHeight="30.0" prefWidth="30.0" text="+" />
+                                       <Button layoutX="64.0" layoutY="18.0" mnemonicParsing="false" onAction="#onMinusClicked" prefHeight="30.0" prefWidth="30.0" text="-" />
+                                       <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="14.0" layoutY="15.0" onMouseClicked="#onRicycleBinClicked" pickOnBounds="true" preserveRatio="true">
                                           <image>
-                                             <Image url="@recycle-bin.png"/>
+                                             <Image url="@recycle-bin.png" />
                                           </image>
                                        </ImageView>
                                     </Pane>
