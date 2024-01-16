@@ -174,7 +174,7 @@
                             <children>
                                 <ImageView fitHeight="150.0" fitWidth="115.0" layoutX="971.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@photo1.jpg" />
+                              <Image url="@photo1%20(2).jpg" />
                            </image></ImageView>
                                 <Button fx:id="add2" layoutX="966.0" layoutY="174.0" mnemonicParsing="false" onAction="#onAdd2" stylesheets="@style.css" text="افزودن به سبد خرید" textFill="WHITE">
                            <styleClass>

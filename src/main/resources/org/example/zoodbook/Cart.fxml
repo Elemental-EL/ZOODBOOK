@@ -17,12 +17,12 @@
    <children>
       <Pane prefHeight="100.0" prefWidth="900.0" styleClass="lightgreen" stylesheets="@style.css">
          <children>
-            <ImageView fx:id="logobtn" fitHeight="100.0" fitWidth="100.0" layoutX="800.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="logobtn" fitHeight="100.0" fitWidth="100.0" layoutX="800.0" pickOnBounds="true" preserveRatio="true" styleClass="zoom">
                <image>
                   <Image url="@jhjhj.png" />
                </image>
             </ImageView>
-            <ImageView fx:id="backbtn" fitHeight="30.0" fitWidth="30.0" layoutX="8.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="backbtn" fitHeight="30.0" fitWidth="30.0" layoutX="8.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true" styleClass="zoom">
                <image>
                   <Image url="@120.png" />
                </image>
@@ -85,9 +85,17 @@
                                              <Font size="18.0" />
                                           </font>
                                        </Label>
-                                       <Button layoutX="107.0" layoutY="18.0" mnemonicParsing="false" onAction="#onAddClicked" prefHeight="30.0" prefWidth="30.0" text="+" />
-                                       <Button layoutX="64.0" layoutY="18.0" mnemonicParsing="false" onAction="#onMinusClicked" prefHeight="30.0" prefWidth="30.0" text="-" />
-                                       <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="14.0" layoutY="15.0" onMouseClicked="#onRicycleBinClicked" pickOnBounds="true" preserveRatio="true">
+                                       <Button layoutX="107.0" layoutY="18.0" mnemonicParsing="false" onAction="#onAddClicked" prefHeight="30.0" prefWidth="30.0" text="+" textFill="WHITE">
+                                          <styleClass>
+                                             <String fx:value="zoom" />
+                                             <String fx:value="mainpageElementsdarkgreen" />
+                                          </styleClass></Button>
+                                       <Button layoutX="64.0" layoutY="18.0" mnemonicParsing="false" onAction="#onMinusClicked" prefHeight="30.0" prefWidth="30.0" text="-" textFill="WHITE">
+                                          <styleClass>
+                                             <String fx:value="zoom" />
+                                             <String fx:value="mainpageElementsdarkgreen" />
+                                          </styleClass></Button>
+                                       <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="14.0" layoutY="15.0" onMouseClicked="#onRicycleBinClicked" pickOnBounds="true" preserveRatio="true" styleClass="zoom">
                                           <image>
                                              <Image url="@recycle-bin.png" />
                                           </image>
