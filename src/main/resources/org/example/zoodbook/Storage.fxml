@@ -50,10 +50,15 @@
                               <Font size="14.0" />
                            </font>
                         </TextField>
-                        <Button fx:id="onEdit1" layoutX="40.0" layoutY="22.0" mnemonicParsing="false" onAction="#onEdit1" style="-fx-background-radius: 4;" styleClass="mainpageElementsdarkgreen" stylesheets="@style.css" text="ویرایش" textFill="WHITE">
+                        <Button fx:id="onEdit1" layoutX="40.0" layoutY="22.0" mnemonicParsing="false" onAction="#onEdit1" style="-fx-background-radius: 4;" stylesheets="@style.css" text="ویرایش" textFill="WHITE">
                            <font>
                               <Font size="14.0" />
                            </font>
+                           <styleClass>
+                              <String fx:value="mainpageElementsdarkgreen" />
+                              <String fx:value="zoom" />
+                              <String fx:value="radiusforcat" />
+                           </styleClass>
                         </Button>
                      </children>
                   </Pane>
