@@ -14,6 +14,8 @@ import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.net.URI;
+import java.net.URISyntaxException;
 
 
 
@@ -166,7 +168,7 @@ public class HelloController {
 
     }
     @FXML
-    void onShowMoreInfoClicked (MouseEvent event){
+     void onShowMoreInfoClicked(ActionEvent event) throws URISyntaxException,IOException {
 
     }
     @FXML
@@ -306,10 +308,6 @@ public class HelloController {
     private HostServices hostServices;
     public void setHostServices(HostServices hostServices){
         this.hostServices=hostServices;
-    }
-    @FXML
-    void onShowMoreInfoClicked(ActionEvent event){
-
     }
 }
 
