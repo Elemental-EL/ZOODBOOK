@@ -44,7 +44,7 @@
          </font>
       </Label>
       <TextField fx:id="passwordText" layoutX="70.0" layoutY="293.0" prefHeight="34.0" prefWidth="298.0" promptText="password" style="-fx-background-radius: 10;" />
-      <Button fx:id="loginbtn" layoutX="190.0" layoutY="360.0" mnemonicParsing="false" onAction="#onLoginClicked" prefHeight="34.0" prefWidth="75.0" style="-fx-background-radius: 10;" text="ورود" textFill="WHITE">
+      <Button fx:id="loginbtn" layoutX="181.0" layoutY="360.0" mnemonicParsing="false" onAction="#onLoginClicked" prefHeight="34.0" prefWidth="75.0" style="-fx-background-radius: 10;" text="ورود" textFill="WHITE">
          <styleClass>
             <String fx:value="mainpageElementsdarkgreen" />
             <String fx:value="navbarbuttonshover" />
