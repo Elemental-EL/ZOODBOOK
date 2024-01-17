@@ -45,6 +45,8 @@ public class SignUpController {
         errorText.setText("");
         if (nameText.getText().trim().isEmpty()||familyText.getText().trim().isEmpty()||userText.getText().trim().isEmpty()||passwordText.getText().trim().isEmpty()||codePText.getText().trim().isEmpty()||PhnumberText.getText().trim().isEmpty()||addressText.getText().trim().isEmpty()){
             errorText.setText("*پر کردن تمامی فیلد ها الزامی است.");
+        } else if ((Objects.equals(userText.getText(), "admin"))||(Objects.equals(passwordText.getText(), "admin"))) {
+            errorText.setText("*شما نمی توانید از این نام کاربری یا رمز عبور استفاده کنید.");
         } else if (passwordText.getText().length()<8) {
             errorText.setText("*رمز عبور باید شامل حداقل 8 کاراکتر باشد.");
         } else if (!(Objects.equals(passwordText.getText(), repPasswordText.getText()))) {
