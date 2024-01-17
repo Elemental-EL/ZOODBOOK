@@ -1,17 +1,21 @@
 package org.example.zoodbook;
 
+import javafx.application.HostServices;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Hyperlink;
 import javafx.scene.control.*;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+
+
 
 public class HelloController {
     private Stage stage;
@@ -24,7 +28,7 @@ public class HelloController {
     @FXML
     private ImageView profilebtn, cartbtn, searchbtn, logobtn;
     @FXML
-    private Hyperlink infolink;
+    private Hyperlink link;
     @FXML
     private ScrollPane scrollPane;
     @FXML
@@ -220,7 +224,92 @@ public class HelloController {
         stage.show();
     }
     @FXML
-    void onJumpUpClicked (ActionEvent event){
+    void onJumpUpClicked (ActionEvent event) {
         scrollPane.setVvalue(0);
     }
+
+
+    public void onAdd1(ActionEvent actionEvent) {
+    }
+
+    public void onAdd2(ActionEvent actionEvent) {
+    }
+
+    public void onAdd3(ActionEvent actionEvent) {
+        
+    }
+
+    public void onAdd4(ActionEvent actionEvent) {
+    }
+
+    public void onAdd5(ActionEvent actionEvent) {
+    }
+
+    public void onAdd6(ActionEvent actionEvent) {
+        
+    }
+
+    public void onAdd7(ActionEvent actionEvent) {
+    }
+
+    public void onAdd8(ActionEvent actionEvent) {
+    }
+
+    public void onAdd9(ActionEvent actionEvent) {
+    }
+
+    public void onAdd10(ActionEvent actionEvent) {
+    }
+
+    public void onAdd11(ActionEvent actionEvent) {
+    }
+
+    public void onAdd12(ActionEvent actionEvent) {
+    }
+
+    public void onAdd13(ActionEvent actionEvent) {
+    }
+
+    public void onAdd14(ActionEvent actionEvent) {
+    }
+
+    public void onAdd15(ActionEvent actionEvent) {
+    }
+
+    public void onAdd16(ActionEvent actionEvent) {
+    }
+
+    public void onAdd17(ActionEvent actionEvent) {
+    }
+
+    public void onAdd18(ActionEvent actionEvent) {
+    }
+
+    public void onAdd19(ActionEvent actionEvent) {
+    }
+
+    public void onAdd20(ActionEvent actionEvent) {
+    }
+
+    public void onAdd21(ActionEvent actionEvent) {
+    }
+
+    public void onAdd22(ActionEvent actionEvent) {
+    }
+
+    public void onAdd23(ActionEvent actionEvent) {
+    }
+
+    public void onAdd24(ActionEvent actionEvent) {
+    }
+    @FXML
+    private HostServices hostServices;
+    public void setHostServices(HostServices hostServices){
+        this.hostServices=hostServices;
+    }
+    @FXML
+    void onShowMoreInfoClicked(ActionEvent event){
+
+    }
 }
+
