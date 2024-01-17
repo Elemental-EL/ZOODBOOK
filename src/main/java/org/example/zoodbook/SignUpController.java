@@ -7,6 +7,7 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.scene.image.ImageView;
@@ -24,7 +25,9 @@ public class SignUpController {
     @FXML
     private ImageView logobtn, backbtn;
     @FXML
-    private TextField nameText, familyText, userText, passwordText,repPasswordText, codePText, PhnumberText;
+    private TextField nameText, familyText, userText, codePText, PhnumberText;
+    @FXML
+    private PasswordField passwordText, repPasswordText;
     @FXML
     private TextArea addressText;
     @FXML

@@ -7,6 +7,7 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
@@ -26,7 +27,9 @@ public class SignInController {
     @FXML
     private ImageView backbtn,logobtn;
     @FXML
-    private TextField usernameText, passwordText;
+    private TextField usernameText;
+    @FXML
+    private PasswordField passwordText;
     @FXML
     private Button loginbtn;
     @FXML
