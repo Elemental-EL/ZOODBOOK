@@ -6,8 +6,14 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
+import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
+import javafx.scene.layout.BorderPane;
+import javafx.scene.layout.HBox;
+import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -20,7 +26,15 @@ public class CartController {
     private Parent root;
     @FXML
     private ImageView backbtn,logobtn;
+    @FXML
+    private VBox ordersVBox;
+
+    public void setOrdersVBox(VBox ordersVBox) {
+        ordersVBox.getStylesheets().add(getClass().getResource("style.css").toExternalForm());
+    }
+
     public void onAddClicked(ActionEvent actionEvent) {
+
     }
 
     public void onMinusClicked(ActionEvent actionEvent) {
@@ -39,6 +53,12 @@ public class CartController {
     public void onBackClicked(MouseEvent event){
 
     }
+    public void onContinueShoppingClicked(ActionEvent actionEvent) {
+        setOrdersVBox(ordersVBox);
+        for (int i=0 ; i<10 ; i++){
+            newOrder();
+        }
+    }
     public List<String> getOrdersByUserId (){
 
         List<String> userOrders = new ArrayList<>();
@@ -53,4 +73,32 @@ public class CartController {
 
 
     }
+    public void newOrder(){
+        BorderPane newPane =  new BorderPane();
+        Label bookName = new Label("نام کتاب :");
+        Label quantity = new Label("تعداد :");
+        Label bookPrice = new Label("قیمت :");
+        TextField orderBookName = new TextField("");
+        TextField orderBookQuantity = new TextField("");
+        TextField orderBookPrice = new TextField("");
+        Button add = new Button("+");
+        Button reduce = new Button("-");
+        HBox orderHBox = new HBox(9);
+
+        bookName.getStyleClass().add("orderBooksLabel");
+        quantity.getStyleClass().add("orderBooksLabel");
+        bookPrice.getStyleClass().add("orderBooksLabel");
+        orderHBox.getStyleClass().add("orderHBox");
+        orderBookName.getStyleClass().addAll("orders-txtField" , "order-orderBookName");
+        orderBookQuantity.getStyleClass().addAll("orders-txtField" , "order-orderBookQuantity");
+        orderBookPrice.getStyleClass().addAll("orders-txtField" , "order-orderBookPrice");
+        add.getStyleClass().addAll("order-add-reduce-btn" , "zoom" , "mainpageElementsdarkgreen");
+        reduce.getStyleClass().addAll("order-add-reduce-btn" , "zoom" , "mainpageElementsdarkgreen");
+
+        orderHBox.getChildren().addAll( reduce , add , orderBookPrice , bookPrice , orderBookQuantity , quantity , orderBookName , bookName);
+        newPane.setRight(orderHBox);
+        ordersVBox.getChildren().add(newPane);
+    }
+
+
 }

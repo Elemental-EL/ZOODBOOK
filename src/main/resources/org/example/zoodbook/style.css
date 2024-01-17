@@ -63,3 +63,28 @@
 .pastelgreen{
 -fx-background-color:#E1ECC8;
 }
+.orderHBox{
+    -fx-padding: 8;
+}
+.orderBooksLabel{
+    -fx-font-size: 18;
+}
+.orders-txtField{
+    -fx-pref-height: 30;
+    -fx-alignment: CENTER_RIGHT;
+    -fx-font-size: 14;
+}
+.order-orderBookName{
+    -fx-pref-width: 170;
+}
+.order-orderBookQuantity{
+    -fx-pref-width: 50;
+}
+.order-orderBookPrice{
+    -fx-pref-width: 130;
+}
+.order-add-reduce-btn{
+    -fx-pref-height: 30;
+    -fx-pref-width: 30;
+    -fx-text-fill: #fff;
+}
