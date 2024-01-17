@@ -3,7 +3,6 @@
 <?import java.lang.String?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.control.Hyperlink?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ScrollPane?>
 <?import javafx.scene.control.TextField?>
@@ -16,7 +15,7 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1200.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.zoodbook.HelloController">
    <children>
-      <ScrollPane fx:id="scrollPane" prefHeight="720.0" prefWidth="1200.0">
+      <ScrollPane fx:id="scrollPane" prefHeight="2500.0" prefWidth="1200.0">
         <content>
           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="2500.0" prefWidth="1184.0" styleClass="mainpageBackground">
                <children>
@@ -383,16 +382,11 @@
                      </image></ImageView>
                   <Pane fx:id="info" layoutX="9.0" layoutY="1730.0" prefHeight="200.0" prefWidth="1160.0" styleClass="categoriesradiudandcolor">
                      <children>
-                        <Text fill="#164c35" layoutX="-9.0" layoutY="82.0" strokeType="OUTSIDE" strokeWidth="0.0" text="تاریخ هرودوت یا کتاب تواریخ کتابی تاریخی است که هرودوت، مورخ یونانی، آن را نوشته است. این کتاب اولین کتاب تاریخ در جهان به‌شمار می‌رود و شامل ۹ کتاب است. شرح زندگانی ۴ شاه ایرانی کوروش بزرگ، کمبوجیه دوم، داریوش بزرگ، خشایارشا در تارتاریخ هرودوت یا کتاب تواریخ کتابی تاریخی است که هرودوت، مورخ یونانی، آن را نوشته است. این کتاب اولین کتاب تاریخ در جهان به‌شمار می‌رود و شامل ۹ کتاب است. شرح زندگانی ۴ شاه ایرانی کوروش بزرگ، کمبوجیه دوم، داریوش بزرگ، خشایارشا در تاریخ هرودوت آمده‌است. تاریخ هرودوت ابتدا در قرن پانزدهم میلادی در اروپا از یونانی به زبان لاتین ترجمه شد. هنری راولینسون شرق‌شناس معروف و کاشف خط میخی که در دورۀ پادشاهی محمدشاه قاجار مربی نظامی در فوج کرمانشاه بود، ضمن همین خدمت به کاوش و پژوهش در زمینهٔ کشف خط میخی همت گماشت و سرانجام موفق شد.خ هرودوت آمده‌است" textAlignment="RIGHT" wrappingWidth="1154.0000915527344">
+                        <Text fill="#164c35" layoutX="-9.0" layoutY="82.0" strokeType="OUTSIDE" strokeWidth="0.0" text="تاریخ هرودوت یا کتاب تواریخ کتابی تاریخی است که هرودوت، مورخ یونانی، آن را نوشته است. این کتاب اولین کتاب تاریخ در جهان به‌شمار می‌رود و شامل ۹ کتاب است. شرح زندگانی ۴ شاه ایرانی کوروش بزرگ، کمبوجیه دوم، داریوش بزرگ، خشایارشا در تارتاریخ هرودوت یا کتاب تواریخ کتابی تاریخی است که هرودوت، مورخ یونانی، آن را نوشته است. این کتاب اولین کتاب تاریخ در جهان به‌شمار می‌رود و شامل ۹ کتاب است. شرح زندگانی ۴ شاه ایرانی کوروش بزرگ، کمبوجیه دوم، داریوش بزرگ، خشایارشا در تاریخ هرودوت آمده‌است. تاریخ هرودوت ابتدا در قرن پانزدهم میلادی در اروپا از یونانی به زبان لاتین ترجمه شد. هنری راولینسون شرق‌شناس معروف و کاشف خط میخی که در دورۀ پادشاهی محمدشاه قاجار مربی نظامی در فوج کرمانشاه بود، ضمن همین خدمت به کاوش و پژوهش در زمینهٔ کشف خط میخی همت گماشت و سرانجام موفق شد." textAlignment="RIGHT" wrappingWidth="1154.0000915527344">
                            <font>
                               <Font size="15.0" />
                            </font>
                         </Text>
-                        <Hyperlink fx:id="Link" layoutX="417.0" layoutY="116.0" onAction="#onShowMoreInfoClicked" text="...">
-                           <font>
-                              <Font size="36.0" />
-                           </font>
-                        </Hyperlink>
                         <Text fill="#164c35" layoutX="1031.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="اولین کتاب">
                            <font>
                               <Font name="System Bold Italic" size="26.0" />
