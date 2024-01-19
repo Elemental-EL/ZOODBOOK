@@ -46,47 +46,56 @@ public class SignUpController {
 
     public void onSignUpClicked(ActionEvent event) throws IOException {
         errorText.setText("");
-        if (nameText.getText().trim().isEmpty()||familyText.getText().trim().isEmpty()||userText.getText().trim().isEmpty()||passwordText.getText().trim().isEmpty()||codePText.getText().trim().isEmpty()||PhnumberText.getText().trim().isEmpty()||addressText.getText().trim().isEmpty()){
+        boolean isUnique = true;
+        String lastUserId = "101";
+        String line;
+        if (nameText.getText().trim().isEmpty() || familyText.getText().trim().isEmpty() || userText.getText().trim().isEmpty() || passwordText.getText().trim().isEmpty() || codePText.getText().trim().isEmpty() || PhnumberText.getText().trim().isEmpty() || addressText.getText().trim().isEmpty())
             errorText.setText("*پر کردن تمامی فیلد ها الزامی است.");
-        } else if ((Objects.equals(userText.getText(), "admin"))||(Objects.equals(passwordText.getText(), "admin"))) {
+        else if ((Objects.equals(userText.getText(), "admin")) || (Objects.equals(passwordText.getText(), "admin")))
             errorText.setText("*شما نمی توانید از این نام کاربری یا رمز عبور استفاده کنید.");
-        } else if (passwordText.getText().length()<8) {
+        else if (passwordText.getText().length() < 8)
             errorText.setText("*رمز عبور باید شامل حداقل 8 کاراکتر باشد.");
-        } else if (!(Objects.equals(passwordText.getText(), repPasswordText.getText()))) {
+        else if (!(Objects.equals(passwordText.getText(), repPasswordText.getText())))
             errorText.setText("*تکرار رمز عبور اشتباه است.");
-        } else if (!codePText.getText().matches("\\d+")) {
+        else if (!codePText.getText().matches("\\d+"))
             errorText.setText("*کد پستی باید تنها شامل عدد باشد.");
-        } else if (!codePText.getText().matches("\\d{10}")) {
+        else if (!codePText.getText().matches("\\d{10}"))
             errorText.setText("*کد پستی باید ده رقمی باشد");
-        } else if (!PhnumberText.getText().matches("\\d+")||!PhnumberText.getText().matches("09\\d{9}")) {
+        else if (!PhnumberText.getText().matches("\\d+") || !PhnumberText.getText().matches("09\\d{9}"))
             errorText.setText("*فرمت شماره تلفن اشتباه است.");
-        } else {
-            StringBuilder userTexts = new StringBuilder();
-            BufferedReader reader1 = new BufferedReader(new FileReader("Files/Users.txt"));
-            String lastUserId ="101";
-            String line;
-            while ((line=reader1.readLine())!=null){
-                lastUserId = line.split("#")[1];
+        else {
+            BufferedReader reader0 = new BufferedReader(new FileReader("Files/Users.txt"));
+            while (isUnique && (line = reader0.readLine()) != null) {
+                if (Objects.equals(userText.getText(), line.split("#")[4]))
+                    isUnique = false;
             }
-            reader1.close();
-            int newId = Integer.parseInt(lastUserId);
-            newId++;
-            BufferedReader reader2 = new BufferedReader(new FileReader("Files/Users.txt"));
-            while ((line=reader2.readLine())!=null){
-                userTexts.append(line+"\n");
+            reader0.close();
+            if (!isUnique)
+                errorText.setText("*این نام کاربری قبلا استفاده شده است.");
+            else {
+                StringBuilder userTexts = new StringBuilder();
+                BufferedReader reader1 = new BufferedReader(new FileReader("Files/Users.txt"));
+                while ((line = reader1.readLine()) != null)
+                    lastUserId = line.split("#")[1];
+                reader1.close();
+                int newId = Integer.parseInt(lastUserId);
+                newId++;
+                BufferedReader reader2 = new BufferedReader(new FileReader("Files/Users.txt"));
+                while ((line = reader2.readLine()) != null)
+                    userTexts.append(line + "\n");
+                reader2.close();
+                StringBuilder newUser = new StringBuilder("#" + newId + "#" + nameText.getText() + "#" + familyText.getText() + "#" + userText.getText() + "#" + passwordText.getText().hashCode() + "#" + addressText.getText() + "#" + codePText.getText() + "#" + PhnumberText.getText() + "#");
+                userTexts.append(newUser);
+                BufferedWriter writer = new BufferedWriter(new FileWriter("Files/Users.txt"));
+                writer.write(String.valueOf(userTexts));
+                writer.close();
+                Parent root = FXMLLoader.load(getClass().getResource("SignIn.fxml"));
+                stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+                scene = new Scene(root);
+                stage.setScene(scene);
+                stage.setResizable(false);
+                stage.show();
             }
-            reader2.close();
-            StringBuilder newUser = new StringBuilder("#"+newId+"#"+nameText.getText()+"#"+familyText.getText()+"#"+userText.getText()+"#"+passwordText.getText().hashCode()+"#"+addressText.getText()+"#"+codePText.getText()+"#"+PhnumberText.getText()+"#");
-            userTexts.append(newUser);
-            BufferedWriter writer = new BufferedWriter(new FileWriter("Files/Users.txt"));
-            writer.write(String.valueOf(userTexts));
-            writer.close();
-            Parent root = FXMLLoader.load(getClass().getResource("SignIn.fxml"));
-            stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-            scene = new Scene(root);
-            stage.setScene(scene);
-            stage.setResizable(false);
-            stage.show();
         }
 
         // BufferedWriter writer = new BufferedWriter(new FileWriter("Files/Users.txt"));
@@ -94,11 +103,10 @@ public class SignUpController {
 //        StringBuilder newUser =new StringBuilder(nameText.getText() +"#"+ familyText.getText() +"#"+userText.getText()+"#"+passwordText.getText().hashCode()+"#"+codePText.getText()+"#"+PhnumberText.getText()+"#"+addressText.getText());
 //        stringBuilder.append("\n"+newUser);
 //        System.out.println(stringBuilder);
-       // User newUser1 = new User(nameText.getText(),);
-         //       registerNewUser(newUser1);
+        // User newUser1 = new User(nameText.getText(),);
+        //       registerNewUser(newUser1);
 
     }
-
 
 
     public void onLogoClicked(MouseEvent event) throws IOException {
