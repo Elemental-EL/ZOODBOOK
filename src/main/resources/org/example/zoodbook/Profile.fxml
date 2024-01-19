@@ -12,7 +12,6 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-
 <AnchorPane prefHeight="550.0" prefWidth="500.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.zoodbook.ProfileController">
    <children>
       <Pane prefHeight="107.0" prefWidth="500.0" styleClass="lightgreen">
@@ -34,61 +33,55 @@
             </Text>
          </children>
       </Pane>
-      <Label layoutX="385.0" layoutY="146.0" prefHeight="18.0" prefWidth="32.0" text="نام : ">
+      <Label layoutX="385.0" layoutY="159.0" prefHeight="18.0" prefWidth="32.0" text="نام : ">
          <font>
             <Font size="15.0" />
          </font>
       </Label>
-      <TextField fx:id="nameText" alignment="CENTER_RIGHT" editable="false" layoutX="46.0" layoutY="144.0" prefHeight="26.0" prefWidth="330.0" style="-fx-background-radius: 10;" />
-      <Label layoutX="388.0" layoutY="183.0" prefHeight="22.0" prefWidth="86.0" text="نام خانوادگی :">
+      <TextField fx:id="nameText" alignment="CENTER_RIGHT" editable="false" layoutX="46.0" layoutY="157.0" prefHeight="26.0" prefWidth="330.0" style="-fx-background-radius: 10;" />
+      <Label layoutX="388.0" layoutY="196.0" prefHeight="22.0" prefWidth="86.0" text="نام خانوادگی :">
          <font>
             <Font size="15.0" />
          </font>
       </Label>
-      <TextField fx:id="familyText" alignment="CENTER_RIGHT" editable="false" layoutX="46.0" layoutY="181.0" prefHeight="26.0" prefWidth="330.0" style="-fx-background-radius: 10;" />
-      <Label layoutX="388.0" layoutY="326.0" prefHeight="22.0" prefWidth="50.0" text="آدرس : ">
+      <TextField fx:id="familyText" alignment="CENTER_RIGHT" editable="false" layoutX="46.0" layoutY="194.0" prefHeight="26.0" prefWidth="330.0" style="-fx-background-radius: 10;" />
+      <Label layoutX="388.0" layoutY="296.0" prefHeight="22.0" prefWidth="50.0" text="آدرس : ">
          <font>
             <Font size="15.0" />
          </font>
       </Label>
-      <TextField fx:id="codePText" alignment="CENTER_RIGHT" editable="false" layoutX="46.0" layoutY="390.0" prefHeight="26.0" prefWidth="330.0" style="-fx-background-radius: 10;" />
-      <Label layoutX="391.0" layoutY="392.0" prefHeight="22.0" prefWidth="62.0" text="کد پستی :">
+      <TextField fx:id="codePText" alignment="CENTER_RIGHT" editable="false" layoutX="46.0" layoutY="357.0" prefHeight="26.0" prefWidth="330.0" style="-fx-background-radius: 10;" />
+      <Label layoutX="391.0" layoutY="359.0" prefHeight="22.0" prefWidth="62.0" text="کد پستی :">
          <font>
             <Font size="15.0" />
          </font>
       </Label>
-      <Label layoutX="388.0" layoutY="432.0" prefHeight="22.0" prefWidth="86.0" text="شماره تماس :">
+      <Label layoutX="388.0" layoutY="399.0" prefHeight="22.0" prefWidth="86.0" text="شماره تماس :">
          <font>
             <Font size="15.0" />
          </font>
       </Label>
-      <TextField fx:id="PhnumberText" alignment="CENTER_RIGHT" editable="false" layoutX="46.0" layoutY="430.0" prefHeight="26.0" prefWidth="330.0" style="-fx-background-radius: 10;" />
-      <Label layoutX="385.0" layoutY="221.0" prefHeight="22.0" prefWidth="79.0" text="نام کاربری : ">
+      <TextField fx:id="PhnumberText" alignment="CENTER_RIGHT" editable="false" layoutX="46.0" layoutY="397.0" prefHeight="26.0" prefWidth="330.0" style="-fx-background-radius: 10;" />
+      <Label layoutX="385.0" layoutY="234.0" prefHeight="22.0" prefWidth="79.0" text="نام کاربری : ">
          <font>
             <Font size="15.0" />
          </font>
       </Label>
-      <TextField fx:id="userText" alignment="CENTER_RIGHT" editable="false" layoutX="46.0" layoutY="219.0" prefHeight="26.0" prefWidth="330.0" style="-fx-background-radius: 10;" />
-      <Label layoutX="386.0" layoutY="261.0" prefHeight="22.0" prefWidth="70.0" text="رمز عبور : ">
-         <font>
-            <Font size="15.0" />
-         </font>
-      </Label>
-      <TextField fx:id="passwordText" alignment="CENTER_RIGHT" editable="false" layoutX="46.0" layoutY="259.0" prefHeight="26.0" prefWidth="330.0" style="-fx-background-radius: 10;" />
-      <Button fx:id="savebtn" layoutX="169.0" layoutY="473.0" mnemonicParsing="false" onAction="#onSaveClicked" prefHeight="34.0" prefWidth="79.0" stylesheets="@style.css" text="ثبت تغییرات" textFill="WHITE">
+      <TextField fx:id="userText" alignment="CENTER_RIGHT" editable="false" layoutX="46.0" layoutY="232.0" prefHeight="26.0" prefWidth="330.0" style="-fx-background-radius: 10;" />
+      <Button fx:id="savebtn" layoutX="169.0" layoutY="455.0" mnemonicParsing="false" onAction="#onSaveClicked" prefHeight="34.0" prefWidth="79.0" stylesheets="@style.css" text="ثبت تغییرات" textFill="WHITE">
          <styleClass>
             <String fx:value="mainpageElementsdarkgreen" />
             <String fx:value="navbarbuttonshover" />
          </styleClass>
       </Button>
-      <TextArea fx:id="addressText" editable="false" layoutX="46.0" layoutY="304.0" prefHeight="66.0" prefWidth="330.0" style="-fx-background-radius: 5;" styleClass="text-area" />
-      <Button fx:id="editbtn" layoutX="249.0" layoutY="473.0" mnemonicParsing="false" onAction="#onEditClicked" prefHeight="34.0" prefWidth="79.0" stylesheets="@style.css" text="ویرایش" textFill="WHITE">
+      <TextArea fx:id="addressText" editable="false" layoutX="46.0" layoutY="274.0" prefHeight="66.0" prefWidth="330.0" style="-fx-background-radius: 5;" styleClass="text-area" />
+      <Button fx:id="editbtn" layoutX="249.0" layoutY="455.0" mnemonicParsing="false" onAction="#onEditClicked" prefHeight="34.0" prefWidth="79.0" stylesheets="@style.css" text="ویرایش" textFill="WHITE">
          <styleClass>
             <String fx:value="mainpageElementsdarkgreen" />
             <String fx:value="navbarbuttonshover" />
          </styleClass>
       </Button>
-      <Text fx:id="editcredsbtn" layoutX="172.0" layoutY="531.0" onMouseClicked="#onEditCredsClicked" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="loginsabtnam" text="تغییر نام کاربری و رمز عبور">
+      <Text fx:id="editcredsbtn" layoutX="172.0" layoutY="513.0" onMouseClicked="#onEditCredsClicked" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="loginsabtnam" text="تغییر نام کاربری و رمز عبور">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>

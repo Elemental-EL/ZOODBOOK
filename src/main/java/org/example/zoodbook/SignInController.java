@@ -23,7 +23,7 @@ public class SignInController {
     private Stage stage;
     private Scene scene;
     private Parent root;
-    public int loggedInUserId=100;
+    public static int loggedInUserId=100;
     @FXML
     private ImageView backbtn,logobtn;
     @FXML

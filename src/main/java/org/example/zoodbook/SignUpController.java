@@ -89,6 +89,7 @@ public class SignUpController {
                 BufferedWriter writer = new BufferedWriter(new FileWriter("Files/Users.txt"));
                 writer.write(String.valueOf(userTexts));
                 writer.close();
+                SignInController.loggedInUserId= newId;
                 Parent root = FXMLLoader.load(getClass().getResource("SignIn.fxml"));
                 stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
                 scene = new Scene(root);
