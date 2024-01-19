@@ -11,6 +11,7 @@ import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
+import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -25,6 +26,8 @@ public class EditCredsController {
     private TextField userText;
     @FXML
     private PasswordField passwordText, repPasswordText;
+    @FXML
+    private Text errorText;
     @FXML
     private Button savebtn;
     public void onBackClicked(MouseEvent event) throws IOException {
