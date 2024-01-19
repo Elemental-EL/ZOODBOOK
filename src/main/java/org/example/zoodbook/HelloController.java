@@ -63,7 +63,7 @@ public class HelloController {
     }
     @FXML
     void onLogoClicked (MouseEvent event){
-        System.out.println(uId);
+
     }
     @FXML
     void onClassicClicked (ActionEvent event) throws IOException {

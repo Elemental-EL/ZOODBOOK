@@ -7,6 +7,7 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
@@ -21,7 +22,9 @@ public class EditCredsController {
     @FXML
     private ImageView logobtn, backbtn;
     @FXML
-    private TextField userText, passwordText, repPasswordText;
+    private TextField userText;
+    @FXML
+    private PasswordField passwordText, repPasswordText;
     @FXML
     private Button savebtn;
     public void onBackClicked(MouseEvent event) throws IOException {

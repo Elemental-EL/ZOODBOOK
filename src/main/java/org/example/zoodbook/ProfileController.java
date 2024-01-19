@@ -70,7 +70,11 @@ public class ProfileController {
 
         savebtn.setDisable(true);
     }
-    public void onEditCredsClicked (ActionEvent event){
-
+    public void onEditCredsClicked (ActionEvent event) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("EditCreds.fxml"));
+        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
     }
 }
