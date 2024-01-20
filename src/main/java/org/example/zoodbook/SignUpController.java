@@ -49,7 +49,7 @@ public class SignUpController {
         boolean isUnique = true;
         String lastUserId = "101";
         String line;
-        if (nameText.getText().trim().isEmpty() || familyText.getText().trim().isEmpty() || userText.getText().trim().isEmpty() || passwordText.getText().trim().isEmpty() || codePText.getText().trim().isEmpty() || PhnumberText.getText().trim().isEmpty() || addressText.getText().trim().isEmpty())
+        if (nameText.getText().trim().isEmpty() || familyText.getText().trim().isEmpty() || userText.getText().trim().isEmpty() || passwordText.getText().trim().isEmpty() || repPasswordText.getText().trim().isEmpty() || codePText.getText().trim().isEmpty() || PhnumberText.getText().trim().isEmpty() || addressText.getText().trim().isEmpty())
             errorText.setText("*پر کردن تمامی فیلد ها الزامی است.");
         else if ((Objects.equals(userText.getText(), "admin")) || (Objects.equals(passwordText.getText(), "admin")))
             errorText.setText("*شما نمی توانید از این نام کاربری یا رمز عبور استفاده کنید.");
@@ -60,7 +60,7 @@ public class SignUpController {
         else if (!codePText.getText().matches("\\d+"))
             errorText.setText("*کد پستی باید تنها شامل عدد باشد.");
         else if (!codePText.getText().matches("\\d{10}"))
-            errorText.setText("*کد پستی باید ده رقمی باشد");
+            errorText.setText("*کد پستی باید ده رقمی باشد.");
         else if (!PhnumberText.getText().matches("\\d+") || !PhnumberText.getText().matches("09\\d{9}"))
             errorText.setText("*فرمت شماره تلفن اشتباه است.");
         else {
