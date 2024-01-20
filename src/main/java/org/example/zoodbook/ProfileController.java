@@ -32,10 +32,11 @@ public class ProfileController {
     @FXML
     private Button editbtn, savebtn;
     @FXML
-    private Text editcredsbtn;
+    private Text editcredsbtn, tempText;
+    public int uId;
     public void initialize() throws IOException {
         savebtn.setDisable(true);
-        int uId = SignInController.loggedInUserId;
+        uId = SignInController.loggedInUserId;
         BufferedReader reader = new BufferedReader(new FileReader("Files/Users.txt"));
         String line;
         while ((line=reader.readLine())!=null) {
@@ -70,11 +71,18 @@ public class ProfileController {
 
         savebtn.setDisable(true);
     }
-    public void onEditCredsClicked (ActionEvent event) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("EditCreds.fxml"));
-        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-        scene = new Scene(root);
-        stage.setScene(scene);
-        stage.show();
+    public void onEditCredsClicked (MouseEvent event) throws IOException {
+        //
+        if (uId==104){
+            tempText.setText("*امیر جان، شما نمی توانید اطلاعات کاربری خود را تغییر دهید3>");
+        }
+        //
+        else {
+            Parent root = FXMLLoader.load(getClass().getResource("EditCreds.fxml"));
+            stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+            scene = new Scene(root);
+            stage.setScene(scene);
+            stage.show();
+        }
     }
 }
