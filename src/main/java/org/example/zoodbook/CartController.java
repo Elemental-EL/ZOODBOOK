@@ -87,8 +87,10 @@ public class CartController {
         Button add = new Button("+");
         Button reduce = new Button("-");
         Image image = new Image(getClass().getResourceAsStream("recycle-bin.png"));
-        ImageView delete = new ImageView();
-        delete.setImage(image);
+        ImageView del = new ImageView();
+        del.setImage(image);
+        Button delete = new Button();
+        delete.setGraphic(del);
 
         HBox orderHBox = new HBox(9);
 
@@ -101,9 +103,9 @@ public class CartController {
         orderBookPrice.getStyleClass().addAll("orders-txtField" , "order-orderBookPrice");
         add.getStyleClass().addAll("order-add-reduce-btn" , "zoom" , "mainpageElementsdarkgreen");
         reduce.getStyleClass().addAll("order-add-reduce-btn" , "zoom" , "mainpageElementsdarkgreen");
-        delete.setFitHeight(30);
-        delete.setFitWidth(30);
-        delete.getStyleClass().add("zoom");
+        del.setFitHeight(25);
+        del.setFitWidth(25);
+        delete.getStyleClass().addAll("order-add-reduce-btn","zoom");
 
         orderHBox.getChildren().addAll(delete , reduce , add , orderBookPrice , bookPrice , orderBookQuantity , quantity , orderBookName , bookName);
         newPane.setRight(orderHBox);
@@ -126,12 +128,18 @@ public class CartController {
                 } 
             }
         });
-        delete.setOnMouseClicked(new EventHandler<MouseEvent>() {
+        delete.setOnAction(new EventHandler<ActionEvent>() {
             @Override
-            public void handle(MouseEvent event) {
+            public void handle(ActionEvent actionEvent) {
                 newPane.getChildren().remove(orderHBox);
             }
         });
+//        delete.setOnMouseClicked(new EventHandler<MouseEvent>() {
+//            @Override
+//            public void handle(MouseEvent event) {
+//                newPane.getChildren().remove(orderHBox);
+//            }
+//        });
     }
 }
 //        reduce.setOnAction(new EventHandler<ActionEvent>() {
