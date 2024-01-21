@@ -105,7 +105,7 @@ public class CartController {
         reduce.getStyleClass().addAll("order-add-reduce-btn" , "zoom" , "mainpageElementsdarkgreen");
         del.setFitHeight(25);
         del.setFitWidth(25);
-        delete.getStyleClass().addAll("order-add-reduce-btn","zoom");
+        delete.getStyleClass().addAll("order-add-reduce-btn","zoom" , "lightgreen");
 
         orderHBox.getChildren().addAll(delete , reduce , add , orderBookPrice , bookPrice , orderBookQuantity , quantity , orderBookName , bookName);
         newPane.setRight(orderHBox);
