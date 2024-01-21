@@ -81,6 +81,8 @@ public class ProfileController {
         errorText.setText("");
         if (nameText.getText().trim().isEmpty() || familyText.getText().trim().isEmpty() || userText.getText().trim().isEmpty() || codePText.getText().trim().isEmpty() || PhnumberText.getText().trim().isEmpty() || addressText.getText().trim().isEmpty())
             errorText.setText("*پر کردن تمامی فیلد ها الزامی است.");
+        else if (nameText.getText().contains("#") || familyText.getText().contains("#") || addressText.getText().contains("#"))
+            errorText.setText("*شما نمی توانید از # در اطلاعات خود استفاده کنید.");
         else if (Objects.equals(userText.getText(), "admin"))
             errorText.setText("*شما نمی توانید از این نام کاربری استفاده کنید.");
         else if (!codePText.getText().matches("\\d+"))

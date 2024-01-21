@@ -69,6 +69,8 @@ public class EditCredsController {
         errorText.setFill(Color.RED);
         if (userText.getText().trim().isEmpty() || passwordText.getText().trim().isEmpty() || repPasswordText.getText().trim().isEmpty())
             errorText.setText("*پر کردن تمامی فیلد ها الزامی است.");
+        else if (userText.getText().contains("#"))
+            errorText.setText("*شما نمی توانید از # در نام کاربری خود استفاده کنید.");
         else if (Objects.equals(userText.getText(), "admin")|| (Objects.equals(passwordText.getText(), "admin")))
             errorText.setText("*شما نمی توانید از این نام کاربری یا رمز عبور استفاده کنید.");
         else if (passwordText.getText().length() < 8)
