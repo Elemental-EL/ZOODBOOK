@@ -88,3 +88,7 @@
     -fx-pref-width: 30;
     -fx-text-fill: #fff;
 }
+.delete-imgv{
+    -fx-fit-to-height: 40;
+    -fx-fit-to-width: 40;
+}

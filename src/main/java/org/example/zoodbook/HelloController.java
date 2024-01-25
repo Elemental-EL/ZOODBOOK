@@ -13,6 +13,9 @@ import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
 import java.io.IOException;
 import java.net.URI;
 import java.net.URISyntaxException;
@@ -34,6 +37,11 @@ public class HelloController {
     @FXML
     private ScrollPane scrollPane;
     public int uId = SignInController.loggedInUserId;
+    public void initialize() throws FileNotFoundException {
+        BufferedReader reader = new BufferedReader(new FileReader("Files/Books.txt"));
+        String line;
+        int i =1;
+    }
     @FXML
     void onUserClicked (MouseEvent event) throws IOException {
         if (uId == 100) {

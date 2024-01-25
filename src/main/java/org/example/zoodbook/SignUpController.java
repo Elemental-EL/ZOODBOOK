@@ -49,8 +49,10 @@ public class SignUpController {
         boolean isUnique = true;
         String lastUserId = "101";
         String line;
-        if (nameText.getText().trim().isEmpty() || familyText.getText().trim().isEmpty() || userText.getText().trim().isEmpty() || passwordText.getText().trim().isEmpty() || codePText.getText().trim().isEmpty() || PhnumberText.getText().trim().isEmpty() || addressText.getText().trim().isEmpty())
+        if (nameText.getText().trim().isEmpty() || familyText.getText().trim().isEmpty() || userText.getText().trim().isEmpty() || passwordText.getText().trim().isEmpty() || repPasswordText.getText().trim().isEmpty() || codePText.getText().trim().isEmpty() || PhnumberText.getText().trim().isEmpty() || addressText.getText().trim().isEmpty())
             errorText.setText("*پر کردن تمامی فیلد ها الزامی است.");
+        else if (nameText.getText().contains("#") || familyText.getText().contains("#") || userText.getText().contains("#") || addressText.getText().contains("#"))
+            errorText.setText("*شما نمی توانید از # در اطلاعات خود استفاده کنید.");
         else if ((Objects.equals(userText.getText(), "admin")) || (Objects.equals(passwordText.getText(), "admin")))
             errorText.setText("*شما نمی توانید از این نام کاربری یا رمز عبور استفاده کنید.");
         else if (passwordText.getText().length() < 8)
@@ -60,7 +62,7 @@ public class SignUpController {
         else if (!codePText.getText().matches("\\d+"))
             errorText.setText("*کد پستی باید تنها شامل عدد باشد.");
         else if (!codePText.getText().matches("\\d{10}"))
-            errorText.setText("*کد پستی باید ده رقمی باشد");
+            errorText.setText("*کد پستی باید ده رقمی باشد.");
         else if (!PhnumberText.getText().matches("\\d+") || !PhnumberText.getText().matches("09\\d{9}"))
             errorText.setText("*فرمت شماره تلفن اشتباه است.");
         else {
@@ -89,7 +91,7 @@ public class SignUpController {
                 BufferedWriter writer = new BufferedWriter(new FileWriter("Files/Users.txt"));
                 writer.write(String.valueOf(userTexts));
                 writer.close();
-                SignInController.loggedInUserId= newId;
+//                SignInController.loggedInUserId= newId;
                 Parent root = FXMLLoader.load(getClass().getResource("SignIn.fxml"));
                 stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
                 scene = new Scene(root);
