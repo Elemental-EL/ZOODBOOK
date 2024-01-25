@@ -41,91 +41,91 @@ public class HelloController {
     @FXML
     private ScrollPane scrollPane;
     public int uId = SignInController.loggedInUserId;
-    public void initialize() throws IOException, NoSuchFieldException, IllegalAccessException {
-        BufferedReader reader = new BufferedReader(new FileReader("Files/Books.txt"));
-        String line;
-        int i =1;
-        while ((line= reader.readLine())!=null&& !Objects.equals(line.split("#")[1], "cl5")){
-            Label price = (Label) getClass().getDeclaredField("price" + i).get(this);
-            if (Objects.equals(line.split("#")[2], "0")) {
-                price.setText("ناموجود");
-                price.setTextFill(Color.RED);
-            }
-            else
-                price.setText(line.split("#")[3]+" تومان");
-            i++;
-        }
-        while ((line= reader.readLine())!=null&& !Objects.equals(line.split("#")[1], "cl8"));{
-        }
-        while ((line= reader.readLine())!=null&& !Objects.equals(line.split("#")[1], "h5")){
-            Label price = (Label) getClass().getDeclaredField("price" + i).get(this);
-            if (Objects.equals(line.split("#")[2], "0")) {
-                price.setText("ناموجود");
-                price.setTextFill(Color.RED);
-            }
-            else
-                price.setText(line.split("#")[3]+" تومان");
-            i++;
-        }
-        while ((line= reader.readLine())!=null&& !Objects.equals(line.split("#")[1], "h8"));{
-        }
-        while ((line= reader.readLine())!=null&& !Objects.equals(line.split("#")[1], "b5")){
-            Label price = (Label) getClass().getDeclaredField("price" + i).get(this);
-            if (Objects.equals(line.split("#")[2], "0")) {
-                price.setText("ناموجود");
-                price.setTextFill(Color.RED);
-            }
-            else
-                price.setText(line.split("#")[3]+" تومان");
-            i++;
-        }
-        while ((line= reader.readLine())!=null&& !Objects.equals(line.split("#")[1], "b8"));{
-        }
-        while ((line= reader.readLine())!=null&& !Objects.equals(line.split("#")[1], "p5")){
-            Label price = (Label) getClass().getDeclaredField("price" + i).get(this);
-            if (Objects.equals(line.split("#")[2], "0")) {
-                price.setText("ناموجود");
-                price.setTextFill(Color.RED);
-            }
-            else
-                price.setText(line.split("#")[3]+" تومان");
-            i++;
-        }
-        while ((line= reader.readLine())!=null&& !Objects.equals(line.split("#")[1], "p8"));{
-        }
-        while ((line= reader.readLine())!=null&& !Objects.equals(line.split("#")[1], "co5")){
-            Label price = (Label) getClass().getDeclaredField("price" + i).get(this);
-            if (Objects.equals(line.split("#")[2], "0")) {
-                price.setText("ناموجود");
-                price.setTextFill(Color.RED);
-            }
-            else
-                price.setText(line.split("#")[3]+" تومان");
-            i++;
-        }
-        while ((line= reader.readLine())!=null&& !Objects.equals(line.split("#")[1], "co8"));{
-        }
-        while ((line= reader.readLine())!=null&& !Objects.equals(line.split("#")[1], "s5")){
-            Label price = (Label) getClass().getDeclaredField("price" + i).get(this);
-            if (Objects.equals(line.split("#")[2], "0")) {
-                price.setText("ناموجود");
-                price.setTextFill(Color.RED);
-            }
-            else
-                price.setText(line.split("#")[3]+" تومان");
-            i++;
-        }
-        reader.close();
-        i=1;
-        while (i<25){
-            Label price = (Label) getClass().getDeclaredField("price" + i).get(this);
-            Button add = (Button) getClass().getDeclaredField("add"+ i).get(this);
-            if (Objects.equals(price.getText(), "ناموجود"))
-                add.setDisable(true);
-            i++;
-        }
-
-    }
+//    public void initialize() throws IOException, NoSuchFieldException, IllegalAccessException {
+//        BufferedReader reader = new BufferedReader(new FileReader("Files/Books.txt"));
+//        String line;
+//        int i =1;
+//        while ((line= reader.readLine())!=null&& !Objects.equals(line.split("#")[1], "cl5")){
+//            Label price = (Label) getClass().getDeclaredField("price" + i).get(this);
+//            if (Objects.equals(line.split("#")[2], "0")) {
+//                price.setText("ناموجود");
+//                price.setTextFill(Color.RED);
+//            }
+//            else
+//                price.setText(line.split("#")[3]+" تومان");
+//            i++;
+//        }
+//        while ((line= reader.readLine())!=null&& !Objects.equals(line.split("#")[1], "cl8"));{
+//        }
+//        while ((line= reader.readLine())!=null&& !Objects.equals(line.split("#")[1], "h5")){
+//            Label price = (Label) getClass().getDeclaredField("price" + i).get(this);
+//            if (Objects.equals(line.split("#")[2], "0")) {
+//                price.setText("ناموجود");
+//                price.setTextFill(Color.RED);
+//            }
+//            else
+//                price.setText(line.split("#")[3]+" تومان");
+//            i++;
+//        }
+//        while ((line= reader.readLine())!=null&& !Objects.equals(line.split("#")[1], "h8"));{
+//        }
+//        while ((line= reader.readLine())!=null&& !Objects.equals(line.split("#")[1], "b5")){
+//            Label price = (Label) getClass().getDeclaredField("price" + i).get(this);
+//            if (Objects.equals(line.split("#")[2], "0")) {
+//                price.setText("ناموجود");
+//                price.setTextFill(Color.RED);
+//            }
+//            else
+//                price.setText(line.split("#")[3]+" تومان");
+//            i++;
+//        }
+//        while ((line= reader.readLine())!=null&& !Objects.equals(line.split("#")[1], "b8"));{
+//        }
+//        while ((line= reader.readLine())!=null&& !Objects.equals(line.split("#")[1], "p5")){
+//            Label price = (Label) getClass().getDeclaredField("price" + i).get(this);
+//            if (Objects.equals(line.split("#")[2], "0")) {
+//                price.setText("ناموجود");
+//                price.setTextFill(Color.RED);
+//            }
+//            else
+//                price.setText(line.split("#")[3]+" تومان");
+//            i++;
+//        }
+//        while ((line= reader.readLine())!=null&& !Objects.equals(line.split("#")[1], "p8"));{
+//        }
+//        while ((line= reader.readLine())!=null&& !Objects.equals(line.split("#")[1], "co5")){
+//            Label price = (Label) getClass().getDeclaredField("price" + i).get(this);
+//            if (Objects.equals(line.split("#")[2], "0")) {
+//                price.setText("ناموجود");
+//                price.setTextFill(Color.RED);
+//            }
+//            else
+//                price.setText(line.split("#")[3]+" تومان");
+//            i++;
+//        }
+//        while ((line= reader.readLine())!=null&& !Objects.equals(line.split("#")[1], "co8"));{
+//        }
+//        while ((line= reader.readLine())!=null&& !Objects.equals(line.split("#")[1], "s5")){
+//            Label price = (Label) getClass().getDeclaredField("price" + i).get(this);
+//            if (Objects.equals(line.split("#")[2], "0")) {
+//                price.setText("ناموجود");
+//                price.setTextFill(Color.RED);
+//            }
+//            else
+//                price.setText(line.split("#")[3]+" تومان");
+//            i++;
+//        }
+//        reader.close();
+//        i=1;
+//        while (i<25){
+//            Label price = (Label) getClass().getDeclaredField("price" + i).get(this);
+//            Button add = (Button) getClass().getDeclaredField("add"+ i).get(this);
+//            if (Objects.equals(price.getText(), "ناموجود"))
+//                add.setDisable(true);
+//            i++;
+//        }
+//
+//    }
     @FXML
     void onUserClicked (MouseEvent event) throws IOException {
         if (uId == 100) {
@@ -348,9 +348,9 @@ public class HelloController {
             while (((read = reader.readLine())!=null) && (!Objects.equals(read.split("#")[1], String.valueOf(SignInController.loggedInUserId)))){
                 ordersText.append(read + "\n");
             }
-            ordersText.append(read + "c1" + "#" + "1" + "#" + "\n");
+            ordersText.append(read + "cl1" + "#" + "1" + "#" + "\n");
             while ((read = reader.readLine()) != null){
-                ordersText.append(read);
+                ordersText.append(read + "\n");
             }
             reader.close();
             BufferedWriter writer = new BufferedWriter(new FileWriter("Files/Cart.txt"));
@@ -374,9 +374,9 @@ public class HelloController {
             while (((read = reader.readLine())!=null) && (!Objects.equals(read.split("#")[1], String.valueOf(SignInController.loggedInUserId)))){
                 ordersText.append(read + "\n");
             }
-            ordersText.append(read + "c2" + "#" + "1" + "#" + "\n");
+            ordersText.append(read + "cl2" + "#" + "1" + "#" + "\n");
             while ((read = reader.readLine()) != null){
-                ordersText.append(read);
+                ordersText.append(read + "\n");
             }
             reader.close();
             BufferedWriter writer = new BufferedWriter(new FileWriter("Files/Cart.txt"));
@@ -400,9 +400,9 @@ public class HelloController {
             while (((read = reader.readLine())!=null) && (!Objects.equals(read.split("#")[1], String.valueOf(SignInController.loggedInUserId)))){
                 ordersText.append(read + "\n");
             }
-            ordersText.append(read + "c3" + "#" + "1" + "#" + "\n");
+            ordersText.append(read + "cl3" + "#" + "1" + "#" + "\n");
             while ((read = reader.readLine()) != null){
-                ordersText.append(read);
+                ordersText.append(read + "\n");
             }
             reader.close();
             BufferedWriter writer = new BufferedWriter(new FileWriter("Files/Cart.txt"));
@@ -427,9 +427,9 @@ public class HelloController {
             while (((read = reader.readLine())!=null) && (!Objects.equals(read.split("#")[1], String.valueOf(SignInController.loggedInUserId)))){
                 ordersText.append(read + "\n");
             }
-            ordersText.append(read + "c4" + "#" + "1" + "#" + "\n");
+            ordersText.append(read + "cl4" + "#" + "1" + "#" + "\n");
             while ((read = reader.readLine()) != null){
-                ordersText.append(read);
+                ordersText.append(read + "\n");
             }
             reader.close();
             BufferedWriter writer = new BufferedWriter(new FileWriter("Files/Cart.txt"));
@@ -455,7 +455,7 @@ public class HelloController {
             }
             ordersText.append(read + "h1" + "#" + "1" + "#" + "\n");
             while ((read = reader.readLine()) != null){
-                ordersText.append(read);
+                ordersText.append(read + "\n");
             }
             reader.close();
             BufferedWriter writer = new BufferedWriter(new FileWriter("Files/Cart.txt"));
@@ -481,7 +481,7 @@ public class HelloController {
             }
             ordersText.append(read + "h2" + "#" + "1" + "#" + "\n");
             while ((read = reader.readLine()) != null){
-                ordersText.append(read);
+                ordersText.append(read + "\n");
             }
             reader.close();
             BufferedWriter writer = new BufferedWriter(new FileWriter("Files/Cart.txt"));
@@ -508,7 +508,7 @@ public class HelloController {
             }
             ordersText.append(read + "h3" + "#" + "1" + "#" + "\n");
             while ((read = reader.readLine()) != null){
-                ordersText.append(read);
+                ordersText.append(read + "\n");
             }
             reader.close();
             BufferedWriter writer = new BufferedWriter(new FileWriter("Files/Cart.txt"));
@@ -534,7 +534,7 @@ public class HelloController {
             }
             ordersText.append(read + "h4" + "#" + "1" + "#" + "\n");
             while ((read = reader.readLine()) != null){
-                ordersText.append(read);
+                ordersText.append(read + "\n");
             }
             reader.close();
             BufferedWriter writer = new BufferedWriter(new FileWriter("Files/Cart.txt"));
@@ -560,7 +560,7 @@ public class HelloController {
             }
             ordersText.append(read + "b1" + "#" + "1" + "#" + "\n");
             while ((read = reader.readLine()) != null){
-                ordersText.append(read);
+                ordersText.append(read + "\n");
             }
             reader.close();
             BufferedWriter writer = new BufferedWriter(new FileWriter("Files/Cart.txt"));
@@ -586,7 +586,7 @@ public class HelloController {
             }
             ordersText.append(read + "b2" + "#" + "1" + "#" + "\n");
             while ((read = reader.readLine()) != null){
-                ordersText.append(read);
+                ordersText.append(read + "\n");
             }
             reader.close();
             BufferedWriter writer = new BufferedWriter(new FileWriter("Files/Cart.txt"));
@@ -638,7 +638,7 @@ public class HelloController {
             }
             ordersText.append(read + "b4" + "#" + "1" + "#" + "\n");
             while ((read = reader.readLine()) != null){
-                ordersText.append(read);
+                ordersText.append(read + "\n");
             }
             reader.close();
             BufferedWriter writer = new BufferedWriter(new FileWriter("Files/Cart.txt"));
@@ -664,7 +664,7 @@ public class HelloController {
             }
             ordersText.append(read + "p1" + "#" + "1" + "#" + "\n");
             while ((read = reader.readLine()) != null){
-                ordersText.append(read);
+                ordersText.append(read + "\n");
             }
             reader.close();
             BufferedWriter writer = new BufferedWriter(new FileWriter("Files/Cart.txt"));
@@ -690,7 +690,7 @@ public class HelloController {
             }
             ordersText.append(read + "p2" + "#" + "1" + "#" + "\n");
             while ((read = reader.readLine()) != null){
-                ordersText.append(read);
+                ordersText.append(read + "\n");
             }
             reader.close();
             BufferedWriter writer = new BufferedWriter(new FileWriter("Files/Cart.txt"));
@@ -716,7 +716,7 @@ public class HelloController {
             }
             ordersText.append(read + "p3" + "#" + "1" + "#" + "\n");
             while ((read = reader.readLine()) != null){
-                ordersText.append(read);
+                ordersText.append(read + "\n");
             }
             reader.close();
             BufferedWriter writer = new BufferedWriter(new FileWriter("Files/Cart.txt"));
@@ -742,7 +742,7 @@ public class HelloController {
             }
             ordersText.append(read + "p4" + "#" + "1" + "#" + "\n");
             while ((read = reader.readLine()) != null){
-                ordersText.append(read);
+                ordersText.append(read + "\n");
             }
             reader.close();
             BufferedWriter writer = new BufferedWriter(new FileWriter("Files/Cart.txt"));
@@ -768,7 +768,7 @@ public class HelloController {
             }
             ordersText.append(read + "co1" + "#" + "1" + "#" + "\n");
             while ((read = reader.readLine()) != null){
-                ordersText.append(read);
+                ordersText.append(read + "\n");
             }
             reader.close();
             BufferedWriter writer = new BufferedWriter(new FileWriter("Files/Cart.txt"));
@@ -794,7 +794,7 @@ public class HelloController {
             }
             ordersText.append(read + "co2" + "#" + "1" + "#" + "\n");
             while ((read = reader.readLine()) != null){
-                ordersText.append(read);
+                ordersText.append(read + "\n");
             }
             reader.close();
             BufferedWriter writer = new BufferedWriter(new FileWriter("Files/Cart.txt"));
@@ -820,7 +820,7 @@ public class HelloController {
             }
             ordersText.append(read + "co3" + "#" + "1" + "#" + "\n");
             while ((read = reader.readLine()) != null){
-                ordersText.append(read);
+                ordersText.append(read + "\n");
             }
             reader.close();
             BufferedWriter writer = new BufferedWriter(new FileWriter("Files/Cart.txt"));
@@ -846,7 +846,7 @@ public class HelloController {
             }
             ordersText.append(read + "co4" + "#" + "1" + "#" + "\n");
             while ((read = reader.readLine()) != null){
-                ordersText.append(read);
+                ordersText.append(read + "\n");
             }
             reader.close();
             BufferedWriter writer = new BufferedWriter(new FileWriter("Files/Cart.txt"));
@@ -872,7 +872,7 @@ public class HelloController {
             }
             ordersText.append(read + "s1" + "#" + "1" + "#" + "\n");
             while ((read = reader.readLine()) != null){
-                ordersText.append(read);
+                ordersText.append(read + "\n");
             }
             reader.close();
             BufferedWriter writer = new BufferedWriter(new FileWriter("Files/Cart.txt"));
@@ -898,7 +898,7 @@ public class HelloController {
             }
             ordersText.append(read + "s2" + "#" + "1" + "#" + "\n");
             while ((read = reader.readLine()) != null){
-                ordersText.append(read);
+                ordersText.append(read + "\n");
             }
             reader.close();
             BufferedWriter writer = new BufferedWriter(new FileWriter("Files/Cart.txt"));
@@ -924,7 +924,7 @@ public class HelloController {
             }
             ordersText.append(read + "s3" + "#" + "1" + "#" + "\n");
             while ((read = reader.readLine()) != null){
-                ordersText.append(read);
+                ordersText.append(read + "\n");
             }
             reader.close();
             BufferedWriter writer = new BufferedWriter(new FileWriter("Files/Cart.txt"));
@@ -950,7 +950,7 @@ public class HelloController {
             }
             ordersText.append(read + "s4" + "#" + "1" + "#" + "\n");
             while ((read = reader.readLine()) != null){
-                ordersText.append(read);
+                ordersText.append(read + "\n");
             }
             reader.close();
             BufferedWriter writer = new BufferedWriter(new FileWriter("Files/Cart.txt"));

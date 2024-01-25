@@ -162,7 +162,7 @@ public class psychobooksController {
             }
             ordersText.append(read + "p1" + "#" + "1" + "#" + "\n");
             while ((read = reader.readLine()) != null){
-                ordersText.append(read);
+                ordersText.append(read + "\n");
             }
             reader.close();
             BufferedWriter writer = new BufferedWriter(new FileWriter("Files/Cart.txt"));
@@ -188,7 +188,7 @@ public class psychobooksController {
             }
             ordersText.append(read + "p2" + "#" + "1" + "#" + "\n");
             while ((read = reader.readLine()) != null){
-                ordersText.append(read);
+                ordersText.append(read + "\n");
             }
             reader.close();
             BufferedWriter writer = new BufferedWriter(new FileWriter("Files/Cart.txt"));
@@ -214,7 +214,7 @@ public class psychobooksController {
             }
             ordersText.append(read + "p3" + "#" + "1" + "#" + "\n");
             while ((read = reader.readLine()) != null){
-                ordersText.append(read);
+                ordersText.append(read + "\n");
             }
             reader.close();
             BufferedWriter writer = new BufferedWriter(new FileWriter("Files/Cart.txt"));
@@ -240,7 +240,7 @@ public class psychobooksController {
             }
             ordersText.append(read + "p4" + "#" + "1" + "#" + "\n");
             while ((read = reader.readLine()) != null){
-                ordersText.append(read);
+                ordersText.append(read + "\n");
             }
             reader.close();
             BufferedWriter writer = new BufferedWriter(new FileWriter("Files/Cart.txt"));
@@ -266,7 +266,7 @@ public class psychobooksController {
             }
             ordersText.append(read + "p5" + "#" + "1" + "#" + "\n");
             while ((read = reader.readLine()) != null){
-                ordersText.append(read);
+                ordersText.append(read + "\n");
             }
             reader.close();
             BufferedWriter writer = new BufferedWriter(new FileWriter("Files/Cart.txt"));
@@ -292,7 +292,7 @@ public class psychobooksController {
             }
             ordersText.append(read + "p6" + "#" + "1" + "#" + "\n");
             while ((read = reader.readLine()) != null){
-                ordersText.append(read);
+                ordersText.append(read + "\n");
             }
             reader.close();
             BufferedWriter writer = new BufferedWriter(new FileWriter("Files/Cart.txt"));
@@ -318,7 +318,7 @@ public class psychobooksController {
             }
             ordersText.append(read + "p7" + "#" + "1" + "#" + "\n");
             while ((read = reader.readLine()) != null){
-                ordersText.append(read);
+                ordersText.append(read + "\n");
             }
             reader.close();
             BufferedWriter writer = new BufferedWriter(new FileWriter("Files/Cart.txt"));
@@ -344,7 +344,7 @@ public class psychobooksController {
             }
             ordersText.append(read + "p8" + "#" + "1" + "#" + "\n");
             while ((read = reader.readLine()) != null){
-                ordersText.append(read);
+                ordersText.append(read + "\n");
             }
             reader.close();
             BufferedWriter writer = new BufferedWriter(new FileWriter("Files/Cart.txt"));

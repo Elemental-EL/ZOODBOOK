@@ -165,7 +165,7 @@ public class biobooksController {
             }
             ordersText.append(read + "b1" + "#" + "1" + "#" + "\n");
             while ((read = reader.readLine()) != null){
-                ordersText.append(read);
+                ordersText.append(read + "\n");
             }
             reader.close();
             BufferedWriter writer = new BufferedWriter(new FileWriter("Files/Cart.txt"));
@@ -191,7 +191,7 @@ public class biobooksController {
             }
             ordersText.append(read + "b2" + "#" + "1" + "#" + "\n");
             while ((read = reader.readLine()) != null){
-                ordersText.append(read);
+                ordersText.append(read + "\n");
             }
             reader.close();
             BufferedWriter writer = new BufferedWriter(new FileWriter("Files/Cart.txt"));
@@ -217,7 +217,7 @@ public class biobooksController {
             }
             ordersText.append(read + "b3" + "#" + "1" + "#" + "\n");
             while ((read = reader.readLine()) != null){
-                ordersText.append(read);
+                ordersText.append(read + "\n");
             }
             reader.close();
             BufferedWriter writer = new BufferedWriter(new FileWriter("Files/Cart.txt"));
@@ -243,7 +243,7 @@ public class biobooksController {
             }
             ordersText.append(read + "b4" + "#" + "1" + "#" + "\n");
             while ((read = reader.readLine()) != null){
-                ordersText.append(read);
+                ordersText.append(read + "\n");
             }
             reader.close();
             BufferedWriter writer = new BufferedWriter(new FileWriter("Files/Cart.txt"));
@@ -269,7 +269,7 @@ public class biobooksController {
             }
             ordersText.append(read + "b5" + "#" + "1" + "#" + "\n");
             while ((read = reader.readLine()) != null){
-                ordersText.append(read);
+                ordersText.append(read + "\n");
             }
             reader.close();
             BufferedWriter writer = new BufferedWriter(new FileWriter("Files/Cart.txt"));
@@ -295,7 +295,7 @@ public class biobooksController {
             }
             ordersText.append(read + "b6" + "#" + "1" + "#" + "\n");
             while ((read = reader.readLine()) != null){
-                ordersText.append(read);
+                ordersText.append(read + "\n");
             }
             reader.close();
             BufferedWriter writer = new BufferedWriter(new FileWriter("Files/Cart.txt"));
@@ -321,7 +321,7 @@ public class biobooksController {
             }
             ordersText.append(read + "b7" + "#" + "1" + "#" + "\n");
             while ((read = reader.readLine()) != null){
-                ordersText.append(read);
+                ordersText.append(read + "\n");
             }
             reader.close();
             BufferedWriter writer = new BufferedWriter(new FileWriter("Files/Cart.txt"));
@@ -347,7 +347,7 @@ public class biobooksController {
             }
             ordersText.append(read + "b8" + "#" + "1" + "#" + "\n");
             while ((read = reader.readLine()) != null){
-                ordersText.append(read);
+                ordersText.append(read + "\n");
             }
             reader.close();
             BufferedWriter writer = new BufferedWriter(new FileWriter("Files/Cart.txt"));
