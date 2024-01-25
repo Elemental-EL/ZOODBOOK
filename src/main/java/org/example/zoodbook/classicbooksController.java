@@ -7,12 +7,16 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.control.ScrollPane;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 
+import java.io.BufferedReader;
+import java.io.FileReader;
 import java.io.IOException;
+import java.util.Objects;
 
 public class classicbooksController {
     private Stage stage;
@@ -24,6 +28,19 @@ public class classicbooksController {
     private Button jumpUpbtn, classicbtn, historybtn, biobtn, psychobtn, cookingbtn, scifibtn, add1, add2, add3, add4, add5, add6, add7, add8;
     @FXML
     private ImageView profilebtn, cartbtn, logobtn;
+    @FXML
+    private Label price1,price2,price3,price4,price5,price6,price7,price8;
+    public void initialize() throws IOException, NoSuchFieldException, IllegalAccessException {
+        BufferedReader reader = new BufferedReader(new FileReader("Files/Books.txt"));
+        String line;
+        int i=1;
+        while ((line=reader.readLine())!=null&& !Objects.equals(line.split("#")[1], "h1")){
+            Label price = (Label) getClass().getDeclaredField("price" + i).get(this);
+            price.setText(line.split("#")[3]+" تومان");
+            i++;
+        }
+        reader.close();
+    }
     @FXML
     void onUserClicked (MouseEvent event) throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource("SignIn.fxml"));

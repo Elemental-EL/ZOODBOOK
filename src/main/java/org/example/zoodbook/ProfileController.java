@@ -53,6 +53,7 @@ public class ProfileController {
                 PhnumberText.setText(line.split("#")[8]);
             }
         }
+
         reader.close();
     }
     public void onBackClicked(MouseEvent event) throws IOException {
