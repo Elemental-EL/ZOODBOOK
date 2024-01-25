@@ -11,6 +11,7 @@ import javafx.scene.control.Label;
 import javafx.scene.control.ScrollPane;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
+import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 
 import java.io.BufferedReader;
@@ -38,10 +39,23 @@ public class psychobooksController {
         }
         while ((line=reader.readLine())!=null&& !Objects.equals(line.split("#")[1], "co1")){
             Label price = (Label) getClass().getDeclaredField("price" + i).get(this);
-            price.setText(line.split("#")[3]+" تومان");
+            if (Objects.equals(line.split("#")[2], "0")) {
+                price.setText("ناموجود");
+                price.setTextFill(Color.RED);
+            }
+            else
+                price.setText(line.split("#")[3]+" تومان");
             i++;
         }
         reader.close();
+        i=1;
+        while (i<9){
+            Label price = (Label) getClass().getDeclaredField("price" + i).get(this);
+            Button add = (Button) getClass().getDeclaredField("add"+ i).get(this);
+            if (Objects.equals(price.getText(), "ناموجود"))
+                add.setDisable(true);
+            i++;
+        }
     }
     @FXML
     void onUserClicked (MouseEvent event) throws IOException {
