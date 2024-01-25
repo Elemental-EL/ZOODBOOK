@@ -11,15 +11,17 @@ import javafx.scene.control.Hyperlink;
 import javafx.scene.control.*;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
+import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
 import java.net.URI;
 import java.net.URISyntaxException;
-
+import java.util.Objects;
+import java.util.Scanner;
 
 
 public class HelloController {
@@ -37,10 +39,89 @@ public class HelloController {
     @FXML
     private ScrollPane scrollPane;
     public int uId = SignInController.loggedInUserId;
-    public void initialize() throws FileNotFoundException {
+    public void initialize() throws IOException, NoSuchFieldException, IllegalAccessException {
         BufferedReader reader = new BufferedReader(new FileReader("Files/Books.txt"));
         String line;
         int i =1;
+        while ((line= reader.readLine())!=null&& !Objects.equals(line.split("#")[1], "cl5")){
+            Label price = (Label) getClass().getDeclaredField("price" + i).get(this);
+            if (Objects.equals(line.split("#")[2], "0")) {
+                price.setText("ناموجود");
+                price.setTextFill(Color.RED);
+            }
+            else
+                price.setText(line.split("#")[3]+" تومان");
+            i++;
+        }
+        while ((line= reader.readLine())!=null&& !Objects.equals(line.split("#")[1], "cl8"));{
+        }
+        while ((line= reader.readLine())!=null&& !Objects.equals(line.split("#")[1], "h5")){
+            Label price = (Label) getClass().getDeclaredField("price" + i).get(this);
+            if (Objects.equals(line.split("#")[2], "0")) {
+                price.setText("ناموجود");
+                price.setTextFill(Color.RED);
+            }
+            else
+                price.setText(line.split("#")[3]+" تومان");
+            i++;
+        }
+        while ((line= reader.readLine())!=null&& !Objects.equals(line.split("#")[1], "h8"));{
+        }
+        while ((line= reader.readLine())!=null&& !Objects.equals(line.split("#")[1], "b5")){
+            Label price = (Label) getClass().getDeclaredField("price" + i).get(this);
+            if (Objects.equals(line.split("#")[2], "0")) {
+                price.setText("ناموجود");
+                price.setTextFill(Color.RED);
+            }
+            else
+                price.setText(line.split("#")[3]+" تومان");
+            i++;
+        }
+        while ((line= reader.readLine())!=null&& !Objects.equals(line.split("#")[1], "b8"));{
+        }
+        while ((line= reader.readLine())!=null&& !Objects.equals(line.split("#")[1], "p5")){
+            Label price = (Label) getClass().getDeclaredField("price" + i).get(this);
+            if (Objects.equals(line.split("#")[2], "0")) {
+                price.setText("ناموجود");
+                price.setTextFill(Color.RED);
+            }
+            else
+                price.setText(line.split("#")[3]+" تومان");
+            i++;
+        }
+        while ((line= reader.readLine())!=null&& !Objects.equals(line.split("#")[1], "p8"));{
+        }
+        while ((line= reader.readLine())!=null&& !Objects.equals(line.split("#")[1], "co5")){
+            Label price = (Label) getClass().getDeclaredField("price" + i).get(this);
+            if (Objects.equals(line.split("#")[2], "0")) {
+                price.setText("ناموجود");
+                price.setTextFill(Color.RED);
+            }
+            else
+                price.setText(line.split("#")[3]+" تومان");
+            i++;
+        }
+        while ((line= reader.readLine())!=null&& !Objects.equals(line.split("#")[1], "co8"));{
+        }
+        while ((line= reader.readLine())!=null&& !Objects.equals(line.split("#")[1], "s5")){
+            Label price = (Label) getClass().getDeclaredField("price" + i).get(this);
+            if (Objects.equals(line.split("#")[2], "0")) {
+                price.setText("ناموجود");
+                price.setTextFill(Color.RED);
+            }
+            else
+                price.setText(line.split("#")[3]+" تومان");
+            i++;
+        }
+        reader.close();
+        i=1;
+        while (i<25){
+            Label price = (Label) getClass().getDeclaredField("price" + i).get(this);
+            Button add = (Button) getClass().getDeclaredField("add"+ i).get(this);
+            if (Objects.equals(price.getText(), "ناموجود"))
+                add.setDisable(true);
+            i++;
+        }
     }
     @FXML
     void onUserClicked (MouseEvent event) throws IOException {
@@ -256,7 +337,7 @@ public class HelloController {
     }
 
     public void onAdd3(ActionEvent actionEvent) {
-        
+
     }
 
     public void onAdd4(ActionEvent actionEvent) {
@@ -266,7 +347,7 @@ public class HelloController {
     }
 
     public void onAdd6(ActionEvent actionEvent) {
-        
+
     }
 
     public void onAdd7(ActionEvent actionEvent) {
@@ -322,6 +403,9 @@ public class HelloController {
 
     public void onAdd24(ActionEvent actionEvent) {
     }
+
+
+
     @FXML
     private HostServices hostServices;
     public void setHostServices(HostServices hostServices){
