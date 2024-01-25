@@ -91,6 +91,16 @@ public class SignUpController {
                 BufferedWriter writer = new BufferedWriter(new FileWriter("Files/Users.txt"));
                 writer.write(String.valueOf(userTexts));
                 writer.close();
+                StringBuilder addUIdToCart = new StringBuilder();
+                BufferedReader reader3 = new BufferedReader(new FileReader("Files/Cart.txt"));
+                while ((line = reader3.readLine()) != null)
+                    addUIdToCart.append(line + "\n");
+                StringBuilder newUserId = new StringBuilder("#" + newId + "#");
+                addUIdToCart.append(newUserId);
+                BufferedWriter addNewUId = new BufferedWriter(new FileWriter("Files/Cart.txt"));
+                addNewUId.write(String.valueOf(addUIdToCart));
+                addNewUId.close();
+
 //                SignInController.loggedInUserId= newId;
                 Parent root = FXMLLoader.load(getClass().getResource("SignIn.fxml"));
                 stage = (Stage) ((Node) event.getSource()).getScene().getWindow();

@@ -18,6 +18,8 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.Objects;
+import java.io.*;
+import java.util.Objects;
 
 public class historybooksController {
     private Stage stage;
@@ -143,27 +145,211 @@ public class historybooksController {
         scrollPane.setVvalue(0);
     }
     @FXML
-    void onAdd1(ActionEvent event) {
+    void onAdd1(ActionEvent event) throws IOException {
+        if (SignInController.loggedInUserId == 100){
+            Parent root = FXMLLoader.load(getClass().getResource("SignIn.fxml"));
+            stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+            scene = new Scene(root);
+            stage.setScene(scene);
+            stage.setResizable(false);
+            stage.show();
+        }else {
+            BufferedReader reader = new BufferedReader(new FileReader("Files/Cart.txt"));
+            StringBuilder ordersText = new StringBuilder();
+            String read;
+            while (((read = reader.readLine())!=null) && (!Objects.equals(read.split("#")[1], String.valueOf(SignInController.loggedInUserId)))){
+                ordersText.append(read + "\n");
+            }
+            ordersText.append(read + "h1" + "#" + "1" + "#" + "\n");
+            while ((read = reader.readLine()) != null){
+                ordersText.append(read);
+            }
+            reader.close();
+            BufferedWriter writer = new BufferedWriter(new FileWriter("Files/Cart.txt"));
+            writer.write(String.valueOf(ordersText));
+            writer.close();
+        }
     }
     @FXML
-    void onAdd2(ActionEvent event) {
+    void onAdd2(ActionEvent event) throws IOException {
+        if (SignInController.loggedInUserId == 100){
+            Parent root = FXMLLoader.load(getClass().getResource("SignIn.fxml"));
+            stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+            scene = new Scene(root);
+            stage.setScene(scene);
+            stage.setResizable(false);
+            stage.show();
+        }else {
+            BufferedReader reader = new BufferedReader(new FileReader("Files/Cart.txt"));
+            StringBuilder ordersText = new StringBuilder();
+            String read;
+            while (((read = reader.readLine())!=null) && (!Objects.equals(read.split("#")[1], String.valueOf(SignInController.loggedInUserId)))){
+                ordersText.append(read + "\n");
+            }
+            ordersText.append(read + "h2" + "#" + "1" + "#" + "\n");
+            while ((read = reader.readLine()) != null){
+                ordersText.append(read);
+            }
+            reader.close();
+            BufferedWriter writer = new BufferedWriter(new FileWriter("Files/Cart.txt"));
+            writer.write(String.valueOf(ordersText));
+            writer.close();
+        }
     }
     @FXML
-    void onAdd3(ActionEvent event) {
+    void onAdd3(ActionEvent event) throws IOException {
+        if (SignInController.loggedInUserId == 100){
+            Parent root = FXMLLoader.load(getClass().getResource("SignIn.fxml"));
+            stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+            scene = new Scene(root);
+            stage.setScene(scene);
+            stage.setResizable(false);
+            stage.show();
+        }else {
+            BufferedReader reader = new BufferedReader(new FileReader("Files/Cart.txt"));
+            StringBuilder ordersText = new StringBuilder();
+            String read;
+            while (((read = reader.readLine())!=null) && (!Objects.equals(read.split("#")[1], String.valueOf(SignInController.loggedInUserId)))){
+                ordersText.append(read + "\n");
+            }
+            ordersText.append(read + "h3" + "#" + "1" + "#" + "\n");
+            while ((read = reader.readLine()) != null){
+                ordersText.append(read);
+            }
+            reader.close();
+            BufferedWriter writer = new BufferedWriter(new FileWriter("Files/Cart.txt"));
+            writer.write(String.valueOf(ordersText));
+            writer.close();
+        }
     }
     @FXML
-    void onAdd4(ActionEvent event) {
+    void onAdd4(ActionEvent event) throws IOException {
+        if (SignInController.loggedInUserId == 100){
+            Parent root = FXMLLoader.load(getClass().getResource("SignIn.fxml"));
+            stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+            scene = new Scene(root);
+            stage.setScene(scene);
+            stage.setResizable(false);
+            stage.show();
+        }else {
+            BufferedReader reader = new BufferedReader(new FileReader("Files/Cart.txt"));
+            StringBuilder ordersText = new StringBuilder();
+            String read;
+            while (((read = reader.readLine())!=null) && (!Objects.equals(read.split("#")[1], String.valueOf(SignInController.loggedInUserId)))){
+                ordersText.append(read + "\n");
+            }
+            ordersText.append(read + "h4" + "#" + "1" + "#" + "\n");
+            while ((read = reader.readLine()) != null){
+                ordersText.append(read);
+            }
+            reader.close();
+            BufferedWriter writer = new BufferedWriter(new FileWriter("Files/Cart.txt"));
+            writer.write(String.valueOf(ordersText));
+            writer.close();
+        }
     }
     @FXML
-    void onAdd5(ActionEvent event) {
+    void onAdd5(ActionEvent event) throws IOException {
+        if (SignInController.loggedInUserId == 100){
+            Parent root = FXMLLoader.load(getClass().getResource("SignIn.fxml"));
+            stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+            scene = new Scene(root);
+            stage.setScene(scene);
+            stage.setResizable(false);
+            stage.show();
+        }else {
+            BufferedReader reader = new BufferedReader(new FileReader("Files/Cart.txt"));
+            StringBuilder ordersText = new StringBuilder();
+            String read;
+            while (((read = reader.readLine())!=null) && (!Objects.equals(read.split("#")[1], String.valueOf(SignInController.loggedInUserId)))){
+                ordersText.append(read + "\n");
+            }
+            ordersText.append(read + "h5" + "#" + "1" + "#" + "\n");
+            while ((read = reader.readLine()) != null){
+                ordersText.append(read);
+            }
+            reader.close();
+            BufferedWriter writer = new BufferedWriter(new FileWriter("Files/Cart.txt"));
+            writer.write(String.valueOf(ordersText));
+            writer.close();
+        }
     }
     @FXML
-    void onAdd6(ActionEvent event) {
+    void onAdd6(ActionEvent event) throws IOException {
+        if (SignInController.loggedInUserId == 100){
+            Parent root = FXMLLoader.load(getClass().getResource("SignIn.fxml"));
+            stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+            scene = new Scene(root);
+            stage.setScene(scene);
+            stage.setResizable(false);
+            stage.show();
+        }else {
+            BufferedReader reader = new BufferedReader(new FileReader("Files/Cart.txt"));
+            StringBuilder ordersText = new StringBuilder();
+            String read;
+            while (((read = reader.readLine())!=null) && (!Objects.equals(read.split("#")[1], String.valueOf(SignInController.loggedInUserId)))){
+                ordersText.append(read + "\n");
+            }
+            ordersText.append(read + "h6" + "#" + "1" + "#" + "\n");
+            while ((read = reader.readLine()) != null){
+                ordersText.append(read);
+            }
+            reader.close();
+            BufferedWriter writer = new BufferedWriter(new FileWriter("Files/Cart.txt"));
+            writer.write(String.valueOf(ordersText));
+            writer.close();
+        }
     }
     @FXML
-    void onAdd7(ActionEvent event) {
+    void onAdd7(ActionEvent event) throws IOException {
+        if (SignInController.loggedInUserId == 100){
+            Parent root = FXMLLoader.load(getClass().getResource("SignIn.fxml"));
+            stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+            scene = new Scene(root);
+            stage.setScene(scene);
+            stage.setResizable(false);
+            stage.show();
+        }else {
+            BufferedReader reader = new BufferedReader(new FileReader("Files/Cart.txt"));
+            StringBuilder ordersText = new StringBuilder();
+            String read;
+            while (((read = reader.readLine())!=null) && (!Objects.equals(read.split("#")[1], String.valueOf(SignInController.loggedInUserId)))){
+                ordersText.append(read + "\n");
+            }
+            ordersText.append(read + "h7" + "#" + "1" + "#" + "\n");
+            while ((read = reader.readLine()) != null){
+                ordersText.append(read);
+            }
+            reader.close();
+            BufferedWriter writer = new BufferedWriter(new FileWriter("Files/Cart.txt"));
+            writer.write(String.valueOf(ordersText));
+            writer.close();
+        }
     }
     @FXML
-    void onAdd8(ActionEvent event) {
+    void onAdd8(ActionEvent event) throws IOException {
+        if (SignInController.loggedInUserId == 100){
+            Parent root = FXMLLoader.load(getClass().getResource("SignIn.fxml"));
+            stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+            scene = new Scene(root);
+            stage.setScene(scene);
+            stage.setResizable(false);
+            stage.show();
+        }else {
+            BufferedReader reader = new BufferedReader(new FileReader("Files/Cart.txt"));
+            StringBuilder ordersText = new StringBuilder();
+            String read;
+            while (((read = reader.readLine())!=null) && (!Objects.equals(read.split("#")[1], String.valueOf(SignInController.loggedInUserId)))){
+                ordersText.append(read + "\n");
+            }
+            ordersText.append(read + "h8" + "#" + "1" + "#" + "\n");
+            while ((read = reader.readLine()) != null){
+                ordersText.append(read);
+            }
+            reader.close();
+            BufferedWriter writer = new BufferedWriter(new FileWriter("Files/Cart.txt"));
+            writer.write(String.valueOf(ordersText));
+            writer.close();
+        }
     }
 }

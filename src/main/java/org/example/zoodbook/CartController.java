@@ -66,15 +66,7 @@ public class CartController {
 
         List<String> userOrders = new ArrayList<>();
         //Get from file
-
         return userOrders;
-
-
-
-
-
-
-
     }
     public void newOrder(){
         BorderPane newPane =  new BorderPane();
@@ -134,17 +126,5 @@ public class CartController {
                 newPane.getChildren().remove(orderHBox);
             }
         });
-//        delete.setOnMouseClicked(new EventHandler<MouseEvent>() {
-//            @Override
-//            public void handle(MouseEvent event) {
-//                newPane.getChildren().remove(orderHBox);
-//            }
-//        });
     }
 }
-//        reduce.setOnAction(new EventHandler<ActionEvent>() {
-//            @Override
-//            public void handle(ActionEvent actionEvent) {
-//                newPane.getChildren().remove(orderHBox);
-//            }
-//        });
