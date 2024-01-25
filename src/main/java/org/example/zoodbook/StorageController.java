@@ -10,11 +10,10 @@ import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
+import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -24,6 +23,8 @@ public class StorageController {
     private Parent root;
     @FXML
     private ImageView logobtn;
+    @FXML
+    private Text errorText;
     @FXML
     private TextField quantity1,quantity2,quantity3,quantity4,quantity5,quantity6,quantity7,quantity8,quantity9,quantity10,quantity11,quantity12,quantity13,quantity14,quantity15,quantity16,quantity17,quantity18,quantity19,quantity20,quantity21,quantity22,quantity23,quantity24,quantity25,quantity26,quantity27,quantity28,quantity29,quantity30,quantity31,quantity32,quantity33,quantity34,quantity35,quantity36,quantity37,quantity38,quantity39,quantity40,quantity41,quantity42,quantity43,quantity44,quantity45,quantity46,quantity47,quantity48,price1,price2,price3,price4,price5,price6,price7,price8,price9,price10,price11,price12,price13,price14,price15,price16,price17,price18,price19,price20,price21,price22,price23,price24,price25,price26,price27,price28,price29,price30,price31,price32,price33,price34,price35,price36,price37,price38,price39,price40,price41,price42,price43,price44,price45,price46,price47,price48;
     @FXML
@@ -346,6 +347,31 @@ public class StorageController {
         ChangeSavebtn.setDisable(false);
     }
 
-    public void onChangeSavebtn(ActionEvent actionEvent) {
+    public void onChangeSavebtn(ActionEvent event) throws IOException, NoSuchFieldException, IllegalAccessException {
+        errorText.setText("");
+        BufferedReader reader = new BufferedReader(new FileReader("Files/Books.txt"));
+        String line;
+        StringBuilder Books = new StringBuilder();
+        boolean fieldsFilled = true;
+        for (int i =1;i<=48;i++){
+            TextField priceField = (TextField) getClass().getDeclaredField("price" + i).get(this);
+            TextField quantityField = (TextField) getClass().getDeclaredField("quantity" + i).get(this);
+            if (priceField.getText().replaceAll("\\D", "").trim().isEmpty()||quantityField.getText().replaceAll("\\D", "").trim().isEmpty())
+                fieldsFilled = false;
+        }
+        if (fieldsFilled) {
+            int i =1;
+            while ((line = reader.readLine()) != null) {
+                TextField priceField = (TextField) getClass().getDeclaredField("price" + i).get(this);
+                TextField quantityField = (TextField) getClass().getDeclaredField("quantity" + i).get(this);
+                Books.append("#" + line.split("#")[1] + "#" + quantityField.getText().replaceAll("\\D", "") + "#" + priceField.getText().replaceAll("\\D", "") + "#" + line.split("#")[4] + "#" + "\n");
+            }
+            reader.close();
+            BufferedWriter writer = new BufferedWriter(new FileWriter("Files/Books.txt"));
+            writer.write(String.valueOf(Books));
+            writer.close();
+        }
+        else
+            errorText.setText("*اطلاعات وارده نا معتبر است.");
     }
 }

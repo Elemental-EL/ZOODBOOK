@@ -2163,5 +2163,10 @@
             <String fx:value="radiusforcat" />
          </styleClass>
       </Button>
+      <Text fx:id="errorText" fill="RED" layoutX="349.0" layoutY="527.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="RIGHT" wrappingWidth="500.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
    </children>
 </AnchorPane>
