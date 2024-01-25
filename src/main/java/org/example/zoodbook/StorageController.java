@@ -10,6 +10,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
+import javafx.scene.paint.Color;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
@@ -349,6 +350,7 @@ public class StorageController {
 
     public void onChangeSavebtn(ActionEvent event) throws IOException, NoSuchFieldException, IllegalAccessException {
         errorText.setText("");
+        errorText.setFill(Color.RED);
         BufferedReader reader = new BufferedReader(new FileReader("Files/Books.txt"));
         String line;
         StringBuilder Books = new StringBuilder();
@@ -365,11 +367,15 @@ public class StorageController {
                 TextField priceField = (TextField) getClass().getDeclaredField("price" + i).get(this);
                 TextField quantityField = (TextField) getClass().getDeclaredField("quantity" + i).get(this);
                 Books.append("#" + line.split("#")[1] + "#" + quantityField.getText().replaceAll("\\D", "") + "#" + priceField.getText().replaceAll("\\D", "") + "#" + line.split("#")[4] + "#" + "\n");
+                i++;
             }
             reader.close();
             BufferedWriter writer = new BufferedWriter(new FileWriter("Files/Books.txt"));
             writer.write(String.valueOf(Books));
             writer.close();
+            errorText.setText("*تغییرات با موفقیت ثبت شد.");
+            errorText.setFill(Color.GREEN);
+            ChangeSavebtn.setDisable(true);
         }
         else
             errorText.setText("*اطلاعات وارده نا معتبر است.");
