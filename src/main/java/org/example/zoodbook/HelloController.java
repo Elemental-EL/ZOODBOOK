@@ -423,6 +423,8 @@ public class HelloController {
             BufferedWriter writer = new BufferedWriter(new FileWriter("Files/Cart.txt"));
             writer.write(String.valueOf(ordersText));
             writer.close();
+            add1.setText("افزوده شد");
+            add1.setDisable(true);
         }
     }
 
@@ -449,6 +451,8 @@ public class HelloController {
             BufferedWriter writer = new BufferedWriter(new FileWriter("Files/Cart.txt"));
             writer.write(String.valueOf(ordersText));
             writer.close();
+            add2.setText("افزوده شد");
+            add2.setDisable(true);
         }
     }
 
