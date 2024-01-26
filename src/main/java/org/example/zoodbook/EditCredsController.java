@@ -51,18 +51,29 @@ public class EditCredsController {
         reader.close();
     }
     public void onBackClicked(MouseEvent event) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("Profile.fxml"));
-        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-        scene = new Scene(root);
-        stage.setScene(scene);
-        stage.show();
+        if (RecoveryController.onRecovery){
+            Parent root = FXMLLoader.load(getClass().getResource("Recovery.fxml"));
+            stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+            scene = new Scene(root);
+            stage.setScene(scene);
+            stage.show();
+        }
+        else {
+            Parent root = FXMLLoader.load(getClass().getResource("Profile.fxml"));
+            stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+            scene = new Scene(root);
+            stage.setScene(scene);
+            stage.show();
+        }
     }
     public void onLogoClicked(MouseEvent event) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("hello-view.fxml"));
-        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-        scene = new Scene(root);
-        stage.setScene(scene);
-        stage.show();
+        if (!RecoveryController.onRecovery) {
+            Parent root = FXMLLoader.load(getClass().getResource("hello-view.fxml"));
+            stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+            scene = new Scene(root);
+            stage.setScene(scene);
+            stage.show();
+        }
     }
     public void onSaveClicked (ActionEvent event) throws IOException {
         errorText.setText("");
@@ -104,6 +115,7 @@ public class EditCredsController {
                 writer.close();
                 errorText.setFill(Color.GREEN);
                 errorText.setText("*اطلاعات شما با موفقیت تغییر یافت.");
+                RecoveryController.onRecovery=false;
             }
         }
     }

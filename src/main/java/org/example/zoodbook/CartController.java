@@ -48,7 +48,6 @@ public class CartController {
                 orderBooksID[i] = read.split("#")[k];
                 orderBooksQuantity[i] = read.split("#")[k+1];
             }
-
             reader.close();
             for (int i = 0 ; i<48 && orderBooksID[i] != null ; i++){
                 BufferedReader reader1 = new BufferedReader(new FileReader("Files/Books.txt"));
@@ -60,7 +59,6 @@ public class CartController {
             }
             newOrder(orderBooksName , orderBooksQuantity , orderBooksPrice , orderBooksID);
         }else {
-
         }
 //        BufferedReader reader1 = new BufferedReader(new FileReader("Files/Cart.txt"));
 //        StringBuilder line = new StringBuilder();

@@ -20,11 +20,9 @@ import java.io.IOException;
 import java.util.Objects;
 
 public class RecoveryController {
-
     private Stage stage;
     private Scene scene;
     private Parent root;
-    public static int loggedInUserId = 100;
     @FXML
     private ImageView backbtn, logobtn;
     @FXML
@@ -33,7 +31,7 @@ public class RecoveryController {
     private Button Recoverybtn;
     @FXML
     private Text errorText;
-
+    public static boolean onRecovery=false;
     @FXML
     void onLogoClicked(MouseEvent event) throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource("hello-view.fxml"));
@@ -43,7 +41,6 @@ public class RecoveryController {
         stage.setResizable(false);
         stage.show();
     }
-
     @FXML
     void onBackClicked(MouseEvent event) throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource("SignIn.fxml"));
@@ -53,7 +50,6 @@ public class RecoveryController {
         stage.setResizable(false);
         stage.show();
     }
-
     @FXML
     void onRecoveryClicked(ActionEvent event) throws IOException {
         errorText.setText("");
@@ -73,12 +69,11 @@ public class RecoveryController {
 
                     }
                 }
-
-
             }
             reader.close();
             if (Authentication){
-                loggedInUserId = Integer.parseInt(line.split("#")[1]);
+                SignInController.loggedInUserId = Integer.parseInt(line.split("#")[1]);
+                onRecovery =true;
                 Parent root = FXMLLoader.load(getClass().getResource("EditCreds.fxml"));
                 stage = (Stage)((Node)event.getSource()).getScene().getWindow();
                 scene = new Scene(root);
