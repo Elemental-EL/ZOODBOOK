@@ -479,6 +479,8 @@ public class HelloController {
             BufferedWriter writer = new BufferedWriter(new FileWriter("Files/Cart.txt"));
             writer.write(String.valueOf(ordersText));
             writer.close();
+            add3.setText("افزوده شد");
+            add3.setDisable(true);
         }
 
     }
@@ -506,6 +508,8 @@ public class HelloController {
             BufferedWriter writer = new BufferedWriter(new FileWriter("Files/Cart.txt"));
             writer.write(String.valueOf(ordersText));
             writer.close();
+            add4.setText("افزوده شد");
+            add4.setDisable(true);
         }
     }
 
@@ -532,6 +536,8 @@ public class HelloController {
             BufferedWriter writer = new BufferedWriter(new FileWriter("Files/Cart.txt"));
             writer.write(String.valueOf(ordersText));
             writer.close();
+            add5.setText("افزوده شد");
+            add5.setDisable(true);
         }
     }
 
@@ -558,6 +564,8 @@ public class HelloController {
             BufferedWriter writer = new BufferedWriter(new FileWriter("Files/Cart.txt"));
             writer.write(String.valueOf(ordersText));
             writer.close();
+            add6.setText("افزوده شد");
+            add6.setDisable(true);
         }
         
     }
@@ -585,6 +593,8 @@ public class HelloController {
             BufferedWriter writer = new BufferedWriter(new FileWriter("Files/Cart.txt"));
             writer.write(String.valueOf(ordersText));
             writer.close();
+            add7.setText("افزوده شد");
+            add7.setDisable(true);
         }
     }
 
@@ -611,6 +621,8 @@ public class HelloController {
             BufferedWriter writer = new BufferedWriter(new FileWriter("Files/Cart.txt"));
             writer.write(String.valueOf(ordersText));
             writer.close();
+            add8.setText("افزوده شد");
+            add8.setDisable(true);
         }
     }
 
@@ -637,6 +649,8 @@ public class HelloController {
             BufferedWriter writer = new BufferedWriter(new FileWriter("Files/Cart.txt"));
             writer.write(String.valueOf(ordersText));
             writer.close();
+            add9.setText("افزوده شد");
+            add9.setDisable(true);
         }
     }
 
@@ -663,6 +677,8 @@ public class HelloController {
             BufferedWriter writer = new BufferedWriter(new FileWriter("Files/Cart.txt"));
             writer.write(String.valueOf(ordersText));
             writer.close();
+            add10.setText("افزوده شد");
+            add10.setDisable(true);
         }
     }
 
@@ -689,6 +705,8 @@ public class HelloController {
             BufferedWriter writer = new BufferedWriter(new FileWriter("Files/Cart.txt"));
             writer.write(String.valueOf(ordersText));
             writer.close();
+            add11.setText("افزوده شد");
+            add11.setDisable(true);
         }
     }
 
@@ -715,6 +733,8 @@ public class HelloController {
             BufferedWriter writer = new BufferedWriter(new FileWriter("Files/Cart.txt"));
             writer.write(String.valueOf(ordersText));
             writer.close();
+            add12.setText("افزوده شد");
+            add12.setDisable(true);
         }
     }
 
@@ -741,6 +761,8 @@ public class HelloController {
             BufferedWriter writer = new BufferedWriter(new FileWriter("Files/Cart.txt"));
             writer.write(String.valueOf(ordersText));
             writer.close();
+            add13.setText("افزوده شد");
+            add13.setDisable(true);
         }
     }
 
@@ -767,6 +789,8 @@ public class HelloController {
             BufferedWriter writer = new BufferedWriter(new FileWriter("Files/Cart.txt"));
             writer.write(String.valueOf(ordersText));
             writer.close();
+            add14.setText("افزوده شد");
+            add14.setDisable(true);
         }
     }
 
@@ -793,6 +817,8 @@ public class HelloController {
             BufferedWriter writer = new BufferedWriter(new FileWriter("Files/Cart.txt"));
             writer.write(String.valueOf(ordersText));
             writer.close();
+            add15.setText("افزوده شد");
+            add15.setDisable(true);
         }
     }
 
@@ -819,6 +845,8 @@ public class HelloController {
             BufferedWriter writer = new BufferedWriter(new FileWriter("Files/Cart.txt"));
             writer.write(String.valueOf(ordersText));
             writer.close();
+            add16.setText("افزوده شد");
+            add16.setDisable(true);
         }
     }
 
@@ -845,6 +873,8 @@ public class HelloController {
             BufferedWriter writer = new BufferedWriter(new FileWriter("Files/Cart.txt"));
             writer.write(String.valueOf(ordersText));
             writer.close();
+            add17.setText("افزوده شد");
+            add17.setDisable(true);
         }
     }
 
@@ -871,6 +901,8 @@ public class HelloController {
             BufferedWriter writer = new BufferedWriter(new FileWriter("Files/Cart.txt"));
             writer.write(String.valueOf(ordersText));
             writer.close();
+            add18.setText("افزوده شد");
+            add18.setDisable(true);
         }
     }
 
@@ -897,6 +929,8 @@ public class HelloController {
             BufferedWriter writer = new BufferedWriter(new FileWriter("Files/Cart.txt"));
             writer.write(String.valueOf(ordersText));
             writer.close();
+            add19.setText("افزوده شد");
+            add19.setDisable(true);
         }
     }
 
@@ -923,6 +957,8 @@ public class HelloController {
             BufferedWriter writer = new BufferedWriter(new FileWriter("Files/Cart.txt"));
             writer.write(String.valueOf(ordersText));
             writer.close();
+            add20.setText("افزوده شد");
+            add20.setDisable(true);
         }
     }
 
@@ -949,6 +985,8 @@ public class HelloController {
             BufferedWriter writer = new BufferedWriter(new FileWriter("Files/Cart.txt"));
             writer.write(String.valueOf(ordersText));
             writer.close();
+            add21.setText("افزوده شد");
+            add21.setDisable(true);
         }
     }
 
@@ -975,6 +1013,8 @@ public class HelloController {
             BufferedWriter writer = new BufferedWriter(new FileWriter("Files/Cart.txt"));
             writer.write(String.valueOf(ordersText));
             writer.close();
+            add22.setText("افزوده شد");
+            add22.setDisable(true);
         }
     }
 
@@ -1001,6 +1041,8 @@ public class HelloController {
             BufferedWriter writer = new BufferedWriter(new FileWriter("Files/Cart.txt"));
             writer.write(String.valueOf(ordersText));
             writer.close();
+            add23.setText("افزوده شد");
+            add23.setDisable(true);
         }
     }
 
@@ -1027,6 +1069,8 @@ public class HelloController {
             BufferedWriter writer = new BufferedWriter(new FileWriter("Files/Cart.txt"));
             writer.write(String.valueOf(ordersText));
             writer.close();
+            add24.setText("افزوده شد");
+            add24.setDisable(true);
         }
     }
 

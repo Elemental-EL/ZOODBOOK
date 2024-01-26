@@ -194,6 +194,8 @@ public class biobooksController {
             BufferedWriter writer = new BufferedWriter(new FileWriter("Files/Cart.txt"));
             writer.write(String.valueOf(ordersText));
             writer.close();
+            add1.setText("افزوده شد");
+            add1.setDisable(true);
         }
     }
     @FXML
@@ -220,6 +222,8 @@ public class biobooksController {
             BufferedWriter writer = new BufferedWriter(new FileWriter("Files/Cart.txt"));
             writer.write(String.valueOf(ordersText));
             writer.close();
+            add2.setText("افزوده شد");
+            add2.setDisable(true);
         }
     }
     @FXML
@@ -246,6 +250,8 @@ public class biobooksController {
             BufferedWriter writer = new BufferedWriter(new FileWriter("Files/Cart.txt"));
             writer.write(String.valueOf(ordersText));
             writer.close();
+            add3.setText("افزوده شد");
+            add3.setDisable(true);
         }
     }
     @FXML
@@ -272,6 +278,8 @@ public class biobooksController {
             BufferedWriter writer = new BufferedWriter(new FileWriter("Files/Cart.txt"));
             writer.write(String.valueOf(ordersText));
             writer.close();
+            add4.setText("افزوده شد");
+            add4.setDisable(true);
         }
     }
     @FXML
@@ -298,6 +306,8 @@ public class biobooksController {
             BufferedWriter writer = new BufferedWriter(new FileWriter("Files/Cart.txt"));
             writer.write(String.valueOf(ordersText));
             writer.close();
+            add5.setText("افزوده شد");
+            add5.setDisable(true);
         }
     }
     @FXML
@@ -324,6 +334,8 @@ public class biobooksController {
             BufferedWriter writer = new BufferedWriter(new FileWriter("Files/Cart.txt"));
             writer.write(String.valueOf(ordersText));
             writer.close();
+            add6.setText("افزوده شد");
+            add6.setDisable(true);
         }
     }
     @FXML
@@ -350,6 +362,8 @@ public class biobooksController {
             BufferedWriter writer = new BufferedWriter(new FileWriter("Files/Cart.txt"));
             writer.write(String.valueOf(ordersText));
             writer.close();
+            add7.setText("افزوده شد");
+            add7.setDisable(true);
         }
     }
     @FXML
@@ -376,6 +390,8 @@ public class biobooksController {
             BufferedWriter writer = new BufferedWriter(new FileWriter("Files/Cart.txt"));
             writer.write(String.valueOf(ordersText));
             writer.close();
+            add8.setText("افزوده شد");
+            add8.setDisable(true);
         }
     }
 }
