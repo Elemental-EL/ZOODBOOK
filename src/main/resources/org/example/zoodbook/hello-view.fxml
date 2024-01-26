@@ -117,7 +117,7 @@
                                  <image>
                                     <Image url="@photo_2024-01-15_09-29-49.jpg" />
                                  </image></ImageView>
-                              <Button layoutX="128.0" layoutY="151.0" mnemonicParsing="false" onAction="#onAdd1" stylesheets="@style.css" text="افزودن به سبد خرید" textFill="WHITE">
+                              <Button fx:id="add1" layoutX="128.0" layoutY="151.0" mnemonicParsing="false" onAction="#onAdd1" stylesheets="@style.css" text="افزودن به سبد خرید" textFill="WHITE">
                                  <styleClass>
                                     <String fx:value="mainpageElementsdarkgreen" />
                                     <String fx:value="zoom" />
@@ -139,7 +139,7 @@
                                  <font>
                                     <Font name="System Bold" size="14.0" />
                                  </font></Label>
-                              <Label layoutX="23.0" layoutY="115.0" text="40000 تومان">
+                              <Label fx:id="price1" layoutX="23.0" layoutY="115.0" text="40000 تومان">
                                  <font>
                                     <Font name="System Bold" size="12.0" />
                                  </font></Label>
@@ -163,7 +163,7 @@
                                  <image>
                                     <Image url="@photo_2024-01-15_09-29-45.jpg" />
                                  </image></ImageView>
-                              <Button layoutX="124.0" layoutY="151.0" mnemonicParsing="false" onAction="#onAdd2" stylesheets="@style.css" text="افزودن به سبد خرید" textFill="WHITE">
+                              <Button fx:id="add2" layoutX="124.0" layoutY="151.0" mnemonicParsing="false" onAction="#onAdd2" stylesheets="@style.css" text="افزودن به سبد خرید" textFill="WHITE">
                                  <styleClass>
                                     <String fx:value="mainpageElementsdarkgreen" />
                                     <String fx:value="zoom" />
@@ -197,7 +197,7 @@
                                  <font>
                                     <Font name="System Bold" size="12.0" />
                                  </font></Label>
-                              <Label layoutX="17.0" layoutY="115.0" text="35000 تومان">
+                              <Label fx:id="price2" layoutX="17.0" layoutY="115.0" text="35000 تومان">
                                  <font>
                                     <Font name="System Bold" size="12.0" />
                                  </font></Label>
@@ -209,7 +209,7 @@
                                  <image>
                                     <Image url="@photo_2024-01-15_09-29-41.jpg" />
                                  </image></ImageView>
-                              <Button layoutX="123.0" layoutY="151.0" mnemonicParsing="false" onAction="#onAdd3" stylesheets="@style.css" text="افزودن به سبد خرید" textFill="WHITE">
+                              <Button fx:id="add3" layoutX="123.0" layoutY="151.0" mnemonicParsing="false" onAction="#onAdd3" stylesheets="@style.css" text="افزودن به سبد خرید" textFill="WHITE">
                                  <styleClass>
                                     <String fx:value="mainpageElementsdarkgreen" />
                                     <String fx:value="zoom" />
@@ -243,20 +243,20 @@
                                  <font>
                                     <Font name="System Bold" size="12.0" />
                                  </font></Label>
-                              <Label layoutX="15.0" layoutY="123.0" text="95000 تومان">
+                              <Label fx:id="price3" layoutX="15.0" layoutY="123.0" text="95000 تومان">
                                  <font>
                                     <Font name="System Bold" size="12.0" />
                                  </font></Label>
                            </children>
                         </Pane>
-                        <Pane layoutX="35.0" layoutY="7.0" prefHeight="190.0" prefWidth="260.0">
+                        <Pane layoutX="7.0" layoutY="5.0" prefHeight="190.0" prefWidth="260.0">
                            <children>
                               <ImageView fitHeight="133.0" fitWidth="117.0" layoutX="137.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
                                     <Image url="@photo_2024-01-15_09-29-36.jpg" />
                                  </image>
                               </ImageView>
-                              <Button layoutX="130.0" layoutY="151.0" mnemonicParsing="false" onAction="#onAdd4" stylesheets="@style.css" text="افزودن به سبد خرید" textFill="WHITE">
+                              <Button fx:id="add4" layoutX="130.0" layoutY="151.0" mnemonicParsing="false" onAction="#onAdd4" stylesheets="@style.css" text="افزودن به سبد خرید" textFill="WHITE">
                                  <styleClass>
                                     <String fx:value="mainpageElementsdarkgreen" />
                                     <String fx:value="zoom" />
@@ -298,7 +298,7 @@
                                     <Font name="System Bold" size="12.0" />
                                  </font>
                               </Label>
-                              <Label layoutX="16.0" layoutY="114.0" text="80000 تومان">
+                              <Label fx:id="price4" layoutX="16.0" layoutY="114.0" text="80000 تومان">
                                  <font>
                                     <Font name="System Bold" size="12.0" />
                                  </font>
@@ -515,7 +515,7 @@
                                     <Image url="@photo_2024-01-13_10-41-46.jpg" />
                                  </image>
                               </ImageView>
-                              <Button layoutX="130.0" layoutY="145.0" mnemonicParsing="false" onAction="#onAdd5" stylesheets="@style.css" text="افزودن به سبد خرید" textFill="WHITE">
+                              <Button fx:id="add5" layoutX="130.0" layoutY="145.0" mnemonicParsing="false" onAction="#onAdd5" stylesheets="@style.css" text="افزودن به سبد خرید" textFill="WHITE">
                                  <styleClass>
                                     <String fx:value="mainpageElementsdarkgreen" />
                                     <String fx:value="zoom" />
@@ -556,7 +556,7 @@
                                     <Font name="System Bold" size="12.0" />
                                  </font>
                               </Label>
-                              <Label layoutX="16.0" layoutY="114.0" text="40000 تومان">
+                              <Label fx:id="price5" layoutX="16.0" layoutY="114.0" text="40000 تومان">
                                  <font>
                                     <Font name="System Bold" size="12.0" />
                                  </font>
@@ -570,7 +570,7 @@
                                     <Image url="@photo_2024-01-13_10-47-24.jpg" />
                                  </image>
                               </ImageView>
-                              <Button layoutX="128.0" layoutY="146.0" mnemonicParsing="false" onAction="#onAdd6" stylesheets="@style.css" text="افزودن به سبد خرید" textFill="WHITE">
+                              <Button fx:id="add6" layoutX="128.0" layoutY="146.0" mnemonicParsing="false" onAction="#onAdd6" stylesheets="@style.css" text="افزودن به سبد خرید" textFill="WHITE">
                                  <styleClass>
                                     <String fx:value="mainpageElementsdarkgreen" />
                                     <String fx:value="zoom" />
@@ -596,7 +596,7 @@
                                     <Font name="System Bold" size="14.0" />
                                  </font>
                               </Label>
-                              <Label layoutX="23.0" layoutY="115.0" text="50000 تومان">
+                              <Label fx:id="price6" layoutX="23.0" layoutY="115.0" text="50000 تومان">
                                  <font>
                                     <Font name="System Bold" size="12.0" />
                                  </font>
@@ -625,7 +625,7 @@
                                     <Image url="@photo_2024-01-13_10-52-00.jpg" />
                                  </image>
                               </ImageView>
-                              <Button layoutX="124.0" layoutY="147.0" mnemonicParsing="false" onAction="#onAdd7" stylesheets="@style.css" text="افزودن به سبد خرید" textFill="WHITE">
+                              <Button fx:id="add7" layoutX="124.0" layoutY="147.0" mnemonicParsing="false" onAction="#onAdd7" stylesheets="@style.css" text="افزودن به سبد خرید" textFill="WHITE">
                                  <styleClass>
                                     <String fx:value="mainpageElementsdarkgreen" />
                                     <String fx:value="zoom" />
@@ -666,21 +666,21 @@
                                     <Font name="System Bold" size="12.0" />
                                  </font>
                               </Label>
-                              <Label layoutX="17.0" layoutY="115.0" text="47000 تومان">
+                              <Label fx:id="price7" layoutX="17.0" layoutY="115.0" text="47000 تومان">
                                  <font>
                                     <Font name="System Bold" size="12.0" />
                                  </font>
                               </Label>
                            </children>
                         </Pane>
-                        <Pane layoutX="14.0" layoutY="5.0" prefHeight="190.0" prefWidth="260.0">
+                        <Pane layoutX="7.0" layoutY="5.0" prefHeight="190.0" prefWidth="260.0">
                            <children>
                               <ImageView fitHeight="133.0" fitWidth="117.0" layoutX="133.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
                                     <Image url="@photo_2024-01-13_10-58-15.jpg" />
                                  </image>
                               </ImageView>
-                              <Button layoutX="123.0" layoutY="151.0" mnemonicParsing="false" onAction="#onAdd8" stylesheets="@style.css" text="افزودن به سبد خرید" textFill="WHITE">
+                              <Button fx:id="add8" layoutX="123.0" layoutY="151.0" mnemonicParsing="false" onAction="#onAdd8" stylesheets="@style.css" text="افزودن به سبد خرید" textFill="WHITE">
                                  <styleClass>
                                     <String fx:value="mainpageElementsdarkgreen" />
                                     <String fx:value="zoom" />
@@ -721,7 +721,7 @@
                                     <Font name="System Bold" size="12.0" />
                                  </font>
                               </Label>
-                              <Label layoutX="15.0" layoutY="123.0" text="67000 تومان">
+                              <Label fx:id="price8" layoutX="15.0" layoutY="123.0" text="67000 تومان">
                                  <font>
                                     <Font name="System Bold" size="12.0" />
                                  </font>
@@ -739,7 +739,7 @@
                                     <Image url="@photo_2024-01-15_08-40-09.jpg" />
                                  </image>
                               </ImageView>
-                              <Button layoutX="130.0" layoutY="151.0" mnemonicParsing="false" onAction="#onAdd9" stylesheets="@style.css" text="افزودن به سبد خرید" textFill="WHITE">
+                              <Button fx:id="add10" layoutX="130.0" layoutY="151.0" mnemonicParsing="false" onAction="#onAdd10" stylesheets="@style.css" text="افزودن به سبد خرید" textFill="WHITE">
                                  <styleClass>
                                     <String fx:value="mainpageElementsdarkgreen" />
                                     <String fx:value="zoom" />
@@ -780,7 +780,7 @@
                                     <Font name="System Bold" size="12.0" />
                                  </font>
                               </Label>
-                              <Label layoutX="13.0" layoutY="114.0" text="65000 تومان">
+                              <Label fx:id="price10" layoutX="13.0" layoutY="114.0" text="65000 تومان">
                                  <font>
                                     <Font name="System Bold" size="12.0" />
                                  </font>
@@ -794,7 +794,7 @@
                                     <Image url="@photo_2024-01-15_08-43-55.jpg" />
                                  </image>
                               </ImageView>
-                              <Button layoutX="124.0" layoutY="151.0" mnemonicParsing="false" onAction="#onAdd11" stylesheets="@style.css" text="افزودن به سبد خرید" textFill="WHITE">
+                              <Button fx:id="add11" layoutX="124.0" layoutY="151.0" mnemonicParsing="false" onAction="#onAdd11" stylesheets="@style.css" text="افزودن به سبد خرید" textFill="WHITE">
                                  <styleClass>
                                     <String fx:value="mainpageElementsdarkgreen" />
                                     <String fx:value="zoom" />
@@ -835,7 +835,7 @@
                                     <Font name="System Bold" size="12.0" />
                                  </font>
                               </Label>
-                              <Label layoutX="11.0" layoutY="115.0" text="120000 تومان">
+                              <Label fx:id="price11" layoutX="11.0" layoutY="115.0" text="120000 تومان">
                                  <font>
                                     <Font name="System Bold" size="12.0" />
                                  </font>
@@ -849,7 +849,7 @@
                                     <Image url="@photo_2024-01-15_08-46-47.jpg" />
                                  </image>
                               </ImageView>
-                              <Button layoutX="128.0" layoutY="151.0" mnemonicParsing="false" onAction="#onAdd10" stylesheets="@style.css" text="افزودن به سبد خرید" textFill="WHITE">
+                              <Button fx:id="add12" layoutX="128.0" layoutY="151.0" mnemonicParsing="false" onAction="#onAdd12" stylesheets="@style.css" text="افزودن به سبد خرید" textFill="WHITE">
                                  <styleClass>
                                     <String fx:value="mainpageElementsdarkgreen" />
                                     <String fx:value="zoom" />
@@ -876,7 +876,7 @@
                                     <Font name="System Bold" size="14.0" />
                                  </font>
                               </Label>
-                              <Label layoutX="17.0" layoutY="115.0" text="110000 تومان">
+                              <Label fx:id="price12" layoutX="17.0" layoutY="115.0" text="110000 تومان">
                                  <font>
                                     <Font name="System Bold" size="12.0" />
                                  </font>
@@ -905,7 +905,7 @@
                                     <Image url="@photo_2024-01-14_16-51-16.jpg" />
                                  </image>
                               </ImageView>
-                              <Button layoutX="123.0" layoutY="151.0" mnemonicParsing="false" onAction="#onAdd12" stylesheets="@style.css" text="افزودن به سبد خرید" textFill="WHITE">
+                              <Button fx:id="add9" layoutX="123.0" layoutY="151.0" mnemonicParsing="false" onAction="#onAdd9" stylesheets="@style.css" text="افزودن به سبد خرید" textFill="WHITE">
                                  <styleClass>
                                     <String fx:value="mainpageElementsdarkgreen" />
                                     <String fx:value="zoom" />
@@ -947,7 +947,7 @@
                                     <Font name="System Bold" size="12.0" />
                                  </font>
                               </Label>
-                              <Label layoutX="15.0" layoutY="123.0" text="90000 تومان">
+                              <Label fx:id="price9" layoutX="15.0" layoutY="123.0" text="90000 تومان">
                                  <font>
                                     <Font name="System Bold" size="12.0" />
                                  </font>
@@ -969,7 +969,7 @@
                                     <Image url="@photo_2024-01-15_10-05-23.jpg" />
                                  </image>
                               </ImageView>
-                              <Button layoutX="130.0" layoutY="151.0" mnemonicParsing="false" onAction="#onAdd13" stylesheets="@style.css" text="افزودن به سبد خرید" textFill="WHITE">
+                              <Button fx:id="add13" layoutX="130.0" layoutY="151.0" mnemonicParsing="false" onAction="#onAdd13" stylesheets="@style.css" text="افزودن به سبد خرید" textFill="WHITE">
                                  <styleClass>
                                     <String fx:value="mainpageElementsdarkgreen" />
                                     <String fx:value="zoom" />
@@ -1010,7 +1010,7 @@
                                     <Font name="System Bold" size="12.0" />
                                  </font>
                               </Label>
-                              <Label layoutX="13.0" layoutY="114.0" text="125000 تومان">
+                              <Label fx:id="price13" layoutX="13.0" layoutY="114.0" text="125000 تومان">
                                  <font>
                                     <Font name="System Bold" size="12.0" />
                                  </font>
@@ -1024,7 +1024,7 @@
                                     <Image url="@photo_6_2024-01-15_10-20-21.jpg" />
                                  </image>
                               </ImageView>
-                              <Button layoutX="128.0" layoutY="151.0" mnemonicParsing="false" onAction="#onAdd14" stylesheets="@style.css" text="افزودن به سبد خرید" textFill="WHITE">
+                              <Button fx:id="add14" layoutX="128.0" layoutY="151.0" mnemonicParsing="false" onAction="#onAdd14" stylesheets="@style.css" text="افزودن به سبد خرید" textFill="WHITE">
                                  <styleClass>
                                     <String fx:value="mainpageElementsdarkgreen" />
                                     <String fx:value="zoom" />
@@ -1050,7 +1050,7 @@
                                     <Font name="System Bold" size="14.0" />
                                  </font>
                               </Label>
-                              <Label layoutX="16.0" layoutY="115.0" text="147000 تومان">
+                              <Label fx:id="price14" layoutX="16.0" layoutY="115.0" text="147000 تومان">
                                  <font>
                                     <Font name="System Bold" size="12.0" />
                                  </font>
@@ -1065,7 +1065,7 @@
                                     <Font name="System Bold" size="12.0" />
                                  </font>
                               </Label>
-                              <Label layoutX="29.0" layoutY="31.0" text="چهار هزار هفته">
+                              <Label layoutX="2.0" layoutY="31.0" text="چهار هزار هفته">
                                  <font>
                                     <Font name="System Bold" size="12.0" />
                                  </font>
@@ -1079,7 +1079,7 @@
                                     <Image url="@photo_2_2024-01-15_10-20-21.jpg" />
                                  </image>
                               </ImageView>
-                              <Button layoutX="124.0" layoutY="151.0" mnemonicParsing="false" onAction="#onAdd15" stylesheets="@style.css" text="افزودن به سبد خرید" textFill="WHITE">
+                              <Button fx:id="add15" layoutX="124.0" layoutY="151.0" mnemonicParsing="false" onAction="#onAdd15" stylesheets="@style.css" text="افزودن به سبد خرید" textFill="WHITE">
                                  <styleClass>
                                     <String fx:value="mainpageElementsdarkgreen" />
                                     <String fx:value="zoom" />
@@ -1120,7 +1120,7 @@
                                     <Font name="System Bold" size="12.0" />
                                  </font>
                               </Label>
-                              <Label layoutX="17.0" layoutY="115.0" text="90000 تومان">
+                              <Label fx:id="price15" layoutX="17.0" layoutY="115.0" text="90000 تومان">
                                  <font>
                                     <Font name="System Bold" size="12.0" />
                                  </font>
@@ -1134,7 +1134,7 @@
                                     <Image url="@photo_3_2024-01-15_10-20-21.jpg" />
                                  </image>
                               </ImageView>
-                              <Button layoutX="123.0" layoutY="151.0" mnemonicParsing="false" onAction="#onAdd16" stylesheets="@style.css" text="افزودن به سبد خرید" textFill="WHITE">
+                              <Button fx:id="add16" layoutX="123.0" layoutY="151.0" mnemonicParsing="false" onAction="#onAdd16" stylesheets="@style.css" text="افزودن به سبد خرید" textFill="WHITE">
                                  <styleClass>
                                     <String fx:value="mainpageElementsdarkgreen" />
                                     <String fx:value="zoom" />
@@ -1175,7 +1175,7 @@
                                     <Font name="System Bold" size="12.0" />
                                  </font>
                               </Label>
-                              <Label layoutX="4.0" layoutY="123.0" text="160000 تومان">
+                              <Label fx:id="price16" layoutX="4.0" layoutY="123.0" text="160000 تومان">
                                  <font>
                                     <Font name="System Bold" size="12.0" />
                                  </font>
@@ -1193,7 +1193,7 @@
                                     <Image url="@photo1_.jpg" />
                                  </image>
                               </ImageView>
-                              <Button layoutX="128.0" layoutY="151.0" mnemonicParsing="false" onAction="#onAdd18" stylesheets="@style.css" text="افزودن به سبد خرید" textFill="WHITE">
+                              <Button fx:id="add18" layoutX="128.0" layoutY="151.0" mnemonicParsing="false" onAction="#onAdd18" stylesheets="@style.css" text="افزودن به سبد خرید" textFill="WHITE">
                                  <styleClass>
                                     <String fx:value="mainpageElementsdarkgreen" />
                                     <String fx:value="zoom" />
@@ -1219,7 +1219,7 @@
                                     <Font name="System Bold" size="14.0" />
                                  </font>
                               </Label>
-                              <Label layoutX="23.0" layoutY="115.0" text="70000 تومان">
+                              <Label fx:id="price18" layoutX="23.0" layoutY="115.0" text="70000 تومان">
                                  <font>
                                     <Font name="System Bold" size="12.0" />
                                  </font>
@@ -1248,7 +1248,7 @@
                                     <Image url="@photo_2024-01-15_09-02-56.jpg" />
                                  </image>
                               </ImageView>
-                              <Button layoutX="124.0" layoutY="151.0" mnemonicParsing="false" onAction="#onAdd19" stylesheets="@style.css" text="افزودن به سبد خرید" textFill="WHITE">
+                              <Button fx:id="add17" layoutX="124.0" layoutY="151.0" mnemonicParsing="false" onAction="#onAdd17" stylesheets="@style.css" text="افزودن به سبد خرید" textFill="WHITE">
                                  <styleClass>
                                     <String fx:value="mainpageElementsdarkgreen" />
                                     <String fx:value="zoom" />
@@ -1289,7 +1289,7 @@
                                     <Font name="System Bold" size="12.0" />
                                  </font>
                               </Label>
-                              <Label layoutX="17.0" layoutY="115.0" text="50000 تومان">
+                              <Label fx:id="price17" layoutX="17.0" layoutY="115.0" text="50000 تومان">
                                  <font>
                                     <Font name="System Bold" size="12.0" />
                                  </font>
@@ -1303,7 +1303,7 @@
                                     <Image url="@photo_2024-01-15_09-02-57.jpg" />
                                  </image>
                               </ImageView>
-                              <Button layoutX="123.0" layoutY="157.0" mnemonicParsing="false" onAction="#onAdd20" stylesheets="@style.css" text="افزودن به سبد خرید" textFill="WHITE">
+                              <Button fx:id="add19" layoutX="123.0" layoutY="157.0" mnemonicParsing="false" onAction="#onAdd19" stylesheets="@style.css" text="افزودن به سبد خرید" textFill="WHITE">
                                  <styleClass>
                                     <String fx:value="mainpageElementsdarkgreen" />
                                     <String fx:value="zoom" />
@@ -1344,7 +1344,7 @@
                                     <Font name="System Bold" size="12.0" />
                                  </font>
                               </Label>
-                              <Label layoutX="15.0" layoutY="123.0" text="76000 تومان">
+                              <Label fx:id="price19" layoutX="15.0" layoutY="123.0" text="76000 تومان">
                                  <font>
                                     <Font name="System Bold" size="12.0" />
                                  </font>
@@ -1358,7 +1358,7 @@
                                     <Image url="@photo4.jpg" />
                                  </image>
                               </ImageView>
-                              <Button layoutX="130.0" layoutY="151.0" mnemonicParsing="false" onAction="#onAdd17" stylesheets="@style.css" text="افزودن به سبد خرید" textFill="WHITE">
+                              <Button fx:id="add20" layoutX="130.0" layoutY="151.0" mnemonicParsing="false" onAction="#onAdd20" stylesheets="@style.css" text="افزودن به سبد خرید" textFill="WHITE">
                                  <styleClass>
                                     <String fx:value="mainpageElementsdarkgreen" />
                                     <String fx:value="zoom" />
@@ -1400,7 +1400,7 @@
                                     <Font name="System Bold" size="12.0" />
                                  </font>
                               </Label>
-                              <Label layoutX="16.0" layoutY="114.0" text="60000 تومان">
+                              <Label fx:id="price20" layoutX="16.0" layoutY="114.0" text="60000 تومان">
                                  <font>
                                     <Font name="System Bold" size="12.0" />
                                  </font>
@@ -1422,7 +1422,7 @@
                                     <Image url="@photo_2024-01-15_10-40-43.jpg" />
                                  </image>
                               </ImageView>
-                              <Button layoutX="130.0" layoutY="151.0" mnemonicParsing="false" onAction="#onAdd21" stylesheets="@style.css" text="افزودن به سبد خرید" textFill="WHITE">
+                              <Button fx:id="add21" layoutX="130.0" layoutY="151.0" mnemonicParsing="false" onAction="#onAdd21" stylesheets="@style.css" text="افزودن به سبد خرید" textFill="WHITE">
                                  <styleClass>
                                     <String fx:value="mainpageElementsdarkgreen" />
                                     <String fx:value="zoom" />
@@ -1463,7 +1463,7 @@
                                     <Font name="System Bold" size="12.0" />
                                  </font>
                               </Label>
-                              <Label layoutX="12.0" layoutY="114.0" text="120000 تومان">
+                              <Label fx:id="price21" layoutX="12.0" layoutY="114.0" text="120000 تومان">
                                  <font>
                                     <Font name="System Bold" size="12.0" />
                                  </font>
@@ -1477,7 +1477,7 @@
                                     <Image url="@photo_2024-01-15_10-41-21.jpg" />
                                  </image>
                               </ImageView>
-                              <Button layoutX="124.0" layoutY="151.0" mnemonicParsing="false" onAction="#onAdd23" stylesheets="@style.css" text="افزودن به سبد خرید" textFill="WHITE">
+                              <Button fx:id="add24" layoutX="124.0" layoutY="151.0" mnemonicParsing="false" onAction="#onAdd24" stylesheets="@style.css" text="افزودن به سبد خرید" textFill="WHITE">
                                  <styleClass>
                                     <String fx:value="mainpageElementsdarkgreen" />
                                     <String fx:value="zoom" />
@@ -1518,7 +1518,7 @@
                                     <Font name="System Bold" size="12.0" />
                                  </font>
                               </Label>
-                              <Label layoutX="17.0" layoutY="115.0" text="67000 تومان">
+                              <Label fx:id="price24" layoutX="17.0" layoutY="115.0" text="67000 تومان">
                                  <font>
                                     <Font name="System Bold" size="12.0" />
                                  </font>
@@ -1532,7 +1532,7 @@
                                     <Image url="@photo_2024-01-15_10-40-45.jpg" />
                                  </image>
                               </ImageView>
-                              <Button layoutX="123.0" layoutY="151.0" mnemonicParsing="false" onAction="#onAdd24" stylesheets="@style.css" text="افزودن به سبد خرید" textFill="WHITE">
+                              <Button fx:id="add22" layoutX="123.0" layoutY="151.0" mnemonicParsing="false" onAction="#onAdd22" stylesheets="@style.css" text="افزودن به سبد خرید" textFill="WHITE">
                                  <styleClass>
                                     <String fx:value="mainpageElementsdarkgreen" />
                                     <String fx:value="zoom" />
@@ -1573,7 +1573,7 @@
                                     <Font name="System Bold" size="12.0" />
                                  </font>
                               </Label>
-                              <Label layoutX="15.0" layoutY="123.0" text="80000 تومان">
+                              <Label fx:id="price22" layoutX="15.0" layoutY="123.0" text="80000 تومان">
                                  <font>
                                     <Font name="System Bold" size="12.0" />
                                  </font>
@@ -1587,7 +1587,7 @@
                                     <Image url="@photo_2024-01-15_10-40-49.jpg" />
                                  </image>
                               </ImageView>
-                              <Button layoutX="128.0" layoutY="151.0" mnemonicParsing="false" onAction="#onAdd22" stylesheets="@style.css" text="افزودن به سبد خرید" textFill="WHITE">
+                              <Button fx:id="add23" layoutX="128.0" layoutY="151.0" mnemonicParsing="false" onAction="#onAdd23" stylesheets="@style.css" text="افزودن به سبد خرید" textFill="WHITE">
                                  <styleClass>
                                     <String fx:value="mainpageElementsdarkgreen" />
                                     <String fx:value="zoom" />
@@ -1613,7 +1613,7 @@
                                     <Font name="System Bold" size="14.0" />
                                  </font>
                               </Label>
-                              <Label layoutX="17.0" layoutY="116.0" text="130000 تومان">
+                              <Label fx:id="price23" layoutX="17.0" layoutY="116.0" text="130000 تومان">
                                  <font>
                                     <Font name="System Bold" size="12.0" />
                                  </font>

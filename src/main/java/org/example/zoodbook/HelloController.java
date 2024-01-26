@@ -31,101 +31,103 @@ public class HelloController {
     private Scene scene;
     private Parent root;
     @FXML
-    private Button jumpUpbtn, classicbtn, historybtn, biobtn, psychobtn, cookingbtn, scifibtn, showMoreCl, showMoreHis, showMoreBio, showMorePsycho, showMoreCooking, showMoreScifi;
+    private Button jumpUpbtn, classicbtn, historybtn, biobtn, psychobtn, cookingbtn, scifibtn, showMoreCl, showMoreHis, showMoreBio, showMorePsycho, showMoreCooking, showMoreScifi,add1,add2,add3,add4,add5,add6,add7,add8,add9,add10,add11,add12,add13,add14,add15,add16,add17,add18,add19,add20,add21,add22,add23,add24;
     @FXML
     private TextField searchBar;
     @FXML
     private ImageView profilebtn, cartbtn, searchbtn, logobtn;
     @FXML
+    private Label price1,price2,price,price3,price4,price5,price6,price7,price8,price9,price10,price11,price12,price13,price14,price15,price16,price17,price18,price19,price20,price21,price22,price23,price24;
+    @FXML
     private Hyperlink link;
     @FXML
     private ScrollPane scrollPane;
     public int uId = SignInController.loggedInUserId;
-//    public void initialize() throws IOException, NoSuchFieldException, IllegalAccessException {
-//        BufferedReader reader = new BufferedReader(new FileReader("Files/Books.txt"));
-//        String line;
-//        int i =1;
-//        while ((line= reader.readLine())!=null&& !Objects.equals(line.split("#")[1], "cl5")){
-//            Label price = (Label) getClass().getDeclaredField("price" + i).get(this);
-//            if (Objects.equals(line.split("#")[2], "0")) {
-//                price.setText("ناموجود");
-//                price.setTextFill(Color.RED);
-//            }
-//            else
-//                price.setText(line.split("#")[3]+" تومان");
-//            i++;
-//        }
-//        while ((line= reader.readLine())!=null&& !Objects.equals(line.split("#")[1], "cl8"));{
-//        }
-//        while ((line= reader.readLine())!=null&& !Objects.equals(line.split("#")[1], "h5")){
-//            Label price = (Label) getClass().getDeclaredField("price" + i).get(this);
-//            if (Objects.equals(line.split("#")[2], "0")) {
-//                price.setText("ناموجود");
-//                price.setTextFill(Color.RED);
-//            }
-//            else
-//                price.setText(line.split("#")[3]+" تومان");
-//            i++;
-//        }
-//        while ((line= reader.readLine())!=null&& !Objects.equals(line.split("#")[1], "h8"));{
-//        }
-//        while ((line= reader.readLine())!=null&& !Objects.equals(line.split("#")[1], "b5")){
-//            Label price = (Label) getClass().getDeclaredField("price" + i).get(this);
-//            if (Objects.equals(line.split("#")[2], "0")) {
-//                price.setText("ناموجود");
-//                price.setTextFill(Color.RED);
-//            }
-//            else
-//                price.setText(line.split("#")[3]+" تومان");
-//            i++;
-//        }
-//        while ((line= reader.readLine())!=null&& !Objects.equals(line.split("#")[1], "b8"));{
-//        }
-//        while ((line= reader.readLine())!=null&& !Objects.equals(line.split("#")[1], "p5")){
-//            Label price = (Label) getClass().getDeclaredField("price" + i).get(this);
-//            if (Objects.equals(line.split("#")[2], "0")) {
-//                price.setText("ناموجود");
-//                price.setTextFill(Color.RED);
-//            }
-//            else
-//                price.setText(line.split("#")[3]+" تومان");
-//            i++;
-//        }
-//        while ((line= reader.readLine())!=null&& !Objects.equals(line.split("#")[1], "p8"));{
-//        }
-//        while ((line= reader.readLine())!=null&& !Objects.equals(line.split("#")[1], "co5")){
-//            Label price = (Label) getClass().getDeclaredField("price" + i).get(this);
-//            if (Objects.equals(line.split("#")[2], "0")) {
-//                price.setText("ناموجود");
-//                price.setTextFill(Color.RED);
-//            }
-//            else
-//                price.setText(line.split("#")[3]+" تومان");
-//            i++;
-//        }
-//        while ((line= reader.readLine())!=null&& !Objects.equals(line.split("#")[1], "co8"));{
-//        }
-//        while ((line= reader.readLine())!=null&& !Objects.equals(line.split("#")[1], "s5")){
-//            Label price = (Label) getClass().getDeclaredField("price" + i).get(this);
-//            if (Objects.equals(line.split("#")[2], "0")) {
-//                price.setText("ناموجود");
-//                price.setTextFill(Color.RED);
-//            }
-//            else
-//                price.setText(line.split("#")[3]+" تومان");
-//            i++;
-//        }
-//        reader.close();
-//        i=1;
-//        while (i<25){
-//            Label price = (Label) getClass().getDeclaredField("price" + i).get(this);
-//            Button add = (Button) getClass().getDeclaredField("add"+ i).get(this);
-//            if (Objects.equals(price.getText(), "ناموجود"))
-//                add.setDisable(true);
-//            i++;
-//        }
-//
-//    }
+    public void initialize() throws IOException, NoSuchFieldException, IllegalAccessException {
+        BufferedReader reader = new BufferedReader(new FileReader("Files/Books.txt"));
+        String line;
+        int i =1;
+        while ((line= reader.readLine())!=null&& !Objects.equals(line.split("#")[1], "cl5")){
+            Label price = (Label) getClass().getDeclaredField("price" + i).get(this);
+            if (Objects.equals(line.split("#")[2], "0")) {
+                price.setText("ناموجود");
+                price.setTextFill(Color.RED);
+            }
+            else
+                price.setText(line.split("#")[3]+" تومان");
+            i++;
+        }
+        while ((line= reader.readLine())!=null&& !Objects.equals(line.split("#")[1], "cl8"));{
+        }
+        while ((line= reader.readLine())!=null&& !Objects.equals(line.split("#")[1], "h5")){
+            Label price = (Label) getClass().getDeclaredField("price" + i).get(this);
+            if (Objects.equals(line.split("#")[2], "0")) {
+                price.setText("ناموجود");
+                price.setTextFill(Color.RED);
+            }
+            else
+                price.setText(line.split("#")[3]+" تومان");
+            i++;
+        }
+        while ((line= reader.readLine())!=null&& !Objects.equals(line.split("#")[1], "h8"));{
+        }
+        while ((line= reader.readLine())!=null&& !Objects.equals(line.split("#")[1], "b5")){
+            Label price = (Label) getClass().getDeclaredField("price" + i).get(this);
+            if (Objects.equals(line.split("#")[2], "0")) {
+                price.setText("ناموجود");
+                price.setTextFill(Color.RED);
+            }
+            else
+                price.setText(line.split("#")[3]+" تومان");
+            i++;
+        }
+        while ((line= reader.readLine())!=null&& !Objects.equals(line.split("#")[1], "b8"));{
+        }
+        while ((line= reader.readLine())!=null&& !Objects.equals(line.split("#")[1], "p5")){
+            Label price = (Label) getClass().getDeclaredField("price" + i).get(this);
+            if (Objects.equals(line.split("#")[2], "0")) {
+                price.setText("ناموجود");
+                price.setTextFill(Color.RED);
+            }
+            else
+                price.setText(line.split("#")[3]+" تومان");
+            i++;
+        }
+        while ((line= reader.readLine())!=null&& !Objects.equals(line.split("#")[1], "p8"));{
+        }
+        while ((line= reader.readLine())!=null&& !Objects.equals(line.split("#")[1], "co5")){
+            Label price = (Label) getClass().getDeclaredField("price" + i).get(this);
+            if (Objects.equals(line.split("#")[2], "0")) {
+                price.setText("ناموجود");
+                price.setTextFill(Color.RED);
+            }
+            else
+                price.setText(line.split("#")[3]+" تومان");
+            i++;
+        }
+        while ((line= reader.readLine())!=null&& !Objects.equals(line.split("#")[1], "co8"));{
+        }
+        while ((line= reader.readLine())!=null&& !Objects.equals(line.split("#")[1], "s5")){
+            Label price = (Label) getClass().getDeclaredField("price" + i).get(this);
+            if (Objects.equals(line.split("#")[2], "0")) {
+                price.setText("ناموجود");
+                price.setTextFill(Color.RED);
+            }
+            else
+                price.setText(line.split("#")[3]+" تومان");
+            i++;
+        }
+        reader.close();
+        i=1;
+        while (i<25){
+            Label price = (Label) getClass().getDeclaredField("price" + i).get(this);
+            Button add = (Button) getClass().getDeclaredField("add"+ i).get(this);
+            if (Objects.equals(price.getText(), "ناموجود"))
+                add.setDisable(true);
+            i++;
+        }
+
+    }
     @FXML
     void onUserClicked (MouseEvent event) throws IOException {
         if (uId == 100) {
@@ -612,7 +614,7 @@ public class HelloController {
             }
             ordersText.append(read + "b3" + "#" + "1" + "#" + "\n");
             while ((read = reader.readLine()) != null){
-                ordersText.append(read);
+                ordersText.append(read + "\n");
             }
             reader.close();
             BufferedWriter writer = new BufferedWriter(new FileWriter("Files/Cart.txt"));
