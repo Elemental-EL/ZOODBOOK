@@ -41,7 +41,7 @@
          </font>
       </Label>
       <PasswordField fx:id="passwordText" layoutX="70.0" layoutY="308.0" prefHeight="34.0" prefWidth="298.0" promptText="Phone Number" style="-fx-background-radius: 10;" />
-      <Button fx:id="loginbtn" layoutX="181.0" layoutY="367.0" mnemonicParsing="false" onAction="#onLoginClicked" prefHeight="34.0" prefWidth="75.0" style="-fx-background-radius: 10;" text="بازیابی" textFill="WHITE">
+      <Button fx:id="loginbtn" layoutX="181.0" layoutY="387.0" mnemonicParsing="false" onAction="#onLoginClicked" prefHeight="34.0" prefWidth="75.0" style="-fx-background-radius: 10;" text="بازیابی" textFill="WHITE">
          <styleClass>
             <String fx:value="mainpageElementsdarkgreen" />
             <String fx:value="navbarbuttonshover" />
@@ -53,5 +53,10 @@
             <Image url="@120.png" />
          </image>
       </ImageView>
+      <Text fx:id="errorText" fill="RED" layoutX="69.0" layoutY="374.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="RIGHT" wrappingWidth="300.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
    </children>
 </AnchorPane>
