@@ -109,7 +109,7 @@
                            <image>
                               <Image url="@photo_2024-01-14_16-51-16.jpg" />
                            </image></ImageView>
-                                <Button fx:id="add1" layoutX="966.0" layoutY="174.0" mnemonicParsing="false" onAction="#onAdd1" stylesheets="@style.css" text="افزودن به سبد خرید" textFill="WHITE">
+                                <Button fx:id="add1" layoutX="966.0" layoutY="174.0" mnemonicParsing="false" onAction="#onAdd1" prefHeight="25.0" prefWidth="112.03" stylesheets="@style.css" text="افزودن به سبد خرید" textFill="WHITE">
                            <styleClass>
                               <String fx:value="mainpageElementsdarkgreen" />
                               <String fx:value="navbarbuttonshover" />
@@ -176,7 +176,7 @@
                            <image>
                               <Image url="@photo_2024-01-15_08-40-09.jpg" />
                            </image></ImageView>
-                        <Button fx:id="add2" layoutX="966.0" layoutY="174.0" mnemonicParsing="false" onAction="#onAdd2" stylesheets="@style.css" text="افزودن به سبد خرید" textFill="WHITE">
+                        <Button fx:id="add2" layoutX="966.0" layoutY="174.0" mnemonicParsing="false" onAction="#onAdd2" prefHeight="25.0" prefWidth="112.03" stylesheets="@style.css" text="افزودن به سبد خرید" textFill="WHITE">
                            <styleClass>
                               <String fx:value="mainpageElementsdarkgreen" />
                               <String fx:value="navbarbuttonshover" />
@@ -243,7 +243,7 @@
                            <image>
                               <Image url="@photo_2024-01-15_08-46-47.jpg" />
                            </image></ImageView>
-                        <Button fx:id="add4" layoutX="966.0" layoutY="174.0" mnemonicParsing="false" onAction="#onAdd4" stylesheets="@style.css" text="افزودن به سبد خرید" textFill="WHITE">
+                        <Button fx:id="add4" layoutX="966.0" layoutY="174.0" mnemonicParsing="false" onAction="#onAdd4" prefHeight="25.0" prefWidth="112.03" stylesheets="@style.css" text="افزودن به سبد خرید" textFill="WHITE">
                            <styleClass>
                               <String fx:value="mainpageElementsdarkgreen" />
                               <String fx:value="navbarbuttonshover" />
@@ -310,7 +310,7 @@
                            <image>
                               <Image url="@photo_2024-01-15_08-51-14.jpg" />
                            </image></ImageView>
-                        <Button fx:id="add5" layoutX="966.0" layoutY="174.0" mnemonicParsing="false" onAction="#onAdd5" stylesheets="@style.css" text="افزودن به سبد خرید" textFill="WHITE">
+                        <Button fx:id="add5" layoutX="966.0" layoutY="174.0" mnemonicParsing="false" onAction="#onAdd5" prefHeight="25.0" prefWidth="112.03" stylesheets="@style.css" text="افزودن به سبد خرید" textFill="WHITE">
                            <styleClass>
                               <String fx:value="mainpageElementsdarkgreen" />
                               <String fx:value="navbarbuttonshover" />
@@ -377,7 +377,7 @@
                            <image>
                               <Image url="@photo_2024-01-15_08-56-02.jpg" />
                            </image></ImageView>
-                        <Button fx:id="add6" layoutX="966.0" layoutY="174.0" mnemonicParsing="false" onAction="#onAdd6" stylesheets="@style.css" text="افزودن به سبد خرید" textFill="WHITE">
+                        <Button fx:id="add6" layoutX="966.0" layoutY="174.0" mnemonicParsing="false" onAction="#onAdd6" prefHeight="25.0" prefWidth="112.03" stylesheets="@style.css" text="افزودن به سبد خرید" textFill="WHITE">
                            <styleClass>
                               <String fx:value="mainpageElementsdarkgreen" />
                               <String fx:value="navbarbuttonshover" />
@@ -444,7 +444,7 @@
                            <image>
                               <Image url="@photo_2024-01-15_09-02-12.jpg" />
                            </image></ImageView>
-                        <Button fx:id="add7" layoutX="966.0" layoutY="174.0" mnemonicParsing="false" onAction="#onAdd7" stylesheets="@style.css" text="افزودن به سبد خرید" textFill="WHITE">
+                        <Button fx:id="add7" layoutX="966.0" layoutY="174.0" mnemonicParsing="false" onAction="#onAdd7" prefHeight="25.0" prefWidth="112.03" stylesheets="@style.css" text="افزودن به سبد خرید" textFill="WHITE">
                            <styleClass>
                               <String fx:value="mainpageElementsdarkgreen" />
                               <String fx:value="navbarbuttonshover" />
@@ -511,7 +511,7 @@
                            <image>
                               <Image url="@photo_2024-01-15_09-07-06.jpg" />
                            </image></ImageView>
-                        <Button fx:id="add8" layoutX="966.0" layoutY="174.0" mnemonicParsing="false" onAction="#onAdd8" stylesheets="@style.css" text="افزودن به سبد خرید" textFill="WHITE">
+                        <Button fx:id="add8" layoutX="966.0" layoutY="174.0" mnemonicParsing="false" onAction="#onAdd8" prefHeight="25.0" prefWidth="112.03" stylesheets="@style.css" text="افزودن به سبد خرید" textFill="WHITE">
                            <styleClass>
                               <String fx:value="mainpageElementsdarkgreen" />
                               <String fx:value="navbarbuttonshover" />
@@ -578,7 +578,7 @@
                            <image>
                               <Image url="@photo_2024-01-15_08-43-55.jpg" />
                            </image></ImageView>
-                        <Button fx:id="add3" layoutX="966.0" layoutY="174.0" mnemonicParsing="false" onAction="#onAdd3" stylesheets="@style.css" text="افزودن به سبد خرید" textFill="WHITE">
+                        <Button fx:id="add3" layoutX="966.0" layoutY="174.0" mnemonicParsing="false" onAction="#onAdd3" prefHeight="25.0" prefWidth="112.03" stylesheets="@style.css" text="افزودن به سبد خرید" textFill="WHITE">
                            <styleClass>
                               <String fx:value="mainpageElementsdarkgreen" />
                               <String fx:value="navbarbuttonshover" />

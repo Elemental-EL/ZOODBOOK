@@ -163,7 +163,7 @@
                                  <image>
                                     <Image url="@photo_2024-01-15_09-29-45.jpg" />
                                  </image></ImageView>
-                              <Button fx:id="add2" layoutX="124.0" layoutY="151.0" mnemonicParsing="false" onAction="#onAdd2" stylesheets="@style.css" text="افزودن به سبد خرید" textFill="WHITE">
+                              <Button fx:id="add2" layoutX="124.0" layoutY="151.0" mnemonicParsing="false" onAction="#onAdd2" prefHeight="25.0" prefWidth="112.03" stylesheets="@style.css" text="افزودن به سبد خرید" textFill="WHITE">
                                  <styleClass>
                                     <String fx:value="mainpageElementsdarkgreen" />
                                     <String fx:value="zoom" />
@@ -209,7 +209,7 @@
                                  <image>
                                     <Image url="@photo_2024-01-15_09-29-41.jpg" />
                                  </image></ImageView>
-                              <Button fx:id="add3" layoutX="123.0" layoutY="151.0" mnemonicParsing="false" onAction="#onAdd3" stylesheets="@style.css" text="افزودن به سبد خرید" textFill="WHITE">
+                              <Button fx:id="add3" layoutX="123.0" layoutY="151.0" mnemonicParsing="false" onAction="#onAdd3" prefHeight="25.0" prefWidth="112.03" stylesheets="@style.css" text="افزودن به سبد خرید" textFill="WHITE">
                                  <styleClass>
                                     <String fx:value="mainpageElementsdarkgreen" />
                                     <String fx:value="zoom" />
@@ -256,7 +256,7 @@
                                     <Image url="@photo_2024-01-15_09-29-36.jpg" />
                                  </image>
                               </ImageView>
-                              <Button fx:id="add4" layoutX="130.0" layoutY="151.0" mnemonicParsing="false" onAction="#onAdd4" stylesheets="@style.css" text="افزودن به سبد خرید" textFill="WHITE">
+                              <Button fx:id="add4" layoutX="130.0" layoutY="151.0" mnemonicParsing="false" onAction="#onAdd4" prefHeight="25.0" prefWidth="112.03" stylesheets="@style.css" text="افزودن به سبد خرید" textFill="WHITE">
                                  <styleClass>
                                     <String fx:value="mainpageElementsdarkgreen" />
                                     <String fx:value="zoom" />
@@ -515,7 +515,7 @@
                                     <Image url="@photo_2024-01-13_10-41-46.jpg" />
                                  </image>
                               </ImageView>
-                              <Button fx:id="add5" layoutX="130.0" layoutY="145.0" mnemonicParsing="false" onAction="#onAdd5" stylesheets="@style.css" text="افزودن به سبد خرید" textFill="WHITE">
+                              <Button fx:id="add5" layoutX="130.0" layoutY="145.0" mnemonicParsing="false" onAction="#onAdd5" prefHeight="25.0" prefWidth="112.03" stylesheets="@style.css" text="افزودن به سبد خرید" textFill="WHITE">
                                  <styleClass>
                                     <String fx:value="mainpageElementsdarkgreen" />
                                     <String fx:value="zoom" />
@@ -570,7 +570,7 @@
                                     <Image url="@photo_2024-01-13_10-47-24.jpg" />
                                  </image>
                               </ImageView>
-                              <Button fx:id="add6" layoutX="128.0" layoutY="146.0" mnemonicParsing="false" onAction="#onAdd6" stylesheets="@style.css" text="افزودن به سبد خرید" textFill="WHITE">
+                              <Button fx:id="add6" layoutX="128.0" layoutY="146.0" mnemonicParsing="false" onAction="#onAdd6" prefHeight="25.0" prefWidth="112.03" stylesheets="@style.css" text="افزودن به سبد خرید" textFill="WHITE">
                                  <styleClass>
                                     <String fx:value="mainpageElementsdarkgreen" />
                                     <String fx:value="zoom" />
@@ -625,7 +625,7 @@
                                     <Image url="@photo_2024-01-13_10-52-00.jpg" />
                                  </image>
                               </ImageView>
-                              <Button fx:id="add7" layoutX="124.0" layoutY="147.0" mnemonicParsing="false" onAction="#onAdd7" stylesheets="@style.css" text="افزودن به سبد خرید" textFill="WHITE">
+                              <Button fx:id="add7" layoutX="124.0" layoutY="147.0" mnemonicParsing="false" onAction="#onAdd7" prefHeight="25.0" prefWidth="112.03" stylesheets="@style.css" text="افزودن به سبد خرید" textFill="WHITE">
                                  <styleClass>
                                     <String fx:value="mainpageElementsdarkgreen" />
                                     <String fx:value="zoom" />
@@ -680,7 +680,7 @@
                                     <Image url="@photo_2024-01-13_10-58-15.jpg" />
                                  </image>
                               </ImageView>
-                              <Button fx:id="add8" layoutX="123.0" layoutY="151.0" mnemonicParsing="false" onAction="#onAdd8" stylesheets="@style.css" text="افزودن به سبد خرید" textFill="WHITE">
+                              <Button fx:id="add8" layoutX="123.0" layoutY="151.0" mnemonicParsing="false" onAction="#onAdd8" prefHeight="25.0" prefWidth="112.03" stylesheets="@style.css" text="افزودن به سبد خرید" textFill="WHITE">
                                  <styleClass>
                                     <String fx:value="mainpageElementsdarkgreen" />
                                     <String fx:value="zoom" />
@@ -739,7 +739,7 @@
                                     <Image url="@photo_2024-01-15_08-40-09.jpg" />
                                  </image>
                               </ImageView>
-                              <Button fx:id="add10" layoutX="130.0" layoutY="151.0" mnemonicParsing="false" onAction="#onAdd10" stylesheets="@style.css" text="افزودن به سبد خرید" textFill="WHITE">
+                              <Button fx:id="add10" layoutX="130.0" layoutY="151.0" mnemonicParsing="false" onAction="#onAdd10" prefHeight="25.0" prefWidth="112.03" stylesheets="@style.css" text="افزودن به سبد خرید" textFill="WHITE">
                                  <styleClass>
                                     <String fx:value="mainpageElementsdarkgreen" />
                                     <String fx:value="zoom" />
@@ -794,7 +794,7 @@
                                     <Image url="@photo_2024-01-15_08-43-55.jpg" />
                                  </image>
                               </ImageView>
-                              <Button fx:id="add11" layoutX="124.0" layoutY="151.0" mnemonicParsing="false" onAction="#onAdd11" stylesheets="@style.css" text="افزودن به سبد خرید" textFill="WHITE">
+                              <Button fx:id="add11" layoutX="124.0" layoutY="151.0" mnemonicParsing="false" onAction="#onAdd11" prefHeight="25.0" prefWidth="112.03" stylesheets="@style.css" text="افزودن به سبد خرید" textFill="WHITE">
                                  <styleClass>
                                     <String fx:value="mainpageElementsdarkgreen" />
                                     <String fx:value="zoom" />
@@ -849,7 +849,7 @@
                                     <Image url="@photo_2024-01-15_08-46-47.jpg" />
                                  </image>
                               </ImageView>
-                              <Button fx:id="add12" layoutX="128.0" layoutY="151.0" mnemonicParsing="false" onAction="#onAdd12" stylesheets="@style.css" text="افزودن به سبد خرید" textFill="WHITE">
+                              <Button fx:id="add12" layoutX="128.0" layoutY="151.0" mnemonicParsing="false" onAction="#onAdd12" prefHeight="25.0" prefWidth="112.03" stylesheets="@style.css" text="افزودن به سبد خرید" textFill="WHITE">
                                  <styleClass>
                                     <String fx:value="mainpageElementsdarkgreen" />
                                     <String fx:value="zoom" />
@@ -905,7 +905,7 @@
                                     <Image url="@photo_2024-01-14_16-51-16.jpg" />
                                  </image>
                               </ImageView>
-                              <Button fx:id="add9" layoutX="123.0" layoutY="151.0" mnemonicParsing="false" onAction="#onAdd9" stylesheets="@style.css" text="افزودن به سبد خرید" textFill="WHITE">
+                              <Button fx:id="add9" layoutX="123.0" layoutY="151.0" mnemonicParsing="false" onAction="#onAdd9" prefHeight="25.0" prefWidth="112.03" stylesheets="@style.css" text="افزودن به سبد خرید" textFill="WHITE">
                                  <styleClass>
                                     <String fx:value="mainpageElementsdarkgreen" />
                                     <String fx:value="zoom" />
@@ -969,7 +969,7 @@
                                     <Image url="@photo_2024-01-15_10-05-23.jpg" />
                                  </image>
                               </ImageView>
-                              <Button fx:id="add13" layoutX="130.0" layoutY="151.0" mnemonicParsing="false" onAction="#onAdd13" stylesheets="@style.css" text="افزودن به سبد خرید" textFill="WHITE">
+                              <Button fx:id="add13" layoutX="130.0" layoutY="151.0" mnemonicParsing="false" onAction="#onAdd13" prefHeight="25.0" prefWidth="112.03" stylesheets="@style.css" text="افزودن به سبد خرید" textFill="WHITE">
                                  <styleClass>
                                     <String fx:value="mainpageElementsdarkgreen" />
                                     <String fx:value="zoom" />
@@ -1024,7 +1024,7 @@
                                     <Image url="@photo_6_2024-01-15_10-20-21.jpg" />
                                  </image>
                               </ImageView>
-                              <Button fx:id="add14" layoutX="128.0" layoutY="151.0" mnemonicParsing="false" onAction="#onAdd14" stylesheets="@style.css" text="افزودن به سبد خرید" textFill="WHITE">
+                              <Button fx:id="add14" layoutX="128.0" layoutY="151.0" mnemonicParsing="false" onAction="#onAdd14" prefHeight="25.0" prefWidth="112.03" stylesheets="@style.css" text="افزودن به سبد خرید" textFill="WHITE">
                                  <styleClass>
                                     <String fx:value="mainpageElementsdarkgreen" />
                                     <String fx:value="zoom" />
@@ -1079,7 +1079,7 @@
                                     <Image url="@photo_2_2024-01-15_10-20-21.jpg" />
                                  </image>
                               </ImageView>
-                              <Button fx:id="add15" layoutX="124.0" layoutY="151.0" mnemonicParsing="false" onAction="#onAdd15" stylesheets="@style.css" text="افزودن به سبد خرید" textFill="WHITE">
+                              <Button fx:id="add15" layoutX="124.0" layoutY="151.0" mnemonicParsing="false" onAction="#onAdd15" prefHeight="25.0" prefWidth="112.03" stylesheets="@style.css" text="افزودن به سبد خرید" textFill="WHITE">
                                  <styleClass>
                                     <String fx:value="mainpageElementsdarkgreen" />
                                     <String fx:value="zoom" />
@@ -1134,7 +1134,7 @@
                                     <Image url="@photo_3_2024-01-15_10-20-21.jpg" />
                                  </image>
                               </ImageView>
-                              <Button fx:id="add16" layoutX="123.0" layoutY="151.0" mnemonicParsing="false" onAction="#onAdd16" stylesheets="@style.css" text="افزودن به سبد خرید" textFill="WHITE">
+                              <Button fx:id="add16" layoutX="123.0" layoutY="151.0" mnemonicParsing="false" onAction="#onAdd16" prefHeight="25.0" prefWidth="112.03" stylesheets="@style.css" text="افزودن به سبد خرید" textFill="WHITE">
                                  <styleClass>
                                     <String fx:value="mainpageElementsdarkgreen" />
                                     <String fx:value="zoom" />
@@ -1193,7 +1193,7 @@
                                     <Image url="@photo1_.jpg" />
                                  </image>
                               </ImageView>
-                              <Button fx:id="add18" layoutX="128.0" layoutY="151.0" mnemonicParsing="false" onAction="#onAdd18" stylesheets="@style.css" text="افزودن به سبد خرید" textFill="WHITE">
+                              <Button fx:id="add18" layoutX="128.0" layoutY="151.0" mnemonicParsing="false" onAction="#onAdd18" prefHeight="25.0" prefWidth="112.03" stylesheets="@style.css" text="افزودن به سبد خرید" textFill="WHITE">
                                  <styleClass>
                                     <String fx:value="mainpageElementsdarkgreen" />
                                     <String fx:value="zoom" />
@@ -1248,7 +1248,7 @@
                                     <Image url="@photo_2024-01-15_09-02-56.jpg" />
                                  </image>
                               </ImageView>
-                              <Button fx:id="add17" layoutX="124.0" layoutY="151.0" mnemonicParsing="false" onAction="#onAdd17" stylesheets="@style.css" text="افزودن به سبد خرید" textFill="WHITE">
+                              <Button fx:id="add17" layoutX="124.0" layoutY="151.0" mnemonicParsing="false" onAction="#onAdd17" prefHeight="25.0" prefWidth="112.03" stylesheets="@style.css" text="افزودن به سبد خرید" textFill="WHITE">
                                  <styleClass>
                                     <String fx:value="mainpageElementsdarkgreen" />
                                     <String fx:value="zoom" />
@@ -1303,7 +1303,7 @@
                                     <Image url="@photo_2024-01-15_09-02-57.jpg" />
                                  </image>
                               </ImageView>
-                              <Button fx:id="add19" layoutX="123.0" layoutY="157.0" mnemonicParsing="false" onAction="#onAdd19" stylesheets="@style.css" text="افزودن به سبد خرید" textFill="WHITE">
+                              <Button fx:id="add19" layoutX="123.0" layoutY="157.0" mnemonicParsing="false" onAction="#onAdd19" prefHeight="25.0" prefWidth="112.03" stylesheets="@style.css" text="افزودن به سبد خرید" textFill="WHITE">
                                  <styleClass>
                                     <String fx:value="mainpageElementsdarkgreen" />
                                     <String fx:value="zoom" />
@@ -1358,7 +1358,7 @@
                                     <Image url="@photo4.jpg" />
                                  </image>
                               </ImageView>
-                              <Button fx:id="add20" layoutX="130.0" layoutY="151.0" mnemonicParsing="false" onAction="#onAdd20" stylesheets="@style.css" text="افزودن به سبد خرید" textFill="WHITE">
+                              <Button fx:id="add20" layoutX="130.0" layoutY="151.0" mnemonicParsing="false" onAction="#onAdd20" prefHeight="25.0" prefWidth="112.03" stylesheets="@style.css" text="افزودن به سبد خرید" textFill="WHITE">
                                  <styleClass>
                                     <String fx:value="mainpageElementsdarkgreen" />
                                     <String fx:value="zoom" />
@@ -1422,7 +1422,7 @@
                                     <Image url="@photo_2024-01-15_10-40-43.jpg" />
                                  </image>
                               </ImageView>
-                              <Button fx:id="add21" layoutX="130.0" layoutY="151.0" mnemonicParsing="false" onAction="#onAdd21" stylesheets="@style.css" text="افزودن به سبد خرید" textFill="WHITE">
+                              <Button fx:id="add21" layoutX="130.0" layoutY="151.0" mnemonicParsing="false" onAction="#onAdd21" prefHeight="25.0" prefWidth="112.03" stylesheets="@style.css" text="افزودن به سبد خرید" textFill="WHITE">
                                  <styleClass>
                                     <String fx:value="mainpageElementsdarkgreen" />
                                     <String fx:value="zoom" />
@@ -1477,7 +1477,7 @@
                                     <Image url="@photo_2024-01-15_10-41-21.jpg" />
                                  </image>
                               </ImageView>
-                              <Button fx:id="add24" layoutX="124.0" layoutY="151.0" mnemonicParsing="false" onAction="#onAdd24" stylesheets="@style.css" text="افزودن به سبد خرید" textFill="WHITE">
+                              <Button fx:id="add24" layoutX="124.0" layoutY="151.0" mnemonicParsing="false" onAction="#onAdd24" prefHeight="25.0" prefWidth="112.03" stylesheets="@style.css" text="افزودن به سبد خرید" textFill="WHITE">
                                  <styleClass>
                                     <String fx:value="mainpageElementsdarkgreen" />
                                     <String fx:value="zoom" />
@@ -1532,7 +1532,7 @@
                                     <Image url="@photo_2024-01-15_10-40-45.jpg" />
                                  </image>
                               </ImageView>
-                              <Button fx:id="add22" layoutX="123.0" layoutY="151.0" mnemonicParsing="false" onAction="#onAdd22" stylesheets="@style.css" text="افزودن به سبد خرید" textFill="WHITE">
+                              <Button fx:id="add22" layoutX="123.0" layoutY="151.0" mnemonicParsing="false" onAction="#onAdd22" prefHeight="25.0" prefWidth="112.03" stylesheets="@style.css" text="افزودن به سبد خرید" textFill="WHITE">
                                  <styleClass>
                                     <String fx:value="mainpageElementsdarkgreen" />
                                     <String fx:value="zoom" />
@@ -1587,7 +1587,7 @@
                                     <Image url="@photo_2024-01-15_10-40-49.jpg" />
                                  </image>
                               </ImageView>
-                              <Button fx:id="add23" layoutX="128.0" layoutY="151.0" mnemonicParsing="false" onAction="#onAdd23" stylesheets="@style.css" text="افزودن به سبد خرید" textFill="WHITE">
+                              <Button fx:id="add23" layoutX="128.0" layoutY="151.0" mnemonicParsing="false" onAction="#onAdd23" prefHeight="25.0" prefWidth="112.03" stylesheets="@style.css" text="افزودن به سبد خرید" textFill="WHITE">
                                  <styleClass>
                                     <String fx:value="mainpageElementsdarkgreen" />
                                     <String fx:value="zoom" />
