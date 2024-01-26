@@ -37,9 +37,9 @@ public class scifibooksController {
         BufferedReader reader = new BufferedReader(new FileReader("Files/Books.txt"));
         String line;
         int i=1;
-        while ((line=reader.readLine())!=null&& !Objects.equals(line.split("#")[1], "p8")){
+        while ((line=reader.readLine())!=null&& !Objects.equals(line.split("#")[1], "co8")){
         }
-        while ((line=reader.readLine())!=null&& !Objects.equals(line.split("#")[1], "s1")){
+        while ((line=reader.readLine())!=null){
             Label price = (Label) getClass().getDeclaredField("price" + i).get(this);
             if (Objects.equals(line.split("#")[2], "0")) {
                 price.setText("ناموجود");
