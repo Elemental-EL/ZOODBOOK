@@ -21,8 +21,7 @@ import java.io.*;
 import java.io.*;
 import java.net.URI;
 import java.net.URISyntaxException;
-import java.util.Objects;
-import java.util.Scanner;
+import java.util.*;
 import java.util.Objects;
 
 
@@ -43,9 +42,75 @@ public class HelloController {
     @FXML
     private ScrollPane scrollPane;
     public int uId = SignInController.loggedInUserId;
+
+
     public void initialize() throws IOException, NoSuchFieldException, IllegalAccessException {
+        if (uId!=100) {
+            Map<String, Button> productButtonMap = new HashMap<>();
+            int i = 1;
+            while (i < 5) {
+                String buttonId = "add" + i;
+                Button button = (Button) getClass().getDeclaredField(buttonId).get(this);
+                productButtonMap.put("cl" + i, button);
+                i++;
+            }
+            int j = 1;
+            while (j < 5) {
+                String buttonId = "add" + i;
+                Button button = (Button) getClass().getDeclaredField(buttonId).get(this);
+                productButtonMap.put("h" + j, button);
+                i++;
+                j++;
+            }
+            j = 1;
+            while (j < 5) {
+                String buttonId = "add" + i;
+                Button button = (Button) getClass().getDeclaredField(buttonId).get(this);
+                productButtonMap.put("b" + j, button);
+                i++;
+                j++;
+            }
+            j = 1;
+            while (j < 5) {
+                String buttonId = "add" + i;
+                Button button = (Button) getClass().getDeclaredField(buttonId).get(this);
+                productButtonMap.put("p" + j, button);
+                i++;
+                j++;
+            }
+            j = 1;
+            while (j < 5) {
+                String buttonId = "add" + i;
+                Button button = (Button) getClass().getDeclaredField(buttonId).get(this);
+                productButtonMap.put("co" + j, button);
+                i++;
+                j++;
+            }
+            j = 1;
+            while (j < 5) {
+                String buttonId = "add" + i;
+                Button button = (Button) getClass().getDeclaredField(buttonId).get(this);
+                productButtonMap.put("s" + j, button);
+                i++;
+                j++;
+            }
+            BufferedReader reader0 = new BufferedReader(new FileReader("Files/Cart.txt"));
+            String line;
+            while ((line = reader0.readLine()) != null && !Objects.equals(line.split("#")[1], String.valueOf(uId))) {
+            }
+            for (i = 2; i < Objects.requireNonNull(line).split("#").length; i += 2) {
+                Button buttonToDisable = productButtonMap.get(line.split("#")[i]);
+                if (buttonToDisable != null) {
+                    buttonToDisable.setDisable(true);
+                    buttonToDisable.setText("افزوده شد");
+                } else {
+                    System.out.println("Button not found for string: " + line.split("#")[i]);
+                }
+            }
+            reader0.close();
+        }
         BufferedReader reader = new BufferedReader(new FileReader("Files/Books.txt"));
-        String line;
+        String line="";
         int i =1;
         while ((line= reader.readLine())!=null&& !Objects.equals(line.split("#")[1], "cl5")){
             Label price = (Label) getClass().getDeclaredField("price" + i).get(this);
