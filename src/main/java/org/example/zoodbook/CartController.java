@@ -53,8 +53,13 @@ public class CartController {
         stage.setResizable(false);
         stage.show();
     }
-    public void onBackClicked(MouseEvent event){
-
+    public void onBackClicked(MouseEvent event) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("hello-view.fxml"));
+        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.setResizable(false);
+        stage.show();
     }
     public void onContinueShoppingClicked(ActionEvent actionEvent) {
         setOrdersVBox(ordersVBox);
