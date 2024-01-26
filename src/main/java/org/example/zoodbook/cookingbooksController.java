@@ -42,7 +42,7 @@ public class cookingbooksController {
             for (int i=1;i<9;i++){
                 String buttonId = "add" + i;
                 Button button = (Button) getClass().getDeclaredField(buttonId).get(this);
-                productButtonMap.put("cl" + i, button);
+                productButtonMap.put("co" + i, button);
             }
             BufferedReader reader0 = new BufferedReader(new FileReader("Files/Cart.txt"));
             String line;
