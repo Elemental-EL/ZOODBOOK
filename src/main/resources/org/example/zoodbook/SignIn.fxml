@@ -7,7 +7,7 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
-<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.AnchorPane?>  
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
@@ -65,5 +65,7 @@
             <Font name="System Bold" size="14.0" />
          </font></Text>
       <PasswordField fx:id="passwordText" layoutX="70.0" layoutY="293.0" prefHeight="34.0" prefWidth="298.0" promptText="password" style="-fx-background-radius: 10;" />
+      <Text layoutX="191.0" layoutY="480.0" strokeType="OUTSIDE" strokeWidth="0.0" text="رمز عبور خود را فراموش کرده اید؟" />
+      <Text fx:id="Recoverybtn" layoutX="110.0" layoutY="479.0" onMouseClicked="#onRecoveryClicked" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="loginsabtnam" text="بازیابی رمز عبور" wrappingWidth="91.33333333333326" />
    </children>
 </AnchorPane>

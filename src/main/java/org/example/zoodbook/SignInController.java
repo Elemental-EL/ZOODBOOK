@@ -44,8 +44,13 @@ public class SignInController {
         stage.show();
     }
     @FXML
-    void onBackClicked(MouseEvent event){
-
+    void onBackClicked(MouseEvent event) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("hello-view.fxml"));
+        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.setResizable(false);
+        stage.show();
     }
     @FXML
     void onSignUpClicked(MouseEvent event) throws IOException {
@@ -95,5 +100,15 @@ public class SignInController {
                 errorText.setText("*نام کاربری یا رمز عبور اشتباه است.");
             }
         }
+    }
+    @FXML
+    void onRecoveryClicked(MouseEvent event) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("Recovery.fxml"));
+        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+
+
     }
 }
