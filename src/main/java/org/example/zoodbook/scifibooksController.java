@@ -93,12 +93,21 @@ public class scifibooksController {
     }
     @FXML
     void onCartClicked (MouseEvent event) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("Cart.fxml"));
-        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-        scene = new Scene(root);
-        stage.setScene(scene);
-        stage.setResizable(false);
-        stage.show();
+        if (uId == 100) {
+            Parent root = FXMLLoader.load(getClass().getResource("SignIn.fxml"));
+            stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+            scene = new Scene(root);
+            stage.setScene(scene);
+            stage.setResizable(false);
+            stage.show();
+        } else {
+            Parent root = FXMLLoader.load(getClass().getResource("Cart.fxml"));
+            stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+            scene = new Scene(root);
+            stage.setScene(scene);
+            stage.setResizable(false);
+            stage.show();
+        }
     }
     @FXML
     void onLogoClicked (MouseEvent event) throws IOException {
