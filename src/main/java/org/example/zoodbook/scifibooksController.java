@@ -15,6 +15,8 @@ import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 
 import java.io.*;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Objects;
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -33,7 +35,28 @@ public class scifibooksController {
     private ImageView profilebtn, cartbtn, logobtn;
     @FXML
     private Label price1,price2,price3,price4,price5,price6,price7,price8;
+    public int uId = SignInController.loggedInUserId;
     public void initialize() throws IOException, NoSuchFieldException, IllegalAccessException {
+        if (uId!=100) {
+            Map<String, Button> productButtonMap = new HashMap<>();
+            for (int i=1;i<9;i++){
+                String buttonId = "add" + i;
+                Button button = (Button) getClass().getDeclaredField(buttonId).get(this);
+                productButtonMap.put("cl" + i, button);
+            }
+            BufferedReader reader0 = new BufferedReader(new FileReader("Files/Cart.txt"));
+            String line;
+            while ((line = reader0.readLine()) != null && !Objects.equals(line.split("#")[1], String.valueOf(uId))) {
+            }
+            for (int i = 2; i < Objects.requireNonNull(line).split("#").length; i += 2) {
+                Button buttonToDisable = productButtonMap.get(line.split("#")[i]);
+                if (buttonToDisable != null) {
+                    buttonToDisable.setDisable(true);
+                    buttonToDisable.setText("افزوده شد");
+                }
+            }
+            reader0.close();
+        }
         BufferedReader reader = new BufferedReader(new FileReader("Files/Books.txt"));
         String line;
         int i=1;
