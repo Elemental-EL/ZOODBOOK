@@ -29,16 +29,16 @@ public class CartController {
     private Scene scene;
     private Parent root;
     @FXML
-    private ImageView backbtn,logobtn;
+    private ImageView backbtn, logobtn;
     @FXML
     private VBox ordersVBox;
 
-    public void initialize() throws IOException, NoSuchFieldException, IllegalAccessException{
+    public void initialize() throws IOException, NoSuchFieldException, IllegalAccessException {
         String[] orderBooksID = new String[48];
         String[] orderBooksQuantity = new String[48];
-        String[] orderBooksName= new String[48];
+        String[] orderBooksName = new String[48];
         String[] orderBooksPrice = new String[48];
-        if (SignInController.loggedInUserId!=100) {
+        if (SignInController.loggedInUserId != 100) {
             BufferedReader reader = new BufferedReader(new FileReader("Files/Cart.txt"));
             String read;
             while (((read = reader.readLine()) != null) && (!Objects.equals(read.split("#")[1], String.valueOf(SignInController.loggedInUserId)))) {
@@ -70,14 +70,16 @@ public class CartController {
 
     public void onRicycleBinClicked(MouseEvent event) {
     }
+
     public void onLogoClicked(MouseEvent event) throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource("hello-view.fxml"));
-        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);
         stage.setResizable(false);
         stage.show();
     }
+
     public void onBackClicked(MouseEvent event) throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource("hello-view.fxml"));
         stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
@@ -86,21 +88,25 @@ public class CartController {
         stage.setResizable(false);
         stage.show();
     }
+
     public void onContinueShoppingClicked(ActionEvent actionEvent) {
         setOrdersVBox(ordersVBox);
     }
+
     public void setOrdersVBox(VBox ordersVBox) {
         ordersVBox.getStylesheets().add(getClass().getResource("style.css").toExternalForm());
     }
-    public List<String> getOrdersByUserId (){
+
+    public List<String> getOrdersByUserId() {
 
         List<String> userOrders = new ArrayList<>();
         //Get from file
         return userOrders;
     }
-    public void newOrder(String[] orderBooksName , String[] orderBooksQuantity , String[] orderBooksPrice , String[] orderBooksID) throws IOException {
-        for (int i=0 ; i<48 && orderBooksName[i] != null ; i++){
-            BorderPane newPane =  new BorderPane();
+
+    public void newOrder(String[] orderBooksName, String[] orderBooksQuantity, String[] orderBooksPrice, String[] orderBooksID) throws IOException {
+        for (int i = 0; i < 48 && orderBooksName[i] != null; i++) {
+            BorderPane newPane = new BorderPane();
             Label bookName = new Label("نام کتاب :");
             Label quantity = new Label("تعداد :");
             Label bookPrice = new Label("قیمت :");
@@ -108,7 +114,7 @@ public class CartController {
             orderBookName.setEditable(false);
             TextField orderBookQuantity = new TextField(orderBooksQuantity[i]);
             orderBookQuantity.setEditable(false);
-            TextField orderBookPrice = new TextField(String.valueOf(Long.parseLong(orderBooksQuantity[i])*Long.parseLong(orderBooksPrice[i])));
+            TextField orderBookPrice = new TextField(String.valueOf(Long.parseLong(orderBooksQuantity[i]) * Long.parseLong(orderBooksPrice[i])));
             orderBookPrice.setEditable(false);
             Button add = new Button("+");
             Button reduce = new Button("-");
@@ -123,16 +129,16 @@ public class CartController {
             quantity.getStyleClass().add("orderBooksLabel");
             bookPrice.getStyleClass().add("orderBooksLabel");
             orderHBox.getStyleClass().add("orderHBox");
-            orderBookName.getStyleClass().addAll("orders-txtField" , "order-orderBookName");
-            orderBookQuantity.getStyleClass().addAll("orders-txtField" , "order-orderBookQuantity");
-            orderBookPrice.getStyleClass().addAll("orders-txtField" , "order-orderBookPrice");
-            add.getStyleClass().addAll("order-add-reduce-btn" , "zoom" , "mainpageElementsdarkgreen");
-            reduce.getStyleClass().addAll("order-add-reduce-btn" , "zoom" , "mainpageElementsdarkgreen");
+            orderBookName.getStyleClass().addAll("orders-txtField", "order-orderBookName");
+            orderBookQuantity.getStyleClass().addAll("orders-txtField", "order-orderBookQuantity");
+            orderBookPrice.getStyleClass().addAll("orders-txtField", "order-orderBookPrice");
+            add.getStyleClass().addAll("order-add-reduce-btn", "zoom", "mainpageElementsdarkgreen");
+            reduce.getStyleClass().addAll("order-add-reduce-btn", "zoom", "mainpageElementsdarkgreen");
             del.setFitHeight(25);
             del.setFitWidth(25);
-            delete.getStyleClass().addAll("order-add-reduce-btn","zoom" , "lightgreen");
+            delete.getStyleClass().addAll("order-add-reduce-btn", "zoom", "lightgreen");
 
-            orderHBox.getChildren().addAll(delete , reduce , add , orderBookPrice , bookPrice , orderBookQuantity , quantity , orderBookName , bookName);
+            orderHBox.getChildren().addAll(delete, reduce, add, orderBookPrice, bookPrice, orderBookQuantity, quantity, orderBookName, bookName);
             newPane.setRight(orderHBox);
             ordersVBox.getChildren().add(newPane);
             int finalI = i;
@@ -148,14 +154,14 @@ public class CartController {
                         StringBuilder lines = new StringBuilder();
                         String line;
                         StringBuilder line1 = new StringBuilder("#" + SignInController.loggedInUserId + "#");
-                        while (((line = reader.readLine())!=null) && (!String.valueOf(SignInController.loggedInUserId).equals(line.split("#")[1]))){
+                        while (((line = reader.readLine()) != null) && (!String.valueOf(SignInController.loggedInUserId).equals(line.split("#")[1]))) {
                             lines.append(line + "\n");
                         }
-                        for (int j=0 ; j<(line.split("#").length-2)/2 ; j++){
-                            line1.append(orderBooksID[j]+ "#" + orderBooksQuantity[j] + "#");
+                        for (int j = 0; j < (line.split("#").length - 2) / 2; j++) {
+                            line1.append(orderBooksID[j] + "#" + orderBooksQuantity[j] + "#");
                         }
                         lines.append(line1 + "\n");
-                        while ((line = reader.readLine())!=null){
+                        while ((line = reader.readLine()) != null) {
                             lines.append(line + "\n");
                         }
                         reader.close();
@@ -167,13 +173,13 @@ public class CartController {
                     } catch (IOException e) {
                         throw new RuntimeException(e);
                     }
-                    orderBookPrice.setText(String.valueOf(Long.valueOf(orderBooksQuantity[finalI])*Long.valueOf(orderBooksPrice[finalI])));
+                    orderBookPrice.setText(String.valueOf(Long.valueOf(orderBooksQuantity[finalI]) * Long.valueOf(orderBooksPrice[finalI])));
                 }
             });
             reduce.setOnAction(new EventHandler<ActionEvent>() {
                 @Override
                 public void handle(ActionEvent actionEvent) {
-                    if (Long.parseLong(orderBookQuantity.getText())>1){
+                    if (Long.parseLong(orderBookQuantity.getText()) > 1) {
                         number = Long.valueOf(orderBooksQuantity[finalI]);
                         number--;
                         orderBookQuantity.setText(String.valueOf(number));
@@ -183,14 +189,14 @@ public class CartController {
                             StringBuilder lines = new StringBuilder();
                             String line;
                             StringBuilder line1 = new StringBuilder("#" + SignInController.loggedInUserId + "#");
-                            while (((line = reader.readLine())!=null) && (!String.valueOf(SignInController.loggedInUserId).equals(line.split("#")[1]))){
+                            while (((line = reader.readLine()) != null) && (!String.valueOf(SignInController.loggedInUserId).equals(line.split("#")[1]))) {
                                 lines.append(line + "\n");
                             }
-                            for (int j=0 ; j<(line.split("#").length-2)/2 ; j++){
-                                line1.append(orderBooksID[j]+ "#" + orderBooksQuantity[j] + "#");
+                            for (int j = 0; j < (line.split("#").length - 2) / 2; j++) {
+                                line1.append(orderBooksID[j] + "#" + orderBooksQuantity[j] + "#");
                             }
                             lines.append(line1 + "\n");
-                            while ((line = reader.readLine())!=null){
+                            while ((line = reader.readLine()) != null) {
                                 lines.append(line + "\n");
                             }
                             reader.close();
@@ -202,33 +208,33 @@ public class CartController {
                         } catch (IOException e) {
                             throw new RuntimeException(e);
                         }
-                        orderBookPrice.setText(String.valueOf(Long.parseLong(orderBooksQuantity[finalI])*Long.parseLong(orderBooksPrice[finalI])));
+                        orderBookPrice.setText(String.valueOf(Long.parseLong(orderBooksQuantity[finalI]) * Long.parseLong(orderBooksPrice[finalI])));
                     }
                 }
             });
             delete.setOnAction(new EventHandler<ActionEvent>() {
                 @Override
                 public void handle(ActionEvent actionEvent) {
-                    int lengh = orderBooksName.length-1;
-                    for (int j = finalI ; j<lengh ; j++){
-                        orderBooksName[j] = orderBooksName[j+1];
-                        orderBooksQuantity[j] = orderBooksQuantity[j+1];
-                        orderBooksPrice[j] = orderBooksPrice[j+1];
-                        orderBooksID[j] = orderBooksID[j+1];
+                    int lengh = orderBooksName.length - 1;
+                    for (int j = finalI; j < lengh; j++) {
+                        orderBooksName[j] = orderBooksName[j + 1];
+                        orderBooksQuantity[j] = orderBooksQuantity[j + 1];
+                        orderBooksPrice[j] = orderBooksPrice[j + 1];
+                        orderBooksID[j] = orderBooksID[j + 1];
                     }
                     try {
                         BufferedReader reader = new BufferedReader(new FileReader("Files/Cart.txt"));
                         StringBuilder lines = new StringBuilder();
                         String line;
                         StringBuilder line1 = new StringBuilder("#" + SignInController.loggedInUserId + "#");
-                        while (((line = reader.readLine())!=null) && (!String.valueOf(SignInController.loggedInUserId).equals(line.split("#")[1]))){
+                        while (((line = reader.readLine()) != null) && (!String.valueOf(SignInController.loggedInUserId).equals(line.split("#")[1]))) {
                             lines.append(line + "\n");
                         }
-                        for (int k=0 ; k<(line.split("#").length-3)/2 ; k++){
-                            line1.append(orderBooksID[k]+ "#" + orderBooksQuantity[k] + "#");
+                        for (int k = 0; k < (line.split("#").length - 3) / 2; k++) {
+                            line1.append(orderBooksID[k] + "#" + orderBooksQuantity[k] + "#");
                         }
                         lines.append(line1 + "\n");
-                        while ((line = reader.readLine())!=null){
+                        while ((line = reader.readLine()) != null) {
                             lines.append(line + "\n");
                         }
                         reader.close();
@@ -254,12 +260,13 @@ public class CartController {
             });
         }
     }
+
     public void update() throws IOException {
         String[] orderBooksID = new String[48];
         String[] orderBooksQuantity = new String[48];
-        String[] orderBooksName= new String[48];
+        String[] orderBooksName = new String[48];
         String[] orderBooksPrice = new String[48];
-        if (SignInController.loggedInUserId!=100) {
+        if (SignInController.loggedInUserId != 100) {
             BufferedReader reader = new BufferedReader(new FileReader("Files/Cart.txt"));
             String read;
             while (((read = reader.readLine()) != null) && (!Objects.equals(read.split("#")[1], String.valueOf(SignInController.loggedInUserId)))) {

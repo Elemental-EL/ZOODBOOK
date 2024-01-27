@@ -35,13 +35,14 @@ public class ProfileController {
     private Text editcredsbtn, errorText;
     public String currentPassword;
     public int uId;
+
     public void initialize() throws IOException {
         savebtn.setDisable(true);
         uId = SignInController.loggedInUserId;
         BufferedReader reader = new BufferedReader(new FileReader("Files/Users.txt"));
         String line;
-        while ((line=reader.readLine())!=null) {
-            if (String.valueOf(uId).equals(line.split("#")[1])){
+        while ((line = reader.readLine()) != null) {
+            if (String.valueOf(uId).equals(line.split("#")[1])) {
                 nameText.setText(line.split("#")[2]);
                 familyText.setText(line.split("#")[3]);
                 userText.setText(line.split("#")[4]);
@@ -56,21 +57,24 @@ public class ProfileController {
 
         reader.close();
     }
+
     public void onBackClicked(MouseEvent event) throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource("hello-view.fxml"));
-        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
     }
+
     public void onLogoClicked(MouseEvent event) throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource("hello-view.fxml"));
-        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
     }
-    public void onEditClicked (ActionEvent event){
+
+    public void onEditClicked(ActionEvent event) {
         errorText.setText("");
         savebtn.setDisable(false);
         nameText.setEditable(true);
@@ -80,7 +84,8 @@ public class ProfileController {
         addressText.setEditable(true);
         editbtn.setDisable(true);
     }
-    public void onSaveClicked (ActionEvent event) throws IOException {
+
+    public void onSaveClicked(ActionEvent event) throws IOException {
         editbtn.setDisable(false);
         errorText.setFill(Color.RED);
         errorText.setText("");
@@ -133,11 +138,12 @@ public class ProfileController {
             savebtn.setDisable(true);
         }
     }
-    public void onEditCredsClicked (MouseEvent event) throws IOException {
-            Parent root = FXMLLoader.load(getClass().getResource("EditCreds.fxml"));
-            stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-            scene = new Scene(root);
-            stage.setScene(scene);
-            stage.show();
+
+    public void onEditCredsClicked(MouseEvent event) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("EditCreds.fxml"));
+        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
     }
 }

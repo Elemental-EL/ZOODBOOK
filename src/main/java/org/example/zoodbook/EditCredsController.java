@@ -33,12 +33,13 @@ public class EditCredsController {
     @FXML
     private Button savebtn;
     public int uId = SignInController.loggedInUserId;
-    public String currentName,currentUser, currentPassword, currentFamily, currentAddress, currentCodeP, currentPhNumber;
+    public String currentName, currentUser, currentPassword, currentFamily, currentAddress, currentCodeP, currentPhNumber;
+
     public void initialize() throws IOException {
         BufferedReader reader = new BufferedReader(new FileReader("Files/Users.txt"));
         String line;
-        while ((line=reader.readLine())!=null) {
-            if (String.valueOf(uId).equals(line.split("#")[1])){
+        while ((line = reader.readLine()) != null) {
+            if (String.valueOf(uId).equals(line.split("#")[1])) {
                 currentName = line.split("#")[2];
                 currentFamily = line.split("#")[3];
                 currentUser = line.split("#")[4];
@@ -50,15 +51,15 @@ public class EditCredsController {
         }
         reader.close();
     }
+
     public void onBackClicked(MouseEvent event) throws IOException {
-        if (RecoveryController.onRecovery){
+        if (RecoveryController.onRecovery) {
             Parent root = FXMLLoader.load(getClass().getResource("Recovery.fxml"));
-            stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+            stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
             scene = new Scene(root);
             stage.setScene(scene);
             stage.show();
-        }
-        else {
+        } else {
             Parent root = FXMLLoader.load(getClass().getResource("Profile.fxml"));
             stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
             scene = new Scene(root);
@@ -66,6 +67,7 @@ public class EditCredsController {
             stage.show();
         }
     }
+
     public void onLogoClicked(MouseEvent event) throws IOException {
         if (!RecoveryController.onRecovery) {
             Parent root = FXMLLoader.load(getClass().getResource("hello-view.fxml"));
@@ -75,14 +77,15 @@ public class EditCredsController {
             stage.show();
         }
     }
-    public void onSaveClicked (ActionEvent event) throws IOException {
+
+    public void onSaveClicked(ActionEvent event) throws IOException {
         errorText.setText("");
         errorText.setFill(Color.RED);
         if (userText.getText().trim().isEmpty() || passwordText.getText().trim().isEmpty() || repPasswordText.getText().trim().isEmpty())
             errorText.setText("*پر کردن تمامی فیلد ها الزامی است.");
         else if (userText.getText().contains("#"))
             errorText.setText("*شما نمی توانید از # در نام کاربری خود استفاده کنید.");
-        else if (Objects.equals(userText.getText(), "admin")|| (Objects.equals(passwordText.getText(), "admin")))
+        else if (Objects.equals(userText.getText(), "admin") || (Objects.equals(passwordText.getText(), "admin")))
             errorText.setText("*شما نمی توانید از این نام کاربری یا رمز عبور استفاده کنید.");
         else if (passwordText.getText().length() < 8)
             errorText.setText("*رمز عبور باید شامل حداقل 8 کاراکتر باشد.");
@@ -117,7 +120,7 @@ public class EditCredsController {
                 writer.close();
                 errorText.setFill(Color.GREEN);
                 errorText.setText("*اطلاعات شما با موفقیت تغییر یافت.");
-                RecoveryController.onRecovery=false;
+                RecoveryController.onRecovery = false;
             }
         }
     }

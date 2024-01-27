@@ -21,26 +21,29 @@ public class SectionController {
     private ImageView logobtn;
     @FXML
     private Button storagebtn, ordersbtn;
+
     @FXML
-    void onStorageClicked (ActionEvent event) throws IOException {
+    void onStorageClicked(ActionEvent event) throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource("Storage.fxml"));
-        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
     }
+
     @FXML
-    void onOrdersClicked (ActionEvent event) throws IOException {
+    void onOrdersClicked(ActionEvent event) throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource("Orders.fxml"));
-        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
     }
+
     @FXML
     void onLogoClicked(MouseEvent event) throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource("hello-view.fxml"));
-        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
