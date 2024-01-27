@@ -97,6 +97,8 @@ public class EditCredsController {
                     isUnique = false;
             }
             reader0.close();
+            if (Objects.equals(userText.getText(), currentUser))
+                isUnique = true;
             if (!isUnique)
                 errorText.setText("*این نام کاربری قبلا استفاده شده است.");
             else {
