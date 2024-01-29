@@ -32,7 +32,7 @@ public class ProfileController {
     @FXML
     private Button editbtn, savebtn;
     @FXML
-    private Text editcredsbtn, errorText;
+    private Text editcredsbtn, errorText,logOutBtn;
     public String currentPassword;
     public int uId;
 
@@ -143,6 +143,16 @@ public class ProfileController {
 
     public void onEditCredsClicked(MouseEvent event) throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource("EditCreds.fxml"));
+        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+        stage.centerOnScreen();
+    }
+
+    public  void onLogOutClicked(MouseEvent event) throws IOException {
+        SignInController.loggedInUserId = 100;
+        Parent root = FXMLLoader.load(getClass().getResource("hello-view.fxml"));
         stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);
