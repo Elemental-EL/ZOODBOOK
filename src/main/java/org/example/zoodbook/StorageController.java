@@ -52,6 +52,7 @@ public class StorageController {
         scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
+        stage.centerOnScreen();
     }
 
     public void onBackClicked(MouseEvent event) throws IOException {
@@ -60,6 +61,7 @@ public class StorageController {
         scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
+        stage.centerOnScreen();
     }
 
     public void onEdit1(ActionEvent actionEvent) {

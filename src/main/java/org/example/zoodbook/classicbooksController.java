@@ -89,6 +89,7 @@ public class classicbooksController {
         stage.setScene(scene);
         stage.setResizable(false);
         stage.show();
+        stage.centerOnScreen();
     }
 
     @FXML
@@ -100,6 +101,7 @@ public class classicbooksController {
             stage.setScene(scene);
             stage.setResizable(false);
             stage.show();
+            stage.centerOnScreen();
         } else {
             Parent root = FXMLLoader.load(getClass().getResource("Cart.fxml"));
             stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
@@ -107,6 +109,7 @@ public class classicbooksController {
             stage.setScene(scene);
             stage.setResizable(false);
             stage.show();
+            stage.centerOnScreen();
         }
     }
 
@@ -118,6 +121,7 @@ public class classicbooksController {
         stage.setScene(scene);
         stage.setResizable(false);
         stage.show();
+        stage.centerOnScreen();
     }
 
     @FXML
@@ -128,6 +132,7 @@ public class classicbooksController {
         stage.setScene(scene);
         stage.setResizable(false);
         stage.show();
+        stage.centerOnScreen();
     }
 
     @FXML
@@ -138,6 +143,7 @@ public class classicbooksController {
         stage.setScene(scene);
         stage.setResizable(false);
         stage.show();
+        stage.centerOnScreen();
     }
 
     @FXML
@@ -148,6 +154,7 @@ public class classicbooksController {
         stage.setScene(scene);
         stage.setResizable(false);
         stage.show();
+        stage.centerOnScreen();
     }
 
     @FXML
@@ -158,6 +165,7 @@ public class classicbooksController {
         stage.setScene(scene);
         stage.setResizable(false);
         stage.show();
+        stage.centerOnScreen();
     }
 
     @FXML
@@ -168,6 +176,7 @@ public class classicbooksController {
         stage.setScene(scene);
         stage.setResizable(false);
         stage.show();
+        stage.centerOnScreen();
     }
 
     @FXML
@@ -178,6 +187,7 @@ public class classicbooksController {
         stage.setScene(scene);
         stage.setResizable(false);
         stage.show();
+        stage.centerOnScreen();
     }
 
     @FXML
@@ -195,6 +205,7 @@ public class classicbooksController {
             stage.setScene(scene);
             stage.setResizable(false);
             stage.show();
+            stage.centerOnScreen();
         } else {
             BufferedReader reader = new BufferedReader(new FileReader("Files/Cart.txt"));
             StringBuilder ordersText = new StringBuilder();
@@ -224,6 +235,7 @@ public class classicbooksController {
             stage.setScene(scene);
             stage.setResizable(false);
             stage.show();
+            stage.centerOnScreen();
         } else {
             BufferedReader reader = new BufferedReader(new FileReader("Files/Cart.txt"));
             StringBuilder ordersText = new StringBuilder();
@@ -253,6 +265,7 @@ public class classicbooksController {
             stage.setScene(scene);
             stage.setResizable(false);
             stage.show();
+            stage.centerOnScreen();
         } else {
             BufferedReader reader = new BufferedReader(new FileReader("Files/Cart.txt"));
             StringBuilder ordersText = new StringBuilder();
@@ -282,6 +295,7 @@ public class classicbooksController {
             stage.setScene(scene);
             stage.setResizable(false);
             stage.show();
+            stage.centerOnScreen();
         } else {
             BufferedReader reader = new BufferedReader(new FileReader("Files/Cart.txt"));
             StringBuilder ordersText = new StringBuilder();
@@ -311,6 +325,7 @@ public class classicbooksController {
             stage.setScene(scene);
             stage.setResizable(false);
             stage.show();
+            stage.centerOnScreen();
         } else {
             BufferedReader reader = new BufferedReader(new FileReader("Files/Cart.txt"));
             StringBuilder ordersText = new StringBuilder();
@@ -340,6 +355,7 @@ public class classicbooksController {
             stage.setScene(scene);
             stage.setResizable(false);
             stage.show();
+            stage.centerOnScreen();
         } else {
             BufferedReader reader = new BufferedReader(new FileReader("Files/Cart.txt"));
             StringBuilder ordersText = new StringBuilder();
@@ -369,6 +385,7 @@ public class classicbooksController {
             stage.setScene(scene);
             stage.setResizable(false);
             stage.show();
+            stage.centerOnScreen();
         } else {
             BufferedReader reader = new BufferedReader(new FileReader("Files/Cart.txt"));
             StringBuilder ordersText = new StringBuilder();
@@ -398,6 +415,7 @@ public class classicbooksController {
             stage.setScene(scene);
             stage.setResizable(false);
             stage.show();
+            stage.centerOnScreen();
         } else {
             BufferedReader reader = new BufferedReader(new FileReader("Files/Cart.txt"));
             StringBuilder ordersText = new StringBuilder();

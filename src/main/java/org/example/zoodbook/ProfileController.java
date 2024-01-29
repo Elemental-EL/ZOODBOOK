@@ -64,6 +64,7 @@ public class ProfileController {
         scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
+        stage.centerOnScreen();
     }
 
     public void onLogoClicked(MouseEvent event) throws IOException {
@@ -72,6 +73,7 @@ public class ProfileController {
         scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
+        stage.centerOnScreen();
     }
 
     public void onEditClicked(ActionEvent event) {
@@ -145,5 +147,6 @@ public class ProfileController {
         scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
+        stage.centerOnScreen();
     }
 }

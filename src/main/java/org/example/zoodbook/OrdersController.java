@@ -25,6 +25,7 @@ public class OrdersController {
         scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
+        stage.centerOnScreen();
     }
 
     public void onBackClicked(MouseEvent event) throws IOException {
@@ -33,5 +34,6 @@ public class OrdersController {
         scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
+        stage.centerOnScreen();
     }
 }

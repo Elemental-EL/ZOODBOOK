@@ -75,16 +75,6 @@ public class CartController {
         }
     }
 
-    public void onAddClicked(ActionEvent actionEvent) {
-
-    }
-
-    public void onMinusClicked(ActionEvent actionEvent) {
-    }
-
-    public void onRicycleBinClicked(MouseEvent event) {
-    }
-
     public void onLogoClicked(MouseEvent event) throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource("hello-view.fxml"));
         stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
@@ -92,6 +82,7 @@ public class CartController {
         stage.setScene(scene);
         stage.setResizable(false);
         stage.show();
+        stage.centerOnScreen();
     }
 
     public void onBackClicked(MouseEvent event) throws IOException {
@@ -101,6 +92,7 @@ public class CartController {
         stage.setScene(scene);
         stage.setResizable(false);
         stage.show();
+        stage.centerOnScreen();
     }
 
     public void onContinueShoppingClicked(ActionEvent event) throws IOException {
@@ -110,17 +102,7 @@ public class CartController {
         stage.setScene(scene);
         stage.setResizable(false);
         stage.show();
-    }
-
-    public void setOrdersVBox(VBox ordersVBox) {
-
-    }
-
-    public List<String> getOrdersByUserId() {
-
-        List<String> userOrders = new ArrayList<>();
-        //Get from file
-        return userOrders;
+        stage.centerOnScreen();
     }
 
     public void newOrder(String[] orderBooksName, String[] orderBooksQuantity, String[] orderBooksPrice, String[] orderBooksID) throws IOException {

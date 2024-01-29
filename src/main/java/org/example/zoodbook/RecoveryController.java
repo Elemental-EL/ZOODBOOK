@@ -41,6 +41,7 @@ public class RecoveryController {
         stage.setScene(scene);
         stage.setResizable(false);
         stage.show();
+        stage.centerOnScreen();
     }
 
     @FXML
@@ -51,6 +52,7 @@ public class RecoveryController {
         stage.setScene(scene);
         stage.setResizable(false);
         stage.show();
+        stage.centerOnScreen();
     }
 
     @FXML
@@ -83,6 +85,7 @@ public class RecoveryController {
                 stage.setScene(scene);
                 stage.setResizable(false);
                 stage.show();
+                stage.centerOnScreen();
             } else {
                 errorText.setText("*نام کاربری یا شماره تلفن اشتباه است.");
             }

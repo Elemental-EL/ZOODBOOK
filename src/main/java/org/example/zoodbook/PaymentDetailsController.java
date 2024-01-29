@@ -42,6 +42,7 @@ public class PaymentDetailsController {
         scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
+        stage.centerOnScreen();
     }
 
     @FXML
@@ -51,6 +52,7 @@ public class PaymentDetailsController {
         scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
+        stage.centerOnScreen();
     }
 
     @FXML
@@ -126,5 +128,6 @@ public class PaymentDetailsController {
         scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
+        stage.centerOnScreen();
     }
 }

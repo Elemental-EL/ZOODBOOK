@@ -29,6 +29,7 @@ public class SectionController {
         scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
+        stage.centerOnScreen();
     }
 
     @FXML
@@ -38,6 +39,7 @@ public class SectionController {
         scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
+        stage.centerOnScreen();
     }
 
     @FXML
@@ -47,5 +49,6 @@ public class SectionController {
         scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
+        stage.centerOnScreen();
     }
 }
