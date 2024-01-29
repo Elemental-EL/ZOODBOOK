@@ -92,3 +92,6 @@
     -fx-fit-to-height: 40;
     -fx-fit-to-width: 40;
 }
+.lblsStyle{
+    -fx-padding: 0 15 0 5;
+}

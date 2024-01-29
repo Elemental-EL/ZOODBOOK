@@ -147,36 +147,61 @@ public class CartController {
             add.setOnAction(new EventHandler<ActionEvent>() {
                 @Override
                 public void handle(ActionEvent actionEvent) {
-                    number = Long.valueOf(orderBooksQuantity[finalI]);
-                    number++;
-                    orderBookQuantity.setText(String.valueOf(number));
-                    orderBooksQuantity[finalI] = String.valueOf(number);
-                    totalPrice+=Long.parseLong(orderBooksPrice[finalI]);
+                    BufferedReader reader1 = null;
                     try {
-                        BufferedReader reader = new BufferedReader(new FileReader("Files/Cart.txt"));
-                        StringBuilder lines = new StringBuilder();
-                        String line;
-                        StringBuilder line1 = new StringBuilder("#" + SignInController.loggedInUserId + "#");
-                        while (((line = reader.readLine()) != null) && (!String.valueOf(SignInController.loggedInUserId).equals(line.split("#")[1]))) {
-                            lines.append(line + "\n");
-                        }
-                        for (int j = 0; j < (line.split("#").length - 2) / 2; j++) {
-                            line1.append(orderBooksID[j] + "#" + orderBooksQuantity[j] + "#");
-                        }
-                        lines.append(line1 + "\n");
-                        while ((line = reader.readLine()) != null) {
-                            lines.append(line + "\n");
-                        }
-                        reader.close();
-                        BufferedWriter writer = new BufferedWriter(new FileWriter("Files/Cart.txt"));
-                        writer.write(String.valueOf(lines));
-                        writer.close();
+                        reader1 = new BufferedReader(new FileReader("Files/Books.txt"));
                     } catch (FileNotFoundException e) {
                         throw new RuntimeException(e);
+                    }
+                    String line2;
+                    while (true){
+                        try {
+                            if (!(((line2 = reader1.readLine())!=null) && (!Objects.equals(line2.split("#")[1], orderBooksID[finalI]))))
+                                break;
+                        } catch (IOException e) {
+                            throw new RuntimeException(e);
+                        }
+
+                    }
+                    try {
+                        reader1.close();
                     } catch (IOException e) {
                         throw new RuntimeException(e);
                     }
-                    orderBookPrice.setText(String.valueOf(Long.valueOf(orderBooksQuantity[finalI]) * Long.valueOf(orderBooksPrice[finalI])));
+                    number = Long.valueOf(orderBooksQuantity[finalI]);
+                    if (number < Long.parseLong(line2.split("#")[2])){
+                        number++;
+                        orderBookQuantity.setText(String.valueOf(number));
+                        orderBooksQuantity[finalI] = String.valueOf(number);
+                        totalPrice+=Long.parseLong(orderBooksPrice[finalI]);
+                        try {
+                            BufferedReader reader = new BufferedReader(new FileReader("Files/Cart.txt"));
+                            StringBuilder lines = new StringBuilder();
+                            String line;
+                            StringBuilder line1 = new StringBuilder("#" + SignInController.loggedInUserId + "#");
+                            while (((line = reader.readLine()) != null) && (!String.valueOf(SignInController.loggedInUserId).equals(line.split("#")[1]))) {
+                                lines.append(line + "\n");
+                            }
+                            for (int j = 0; j < (line.split("#").length - 2) / 2; j++) {
+                                line1.append(orderBooksID[j] + "#" + orderBooksQuantity[j] + "#");
+                            }
+                            lines.append(line1 + "\n");
+                            while ((line = reader.readLine()) != null) {
+                                lines.append(line + "\n");
+                            }
+                            reader.close();
+                            BufferedWriter writer = new BufferedWriter(new FileWriter("Files/Cart.txt"));
+                            writer.write(String.valueOf(lines));
+                            writer.close();
+                        } catch (FileNotFoundException e) {
+                            throw new RuntimeException(e);
+                        } catch (IOException e) {
+                            throw new RuntimeException(e);
+                        }
+                        orderBookPrice.setText(String.valueOf(Long.valueOf(orderBooksQuantity[finalI]) * Long.valueOf(orderBooksPrice[finalI])));
+                    }
+
+
                 }
             });
             reduce.setOnAction(new EventHandler<ActionEvent>() {
@@ -290,7 +315,8 @@ public class CartController {
         firstDate.getChildren().addAll(orderbookStatus , orderStatus , orderBooksCode1 , orderBooksCode);
         BorderPane firstPane = new BorderPane();
         firstPane.setRight(firstDate);
-        firstPane.setStyle("-fx-padding: 10");
+        firstPane.setStyle("-fx-padding: 15 10 15 10");
+        firstPane.getStyleClass().add("lightergreen");
         ordersVbox1.getChildren().add(firstPane);
         for (int i=0 ; i<((line.split("#").length)-6)/2 ; i++){
             orderBooksID1[i] = line.split("#")[2*i+6];
@@ -305,7 +331,7 @@ public class CartController {
         }
         for (int j = 0 ; j<orderBooksID1.length && orderBooksID1[j]!=null; j++){
             HBox secondHbox = new HBox(4);
-            Label bookname = new Label("نام کتاب :");
+            Label bookname = new Label((j+1)+"- نام کتاب :");
             TextField booksName = new TextField(orderBooksName1[j]);
             bookname.getStyleClass().add("orderBooksLabel");
             bookname.setStyle("-fx-padding: 0 20 0 5");
@@ -315,13 +341,14 @@ public class CartController {
             TextField bookQuantity = new TextField(orderBooksQuantity1[j]);
             bookquantity.getStyleClass().add("orderBooksLabel");
             bookQuantity.getStyleClass().addAll("orders-txtField", "order-orderBookQuantity");
-            bookquantity.setStyle("-fx-padding: 0 20 0 5");
+            bookquantity.setStyle("-fx-padding: 0 15 0 5");
             bookQuantity.setEditable(false);
             HBox hBox = new HBox(4);
             hBox.getChildren().addAll(bookQuantity , bookquantity , booksName , bookname);
             BorderPane ordersPane = new BorderPane();
             ordersPane.setStyle("-fx-padding: 5");
             ordersPane.setRight(hBox);
+            ordersPane.getStyleClass().add("lightergreen");
             ordersVbox1.getChildren().add(ordersPane);
         }
         Label orderBooksDate = new Label("تاریخ ثبت سفارش :");
@@ -340,9 +367,14 @@ public class CartController {
         HBox hbox1 = new HBox(4);
         hbox1.getChildren().addAll(orderPrice , orderprice , orderBooksDate1 , orderBooksDate);
         BorderPane lastborderpane = new BorderPane();
-        lastborderpane.setStyle("-fx-padding: 5");
+        lastborderpane.setStyle("-fx-padding: 15 10 10 0");
         lastborderpane.setRight(hbox1);
+        lastborderpane.getStyleClass().add("lightergreen");
         ordersVbox1.getChildren().add(lastborderpane);
+        BorderPane distance = new BorderPane();
+        distance.setPrefWidth(682);
+        distance.setPrefHeight(20);
+        ordersVbox1.getChildren().add(distance);
     }
 }
 //    public void update() throws IOException {
@@ -371,3 +403,33 @@ public class CartController {
 //            }
 //        }
 //    }
+//number = Long.valueOf(orderBooksQuantity[finalI]);
+//        number++;
+//        orderBookQuantity.setText(String.valueOf(number));
+//        orderBooksQuantity[finalI] = String.valueOf(number);
+//        totalPrice+=Long.parseLong(orderBooksPrice[finalI]);
+//        try {
+//        BufferedReader reader = new BufferedReader(new FileReader("Files/Cart.txt"));
+//        StringBuilder lines = new StringBuilder();
+//        String line;
+//        StringBuilder line1 = new StringBuilder("#" + SignInController.loggedInUserId + "#");
+//        while (((line = reader.readLine()) != null) && (!String.valueOf(SignInController.loggedInUserId).equals(line.split("#")[1]))) {
+//        lines.append(line + "\n");
+//        }
+//        for (int j = 0; j < (line.split("#").length - 2) / 2; j++) {
+//        line1.append(orderBooksID[j] + "#" + orderBooksQuantity[j] + "#");
+//        }
+//        lines.append(line1 + "\n");
+//        while ((line = reader.readLine()) != null) {
+//        lines.append(line + "\n");
+//        }
+//        reader.close();
+//        BufferedWriter writer = new BufferedWriter(new FileWriter("Files/Cart.txt"));
+//        writer.write(String.valueOf(lines));
+//        writer.close();
+//        } catch (FileNotFoundException e) {
+//        throw new RuntimeException(e);
+//        } catch (IOException e) {
+//        throw new RuntimeException(e);
+//        }
+//        orderBookPrice.setText(String.valueOf(Long.valueOf(orderBooksQuantity[finalI]) * Long.valueOf(orderBooksPrice[finalI])));
