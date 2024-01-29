@@ -59,12 +59,14 @@ public class EditCredsController {
             scene = new Scene(root);
             stage.setScene(scene);
             stage.show();
+            stage.centerOnScreen();
         } else {
             Parent root = FXMLLoader.load(getClass().getResource("Profile.fxml"));
             stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
             scene = new Scene(root);
             stage.setScene(scene);
             stage.show();
+            stage.centerOnScreen();
         }
     }
 
@@ -75,6 +77,7 @@ public class EditCredsController {
             scene = new Scene(root);
             stage.setScene(scene);
             stage.show();
+            stage.centerOnScreen();
         }
     }
 

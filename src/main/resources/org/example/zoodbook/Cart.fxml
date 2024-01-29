@@ -77,9 +77,9 @@
                   </ImageView>
                   <ScrollPane layoutX="93.0" layoutY="486.0" prefHeight="300.0" prefWidth="700.0">
                      <content>
-                        <AnchorPane prefHeight="900.0" prefWidth="686.0">
+                        <AnchorPane prefHeight="900.0" prefWidth="674.0">
                            <children>
-                              <VBox fx:id="ordersVbox1" prefHeight="900.0" prefWidth="686.0" />
+                              <VBox fx:id="ordersVbox1" prefHeight="900.0" prefWidth="682.0" />
                            </children>
                         </AnchorPane>
                      </content>

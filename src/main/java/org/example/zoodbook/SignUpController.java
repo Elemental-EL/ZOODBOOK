@@ -42,6 +42,7 @@ public class SignUpController {
         stage.setScene(scene);
         stage.setResizable(false);
         stage.show();
+        stage.centerOnScreen();
     }
 
     public void onSignUpClicked(ActionEvent event) throws IOException {
@@ -108,6 +109,7 @@ public class SignUpController {
                 stage.setScene(scene);
                 stage.setResizable(false);
                 stage.show();
+                stage.centerOnScreen();
             }
         }
 
@@ -128,5 +130,6 @@ public class SignUpController {
         scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
+        stage.centerOnScreen();
     }
 }

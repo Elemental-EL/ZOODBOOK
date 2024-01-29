@@ -43,6 +43,7 @@ public class SignInController {
         stage.setScene(scene);
         stage.setResizable(false);
         stage.show();
+        stage.centerOnScreen();
     }
 
     @FXML
@@ -53,6 +54,7 @@ public class SignInController {
         stage.setScene(scene);
         stage.setResizable(false);
         stage.show();
+        stage.centerOnScreen();
     }
 
     @FXML
@@ -62,6 +64,7 @@ public class SignInController {
         scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
+        stage.centerOnScreen();
     }
 
     @FXML
@@ -75,6 +78,7 @@ public class SignInController {
             scene = new Scene(root);
             stage.setScene(scene);
             stage.show();
+            stage.centerOnScreen();
         } else {
             String entryUsername, line = null;
             int entryPassword;
@@ -98,6 +102,7 @@ public class SignInController {
                 stage.setScene(scene);
                 stage.setResizable(false);
                 stage.show();
+                stage.centerOnScreen();
             } else {
                 errorText.setText("*نام کاربری یا رمز عبور اشتباه است.");
             }
@@ -111,7 +116,6 @@ public class SignInController {
         scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
-
-
+        stage.centerOnScreen();
     }
 }
