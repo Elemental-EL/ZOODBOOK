@@ -32,6 +32,7 @@ public class CartController {
     private ImageView backbtn, logobtn;
     @FXML
     private VBox ordersVBox;
+    public static long totalPrice;
     @FXML
     private VBox ordersVbox1;
 
@@ -52,6 +53,7 @@ public class CartController {
                 orderBooksQuantity[i] = read.split("#")[k + 1];
             }
             reader.close();
+            totalPrice=0;
             for (int i = 0; i < 48 && orderBooksID[i] != null; i++) {
                 BufferedReader reader1 = new BufferedReader(new FileReader("Files/Books.txt"));
                 String line1;
@@ -102,8 +104,13 @@ public class CartController {
         stage.show();
     }
 
-    public void onContinueShoppingClicked(ActionEvent actionEvent) {
-        setOrdersVBox(ordersVBox);
+    public void onContinueShoppingClicked(ActionEvent event) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("Payment Details.fxml"));
+        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.setResizable(false);
+        stage.show();
     }
 
     public void setOrdersVBox(VBox ordersVBox) {
@@ -129,6 +136,7 @@ public class CartController {
             orderBookQuantity.setEditable(false);
             TextField orderBookPrice = new TextField(String.valueOf(Long.parseLong(orderBooksQuantity[i]) * Long.parseLong(orderBooksPrice[i])));
             orderBookPrice.setEditable(false);
+            totalPrice+=(Long.parseLong(orderBookPrice.getText()));
             Button add = new Button("+");
             Button reduce = new Button("-");
             Image image = new Image(getClass().getResourceAsStream("recycle-bin.png"));
@@ -162,6 +170,7 @@ public class CartController {
                     number++;
                     orderBookQuantity.setText(String.valueOf(number));
                     orderBooksQuantity[finalI] = String.valueOf(number);
+                    totalPrice+=Long.parseLong(orderBooksPrice[finalI]);
                     try {
                         BufferedReader reader = new BufferedReader(new FileReader("Files/Cart.txt"));
                         StringBuilder lines = new StringBuilder();
@@ -197,6 +206,7 @@ public class CartController {
                         number--;
                         orderBookQuantity.setText(String.valueOf(number));
                         orderBooksQuantity[finalI] = String.valueOf(number);
+                        totalPrice-=Long.parseLong(orderBooksPrice[finalI]);
                         try {
                             BufferedReader reader = new BufferedReader(new FileReader("Files/Cart.txt"));
                             StringBuilder lines = new StringBuilder();
