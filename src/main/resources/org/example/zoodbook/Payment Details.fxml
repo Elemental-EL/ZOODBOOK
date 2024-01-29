@@ -36,9 +36,9 @@
             <Font size="18.0" />
          </font>
       </Label>
-      <Text fx:id="totalPrice" layoutX="137.0" layoutY="227.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="132.80001220703116">
+      <Text fx:id="totalPrice" layoutX="137.0" layoutY="227.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="RIGHT" wrappingWidth="132.80001220703116">
          <font>
-            <Font size="16.0" />
+            <Font name="System Bold" size="16.0" />
          </font>
       </Text>
       <Label layoutX="281.0" layoutY="164.0" prefHeight="27.0" prefWidth="102.0" text="هزینه ارسال :">
@@ -46,9 +46,9 @@
             <Font size="18.0" />
          </font>
       </Label>
-      <Text fx:id="shippingPrice" layoutX="137.0" layoutY="186.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="132.80001220703116">
+      <Text fx:id="shippingPrice" layoutX="137.0" layoutY="186.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="RIGHT" wrappingWidth="132.80001220703116">
          <font>
-            <Font size="16.0" />
+            <Font name="System Bold" size="16.0" />
          </font>
       </Text>
       <Button fx:id="purchasebtn" layoutX="174.0" layoutY="254.0" mnemonicParsing="false" onAction="#onPurchaseClicked" prefHeight="35.0" prefWidth="101.0" stylesheets="@style.css" text="تکمیل پرداخت" textFill="WHITE">
@@ -65,9 +65,9 @@
             <Font size="18.0" />
          </font>
       </Label>
-      <Text fx:id="shippingBooks" layoutX="137.0" layoutY="146.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="132.80001220703116">
+      <Text fx:id="shippingBooks" layoutX="137.0" layoutY="146.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="RIGHT" wrappingWidth="132.80001220703116">
          <font>
-            <Font name="System Bold Italic" size="16.0" />
+            <Font name="System Bold" size="16.0" />
          </font>
       </Text>
    </children>
