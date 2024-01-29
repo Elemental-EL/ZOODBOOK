@@ -63,9 +63,6 @@ public class OrdersController {
         }
         String Name = newline.split("#")[2];
         String Family = newline.split("#")[3];
-        String phoneNumber = newline.split("#")[8];
-        String postCode = newline.split("#")[7];
-        String Address = newline.split("#")[6];
         Label name = new Label("نام و نام خانوادگی:");
         TextField fillName = new TextField(Name +" "+ Family);
         Label orderCode = new Label("کد سفارش :");
