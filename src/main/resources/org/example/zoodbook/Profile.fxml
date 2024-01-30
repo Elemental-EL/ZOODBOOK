@@ -91,7 +91,7 @@
             <Font name="System Bold" size="14.0" />
          </font>
       </Text>
-      <Text fx:id="logOutBtn" layoutX="234.0" layoutY="538.0" onMouseClicked="#onLogOutClicked" strokeType="OUTSIDE" strokeWidth="0.0" text="خروج" textAlignment="CENTER">
+      <Text fx:id="logOutBtn" layoutX="234.0" layoutY="538.0" onMouseClicked="#onLogOutClicked" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="logout" text="خروج" textAlignment="CENTER">
          <font>
             <Font name="System Bold" size="13.0" />
          </font>
