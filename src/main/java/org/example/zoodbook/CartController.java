@@ -16,6 +16,7 @@ import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
+import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
 import java.io.*;
@@ -32,6 +33,8 @@ public class CartController {
     private ImageView backbtn, logobtn;
     @FXML
     private VBox ordersVBox;
+    @FXML
+    private Text errorText;
     public static long totalPrice;
     @FXML
     private VBox ordersVbox1;
@@ -96,13 +99,24 @@ public class CartController {
     }
 
     public void onContinueShoppingClicked(ActionEvent event) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("Payment Details.fxml"));
-        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-        scene = new Scene(root);
-        stage.setScene(scene);
-        stage.setResizable(false);
-        stage.show();
-        stage.centerOnScreen();
+        BufferedReader reader = new BufferedReader(new FileReader("Files/Cart.txt"));
+        String line;
+        while ((line=reader.readLine())!=null&& !Objects.equals(line.split("#")[1], String.valueOf(SignInController.loggedInUserId))){
+        }
+        reader.close();
+        String[] words = line.split("#");
+        int n = words.length;
+        if (n<3)
+            errorText.setText("*سبد خرید شما خالی است.");
+        else {
+            Parent root = FXMLLoader.load(getClass().getResource("Payment Details.fxml"));
+            stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+            scene = new Scene(root);
+            stage.setScene(scene);
+            stage.setResizable(false);
+            stage.show();
+            stage.centerOnScreen();
+        }
     }
 
     public void newOrder(String[] orderBooksName, String[] orderBooksQuantity, String[] orderBooksPrice, String[] orderBooksID) throws IOException {
@@ -377,59 +391,3 @@ public class CartController {
         ordersVbox1.getChildren().add(distance);
     }
 }
-//    public void update() throws IOException {
-//        String[] orderBooksID = new String[48];
-//        String[] orderBooksQuantity = new String[48];
-//        String[] orderBooksName = new String[48];
-//        String[] orderBooksPrice = new String[48];
-//        if (SignInController.loggedInUserId != 100) {
-//            BufferedReader reader = new BufferedReader(new FileReader("Files/Cart.txt"));
-//            String read;
-//            while (((read = reader.readLine()) != null) && (!Objects.equals(read.split("#")[1], String.valueOf(SignInController.loggedInUserId)))) {
-//            }
-//            for (int i = 0; i < (read.split("#").length - 1) / 2; i++) {
-//                int k = (2 * i) + 2;
-//                orderBooksID[i] = read.split("#")[k];
-//                orderBooksQuantity[i] = read.split("#")[k + 1];
-//            }
-//            reader.close();
-//            for (int i = 0; i < 48 && orderBooksID[i] != null; i++) {
-//                BufferedReader reader1 = new BufferedReader(new FileReader("Files/Books.txt"));
-//                String line1;
-//                while (((line1 = reader1.readLine()) != null) && (!Objects.equals(line1.split("#")[1], orderBooksID[i]))) {
-//                }
-//                orderBooksName[i] = line1.split("#")[4];
-//                orderBooksPrice[i] = line1.split("#")[3];
-//            }
-//        }
-//    }
-//number = Long.valueOf(orderBooksQuantity[finalI]);
-//        number++;
-//        orderBookQuantity.setText(String.valueOf(number));
-//        orderBooksQuantity[finalI] = String.valueOf(number);
-//        totalPrice+=Long.parseLong(orderBooksPrice[finalI]);
-//        try {
-//        BufferedReader reader = new BufferedReader(new FileReader("Files/Cart.txt"));
-//        StringBuilder lines = new StringBuilder();
-//        String line;
-//        StringBuilder line1 = new StringBuilder("#" + SignInController.loggedInUserId + "#");
-//        while (((line = reader.readLine()) != null) && (!String.valueOf(SignInController.loggedInUserId).equals(line.split("#")[1]))) {
-//        lines.append(line + "\n");
-//        }
-//        for (int j = 0; j < (line.split("#").length - 2) / 2; j++) {
-//        line1.append(orderBooksID[j] + "#" + orderBooksQuantity[j] + "#");
-//        }
-//        lines.append(line1 + "\n");
-//        while ((line = reader.readLine()) != null) {
-//        lines.append(line + "\n");
-//        }
-//        reader.close();
-//        BufferedWriter writer = new BufferedWriter(new FileWriter("Files/Cart.txt"));
-//        writer.write(String.valueOf(lines));
-//        writer.close();
-//        } catch (FileNotFoundException e) {
-//        throw new RuntimeException(e);
-//        } catch (IOException e) {
-//        throw new RuntimeException(e);
-//        }
-//        orderBookPrice.setText(String.valueOf(Long.valueOf(orderBooksQuantity[finalI]) * Long.valueOf(orderBooksPrice[finalI])));
