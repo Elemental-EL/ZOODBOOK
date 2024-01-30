@@ -101,8 +101,6 @@ public class SignUpController {
                 BufferedWriter addNewUId = new BufferedWriter(new FileWriter("Files/Cart.txt"));
                 addNewUId.write(String.valueOf(addUIdToCart));
                 addNewUId.close();
-
-//                SignInController.loggedInUserId= newId;
                 Parent root = FXMLLoader.load(getClass().getResource("SignIn.fxml"));
                 stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
                 scene = new Scene(root);
@@ -112,15 +110,6 @@ public class SignUpController {
                 stage.centerOnScreen();
             }
         }
-
-        // BufferedWriter writer = new BufferedWriter(new FileWriter("Files/Users.txt"));
-//        StringBuilder stringBuilder = new StringBuilder("text gotten from file");
-//        StringBuilder newUser =new StringBuilder(nameText.getText() +"#"+ familyText.getText() +"#"+userText.getText()+"#"+passwordText.getText().hashCode()+"#"+codePText.getText()+"#"+PhnumberText.getText()+"#"+addressText.getText());
-//        stringBuilder.append("\n"+newUser);
-//        System.out.println(stringBuilder);
-        // User newUser1 = new User(nameText.getText(),);
-        //       registerNewUser(newUser1);
-
     }
 
 
