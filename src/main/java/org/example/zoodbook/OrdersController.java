@@ -242,25 +242,4 @@ public class OrdersController {
         distance.setPrefWidth(838);
         mainVbox.getChildren().add(distance);
     }
-//    if (checkBox.isSelected()){
-//        BufferedReader reader1 = new BufferedReader(new FileReader("Files/Orders.txt"));
-//        StringBuilder stringBuilder = new StringBuilder();
-//        String changeLine;
-//        while (((changeLine = reader1.readLine())!= null) && (!Objects.equals(changeLine.split("#")[2], line.split("#")[2]))){
-//            stringBuilder.append(changeLine + "\n");
-//        }
-//        stringBuilder.append(changeLine.split("#")[1]+"#"+changeLine.split("#")[2]+"#"+changeLine.split("#")[3]+"#"+changeLine.split("#")[4]+"#"+1+"#");
-//        for (int i=0 ; i<48 && booksID[i]!=null ; i++){
-//            stringBuilder.append(booksID[i]+"#"+booksQuantity[i]+"#");
-//        }
-//        stringBuilder.append("\n");
-//        while ((changeLine = reader1.readLine())!=null){
-//            stringBuilder.append(changeLine+"\n");
-//        }
-//        reader.close();
-//        BufferedWriter writer = new BufferedWriter(new FileWriter("Files/Orders.txt"));
-//        writer.write(String.valueOf(stringBuilder));
-//        writer.close();
-//    }
-//
 }

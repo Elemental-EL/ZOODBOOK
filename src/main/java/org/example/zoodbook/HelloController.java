@@ -32,13 +32,9 @@ public class HelloController {
     @FXML
     private Button jumpUpbtn, classicbtn, historybtn, biobtn, psychobtn, cookingbtn, scifibtn, showMoreCl, showMoreHis, showMoreBio, showMorePsycho, showMoreCooking, showMoreScifi, add1, add2, add3, add4, add5, add6, add7, add8, add9, add10, add11, add12, add13, add14, add15, add16, add17, add18, add19, add20, add21, add22, add23, add24;
     @FXML
-    private TextField searchBar;
-    @FXML
     private ImageView profilebtn, cartbtn, searchbtn, logobtn;
     @FXML
     private Label price1, price2, price, price3, price4, price5, price6, price7, price8, price9, price10, price11, price12, price13, price14, price15, price16, price17, price18, price19, price20, price21, price22, price23, price24;
-    @FXML
-    private Hyperlink link;
     @FXML
     private ScrollPane scrollPane;
     public int uId = SignInController.loggedInUserId;
@@ -103,8 +99,6 @@ public class HelloController {
                 if (buttonToDisable != null) {
                     buttonToDisable.setDisable(true);
                     buttonToDisable.setText("افزوده شد");
-                } else {
-                    System.out.println("Button not found for string: " + line.split("#")[i]);
                 }
             }
             reader0.close();
@@ -374,11 +368,6 @@ public class HelloController {
 
     @FXML
     void onSearchClicked(MouseEvent event) {
-
-    }
-
-    @FXML
-    void onShowMoreInfoClicked(ActionEvent event) throws URISyntaxException, IOException {
 
     }
 
@@ -1150,14 +1139,6 @@ public class HelloController {
             add24.setText("افزوده شد");
             add24.setDisable(true);
         }
-    }
-
-
-    @FXML
-    private HostServices hostServices;
-
-    public void setHostServices(HostServices hostServices) {
-        this.hostServices = hostServices;
     }
 }
 
