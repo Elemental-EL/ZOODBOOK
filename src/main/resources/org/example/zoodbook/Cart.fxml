@@ -49,9 +49,9 @@
                   </ImageView>
                   <ScrollPane layoutX="68.0" layoutY="66.0" prefHeight="300.0" prefWidth="750.0">
                     <content>
-                      <AnchorPane fx:id="cartList" minHeight="0.0" minWidth="0.0" prefHeight="911.0" prefWidth="735.0">
+                      <AnchorPane fx:id="cartList" minHeight="0.0" minWidth="0.0" prefHeight="1500.0" prefWidth="735.0">
                            <children>
-                              <VBox fx:id="ordersVBox" layoutY="-2.0" prefHeight="902.0" prefWidth="738.0" styleClass="lightergreen" stylesheets="@style.css" />
+                              <VBox fx:id="ordersVBox" layoutY="-2.0" prefHeight="1500.0" prefWidth="738.0" styleClass="lightergreen" stylesheets="@style.css" />
                            </children>
                         </AnchorPane>
                     </content>
@@ -78,9 +78,9 @@
                   </ImageView>
                   <ScrollPane layoutX="93.0" layoutY="486.0" prefHeight="300.0" prefWidth="700.0">
                      <content>
-                        <AnchorPane prefHeight="900.0" prefWidth="674.0">
+                        <AnchorPane prefHeight="2000.0" prefWidth="674.0">
                            <children>
-                              <VBox fx:id="ordersVbox1" prefHeight="900.0" prefWidth="682.0" />
+                              <VBox fx:id="ordersVbox1" prefHeight="2000.0" prefWidth="682.0" />
                            </children>
                         </AnchorPane>
                      </content>
