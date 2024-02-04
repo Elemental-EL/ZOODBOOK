@@ -10,7 +10,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="700.0" prefWidth="600.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.zoodbook.BookController">
+<AnchorPane prefHeight="700.0" prefWidth="600.0" styleClass="mainpageBackground" stylesheets="@style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.zoodbook.BookController">
    <children>
       <Pane prefHeight="106.0" prefWidth="600.0" styleClass="lightgreen">
          <children>
@@ -82,7 +82,7 @@
                   <Image url="@UsetGreenPNG.png" />
                </image>
             </ImageView>
-            <ImageView fx:id="logobtn" fitHeight="80.0" fitWidth="80.0" layoutX="518.0" layoutY="16.0" onMouseClicked="#onLogoClicked" pickOnBounds="true" preserveRatio="true" styleClass="zoom">
+            <ImageView fx:id="logobtn" fitHeight="80.0" fitWidth="80.0" layoutX="518.0" onMouseClicked="#onLogoClicked" pickOnBounds="true" preserveRatio="true" styleClass="zoom">
                <image>
                   <Image url="@jhjhj.png" />
                </image>
@@ -100,7 +100,7 @@
             <Font name="System Bold" size="24.0" />
          </font>
       </Label>
-      <Label fx:id="authorB" alignment="CENTER_RIGHT" layoutX="7.0" layoutY="193.0" prefHeight="27.0" prefWidth="217.0" textAlignment="RIGHT">
+      <Label fx:id="authorB" alignment="CENTER_RIGHT" layoutX="7.0" layoutY="193.0" prefHeight="27.0" prefWidth="217.0" style="-fx-background-radius: 7;" styleClass="lightergreen" stylesheets="@style.css" textAlignment="RIGHT">
          <font>
             <Font name="System Bold" size="18.0" />
          </font>
@@ -110,7 +110,7 @@
             <Font name="System Bold" size="24.0" />
          </font>
       </Label>
-      <Label fx:id="publisherB" alignment="CENTER_RIGHT" layoutX="7.0" layoutY="237.0" prefHeight="27.0" prefWidth="217.0" textAlignment="RIGHT">
+      <Label fx:id="publisherB" alignment="CENTER_RIGHT" layoutX="7.0" layoutY="237.0" prefHeight="27.0" prefWidth="217.0" style="-fx-background-radius: 7;" styleClass="lightergreen" textAlignment="RIGHT">
          <font>
             <Font name="System Bold" size="18.0" />
          </font>
@@ -120,7 +120,7 @@
             <Font name="System Bold" size="24.0" />
          </font>
       </Label>
-      <Label fx:id="priceB" alignment="CENTER_RIGHT" layoutX="7.0" layoutY="285.0" prefHeight="27.0" prefWidth="241.0" textAlignment="RIGHT">
+      <Label fx:id="priceB" alignment="CENTER_RIGHT" layoutX="7.0" layoutY="285.0" prefHeight="27.0" prefWidth="241.0" style="-fx-background-radius: 7;" styleClass="lightergreen" textAlignment="RIGHT">
          <font>
             <Font name="System Bold" size="18.0" />
          </font>
@@ -135,10 +135,15 @@
             <Font name="System Bold" size="14.0" />
          </font>
       </Text>
-      <Button fx:id="addB" layoutX="335.0" layoutY="529.0" mnemonicParsing="false" prefWidth="248.0" text="افزودن به سبد خرید">
+      <Button fx:id="addB" layoutX="335.0" layoutY="529.0" mnemonicParsing="false" prefWidth="248.0" style="-fx-background-radius: 4;" text="افزودن به سبد خرید" textFill="WHITE">
          <font>
             <Font name="System Bold" size="18.0" />
          </font>
+         <styleClass>
+            <String fx:value="zoom" />
+            <String fx:value="navbarbuttonshover" />
+            <String fx:value="mainpageElementsdarkgreen" />
+         </styleClass>
       </Button>
    </children>
 </AnchorPane>
