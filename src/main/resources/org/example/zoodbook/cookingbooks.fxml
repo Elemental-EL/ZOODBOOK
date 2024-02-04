@@ -107,7 +107,7 @@
                             <children>
                                 <ImageView fitHeight="150.0" fitWidth="115.0" layoutX="969.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@photo_2024-01-15_09-02-56.jpg" />
+                              <Image url="@co1.jpg" />
                            </image></ImageView>
                                 <Button fx:id="add1" layoutX="966.0" layoutY="174.0" mnemonicParsing="false" onAction="#onAdd1" prefHeight="25.0" prefWidth="112.03" stylesheets="@style.css" text="افزودن به سبد خرید" textFill="WHITE">
                            <styleClass>
@@ -174,7 +174,7 @@
                             <children>
                                 <ImageView fitHeight="150.0" fitWidth="115.0" layoutX="971.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@photo1_.jpg" />
+                              <Image url="@co2.jpg" />
                            </image></ImageView>
                                 <Button fx:id="add2" layoutX="966.0" layoutY="174.0" mnemonicParsing="false" onAction="#onAdd2" prefHeight="25.0" prefWidth="112.03" stylesheets="@style.css" text="افزودن به سبد خرید" textFill="WHITE">
                            <styleClass>
@@ -241,7 +241,7 @@
                             <children>
                                 <ImageView fitHeight="150.0" fitWidth="115.0" layoutX="971.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@photo_2024-01-15_09-02-57.jpg" />
+                              <Image url="@co3.jpg" />
                            </image></ImageView>
                                 <Button fx:id="add3" layoutX="966.0" layoutY="174.0" mnemonicParsing="false" onAction="#onAdd3" prefHeight="25.0" prefWidth="112.03" stylesheets="@style.css" text="افزودن به سبد خرید" textFill="WHITE">
                            <styleClass>
@@ -308,7 +308,7 @@
                             <children>
                                 <ImageView fitHeight="150.0" fitWidth="115.0" layoutX="971.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@photo4.jpg" />
+                              <Image url="@co4.jpg" />
                            </image></ImageView>
                                 <Button fx:id="add4" layoutX="966.0" layoutY="174.0" mnemonicParsing="false" onAction="#onAdd4" prefHeight="25.0" prefWidth="112.03" stylesheets="@style.css" text="افزودن به سبد خرید" textFill="WHITE">
                            <styleClass>
@@ -375,7 +375,7 @@
                             <children>
                                 <ImageView fitHeight="150.0" fitWidth="115.0" layoutX="965.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@photo3.jpg" />
+                              <Image url="@co5.jpg" />
                            </image></ImageView>
                                 <Button fx:id="add5" layoutX="966.0" layoutY="174.0" mnemonicParsing="false" onAction="#onAdd5" prefHeight="25.0" prefWidth="112.03" stylesheets="@style.css" text="افزودن به سبد خرید" textFill="WHITE">
                            <styleClass>
@@ -442,7 +442,7 @@
                             <children>
                                 <ImageView fitHeight="150.0" fitWidth="115.0" layoutX="969.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@photo2.jpg" />
+                              <Image url="@co6.jpg" />
                            </image></ImageView>
                                 <Button fx:id="add6" layoutX="966.0" layoutY="174.0" mnemonicParsing="false" onAction="#onAdd6" prefHeight="25.0" prefWidth="112.03" stylesheets="@style.css" text="افزودن به سبد خرید" textFill="WHITE">
                            <styleClass>
@@ -509,7 +509,7 @@
                             <children>
                                 <ImageView fitHeight="150.0" fitWidth="115.0" layoutX="973.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@photo1.jpg" />
+                              <Image url="@co7.jpg" />
                            </image></ImageView>
                                 <Button fx:id="add7" layoutX="966.0" layoutY="174.0" mnemonicParsing="false" onAction="#onAdd7" prefHeight="25.0" prefWidth="112.03" stylesheets="@style.css" text="افزودن به سبد خرید" textFill="WHITE">
                            <styleClass>
@@ -576,7 +576,7 @@
                             <children>
                                 <ImageView fitHeight="150.0" fitWidth="115.0" layoutX="974.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@photo_2024-01-15_09-02-58.jpg" />
+                              <Image url="@co8.jpg" />
                            </image></ImageView>
                                 <Button fx:id="add8" layoutX="966.0" layoutY="174.0" mnemonicParsing="false" onAction="#onAdd8" prefHeight="25.0" prefWidth="112.03" stylesheets="@style.css" text="افزودن به سبد خرید" textFill="WHITE">
                            <styleClass>
