@@ -8,29 +8,28 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.zoodbook.SeeUsersController">
     <children>
-        <Pane prefHeight="100.0" prefWidth="800.0">
+        <Pane prefHeight="100.0" prefWidth="800.0" styleClass="lightgreen" stylesheets="@style.css">
             <children>
-                <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="700.0" pickOnBounds="true" preserveRatio="true">
+                <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="700.0" pickOnBounds="true" preserveRatio="true" styleClass="zoom">
                     <image>
                         <Image url="@jhjhj.png" />
                     </image>
                 </ImageView>
-                <Label layoutX="357.0" layoutY="50.0" text=" کاربران :">
+                <Label layoutX="357.0" layoutY="50.0" text=" کاربران :" textFill="#164c35">
                     <font>
                         <Font name="System Bold Italic" size="24.0" />
                     </font>
                 </Label>
-                <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="14.0" layoutY="14.0" onMouseClicked="#onBackClicked" pickOnBounds="true" preserveRatio="true">
+                <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="14.0" layoutY="14.0" onMouseClicked="#onBackClicked" pickOnBounds="true" preserveRatio="true" styleClass="zoom">
                     <image>
                         <Image url="@120.png" />
                     </image>
                 </ImageView>
             </children>
         </Pane>
-        <Pane layoutY="100.0" prefHeight="500.0" prefWidth="800.0">
+        <Pane layoutY="100.0" prefHeight="500.0" prefWidth="800.0" styleClass="mainpageBackground" stylesheets="@style.css">
             <children>
                 <ScrollPane layoutX="25.0" layoutY="25.0" prefHeight="450.0" prefWidth="750.0">
                     <content>
@@ -41,4 +40,3 @@
         </Pane>
     </children>
 </AnchorPane>
-
