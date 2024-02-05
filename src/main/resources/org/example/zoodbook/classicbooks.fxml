@@ -105,7 +105,7 @@
                   </Pane>
                   <Pane layoutX="74.0" layoutY="210.0" prefHeight="227.0" prefWidth="1096.0" stylesheets="@style.css">
                      <children>
-                        <ImageView fitHeight="150.0" fitWidth="115.0" layoutX="965.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="150.0" fitWidth="115.0" layoutX="965.0" layoutY="16.0" onMouseClicked="#onProductClicked" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@cl1.jpg" />
                            </image></ImageView>
@@ -172,7 +172,7 @@
                   </Pane>
                   <Pane layoutX="74.0" layoutY="446.0" prefHeight="227.0" prefWidth="1096.0" stylesheets="@style.css">
                      <children>
-                        <ImageView fitHeight="150.0" fitWidth="115.0" layoutX="968.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="150.0" fitWidth="115.0" layoutX="968.0" layoutY="17.0" onMouseClicked="#onProductClicked" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@cl2.jpg" />
                            </image></ImageView>
@@ -239,7 +239,7 @@
                   </Pane>
                   <Pane layoutX="74.0" layoutY="691.0" prefHeight="227.0" prefWidth="1096.0" stylesheets="@style.css">
                      <children>
-                        <ImageView fitHeight="150.0" fitWidth="115.0" layoutX="967.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="150.0" fitWidth="115.0" layoutX="967.0" layoutY="18.0" onMouseClicked="#onProductClicked" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@cl3.jpg" />
                            </image></ImageView>
@@ -306,7 +306,7 @@
                   </Pane>
                   <Pane layoutX="74.0" layoutY="925.0" prefHeight="227.0" prefWidth="1096.0" stylesheets="@style.css">
                      <children>
-                        <ImageView fitHeight="150.0" fitWidth="115.0" layoutX="967.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="150.0" fitWidth="115.0" layoutX="967.0" layoutY="17.0" onMouseClicked="#onProductClicked" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@cl4.jpg" />
                            </image></ImageView>
@@ -373,7 +373,7 @@
                   </Pane>
                   <Pane layoutX="74.0" layoutY="1164.0" prefHeight="227.0" prefWidth="1096.0" stylesheets="@style.css">
                      <children>
-                        <ImageView fitHeight="150.0" fitWidth="115.0" layoutX="970.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="150.0" fitWidth="115.0" layoutX="970.0" layoutY="17.0" onMouseClicked="#onProductClicked" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@cl5.jpg" />
                            </image></ImageView>
@@ -440,7 +440,7 @@
                   </Pane>
                   <Pane layoutX="74.0" layoutY="1401.0" prefHeight="227.0" prefWidth="1096.0" stylesheets="@style.css">
                      <children>
-                        <ImageView fitHeight="150.0" fitWidth="115.0" layoutX="967.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="150.0" fitWidth="115.0" layoutX="967.0" layoutY="17.0" onMouseClicked="#onProductClicked" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@cl6.jpg" />
                            </image></ImageView>
@@ -507,7 +507,7 @@
                   </Pane>
                   <Pane layoutX="74.0" layoutY="1642.0" prefHeight="227.0" prefWidth="1096.0" stylesheets="@style.css">
                      <children>
-                        <ImageView fitHeight="150.0" fitWidth="115.0" layoutX="967.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="150.0" fitWidth="115.0" layoutX="967.0" layoutY="17.0" onMouseClicked="#onProductClicked" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@cl7.jpg" />
                            </image></ImageView>
@@ -574,7 +574,7 @@
                   </Pane>
                   <Pane layoutX="74.0" layoutY="1876.0" prefHeight="227.0" prefWidth="1096.0" stylesheets="@style.css">
                      <children>
-                        <ImageView fitHeight="150.0" fitWidth="115.0" layoutX="970.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="150.0" fitWidth="115.0" layoutX="970.0" layoutY="17.0" onMouseClicked="#onProductClicked" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@cl8.jpg" />
                            </image></ImageView>
@@ -613,7 +613,7 @@
                               <Font name="System Bold" size="14.0" />
                            </font>
                         </Label>
-                        <Label layoutX="814.0" layoutY="45.0" text="مارک توین">
+                        <Label layoutX="814.0" layoutY="45.0" text="مارک تواین">
                            <font>
                               <Font name="System Bold" size="14.0" />
                            </font>

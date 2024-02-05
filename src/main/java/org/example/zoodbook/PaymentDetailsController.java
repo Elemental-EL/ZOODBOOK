@@ -97,6 +97,9 @@ public class PaymentDetailsController {
         String[] BooksQuantity = new String[48];
         String[] BooksPrice = new String[48];
         String[] BooksName = new String[48];
+        String[] BooksAuthor = new String[48];
+        String[] BooksPublisher = new String[48];
+        String[] BooksDescription = new String[48];
         BufferedReader reader4 = new BufferedReader(new FileReader("Files/Books.txt"));
         StringBuilder newStorage = new StringBuilder();
         for (int i = 0; i<48;i++) {
@@ -105,6 +108,9 @@ public class PaymentDetailsController {
             BooksQuantity[i] = line.split("#")[2];
             BooksPrice[i] = line.split("#")[3];
             BooksName[i] = line.split("#")[4];
+            BooksAuthor[i] = line.split("#")[5];
+            BooksPublisher[i] = line.split("#")[6];
+            BooksDescription[i] = line.split("#")[7];
         }
         reader4.close();
         for (int i = 6;i<newOrder.split("#").length-1;i+=2){
@@ -118,7 +124,7 @@ public class PaymentDetailsController {
             }
         }
         for (int i=0;i<48;i++){
-            newStorage.append("#"+BooksID[i]+"#"+BooksQuantity[i]+"#"+BooksPrice[i]+"#"+BooksName[i]+"#"+"\n");
+            newStorage.append("#"+BooksID[i]+"#"+BooksQuantity[i]+"#"+BooksPrice[i]+"#"+BooksName[i]+"#"+BooksAuthor[i]+"#"+BooksPublisher[i]+"#"+BooksDescription[i]+"#"+"\n");
         }
         BufferedWriter writer3 = new BufferedWriter(new FileWriter("Files/Books.txt"));
         writer3.write(String.valueOf(newStorage));

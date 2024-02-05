@@ -368,9 +368,10 @@ public class StorageController {
         if (fieldsFilled) {
             int i = 1;
             while ((line = reader.readLine()) != null) {
+//                System.out.println(line.split("#").length);
                 TextField priceField = (TextField) getClass().getDeclaredField("price" + i).get(this);
                 TextField quantityField = (TextField) getClass().getDeclaredField("quantity" + i).get(this);
-                Books.append("#" + line.split("#")[1] + "#" + quantityField.getText().replaceAll("\\D", "") + "#" + priceField.getText().replaceAll("\\D", "") + "#" + line.split("#")[4] + "#" + "\n");
+                Books.append("#" + line.split("#")[1] + "#" + quantityField.getText().replaceAll("\\D", "") + "#" + priceField.getText().replaceAll("\\D", "") + "#" + line.split("#")[4] + "#" + line.split("#")[5] + "#" + line.split("#")[6] + "#" + line.split("#")[7] + "#" + "\n");
                 i++;
             }
             reader.close();

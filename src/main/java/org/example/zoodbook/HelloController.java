@@ -42,8 +42,7 @@ public class HelloController {
     @FXML
     private ScrollPane scrollPane;
     public int uId = SignInController.loggedInUserId;
-
-
+    public static String clickedBook;
     public void initialize() throws IOException, NoSuchFieldException, IllegalAccessException {
         if (uId != 100) {
             Map<String, Button> productButtonMap = new HashMap<>();
@@ -1151,8 +1150,18 @@ public class HelloController {
             add24.setDisable(true);
         }
     }
-
-
+    @FXML
+    private void onProductClicked(MouseEvent event) throws IOException {
+        ImageView clickedImage = (ImageView) event.getSource();
+        clickedBook = clickedImage.getImage().getUrl().substring(clickedImage.getImage().getUrl().lastIndexOf("/") + 1, clickedImage.getImage().getUrl().lastIndexOf("."));
+        Parent root = FXMLLoader.load(getClass().getResource("Book.fxml"));
+        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.setResizable(false);
+        stage.show();
+        stage.centerOnScreen();
+    }
     @FXML
     private HostServices hostServices;
 

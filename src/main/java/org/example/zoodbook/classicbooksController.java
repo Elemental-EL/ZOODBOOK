@@ -83,13 +83,23 @@ public class classicbooksController {
 
     @FXML
     void onUserClicked(MouseEvent event) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("SignIn.fxml"));
-        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-        scene = new Scene(root);
-        stage.setScene(scene);
-        stage.setResizable(false);
-        stage.show();
-        stage.centerOnScreen();
+        if (uId == 100) {
+            Parent root = FXMLLoader.load(getClass().getResource("SignIn.fxml"));
+            stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+            scene = new Scene(root);
+            stage.setScene(scene);
+            stage.setResizable(false);
+            stage.show();
+            stage.centerOnScreen();
+        } else {
+            Parent root = FXMLLoader.load(getClass().getResource("Profile.fxml"));
+            stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+            scene = new Scene(root);
+            stage.setScene(scene);
+            stage.setResizable(false);
+            stage.show();
+            stage.centerOnScreen();
+        }
     }
 
     @FXML
@@ -434,5 +444,17 @@ public class classicbooksController {
             add8.setText("افزوده شد");
             add8.setDisable(true);
         }
+    }
+    @FXML
+    private void onProductClicked(MouseEvent event) throws IOException {
+        ImageView clickedImage = (ImageView) event.getSource();
+        HelloController.clickedBook = clickedImage.getImage().getUrl().substring(clickedImage.getImage().getUrl().lastIndexOf("/") + 1, clickedImage.getImage().getUrl().lastIndexOf("."));
+        Parent root = FXMLLoader.load(getClass().getResource("Book.fxml"));
+        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.setResizable(false);
+        stage.show();
+        stage.centerOnScreen();
     }
 }
