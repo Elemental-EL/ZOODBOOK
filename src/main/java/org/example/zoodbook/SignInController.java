@@ -73,7 +73,7 @@ public class SignInController {
         if (usernameText.getText().trim().isEmpty() || passwordText.getText().trim().isEmpty()) {
             errorText.setText("*پر کردن تمامی فیلد ها الزامی است.");
         } else if (Objects.equals(usernameText.getText(), "admin") & Objects.equals(passwordText.getText(), "admin")) {
-            Parent root = FXMLLoader.load(getClass().getResource("Section.fxml"));
+            Parent root = FXMLLoader.load(getClass().getResource("AdminPanel.fxml"));
             stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
             scene = new Scene(root);
             stage.setScene(scene);

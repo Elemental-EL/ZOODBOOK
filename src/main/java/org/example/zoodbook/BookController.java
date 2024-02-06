@@ -107,7 +107,7 @@ public class BookController {
             stage.show();
             stage.centerOnScreen();
         } else {
-            Parent root = FXMLLoader.load(getClass().getResource("Profile.fxml"));
+            Parent root = FXMLLoader.load(getClass().getResource("UserPanel.fxml"));
             stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
             scene = new Scene(root);
             stage.setScene(scene);
