@@ -18,7 +18,7 @@
                   <Image url="@UsetGreenPNG.png" />
                </image>
             </ImageView>
-            <Label layoutX="57.0" layoutY="25.0" prefHeight="30.0" prefWidth="150.0">
+            <Label fx:id="userNamelbl" layoutX="57.0" layoutY="25.0" prefHeight="30.0" prefWidth="200.0">
                <font>
                   <Font name="System Bold Italic" size="20.0" />
                </font>

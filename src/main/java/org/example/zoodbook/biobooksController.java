@@ -461,4 +461,22 @@ public class biobooksController {
         stage.show();
         stage.centerOnScreen();
     }
+//    public void addToCart(String bookID) throws IOException {
+//        BufferedReader reader = new BufferedReader(new FileReader("Files/Cart.txt"));
+//        StringBuilder ordersText = new StringBuilder();
+//        String read;
+//        while (((read = reader.readLine()) != null) && (!Objects.equals(read.split("#")[1], String.valueOf(SignInController.loggedInUserId)))) {
+//            ordersText.append(read + "\n");
+//        }
+//        ordersText.append(read + bookID + "#" + "1" + "#" + "\n");
+//        while ((read = reader.readLine()) != null) {
+//            ordersText.append(read + "\n");
+//        }
+//        reader.close();
+//        BufferedWriter writer = new BufferedWriter(new FileWriter("Files/Cart.txt"));
+//        writer.write(String.valueOf(ordersText));
+//        writer.close();
+//        add5.setText("افزوده شد");
+//        add5.setDisable(true);
+//    }
 }

@@ -106,3 +106,10 @@
 .lblsStyle{
     -fx-padding: 0 15 0 5;
 }
+.showUserslbl {
+    -fx-font-size: 16;
+    -fx-end-margin: 10px;
+}
+.showUsersTXT{
+    -fx-font-size: 18;
+}

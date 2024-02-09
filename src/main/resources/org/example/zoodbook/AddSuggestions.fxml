@@ -9,6 +9,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
 <AnchorPane prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.zoodbook.AddSuggestionsController">
     <children>
@@ -33,7 +34,7 @@
         </Pane>
         <Pane layoutY="100.0" prefHeight="400.0" prefWidth="800.0" styleClass="mainpageBackground" stylesheets="@style.css">
             <children>
-                <TextArea layoutX="50.0" layoutY="36.0" prefHeight="250.0" prefWidth="700.0" />
+                <TextArea fx:id="SuggestionsTXT" layoutX="50.0" layoutY="36.0" prefHeight="250.0" prefWidth="700.0" />
                 <Button layoutX="350.0" layoutY="321.0" mnemonicParsing="false" onAction="#onAddSuggClicked" prefHeight="35.0" prefWidth="100.0" style="-fx-background-radius: 10;" stylesheets="@style.css" text="افزودن" textFill="WHITE">
                     <font>
                         <Font name="System Bold" size="18.0" />
@@ -44,6 +45,11 @@
                   <String fx:value="zoom" />
                </styleClass>
                 </Button>
+            <Text fill="RED" layoutX="464.0" layoutY="310.0" strokeType="OUTSIDE" strokeWidth="0.0" text="لطفا پایان جملات خود را  با &quot; . &quot; مشخص کنید!">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
             </children>
         </Pane>
     </children>

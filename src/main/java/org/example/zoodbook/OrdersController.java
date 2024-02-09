@@ -12,6 +12,7 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
+import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
@@ -29,6 +30,8 @@ public class OrdersController {
     private ImageView logobtn;
     @FXML
     private VBox mainVbox;
+    @FXML
+    private AnchorPane ordersAnchorPane;
 
     public void initialize() throws IOException {
         BufferedReader reader = new BufferedReader(new FileReader("Files/Orders.txt"));
@@ -49,7 +52,7 @@ public class OrdersController {
     }
 
     public void onBackClicked(MouseEvent event) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("Section.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("AdminPanel.fxml"));
         stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);
@@ -164,6 +167,11 @@ public class OrdersController {
         checkBox.setPrefHeight(30);
         Label status = new Label("ارسال شده :");
         status.getStyleClass().addAll("orderBooksLabel" , "lblsStyle");
+
+        for (int i = 0 ; i < booksID.length && booksID[i]!=null ; i++){
+            mainVbox.setPrefHeight(mainVbox.getPrefHeight() + 200);
+            ordersAnchorPane.setPrefHeight(ordersAnchorPane.getPrefHeight() + 200);
+        }
 
         if (Integer.parseInt(line.split("#")[5])!=0){
             checkBox.setDisable(true);

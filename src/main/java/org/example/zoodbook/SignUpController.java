@@ -87,7 +87,7 @@ public class SignUpController {
                 while ((line = reader2.readLine()) != null)
                     userTexts.append(line + "\n");
                 reader2.close();
-                StringBuilder newUser = new StringBuilder("#" + newId + "#" + nameText.getText() + "#" + familyText.getText() + "#" + userText.getText() + "#" + passwordText.getText().hashCode() + "#" + addressText.getText() + "#" + codePText.getText() + "#" + PhnumberText.getText() + "#");
+                StringBuilder newUser = new StringBuilder("#" + newId + "#" + nameText.getText() + "#" + familyText.getText() + "#" + userText.getText() + "#" + passwordText.getText().hashCode() + "#" + addressText.getText() + "#" + codePText.getText() + "#" + PhnumberText.getText() + "#" + 0 + "#");
                 userTexts.append(newUser);
                 BufferedWriter writer = new BufferedWriter(new FileWriter("Files/Users.txt"));
                 writer.write(String.valueOf(userTexts));
