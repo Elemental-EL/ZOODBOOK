@@ -63,7 +63,7 @@ public class SeeSuggestionsController {
             seeSuggestionVbox.getChildren().add(borderPane1);
             StringBuilder stringBuilder = new StringBuilder();
             for (int i = 2 ; i < line1.split("#").length ; i++){
-                if (!(line1.split("#")[i].contains("."))){
+                if (!(line1.split("#")[i].contains(".")) && (i < line1.split("#").length-1)){
                     stringBuilder.append(line1.split("#")[i] + " ");
                 }else{
                     stringBuilder.append(line1.split("#")[i]);
