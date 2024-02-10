@@ -85,7 +85,6 @@ public class SeeSuggestionsController {
             SuggestionsPane.setPrefHeight(SuggestionsPane.getPrefHeight() + 75);
         }
         reader1.close();
-
     }
 }
 
