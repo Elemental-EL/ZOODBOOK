@@ -113,3 +113,17 @@
 .showUsersTXT{
     -fx-font-size: 18;
 }
+.showUsersNameChoice{
+    -fx-font-size: 16;
+    -fx-mark-color: #164c35;
+}
+.choice-box .menu-item:focused {
+    -fx-background-color: #D2E3C8;
+}
+.choice-box .menu-item:focused > .label {
+    -fx-text-fill: #164c35;
+}
+.dataMassage{
+    -fx-text-fill: #164c35;
+    -fx-font-weight: bold;
+}
