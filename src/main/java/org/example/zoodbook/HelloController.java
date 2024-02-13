@@ -2,6 +2,7 @@ package org.example.zoodbook;
 
 import javafx.application.HostServices;
 import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
@@ -9,9 +10,14 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Hyperlink;
 import javafx.scene.control.*;
+import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
+import javafx.scene.layout.BorderPane;
+import javafx.scene.layout.HBox;
+import javafx.scene.layout.VBox;
 import javafx.scene.paint.Color;
+import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
 import java.io.BufferedReader;
@@ -41,16 +47,36 @@ public class HelloController {
     private Hyperlink link;
     @FXML
     private ScrollPane scrollPane;
+    @FXML
+    private VBox SearchVbox;
+
     public int uId = SignInController.loggedInUserId;
     public static String clickedBook;
+
+    public static String searchedBook;
     public ArrayList<String> results = new ArrayList<>();
     public void initialize() throws IOException, NoSuchFieldException, IllegalAccessException {
+        SearchVbox.getStyleClass().add("searchVBox");
+        String[] BooksID = new String[48];
+        String[] BookName = new String[48];
+        String[] BookPrice = new String[48];
+        BufferedReader reader1 = new BufferedReader(new FileReader("Files/Books.txt"));
+        String line1;
+        int k = 0;
+        while (((line1 = reader1.readLine()) != null) && (k < 48)){
+            BooksID[k] = line1.split("#")[1];
+            BookName[k] = line1.split("#")[4];
+            BookPrice[k] = line1.split("#")[3];
+            k++;
+        }
         searchBar.textProperty().addListener((observable, oldValue, newValue) -> {
             try {
-                if (!newValue.trim().isEmpty())
+                if (!newValue.trim().isEmpty()) {
                     results = lsearch(newValue);
+                }
                 else
                     results.clear();
+                showResult(results , BooksID , BookName , BookPrice);
             } catch (IOException e) {
                 throw new RuntimeException(e);
             }
@@ -1190,6 +1216,73 @@ public class HelloController {
 
     public void setHostServices(HostServices hostServices) {
         this.hostServices = hostServices;
+    }
+
+    public void showResult(ArrayList<String> results , String[] BookID , String[] BookName , String[] BookPrice){
+        if (results != null){
+            if (!results.contains("notFound")){
+                SearchVbox.getChildren().clear();
+                SearchVbox.setPrefHeight(0);
+                for (String res:results) {
+                    ImageView bookPic = new ImageView();
+                    Image image = new Image(getClass().getResource(res+".jpg").toExternalForm());
+                    bookPic.setImage(image);
+                    bookPic.setFitWidth(50);
+                    bookPic.setFitHeight(60);
+                    int i=0;
+                    while (!Objects.equals(res, BookID[i])){
+                        i++;
+                    }
+                    Text resBookName = new Text(BookName[i] + "      ");
+                    Text resBookPrice = new Text(BookPrice[i] + " تومان");
+                    resBookName.getStyleClass().addAll("searchResult" , "searchResult1");
+                    resBookPrice.getStyleClass().add("searchResult");
+                    HBox hBox = new HBox(2);
+                    hBox.getChildren().addAll(resBookPrice , resBookName);
+                    hBox.getStyleClass().add("searchHbox");
+                    BorderPane borderPane = new BorderPane();
+                    borderPane.setRight(hBox);
+                    borderPane.setLeft(bookPic);
+                    borderPane.setStyle("-fx-pref-height: 70");
+                    borderPane.getStyleClass().addAll("lightergreen" , "resultPane");
+                    SearchVbox.setPrefHeight(SearchVbox.getPrefHeight() + 70);
+                    SearchVbox.getChildren().add(borderPane);
+
+                    int finalI = i;
+                    borderPane.setOnMouseClicked(new EventHandler<MouseEvent>() {
+                        @Override
+                        public void handle(MouseEvent event) {
+                            searchedBook = BookID[finalI];
+                            Parent root = null;
+                            try {
+                                root = FXMLLoader.load(getClass().getResource("Book.fxml"));
+                            } catch (IOException e) {
+                                throw new RuntimeException(e);
+                            }
+                            stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+                            scene = new Scene(root);
+                            stage.setScene(scene);
+                            stage.setResizable(false);
+                            stage.show();
+                            stage.centerOnScreen();
+                        }
+                    });
+                }
+            }else{
+                SearchVbox.getChildren().clear();
+                SearchVbox.setPrefHeight(0);
+                Text errorTXT = new Text("یافت نشد !!");
+                BorderPane borderPane = new BorderPane();
+                borderPane.getStyleClass().addAll("lightergreen" , "resultPane");
+                borderPane.setRight(errorTXT);
+                borderPane.setStyle("-fx-pref-height: 50");
+                SearchVbox.setStyle("-fx-pref-height: 50");
+                SearchVbox.getChildren().add(borderPane);
+            }
+        }else {
+            SearchVbox.getChildren().clear();
+            SearchVbox.setPrefHeight(0);
+        }
     }
 }
 

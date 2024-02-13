@@ -33,40 +33,77 @@ public class BookController {
     private Text descriptionB;
     public int uId = SignInController.loggedInUserId;
     public String bId = HelloController.clickedBook;
+    public String BID = HelloController.searchedBook;
     public void initialize() throws IOException {
-        BufferedReader reader1= new BufferedReader(new FileReader("Files/Books.txt"));
-        String line;
-        while ((line= reader1.readLine())!=null&& !Objects.equals(line.split("#")[1], bId)){
-        }
-        reader1.close();
-        priceB.setText(line.split("#")[3]+" تومان");
-        nameB.setText(line.split("#")[4]);
-        authorB.setText(line.split("#")[5]);
-        publisherB.setText(line.split("#")[6]);
-        descriptionB.setText(line.split("#")[7]);
-        Image image = new Image(getClass().getResource(bId+".jpg").toExternalForm());
-        imgB.setImage(image);
-        if (uId!=100) {
-            BufferedReader reader2 = new BufferedReader(new FileReader("Files/Cart.txt"));
-            while ((line = reader2.readLine()) != null && !Objects.equals(line.split("#")[1], String.valueOf(uId))) {
+        if (bId != null){
+            BufferedReader reader1= new BufferedReader(new FileReader("Files/Books.txt"));
+            String line;
+            while ((line= reader1.readLine())!=null&& !Objects.equals(line.split("#")[1], bId)){
             }
-            reader2.close();
-            for (int i = 2; i < Objects.requireNonNull(line).split("#").length; i+=2) {
-                if (Objects.equals(bId, line.split("#")[i])) {
-                    addB.setText("افزوده شد");
-                    addB.setDisable(true);
+            reader1.close();
+            priceB.setText(line.split("#")[3]+" تومان");
+            nameB.setText(line.split("#")[4]);
+            authorB.setText(line.split("#")[5]);
+            publisherB.setText(line.split("#")[6]);
+            descriptionB.setText(line.split("#")[7]);
+            Image image = new Image(getClass().getResource(bId+".jpg").toExternalForm());
+            imgB.setImage(image);
+            if (uId!=100) {
+                BufferedReader reader2 = new BufferedReader(new FileReader("Files/Cart.txt"));
+                while ((line = reader2.readLine()) != null && !Objects.equals(line.split("#")[1], String.valueOf(uId))) {
+                }
+                reader2.close();
+                for (int i = 2; i < Objects.requireNonNull(line).split("#").length; i+=2) {
+                    if (Objects.equals(bId, line.split("#")[i])) {
+                        addB.setText("افزوده شد");
+                        addB.setDisable(true);
+                    }
                 }
             }
+            BufferedReader reader3 = new BufferedReader(new FileReader("Files/Books.txt"));
+            while ((line = reader3.readLine()) != null && !Objects.equals(line.split("#")[1], bId)) {
+            }
+            if (Objects.equals(line.split("#")[2], "0")) {
+                priceB.setText("ناموجود");
+                priceB.setTextFill(Color.RED);
+                addB.setDisable(true);
+            }
+            reader3.close();
+        } else if (BID != null) {
+            BufferedReader reader1= new BufferedReader(new FileReader("Files/Books.txt"));
+            String line;
+            while ((line= reader1.readLine())!=null&& !Objects.equals(line.split("#")[1], BID)){
+            }
+            reader1.close();
+            priceB.setText(line.split("#")[3]+" تومان");
+            nameB.setText(line.split("#")[4]);
+            authorB.setText(line.split("#")[5]);
+            publisherB.setText(line.split("#")[6]);
+            descriptionB.setText(line.split("#")[7]);
+            Image image = new Image(getClass().getResource(BID+".jpg").toExternalForm());
+            imgB.setImage(image);
+            if (uId!=100) {
+                BufferedReader reader2 = new BufferedReader(new FileReader("Files/Cart.txt"));
+                while ((line = reader2.readLine()) != null && !Objects.equals(line.split("#")[1], String.valueOf(uId))) {
+                }
+                reader2.close();
+                for (int i = 2; i < Objects.requireNonNull(line).split("#").length; i+=2) {
+                    if (Objects.equals(BID, line.split("#")[i])) {
+                        addB.setText("افزوده شد");
+                        addB.setDisable(true);
+                    }
+                }
+            }
+            BufferedReader reader3 = new BufferedReader(new FileReader("Files/Books.txt"));
+            while ((line = reader3.readLine()) != null && !Objects.equals(line.split("#")[1], BID)) {
+            }
+            if (Objects.equals(line.split("#")[2], "0")) {
+                priceB.setText("ناموجود");
+                priceB.setTextFill(Color.RED);
+                addB.setDisable(true);
+            }
+            reader3.close();
         }
-        BufferedReader reader3 = new BufferedReader(new FileReader("Files/Books.txt"));
-        while ((line = reader3.readLine()) != null && !Objects.equals(line.split("#")[1], bId)) {
-        }
-        if (Objects.equals(line.split("#")[2], "0")) {
-            priceB.setText("ناموجود");
-            priceB.setTextFill(Color.RED);
-            addB.setDisable(true);
-        }
-        reader3.close();
     }
     @FXML
     private void onAddBClicked(ActionEvent event) throws IOException {
@@ -216,3 +253,38 @@ public class BookController {
         stage.centerOnScreen();
     }
 }
+/*
+* BufferedReader reader1= new BufferedReader(new FileReader("Files/Books.txt"));
+        String line;
+        while ((line= reader1.readLine())!=null&& !Objects.equals(line.split("#")[1], bId)){
+        }
+        reader1.close();
+        priceB.setText(line.split("#")[3]+" تومان");
+        nameB.setText(line.split("#")[4]);
+        authorB.setText(line.split("#")[5]);
+        publisherB.setText(line.split("#")[6]);
+        descriptionB.setText(line.split("#")[7]);
+        Image image = new Image(getClass().getResource(bId+".jpg").toExternalForm());
+        imgB.setImage(image);
+        if (uId!=100) {
+            BufferedReader reader2 = new BufferedReader(new FileReader("Files/Cart.txt"));
+            while ((line = reader2.readLine()) != null && !Objects.equals(line.split("#")[1], String.valueOf(uId))) {
+            }
+            reader2.close();
+            for (int i = 2; i < Objects.requireNonNull(line).split("#").length; i+=2) {
+                if (Objects.equals(bId, line.split("#")[i])) {
+                    addB.setText("افزوده شد");
+                    addB.setDisable(true);
+                }
+            }
+        }
+        BufferedReader reader3 = new BufferedReader(new FileReader("Files/Books.txt"));
+        while ((line = reader3.readLine()) != null && !Objects.equals(line.split("#")[1], bId)) {
+        }
+        if (Objects.equals(line.split("#")[2], "0")) {
+            priceB.setText("ناموجود");
+            priceB.setTextFill(Color.RED);
+            addB.setDisable(true);
+        }
+        reader3.close();
+* */

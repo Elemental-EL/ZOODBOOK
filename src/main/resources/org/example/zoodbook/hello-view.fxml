@@ -1622,13 +1622,13 @@
                         </Pane>
                      </children>
                   </Pane>
-                  <TextField fx:id="searchBar" layoutX="376.0" layoutY="31.0" prefHeight="32.0" prefWidth="445.0" style="-fx-background-radius: 5;" />
+                  <TextField fx:id="searchBar" alignment="CENTER_RIGHT" layoutX="376.0" layoutY="31.0" prefHeight="32.0" prefWidth="445.0" style="-fx-background-radius: 5;" />
                   <ImageView fitHeight="26.0" fitWidth="43.0" layoutX="376.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@Search.png" />
                      </image>
                   </ImageView>
-                  <VBox layoutX="371.0" layoutY="62.0" prefHeight="21.0" prefWidth="439.0" />
+                  <VBox fx:id="SearchVbox" layoutX="376.0" layoutY="63.0" prefHeight="22.0" prefWidth="445.0" />
                </children></AnchorPane>
         </content>
       </ScrollPane>

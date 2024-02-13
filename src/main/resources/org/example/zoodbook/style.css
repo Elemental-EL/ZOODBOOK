@@ -127,3 +127,19 @@
     -fx-text-fill: #164c35;
     -fx-font-weight: bold;
 }
+.resultPane{
+    -fx-padding: 5 10 5 10;
+}
+.searchVBox{
+    -fx-background-color: #fff;
+}
+.searchResult{
+    -fx-font-size: 20;
+    -fx-text-fill: #164c35;
+}
+.searchResult1{
+    -fx-font-weight: bold;
+}
+.searchHbox{
+    -fx-padding: 20 10 20 15;
+}
