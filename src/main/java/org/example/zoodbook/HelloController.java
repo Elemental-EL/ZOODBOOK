@@ -51,7 +51,6 @@ public class HelloController {
                     results = lsearch(newValue);
                 else
                     results.clear();
-                System.out.println(results);
             } catch (IOException e) {
                 throw new RuntimeException(e);
             }
