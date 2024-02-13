@@ -47,7 +47,11 @@ public class HelloController {
     public void initialize() throws IOException, NoSuchFieldException, IllegalAccessException {
         searchBar.textProperty().addListener((observable, oldValue, newValue) -> {
             try {
-                results = lsearch(newValue);
+                if (!newValue.trim().isEmpty())
+                    results = lsearch(newValue);
+                else
+                    results.clear();
+                System.out.println(results);
             } catch (IOException e) {
                 throw new RuntimeException(e);
             }
@@ -207,6 +211,8 @@ public class HelloController {
             if (line.split("#")[4].contains(newText))
                     result.add(line.split("#")[1]);
         }
+        if (result.isEmpty())
+            result.add("notFound");
         reader.close();
         return result;
     }
