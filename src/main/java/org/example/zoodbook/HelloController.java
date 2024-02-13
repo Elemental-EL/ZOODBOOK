@@ -60,12 +60,14 @@ public class HelloController {
         String[] BooksID = new String[48];
         String[] BookName = new String[48];
         String[] BookPrice = new String[48];
+        String[] BookQuantity = new String[48];
         BufferedReader reader1 = new BufferedReader(new FileReader("Files/Books.txt"));
         String line1;
         int k = 0;
         while (((line1 = reader1.readLine()) != null) && (k < 48)){
             BooksID[k] = line1.split("#")[1];
             BookName[k] = line1.split("#")[4];
+            BookQuantity[k] = line1.split("#")[2];
             BookPrice[k] = line1.split("#")[3];
             k++;
         }
@@ -76,7 +78,7 @@ public class HelloController {
                 }
                 else
                     results.clear();
-                showResult(results , BooksID , BookName , BookPrice);
+                showResult(results , BooksID , BookName , BookPrice , BookQuantity);
             } catch (IOException e) {
                 throw new RuntimeException(e);
             }
@@ -1218,7 +1220,7 @@ public class HelloController {
         this.hostServices = hostServices;
     }
 
-    public void showResult(ArrayList<String> results , String[] BookID , String[] BookName , String[] BookPrice){
+    public void showResult(ArrayList<String> results , String[] BookID , String[] BookName , String[] BookPrice , String[] BookQuantity){
         if (results != null){
             if (!results.contains("notFound")){
                 SearchVbox.getChildren().clear();
@@ -1234,7 +1236,13 @@ public class HelloController {
                         i++;
                     }
                     Text resBookName = new Text(BookName[i] + "      ");
-                    Text resBookPrice = new Text(BookPrice[i] + " تومان");
+                    Text resBookPrice = new Text();
+                    if (!Objects.equals(BookQuantity[i], "0"))
+                        resBookPrice.setText(BookPrice[i] + " تومان");
+                    else {
+                        resBookPrice.setText("ناموجود");
+                        resBookPrice.setFill(Color.RED);
+                    }
                     resBookName.getStyleClass().addAll("searchResult" , "searchResult1");
                     resBookPrice.getStyleClass().add("searchResult");
                     HBox hBox = new HBox(2);
