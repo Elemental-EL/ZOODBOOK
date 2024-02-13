@@ -1622,8 +1622,8 @@
                         </Pane>
                      </children>
                   </Pane>
-                  <TextField fx:id="searchBar" layoutX="366.0" layoutY="31.0" prefHeight="32.0" prefWidth="445.0" style="-fx-background-radius: 5;" />
-                  <ImageView fitHeight="26.0" fitWidth="43.0" layoutX="366.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
+                  <TextField fx:id="searchBar" layoutX="376.0" layoutY="31.0" prefHeight="32.0" prefWidth="445.0" style="-fx-background-radius: 5;" />
+                  <ImageView fitHeight="26.0" fitWidth="43.0" layoutX="376.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@Search.png" />
                      </image>

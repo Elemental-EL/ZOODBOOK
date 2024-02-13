@@ -78,7 +78,8 @@ public class BookController {
             stage.setResizable(false);
             stage.show();
             stage.centerOnScreen();
-        } else {BufferedReader reader = new BufferedReader(new FileReader("Files/Cart.txt"));
+        } else {
+            BufferedReader reader = new BufferedReader(new FileReader("Files/Cart.txt"));
             StringBuilder ordersText = new StringBuilder();
             String read;
             while (((read = reader.readLine()) != null) && (!Objects.equals(read.split("#")[1], String.valueOf(SignInController.loggedInUserId)))) {

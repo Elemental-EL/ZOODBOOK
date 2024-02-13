@@ -32,7 +32,7 @@ public class SeeMassagesController {
         String line;
         while ((line = reader.readLine()) != null){
             if (Objects.equals(line.split("#")[1], String.valueOf(SignInController.loggedInUserId))){
-                Text massageDatalbl = new Text("تاریخ دریافت : ");
+                Text massageDatalbl = new Text("تاریخ : ");
                 Text massageDatatxt = new Text(line.split("#")[2]);
                 HBox hBox1 = new HBox(2);
                 hBox1.getChildren().addAll(massageDatatxt , massageDatalbl);
