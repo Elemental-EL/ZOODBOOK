@@ -43,7 +43,15 @@ public class HelloController {
     private ScrollPane scrollPane;
     public int uId = SignInController.loggedInUserId;
     public static String clickedBook;
+    public ArrayList<String> results = new ArrayList<>();
     public void initialize() throws IOException, NoSuchFieldException, IllegalAccessException {
+        searchBar.textProperty().addListener((observable, oldValue, newValue) -> {
+            try {
+                results = lsearch(newValue);
+            } catch (IOException e) {
+                throw new RuntimeException(e);
+            }
+        });
         if (uId != 100) {
             Map<String, Button> productButtonMap = new HashMap<>();
             int i = 1;
@@ -191,7 +199,17 @@ public class HelloController {
         }
 
     }
-
+    private ArrayList<String> lsearch(String newText) throws IOException {
+        ArrayList<String> result = new ArrayList<>();
+        BufferedReader reader = new BufferedReader(new FileReader("Files/Books.txt"));
+        String line;
+        while ((line=reader.readLine())!=null){
+            if (line.split("#")[4].contains(newText))
+                    result.add(line.split("#")[1]);
+        }
+        reader.close();
+        return result;
+    }
     @FXML
     void onUserClicked(MouseEvent event) throws IOException {
         if (uId == 100) {
