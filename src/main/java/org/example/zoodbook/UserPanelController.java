@@ -8,6 +8,8 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.input.MouseEvent;
+import javafx.scene.layout.Pane;
+import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
 import java.io.BufferedReader;
@@ -23,8 +25,11 @@ public class UserPanelController {
     private Parent root;
     @FXML
     private Label userNamelbl;
-
-
+    @FXML
+    private Pane notifPane;
+    @FXML
+    private Text notifCount;
+    private int notifC =0;
     public void initialize() throws IOException {
         BufferedReader reader = new BufferedReader(new FileReader("Files/Users.txt"));
         String line;
@@ -36,6 +41,18 @@ public class UserPanelController {
             }
         }
         reader.close();
+        BufferedReader reader0 = new BufferedReader(new FileReader("Files/Massages.txt"));
+        while ((line = reader0.readLine()) != null){
+            if (Objects.equals(line.split("#")[1], String.valueOf(SignInController.loggedInUserId))){
+                if (Objects.equals(line.split("#")[3], "0"))
+                    notifC++;
+            }
+        }
+        reader0.close();
+        if (notifC==0)
+            notifPane.setVisible(false);
+        else
+            notifCount.setText(String.valueOf(notifC));
     }
     public void onLogoClicked(MouseEvent event) throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource("hello-view.fxml"));

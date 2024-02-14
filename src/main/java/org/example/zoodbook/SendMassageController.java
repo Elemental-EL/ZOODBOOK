@@ -78,7 +78,7 @@ public class SendMassageController {
                     }
                     reader1.close();
                     line2 = entryMassage.getText();
-                    stringBuilder.append("#" + userID + "#" + formattedDate + "#");
+                    stringBuilder.append("#" + userID + "#" + formattedDate + "#"+"0"+"#");
                     StringTokenizer stringTokenizer = new StringTokenizer(line2 , " \n");
                     while (stringTokenizer.hasMoreTokens()){
                         stringBuilder.append(stringTokenizer.nextToken() + "#");
@@ -105,7 +105,7 @@ public class SendMassageController {
                     reader1.close();
                     newLine1 = entryMassage.getText();
                     for (String id: usersID) {
-                        stringBuilder1.append("#" + id + "#" + formattedDate + "#");
+                        stringBuilder1.append("#" + id + "#" + formattedDate + "#" +"0"+ "#");
                         StringTokenizer stringTokenizer1 = new StringTokenizer(newLine1 , " \n");
                         while (stringTokenizer1.hasMoreTokens()){
                             stringBuilder1.append(stringTokenizer1.nextToken() + "#");

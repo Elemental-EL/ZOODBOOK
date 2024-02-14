@@ -13,10 +13,7 @@ import javafx.scene.layout.VBox;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
-import java.io.BufferedReader;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
 import java.util.Objects;
 
 public class SeeMassagesController {
@@ -42,7 +39,7 @@ public class SeeMassagesController {
                 firstPane.getStyleClass().addAll("showUsersTXT" , "lightergreen" , "dataMassage");
                 showMassageVbox.getChildren().add(firstPane);
                 StringBuilder stringBuilder = new StringBuilder();
-                for (int i = 3 ; i < line.split("#").length ; i++){
+                for (int i = 4 ; i < line.split("#").length ; i++){
                     if (!(line.split("#")[i].contains(".")) && (i < line.split("#").length-1)){
                         stringBuilder.append(line.split("#")[i] + " ");
                     }else{
@@ -63,6 +60,22 @@ public class SeeMassagesController {
                 showMassageVbox.getChildren().add(spacePane);
             }
         }
+        BufferedReader reader1 = new BufferedReader(new FileReader("Files/Massages.txt"));
+        StringBuilder builder = new StringBuilder();
+        while ((line = reader1.readLine()) != null){
+            if (Objects.equals(line.split("#")[1], String.valueOf(SignInController.loggedInUserId))){
+                builder.append("#"+line.split("#")[1]+"#"+line.split("#")[2]+"#"+"1"+"#");
+                for (int i=4;i<line.split("#").length;i++)
+                    builder.append(line.split("#")[i]+"#");
+                builder.append("\n");
+            }
+            else
+                builder.append(line+"\n");
+        }
+        reader1.close();
+        BufferedWriter writer = new BufferedWriter(new FileWriter("Files/Massages.txt"));
+        writer.write(String.valueOf(builder));
+        writer.close();
     }
 
     public void onBackClicked(MouseEvent event) throws IOException {
