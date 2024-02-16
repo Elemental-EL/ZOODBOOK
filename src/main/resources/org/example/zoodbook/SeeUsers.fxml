@@ -9,16 +9,16 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="600.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.zoodbook.SeeUsersController">
+<AnchorPane prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.zoodbook.SeeUsersController">
     <children>
-        <Pane prefHeight="100.0" prefWidth="850.0" styleClass="lightgreen" stylesheets="@style.css">
+        <Pane prefHeight="100.0" prefWidth="900.0" styleClass="lightgreen" stylesheets="@style.css">
             <children>
-                <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="750.0" pickOnBounds="true" preserveRatio="true" styleClass="zoom">
+                <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="800.0" pickOnBounds="true" preserveRatio="true" styleClass="zoom">
                     <image>
                         <Image url="@jhjhj.png" />
                     </image>
                 </ImageView>
-                <Label layoutX="382.0" layoutY="50.0" text=" کاربران :" textFill="#164c35">
+                <Label layoutX="407.0" layoutY="50.0" text=" کاربران :" textFill="#164c35">
                     <font>
                         <Font name="System Bold Italic" size="24.0" />
                     </font>
@@ -30,13 +30,13 @@
                 </ImageView>
             </children>
         </Pane>
-        <Pane layoutY="100.0" prefHeight="500.0" prefWidth="850.0" styleClass="mainpageBackground" stylesheets="@style.css">
+        <Pane layoutY="100.0" prefHeight="500.0" prefWidth="900.0" styleClass="mainpageBackground" stylesheets="@style.css">
             <children>
-                <ScrollPane layoutX="25.0" layoutY="25.0" prefHeight="450.0" prefWidth="800.0">
+                <ScrollPane layoutX="25.0" layoutY="25.0" prefHeight="450.0" prefWidth="850.0">
                     <content>
-                        <AnchorPane fx:id="userInformationPane" minHeight="0.0" minWidth="0.0" prefHeight="450.0" prefWidth="785.0">
+                        <AnchorPane fx:id="userInformationPane" minHeight="0.0" minWidth="0.0" prefHeight="450.0" prefWidth="835.0">
                      <children>
-                        <VBox fx:id="showUsersVbox" prefHeight="450.0" prefWidth="785.0" />
+                        <VBox fx:id="showUsersVbox" prefHeight="450.0" prefWidth="836.0" />
                      </children></AnchorPane>
                     </content>
                 </ScrollPane>

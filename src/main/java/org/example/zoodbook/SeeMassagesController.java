@@ -15,6 +15,7 @@ import javafx.stage.Stage;
 
 import java.io.*;
 import java.util.Objects;
+import java.util.Scanner;
 
 public class SeeMassagesController {
     private Stage stage;

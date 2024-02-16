@@ -134,7 +134,7 @@
     -fx-background-color: #fff;
 }
 .searchResult{
-    -fx-font-size: 20;
+    -fx-font-size: 18;
     -fx-text-fill: #164c35;
 }
 .searchResult1{
@@ -142,4 +142,16 @@
 }
 .searchHbox{
     -fx-padding: 20 10 20 15;
+}
+.seeUsersDisable{
+    -fx-text-fill: #fff;
+    -fx-background-color:#164c35;
+    -fx-pref-height: 18;
+    -fx-pref-width: 100;
+}
+.seeUsersDisable1{
+    -fx-text-fill: #fff;
+    -fx-background-color:#86A789;
+    -fx-pref-height: 18;
+    -fx-pref-width: 100;
 }
