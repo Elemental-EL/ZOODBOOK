@@ -95,14 +95,18 @@ public class SignInController {
             }
             reader.close();
             if (Authentication) {
-                loggedInUserId = Integer.parseInt(line.split("#")[1]);
-                Parent root = FXMLLoader.load(getClass().getResource("hello-view.fxml"));
-                stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-                scene = new Scene(root);
-                stage.setScene(scene);
-                stage.setResizable(false);
-                stage.show();
-                stage.centerOnScreen();
+                if (Objects.equals(line.split("#")[9], "0")){
+                    loggedInUserId = Integer.parseInt(line.split("#")[1]);
+                    Parent root = FXMLLoader.load(getClass().getResource("UserPanel.fxml"));
+                    stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+                    scene = new Scene(root);
+                    stage.setScene(scene);
+                    stage.setResizable(false);
+                    stage.show();
+                    stage.centerOnScreen();
+                } else if (Objects.equals(line.split("#")[9], "1")) {
+                    errorText.setText("حساب کاربری شما مسدود میباشد!");
+                }
             } else {
                 errorText.setText("*نام کاربری یا رمز عبور اشتباه است.");
             }
@@ -119,3 +123,13 @@ public class SignInController {
         stage.centerOnScreen();
     }
 }
+/*
+* loggedInUserId = Integer.parseInt(line.split("#")[1]);
+* Parent root = FXMLLoader.load(getClass().getResource("UserPanel.fxml"));
+* stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+* scene = new Scene(root);
+* stage.setScene(scene);
+* stage.setResizable(false);
+* stage.show();
+* stage.centerOnScreen();
+*/
